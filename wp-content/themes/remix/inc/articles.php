@@ -1,13 +1,22 @@
 <?php 
 
+$categories = array(
+	get_cat_ID("fashion"), 
+	get_cat_ID("beauty"), 
+	get_cat_ID("culture"),
+	get_cat_ID("lifestyle"),
+	get_cat_ID("soulsundaysessions"),
+	get_cat_ID("notatourist")
+	);
+
 $args = array(
 	'type'                     => 'post',
 	'child_of'                 => 0,
 	'orderby'                  => 'name',
 	'order'                    => 'ASC',
+	'include'                  => $categories,
 	'hide_empty'               => 1,
 	'hierarchical'             => 1,
-	'exclude'                  => array(get_cat_ID("uncategorized"), get_cat_ID("win")),
 	'taxonomy'                 => 'category',
 	'pad_counts'               => false 
 
