@@ -1,7 +1,7 @@
 <?php 
 
 $categories = array(
-	get_cat_ID("fashion"), 
+	get_cat_ID("Fashion"), 
 	get_cat_ID("beauty"), 
 	get_cat_ID("culture"),
 	get_cat_ID("lifestyle"),
