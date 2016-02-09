@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) {
+  #adv-search {
+    margin: 0 auto;
+  }
+
+  .dropdown.dropdown-lg {
+    position: static !important;
+
+    .dropdown-menu {
+      min-width: 500px;
+    }
+  }
+}

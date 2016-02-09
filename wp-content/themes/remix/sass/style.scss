@@ -1,0 +1,81 @@
+/*
+Theme Name: remix
+Theme URI: http://gomomentum.marketing/
+Author: Dylan Peti
+Author URI: http://gomomentum.marketing/
+Description: A theme for online magazin and blog.
+Version: 1.4
+License: NU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: remix
+*/
+
+@import "wp-content/themes/remix/sass/partials/header.scss";
+@import "wp-content/themes/remix/sass/partials/article.scss";
+@import "wp-content/themes/remix/sass/carousel/article.scss";
+@import "wp-content/themes/remix/sass/footer/article.scss";
+@import "wp-content/themes/remix/sass/media.scss";
+
+html {
+  margin: 0;
+  height: 0;
+}
+
+body {
+  margin: 0;
+  height: 0;
+  font-family: "proxima-nova",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+p, li, a {
+  line-height: 1.875em;
+  font-size: 1.125em;
+  font-weight: normal;
+}
+
+li, a {
+  color: #5D6769;
+}
+
+input {
+  background-color: transparent;
+  border-radius: 0px;
+  text-transform: capitalize;
+  border: 1px solid #ddd;
+  box-shadow: none;
+  border-right: 0px;
+}
+
+input, .btn, .btn-primary, .btn-default, .btn-primary {}
+
+.btn {
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+
+.btn-primary {
+  @extend .btn;
+}
+
+.btn-danger {
+  @extend .btn;
+}
+
+section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.glyphicon {
+  color: #ccc;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  background: #eee url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}

@@ -86,6 +86,8 @@ function get_footer( $name = null ) {
 		load_template( ABSPATH . WPINC . '/theme-compat/footer.php');
 }
 
+
+
 /**
  * Load sidebar template.
  *

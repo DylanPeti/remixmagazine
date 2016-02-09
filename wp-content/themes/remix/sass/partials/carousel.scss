@@ -1,0 +1,28 @@
+.carousel-control {
+  &.left, &.right {
+    background-image: none;
+  }
+}
+
+.carousel-inner .item img {
+  width: 100%;
+  height: 200px;
+}
+
+.carousel-control {
+  &.right, &.left {
+    background-image: none !important;
+  }
+}
+
+.article-carousel h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+/** carousel */
+
+/*.carousel-inner .active.left { position: relative; left: -10% !important; }
+.carousel-inner .next        { position: relative;  left:  10% !important; }
+.carousel-inner .prev        { position: relative;  left: -10% !important; }*/
