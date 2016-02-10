@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+  /* line 2, sass/media.scss */
+  #adv-search {
+    margin: 0 auto;
+  }
+
+  /* line 6, sass/media.scss */
+  .dropdown.dropdown-lg {
+    position: static !important;
+  }
+  /* line 9, sass/media.scss */
+  .dropdown.dropdown-lg .dropdown-menu {
+    min-width: 500px;
+  }
+}

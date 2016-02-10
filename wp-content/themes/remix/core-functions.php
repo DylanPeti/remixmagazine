@@ -6,8 +6,8 @@
 * Minify everything
 */
 function remix_js_scripts() {
-  wp_enqueue_style( 'remix_css', get_stylesheet_uri() );
-  wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
+  // wp_enqueue_style( 'remix_css', get_stylesheet_uri(), 'bootstrap_css' );
+  // wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
 if( is_front_page() ) {
 
 /* js */

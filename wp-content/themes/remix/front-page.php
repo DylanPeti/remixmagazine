@@ -2,7 +2,6 @@
 
 get_header(); 
 
-
     get_section('hero');
    
     get_section('latest'); 

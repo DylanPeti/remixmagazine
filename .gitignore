@@ -5,7 +5,7 @@
 *.bak
 *.swp
 Thumbs.db
-
+node_modules
 # wordpress specific
 wp-config.php
 wp-content/uploads/
@@ -16,6 +16,7 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 wp-content/cache/*
 wp-content/cache/supercache/*
+.sass-cache/*
 
 # wpengine specific
 .smushit-status

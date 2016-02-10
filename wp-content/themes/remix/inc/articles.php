@@ -1,20 +1,25 @@
 <?php 
 
-$categories = array(
-	get_cat_ID("Fashion"), 
+
+$car_items = array(
+	get_cat_ID("fashion"), 
 	get_cat_ID("beauty"), 
-	get_cat_ID("culture"),
-	get_cat_ID("lifestyle"),
-	get_cat_ID("soulsundaysessions"),
-	get_cat_ID("notatourist")
+	get_cat_ID("Culture"),
+	get_cat_ID("Lifestyle"),
+	get_cat_ID("#soulsundaysessions"),
+	get_cat_ID("#notatourist")
 	);
+
+
+$testing = array(implode(',',$car_items));
+
 
 $args = array(
 	'type'                     => 'post',
 	'child_of'                 => 0,
 	'orderby'                  => 'name',
 	'order'                    => 'ASC',
-	'include'                  => $categories,
+	'include'                  => $testing[0],
 	'hide_empty'               => 1,
 	'hierarchical'             => 1,
 	'taxonomy'                 => 'category',
@@ -26,12 +31,13 @@ $categories = get_categories( $args );
 
 ?>
 
- <section id="article-3" class="black">
+<section id="article-3" class="black">
 
  <div class="container">
 	<div class="article-collection">
 
 	<?php foreach ($categories as $article) : ?>
+
 
 		<article class="article">
 	
@@ -46,3 +52,12 @@ $categories = get_categories( $args );
 	</div>
 </div>
 </section>
+
+
+
+
+
+
+
+
+

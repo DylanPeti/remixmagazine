@@ -1,0 +1,20 @@
+{
+  "name": "remixmagazine",
+  "version": "1.0.0",
+  "dependencies": {
+    "grunt": "latest"
+  },
+  "devDependencies": {
+    "grunt-contrib-compass": "latest",
+    "grunt-contrib-csslint": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-env": "latest",
+    "grunt-node-inspector": "latest",
+    "grunt-nodemon": "latest",
+    "matchdep": "^1.0.1"
+  }
+}

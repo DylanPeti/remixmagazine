@@ -8,6 +8,9 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
+ 
+  <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css'; ?>">
+   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
 <?php wp_head(); ?>
 </head>
 

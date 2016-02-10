@@ -14,7 +14,7 @@ require ('core-functions.php');
 function remix_thumbnail_url($cat_name = null, $post_type, $id = null) {
 if($post_type == "cat") :
 
-$cat_id = get_cat∂_ID( $cat_name );
+$cat_id = get_cat_ID( $cat_name );
   $defaults = array(
 'numberposts' => 1,
 'category' => $cat_id,
@@ -46,14 +46,15 @@ function get_section( $name = null ) {
 
   $templates = array();
   $name = (string) $name;
-  if ( '' !== $name )
+  if ( '' !== $name ) 
     $templates[] = 'inc/' . $name . '-{$name}' . '.php';
 
   $templates[] = 'inc/' . $name . '.php';
 
   // Backward compat code will be removed in a future release
-  if ('' == locate_template($templates, true))
-    load_template( ABSPATH . WPINC . '/theme-compat/' . $name . '.php');
+  
+return locate_template($templates, true, false);
+
 }
 
 
