@@ -10,7 +10,8 @@
 	<![endif]-->
  
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css'; ?>">
-   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/admin.css'; ?>">
 <?php wp_head(); ?>
 </head>
 
@@ -21,7 +22,7 @@
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 
-<header>
+<!-- <header>
 <div class="container">
     <div class="logo">
  
@@ -29,4 +30,4 @@
     </div>
     
 </div>
-</header>
+</header> -->

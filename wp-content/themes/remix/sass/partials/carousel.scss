@@ -4,9 +4,30 @@
   }
 }
 
+.article-carousel {
+  padding: 30px;
+}
+
+.carousel-inner {
+ padding: 45px 0;
+}
+
+.carousel-inner .item .col-md-4 {
+  padding: 0;
+}
+
 .carousel-inner .item img {
-  width: 100%;
-  height: 200px;
+    width: 300px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-image {
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover; 
+ height: 250px
 }
 
 .carousel-control {

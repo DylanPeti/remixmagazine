@@ -15,7 +15,7 @@ $single_cats = wp_get_recent_posts($single_cat, OBJECT);
 
 ?>
 
-<section id="article-2" class="orange">
+<section id="carousel-section">
 
 	<div class="container"> 
 <article class="article-carousel">
@@ -29,7 +29,7 @@ $single_cats = wp_get_recent_posts($single_cat, OBJECT);
       <?php foreach ($single_cats as $item) : ?>
       <div class="item article-carousel-item">
         <div class="col-md-4">
-          <img src="<?php echo remix_thumbnail_url('', 'post', $item->ID) ?>" />
+<div class="carousel-image" style="background: url(<?php echo remix_thumbnail_url('', 'post', $item->ID); ?>);"></div>
         </div>
       </div>
       <?php endforeach; ?>

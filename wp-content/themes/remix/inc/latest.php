@@ -17,7 +17,7 @@ $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
 
 ?>
 
-<section id="article-1" class="">
+<section id="latest-article-section" class="">
 
 <div class="container">
 

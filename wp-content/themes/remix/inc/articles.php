@@ -31,7 +31,7 @@ $categories = get_categories( $args );
 
 ?>
 
-<section id="article-3" class="black">
+<section id="article-section" class="black">
 
  <div class="container">
 	<div class="article-collection">

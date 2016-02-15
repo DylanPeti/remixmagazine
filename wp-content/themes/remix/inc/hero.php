@@ -1,5 +1,6 @@
 <div class="hero"></div>
 
+<section id="toolbar-section">
 <div class="toolbar">
 	<div class="container">
 	  <div class="main-search">
@@ -8,3 +9,4 @@
 		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'menu-remix')); ?>
 	</div>
 </div>
+</section>
