@@ -22,7 +22,7 @@
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 
-<!-- <header>
+<header>
 <div class="container">
     <div class="logo">
  
@@ -30,4 +30,4 @@
     </div>
     
 </div>
-</header> -->
+</header>
