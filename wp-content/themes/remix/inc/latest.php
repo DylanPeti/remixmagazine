@@ -31,6 +31,13 @@ $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
                <h4><?php echo $recent_post[0]->post_title; ?></h4>
         	   <?php  echo wp_trim_words($recent_post[0]->post_excerpt, 30); ?>
         	</div>
+             
+              <span class="article-latest-author"><?php echo remix_post_author($recent_post[0]->title); ?></span>
+              <ul class="entypo-icons">
+               <li class="entypo-facebook"></li>
+               <li class="entypo-twitter"></li>
+              </ul>
+              
         </div>
    
  </article>
