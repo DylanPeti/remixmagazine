@@ -15,12 +15,6 @@ Text Domain: remix
 
 /* Enter Your Custom CSS Here */
 
-
-body {
-    font-family:Bookmania, Times, 'Times new roman';
-    color: #333;
-}
-
 @import "partials/header";
 @import "partials/article";
 @import "partials/carousel";
@@ -45,16 +39,11 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  line-height: 1.4;
 }
 
-p, li, a {
-  line-height: 1.875em;
-  font-size: 1.125em;
-  font-weight: normal;
-}
-
-li, a {
-  color: #5D6769;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, li {
+  line-height: 1.4;
 }
 
 input {
