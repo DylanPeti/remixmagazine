@@ -42,16 +42,16 @@ $categories = get_categories( $args );
 	<?php foreach ($categories as $article) : ?>
 
 
-		<article class="article article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
+<article class="article article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
 	
 		 <span class="article-tag"><?php echo $article->name; ?></span>
 		 <div class="article_exerpt">
-		 	<h6><?php echo $article->name ?></h6>
-		 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting...</p>
+		 	<h2><?php echo $article->name ?></h2>
+		 	<p><?php get_the_author(); ?></p>
 
 		 </div>
 
-		</article>
+</article>
 
     <?php endforeach; ?>
   

@@ -35,4 +35,10 @@ $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
    
  </article>
 
- </section>
+<?php include('editors-choice.php'); ?>
+
+</section>
+
+
+
+

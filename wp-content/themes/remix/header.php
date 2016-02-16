@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
 
 
-<script src="https://use.typekit.net/nog2wem.js"></script>
+<script src="https://use.typekit.net/jvi0csq.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 
