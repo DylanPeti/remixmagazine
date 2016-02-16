@@ -51,6 +51,30 @@ $articleMargin: 25.5px;
   background-position: 50% 50%;
 }
 
+.article_exerpt {
+  position: absolute;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    height: 40%;
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+}
+
+.article_exerpt h6 {
+  font-weight: 900;
+  color: #fff;
+}
+
+
+.article_exerpt p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .article-latest.remix-img {
   height: 250px;
 }

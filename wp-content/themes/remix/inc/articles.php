@@ -7,7 +7,10 @@ $car_items = array(
 	get_cat_ID("Culture"),
 	get_cat_ID("Lifestyle"),
 	get_cat_ID("#soulsundaysessions"),
-	get_cat_ID("#notatourist")
+	get_cat_ID("#notatourist"),
+	get_cat_ID("outandabout"),
+	get_cat_ID("Research")
+
 	);
 
 
@@ -39,11 +42,14 @@ $categories = get_categories( $args );
 	<?php foreach ($categories as $article) : ?>
 
 
-		<article class="article">
+		<article class="article article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
 	
 		 <span class="article-tag"><?php echo $article->name; ?></span>
-		 <div class="article_image remix-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)"></div>
-		 <div class="article_exerpt"></div>
+		 <div class="article_exerpt">
+		 	<h6><?php echo $article->name ?></h6>
+		 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting...</p>
+
+		 </div>
 
 		</article>
 
