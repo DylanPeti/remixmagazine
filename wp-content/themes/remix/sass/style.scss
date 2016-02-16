@@ -11,11 +11,27 @@ Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, 
 Text Domain: remix
 */
 
+
+
+/* Enter Your Custom CSS Here */
+
+
+body {
+    font-family:Bookmania, Times, 'Times new roman';
+    color: #333;
+}
+
 @import "partials/header";
 @import "partials/article";
 @import "partials/carousel";
 @import "partials/footer";
 @import "media";
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 
 html {
   margin: 0;
@@ -25,7 +41,8 @@ html {
 body {
   margin: 0;
   height: 0;
-  font-family: "proxima-nova",sans-serif;
+  font-family:Bookmania, Times, 'Times new roman';
+  color: #333;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -59,6 +76,10 @@ input, .btn, .btn-primary, .btn-default, .btn-primary {
  background-color: transparent;
  border-radius: 0px;
  text-transform: capitalize;
+}
+
+ul li {
+  list-style: none;
 }
 
 .container {
@@ -121,3 +142,26 @@ section {
   width: 20%;
   padding: 0;
 }
+
+.beauty {
+  color: #6a7fdc;
+}
+.fashion {
+  color: #da6adc;
+}
+.culture {
+  color: #f58a76;
+}
+.lifestyle {
+  color: #6adc9d;
+}
+.research {
+  color: #f5cc76;
+}
+.outabout {
+  color: #e6f074;
+}
+
+
+
+

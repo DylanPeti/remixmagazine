@@ -40,18 +40,21 @@ $categories = get_categories( $args );
 	<div class="article-collection">
 
 	<?php foreach ($categories as $article) : ?>
-
-
-<article class="article article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
-	
-		 <span class="article-tag"><?php echo $article->name; ?></span>
+    <?php $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $article->name)); ?>
+      <article class="article article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
+			
 		 <div class="article_exerpt">
-		 	<h2><?php echo $article->name ?></h2>
-		 	<p><?php get_the_author(); ?></p>
+		  <span class="article-tag <?php echo $cat_class; ?>"><?php echo $article->name; ?></span>
+		 	<h2><?php echo remix_post_title($article->name); ?></h2>
+		 	<span class="author"><?php echo remix_post_author($article->name); ?></span>
+		 	<ul class="entypo-icons">
+             <li class="entypo-facebook"></li>
+             <li class="entypo-twitter"></li>
+            </ul>
 
 		 </div>
 
-</article>
+      </article>
 
     <?php endforeach; ?>
   

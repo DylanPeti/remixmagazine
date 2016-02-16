@@ -26,6 +26,7 @@ $thumb_id = get_post_thumbnail_id($latest_post[0]->ID);
 elseif($post_type == "post") :
 
 $thumb_id = get_post_thumbnail_id($id);
+
 endif;
 
 $post_thumbnail_url = wp_get_attachment_url( $thumb_id );
@@ -33,6 +34,53 @@ $post_thumbnail_url = wp_get_attachment_url( $thumb_id );
 return $post_thumbnail_url;
 
 }
+
+function remix_post_author($cat_name) {
+
+
+$cat_id = get_cat_ID( $cat_name );
+  $defaults = array(
+'numberposts' => 1,
+'category' => $cat_id,
+'post_type' => 'post',
+);
+$latest_post = get_posts( $defaults );
+$post_author_id = $latest_post[0]->post_author;
+
+$author_meta = get_the_author_meta('display_name',$post_author_id); 
+
+
+return $author_meta;
+
+
+}
+
+function remix_post_title($cat_name) {
+
+
+$cat_id = get_cat_ID( $cat_name );
+  $defaults = array(
+'numberposts' => 1,
+'category' => $cat_id,
+'post_type' => 'post',
+);
+$latest_post = get_posts( $defaults );
+$post_title = substr($latest_post[0]->post_title, 0, 65);
+
+if(strlen($post_title) >= 65) : 
+
+$result = $post_title . "...";
+return $result;
+
+else :  
+
+return $post_title;
+
+endif;
+
+
+}
+
 
 /**
    *
