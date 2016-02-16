@@ -8,14 +8,9 @@
   padding: 30px;
 }
 
-/* line 11, ../sass/partials/carousel.scss */
-.carousel-inner {
-  padding: 45px 0;
-}
-
 /* line 15, ../sass/partials/carousel.scss */
 .carousel-inner .item .col-md-4 {
-  padding: 0;
+  padding: 45px;
 }
 
 /* line 19, ../sass/partials/carousel.scss */
