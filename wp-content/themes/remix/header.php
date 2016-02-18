@@ -25,8 +25,10 @@
 <header>
 <div class="container">
     <div class="logo">
- 
-       <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+    	<h1>Fashion and Lifestyle</h1>
+    </div>
+    <div class="main_menu">
+    	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
     </div>
     
 </div>

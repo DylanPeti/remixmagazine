@@ -41,10 +41,11 @@ $categories = get_categories( $args );
 
 	<?php foreach ($categories as $article) : ?>
     <?php $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $article->name)); ?>
-      <article class="article article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
-			
+      <article class="article">
+      	<div class=" article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
+      	</div>
 		 <div class="article_exerpt">
-		  <span class="article-tag <?php echo $cat_class; ?>"><?php echo $article->name; ?></span>
+		  	<span class="article-tag <?php echo $cat_class; ?>"><?php echo $article->name; ?></span>
 		 	<h2><?php echo remix_post_title($article->name); ?></h2>
 		 	<span class="author"><?php echo remix_post_author($article->name); ?></span>
 		 	<ul class="entypo-icons">
