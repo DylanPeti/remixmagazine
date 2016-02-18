@@ -1018,37 +1018,44 @@ section {
 }
 
 /* line 203, sass/style.scss */
+.article-img {
+  background-size: cover;
+  background-position: center center;
+  height: 155px;
+}
+
+/* line 209, sass/style.scss */
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-/* line 208, sass/style.scss */
+/* line 214, sass/style.scss */
 .beauty {
   color: #6a7fdc;
 }
 
-/* line 212, sass/style.scss */
+/* line 218, sass/style.scss */
 .fashion {
   color: #da6adc;
 }
 
-/* line 216, sass/style.scss */
+/* line 222, sass/style.scss */
 .culture {
   color: #f58a76;
 }
 
-/* line 220, sass/style.scss */
+/* line 226, sass/style.scss */
 .lifestyle {
   color: #6adc9d;
 }
 
-/* line 224, sass/style.scss */
+/* line 230, sass/style.scss */
 .research {
   color: #f5cc76;
 }
 
-/* line 228, sass/style.scss */
+/* line 234, sass/style.scss */
 .outabout {
   color: #e6f074;
 }

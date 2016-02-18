@@ -7,7 +7,10 @@ $category = get_category($culture_cat);
 
 ?>
 
-<article class="article-editors-choice article-img" style="background-image: url(<?php echo remix_thumbnail_url($category->name, 'cat') ?>)">
+<article class="article-editors-choice">
+
+    	<div class="article-img" style="background-image: url(<?php echo remix_thumbnail_url($category->name, 'cat') ?>)">
+      	</div>
 	
 		 <div class="article_exerpt">
 		 <?php $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $category->name)); ?>
@@ -22,3 +25,5 @@ $category = get_category($culture_cat);
 		 </div>
 
 </article> 
+
+
