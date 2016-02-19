@@ -12,141 +12,161 @@ Text Domain: remix
 */
 
 
-
 /* Enter Your Custom CSS Here */
 
 @import "partials/header";
 @import "partials/article";
 @import "partials/carousel";
 @import "partials/footer";
+@import "partials/advert";
 @import "media";
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-
 [class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
+    font-family: 'entypo', sans-serif;
 }
 
-
 html {
-  margin: 0;
-  height: 0;
+    margin: 0;
+    height: 0;
 }
 
 body {
-  margin: 0;
-  height: 0;
-  font-family:Bookmania, Times, 'Times new roman';
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  line-height: 1.4;
-  background: #f0f0f0;
+    margin: 0;
+    height: 0;
+    font-family: Bookmania, Times, 'Times new roman';
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.4;
+    background: #f0f0f0;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, li {
-  line-height: 1.4;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+    line-height: 1.4;
 }
 
 input {
-  background-color: transparent;
-  border-radius: 0px;
-  text-transform: capitalize;
-  border: 1px solid #ddd;
-  box-shadow: none;
-  border-right: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    text-transform: capitalize;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    border-right: 0px;
 }
 
-a, a:hover {
-  color: #333;
-  text-decoration: none;
+a,
+a:hover {
+    color: #333;
+    text-decoration: none;
 }
 
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    text-align: justify;
+}
 
-input, .btn, .btn-primary, .btn-default, .btn-primary {
- background-color: transparent;
- border-radius: 0px;
- text-transform: capitalize;
+input,
+.btn,
+.btn-primary,
+.btn-default,
+.btn-primary {
+    background-color: transparent;
+    border-radius: 0px;
+    text-transform: capitalize;
 }
 
 ul li {
-  list-style: none;
+    list-style: none;
 }
 
 .container {
- width: 1280px;
+    width: 1280px;
 }
 
-.btn-default, .btn-primary{
-
- border: 1px solid #ddd;
- box-shadow: none;
- border-radius: 0;
-
+.btn-default,
+.btn-primary {
+    border: 1px solid #ddd;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 #adv-search input {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: none;
-  border-radius: 0;
-  box-shadow: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .btn {
-  border: 1px solid #ddd;
-  box-shadow: none;
+    border: 1px solid #ddd;
+    box-shadow: none;
 }
 
 .btn-primary {
-  @extend .btn;
+    @extend .btn;
 }
 
 .btn-danger {
-  @extend .btn;
+    @extend .btn;
 }
 
 section {
-  width: 100%;
-  padding: 25px 0 0;
-
+    width: 100%;
+    padding: 25px 0 0;
 }
 
 #toolbar-section {
-  padding-top: 30px;
-  padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
 }
 
 .glyphicon {
-  color: #ccc;
+    color: #ccc;
 }
 
-
-
 .col-md-2 {
-  width: 20%;
-  padding: 0;
+    width: 20%;
+    padding: 0;
 }
 
 .beauty {
-  color: #6a7fdc;
+    color: #6a7fdc;
 }
+
 .fashion {
-  color: #da6adc;
+    color: #da6adc;
 }
+
 .culture {
-  color: #f58a76;
+    color: #f58a76;
 }
+
 .lifestyle {
-  color: #6adc9d;
+    color: #6adc9d;
 }
+
 .research {
-  color: #f5cc76;
+    color: #f5cc76;
 }
+
 .outabout {
-  color: #e6f074;
+    color: #e6f074;
 }
-
-
-
-

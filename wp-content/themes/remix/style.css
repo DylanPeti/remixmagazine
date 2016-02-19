@@ -145,7 +145,7 @@ body {
   background: #f0f0f0;
 }
 
-/* HERO */
+/* HERO AREA HOME PAGE */
 /* line 66, sass/partials/article.scss */
 .hero {
   width: 100%;
@@ -169,21 +169,22 @@ body {
   color: #fff;
 }
 /* line 84, sass/partials/article.scss */
-.hero .article_exerpt a, .hero .article_exerpt a:hover {
+.hero .article_exerpt a,
+.hero .article_exerpt a:hover {
   color: #ffffff;
 }
-/* line 87, sass/partials/article.scss */
+/* line 88, sass/partials/article.scss */
 .hero .article_exerpt h2 {
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2em;
   margin: 10px 0 15px 0;
 }
-/* line 93, sass/partials/article.scss */
+/* line 94, sass/partials/article.scss */
 .hero .article_exerpt h2:hover {
   text-decoration: underline;
 }
-/* line 96, sass/partials/article.scss */
+/* line 97, sass/partials/article.scss */
 .hero .article_exerpt .article-tag {
   position: absolute;
   top: 0;
@@ -195,11 +196,11 @@ body {
   font-family: helvetica, arial, verdana;
   width: 100%;
 }
-/* line 99, sass/partials/article.scss */
+/* line 100, sass/partials/article.scss */
 .hero .article_exerpt .article-tag {
   padding: 15px 35px;
 }
-/* line 102, sass/partials/article.scss */
+/* line 103, sass/partials/article.scss */
 .hero .article_exerpt span.author {
   display: block;
   bottom: 0;
@@ -207,25 +208,25 @@ body {
   position: absolute;
   font-size: 12px;
 }
-/* line 109, sass/partials/article.scss */
+/* line 110, sass/partials/article.scss */
 .hero .article_exerpt ul.entypo-icons {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 5px 35px;
 }
-/* line 115, sass/partials/article.scss */
+/* line 116, sass/partials/article.scss */
 .hero .article_exerpt ul.entypo-icons li {
   display: inline-block;
   font-size: 16px;
 }
-/* line 119, sass/partials/article.scss */
+/* line 120, sass/partials/article.scss */
 .hero .article_exerpt ul.entypo-icons li:first-child {
   padding-right: 10px;
 }
 
 /* ARTICLE GRID */
-/* line 128, sass/partials/article.scss */
+/* line 129, sass/partials/article.scss */
 .article {
   position: relative;
   background-color: #999;
@@ -235,16 +236,16 @@ body {
   margin-bottom: 25px;
   cursor: pointer;
 }
-/* line 136, sass/partials/article.scss */
+/* line 137, sass/partials/article.scss */
 .article:nth-child(n) {
   float: left;
   margin-right: 25.5px;
 }
-/* line 140, sass/partials/article.scss */
+/* line 141, sass/partials/article.scss */
 .article:nth-child(4n+1) {
   clear: left;
 }
-/* line 143, sass/partials/article.scss */
+/* line 144, sass/partials/article.scss */
 .article:nth-child(4n) {
   margin-right: 0;
 }
@@ -307,7 +308,7 @@ body {
 }
 
 /* EDITORS CHOICE */
-/* line 152, sass/partials/article.scss */
+/* line 153, sass/partials/article.scss */
 .article-editors-choice {
   position: relative;
   float: right;
@@ -376,7 +377,7 @@ body {
 }
 
 /* LATEST ARTICLE */
-/* line 166, sass/partials/article.scss */
+/* line 167, sass/partials/article.scss */
 .article-latest {
   position: relative;
   float: left;
@@ -387,20 +388,20 @@ body {
   clear: both;
   cursor: pointer;
 }
-/* line 175, sass/partials/article.scss */
+/* line 176, sass/partials/article.scss */
 .article-latest .remix-img {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
-/* line 181, sass/partials/article.scss */
+/* line 182, sass/partials/article.scss */
 .article-latest .article-latest-tag {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 186, sass/partials/article.scss */
+/* line 187, sass/partials/article.scss */
 .article-latest .article-latest-exerpt {
   position: absolute;
   width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
@@ -410,7 +411,7 @@ body {
   padding: 15px;
   background: #ffffff;
 }
-/* line 194, sass/partials/article.scss */
+/* line 195, sass/partials/article.scss */
 .article-latest .article-latest-exerpt ul {
   float: right;
   position: absolute;
@@ -420,18 +421,18 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 203, sass/partials/article.scss */
+/* line 204, sass/partials/article.scss */
 .article-latest .article-latest-exerpt h2 {
   font-weight: 900;
   font-size: 30px;
   margin-top: 15px;
   line-height: 1.2em;
 }
-/* line 209, sass/partials/article.scss */
+/* line 210, sass/partials/article.scss */
 .article-latest .article-latest-exerpt h2:hover {
   text-decoration: underline;
 }
-/* line 212, sass/partials/article.scss */
+/* line 213, sass/partials/article.scss */
 .article-latest .article-latest-exerpt .article-tag {
   position: absolute;
   top: 0;
@@ -443,32 +444,32 @@ body {
   font-family: helvetica, arial, verdana;
   width: 100%;
 }
-/* line 215, sass/partials/article.scss */
+/* line 216, sass/partials/article.scss */
 .article-latest .article-latest-exerpt span.article-latest-author {
   display: block;
   bottom: 10px;
   position: absolute;
   font-size: 12px;
 }
-/* line 221, sass/partials/article.scss */
+/* line 222, sass/partials/article.scss */
 .article-latest .article-latest-exerpt ul.entypo-icons li:first-child {
   padding-right: 10px;
 }
-/* line 224, sass/partials/article.scss */
+/* line 225, sass/partials/article.scss */
 .article-latest .article-latest-exerpt ul.entypo-icons li {
   display: inline-block;
   font-size: 16px;
 }
 
 /* ARTICLE COLLECTION - what is this? */
-/* line 236, sass/partials/article.scss */
+/* line 237, sass/partials/article.scss */
 .article-collection:nth-last-child(1), .article-collection:nth-last-child(2), .article-collection:nth-last-child(3),
 .article-editors-choice:nth-last-child(1),
 .article-editors-choice:nth-last-child(2),
 .article-editors-choice:nth-last-child(3) {
   margin-bottom: 0;
 }
-/* line 241, sass/partials/article.scss */
+/* line 242, sass/partials/article.scss */
 .article-collection .article_exerpt ul,
 .article-editors-choice .article_exerpt ul {
   float: right;
@@ -479,16 +480,78 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 250, sass/partials/article.scss */
+/* line 251, sass/partials/article.scss */
 .article-collection .article_exerpt ul.entypo-icons li,
 .article-editors-choice .article_exerpt ul.entypo-icons li {
   display: inline-block;
   font-size: 16px;
 }
-/* line 254, sass/partials/article.scss */
+/* line 255, sass/partials/article.scss */
 .article-collection .article_exerpt ul.entypo-icons li:first-child,
 .article-editors-choice .article_exerpt ul.entypo-icons li:first-child {
   padding-right: 10px;
+}
+
+/* ARTICLE PAGE */
+/* line 263, sass/partials/article.scss */
+body.single-post {
+  background: #ffffff;
+}
+
+/* line 267, sass/partials/article.scss */
+.single-post .container {
+  padding: 0;
+}
+
+/* line 271, sass/partials/article.scss */
+.article-hero {
+  width: 100%;
+  display: inline-block;
+  padding-top: 25px;
+  cursor: pointer;
+  background: #ffffff;
+  height: 500px;
+  background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
+  background-size: cover;
+}
+/* line 280, sass/partials/article.scss */
+.article-hero h2 {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  margin: 300px 0 0 50px;
+  max-width: 60%;
+  color: #ffffff;
+}
+
+/* line 290, sass/partials/article.scss */
+.article_single .toolbar {
+  border-bottom: solid 1px #f0f0f0;
+  display: block;
+  height: 50px;
+}
+/* line 294, sass/partials/article.scss */
+.article_single .toolbar span {
+  display: inline-block;
+  float: left;
+  padding: 17px 20px;
+  font-family: helvetica, arial, verdana;
+  font-size: 12px;
+}
+/* line 300, sass/partials/article.scss */
+.article_single .toolbar span:last-child {
+  float: right;
+}
+/* line 304, sass/partials/article.scss */
+.article_single .toolbar .article-tag {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: inherit;
+}
+/* line 310, sass/partials/article.scss */
+.article_single .article_content {
+  background: #ffffff;
+  display: block;
+  padding: 40px;
 }
 
 /* line 2, sass/partials/carousel.scss */
@@ -546,6 +609,47 @@ footer {
   background-color: #eee;
 }
 
+/* line 1, sass/partials/advert.scss */
+.ad {
+  width: 300px;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  padding: 0;
+  margin: 25px auto;
+}
+/* line 7, sass/partials/advert.scss */
+.ad .ad-img {
+  background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+}
+/* line 13, sass/partials/advert.scss */
+.ad .ad-content {
+  padding: 15px;
+}
+/* line 15, sass/partials/advert.scss */
+.ad .ad-content h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  text-transform: capitalize;
+}
+/* line 20, sass/partials/advert.scss */
+.ad .ad-content p {
+  font-size: 16px;
+}
+/* line 23, sass/partials/advert.scss */
+.ad .ad-content .ad-tag {
+  font-size: 10px;
+  color: #999999;
+  font-weight: bold;
+  font-family: helvetica, arial, verdana;
+}
+/* line 29, sass/partials/advert.scss */
+.ad .ad-content .ad-btn {
+  float: right;
+}
+
 @media screen and (min-width: 768px) {
   /* line 2, sass/media.scss */
   #adv-search {
@@ -561,18 +665,18 @@ footer {
     min-width: 500px;
   }
 }
-/* line 25, sass/style.scss */
+/* line 24, sass/style.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-/* line 30, sass/style.scss */
+/* line 28, sass/style.scss */
 html {
   margin: 0;
   height: 0;
 }
 
-/* line 35, sass/style.scss */
+/* line 33, sass/style.scss */
 body {
   margin: 0;
   height: 0;
@@ -584,12 +688,24 @@ body {
   background: #f0f0f0;
 }
 
-/* line 46, sass/style.scss */
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, li {
+/* line 44, sass/style.scss */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
   line-height: 1.4;
 }
 
-/* line 50, sass/style.scss */
+/* line 60, sass/style.scss */
 input {
   background-color: transparent;
   border-radius: 0px;
@@ -599,37 +715,55 @@ input {
   border-right: 0px;
 }
 
-/* line 59, sass/style.scss */
-a, a:hover {
+/* line 69, sass/style.scss */
+a,
+a:hover {
   color: #333;
   text-decoration: none;
 }
 
-/* line 65, sass/style.scss */
-input, .btn, .btn-primary, .btn-danger, .btn-primary, .btn-default, .btn-primary {
+/* line 75, sass/style.scss */
+p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  text-align: justify;
+}
+
+/* line 84, sass/style.scss */
+input,
+.btn,
+.btn-primary,
+.btn-danger,
+.btn-primary,
+.btn-default,
+.btn-primary {
   background-color: transparent;
   border-radius: 0px;
   text-transform: capitalize;
 }
 
-/* line 71, sass/style.scss */
+/* line 94, sass/style.scss */
 ul li {
   list-style: none;
 }
 
-/* line 75, sass/style.scss */
+/* line 98, sass/style.scss */
 .container {
   width: 1280px;
 }
 
-/* line 79, sass/style.scss */
-.btn-default, .btn-primary {
+/* line 102, sass/style.scss */
+.btn-default,
+.btn-primary {
   border: 1px solid #ddd;
   box-shadow: none;
   border-radius: 0;
 }
 
-/* line 87, sass/style.scss */
+/* line 109, sass/style.scss */
 #adv-search input {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -639,61 +773,61 @@ ul li {
   box-shadow: none;
 }
 
-/* line 96, sass/style.scss */
+/* line 118, sass/style.scss */
 .btn, .btn-primary, .btn-danger {
   border: 1px solid #ddd;
   box-shadow: none;
 }
 
-/* line 109, sass/style.scss */
+/* line 131, sass/style.scss */
 section {
   width: 100%;
   padding: 25px 0 0;
 }
 
-/* line 115, sass/style.scss */
+/* line 136, sass/style.scss */
 #toolbar-section {
   padding-top: 30px;
   padding-bottom: 0;
 }
 
-/* line 120, sass/style.scss */
+/* line 141, sass/style.scss */
 .glyphicon {
   color: #ccc;
 }
 
-/* line 126, sass/style.scss */
+/* line 145, sass/style.scss */
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-/* line 131, sass/style.scss */
+/* line 150, sass/style.scss */
 .beauty {
   color: #6a7fdc;
 }
 
-/* line 134, sass/style.scss */
+/* line 154, sass/style.scss */
 .fashion {
   color: #da6adc;
 }
 
-/* line 137, sass/style.scss */
+/* line 158, sass/style.scss */
 .culture {
   color: #f58a76;
 }
 
-/* line 140, sass/style.scss */
+/* line 162, sass/style.scss */
 .lifestyle {
   color: #6adc9d;
 }
 
-/* line 143, sass/style.scss */
+/* line 166, sass/style.scss */
 .research {
   color: #f5cc76;
 }
 
-/* line 146, sass/style.scss */
+/* line 170, sass/style.scss */
 .outabout {
   color: #e6f074;
 }

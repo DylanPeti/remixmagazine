@@ -61,7 +61,7 @@ body {
 }
 
 
-/* HERO */
+/* HERO AREA HOME PAGE */
 
 .hero {
     width: 100%;
@@ -81,8 +81,9 @@ body {
         background: rgba(0, 0, 0, 0.7);
         position: relative;
         color: #fff;
-        a, a:hover {
-          color: #ffffff;
+        a,
+        a:hover {
+            color: #ffffff;
         }
         h2 {
             font-weight: 900;
@@ -253,5 +254,62 @@ body {
     }
     .article_exerpt ul.entypo-icons li:first-child {
         padding-right: 10px;
+    }
+}
+
+
+/* ARTICLE PAGE */
+
+body.single-post {
+    background: #ffffff;
+}
+
+.single-post .container {
+    padding: 0;
+}
+
+.article-hero {
+    width: 100%;
+    display: inline-block;
+    padding-top: 25px;
+    cursor: pointer;
+    background: #ffffff;
+    height: 500px;
+    background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
+    background-size: cover;
+    h2 {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px 20px;
+        margin: 300px 0 0 50px;
+        max-width: 60%;
+        color: #ffffff;
+    }
+}
+
+.article_single {
+    .toolbar {
+        border-bottom: solid 1px #f0f0f0;
+        display: block;
+        height: 50px;
+        span {
+            display: inline-block;
+            float: left;
+            padding: 17px 20px;
+            font-family: helvetica, arial, verdana;
+            font-size: 12px;
+            &:last-child {
+                float: right;
+            }
+        }
+        .article-tag {
+            text-transform: uppercase;
+            font-weight: bold;
+            width: inherit;
+        }
+    }
+    .article_content {
+        background: #ffffff;
+        display: block;
+        padding: 40px;
     }
 }
