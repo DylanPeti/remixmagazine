@@ -88,6 +88,9 @@ p {
     text-align: justify;
     margin-bottom: 20px;
 }
+.smalltext {
+    font-size: 10px;
+}
 
 input,
 .btn,
@@ -143,14 +146,6 @@ input:placeholder-shown {
     border-radius: 0;
 }
 
-#adv-search input {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    border-right: none;
-    border-radius: 0;
-    box-shadow: none;
-}
 
 .btn,
 button {

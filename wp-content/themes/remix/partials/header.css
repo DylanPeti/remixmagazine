@@ -19,107 +19,161 @@ header .logo h1 {
   padding-top: 80px;
 }
 /* line 17, ../sass/partials/header.scss */
-header .main_menu {
+header .menu-wrap {
+  width: 360px;
+  height: 100%;
   position: fixed;
-  top: 15px;
-  right: 40px;
+  right: -310px;
+  background: transparent;
   z-index: 99999;
+  top: 0;
 }
-/* line 22, ../sass/partials/header.scss */
-header .main_menu .glyphicon-menu-hamburger {
+/* line 25, ../sass/partials/header.scss */
+header .menu-wrap .glyphicon-menu-hamburger {
   color: #333;
-  float: right;
+  float: left;
   font-size: 32px;
   line-height: 80px !important;
+  display: inline-block;
+}
+/* line 32, ../sass/partials/header.scss */
+header .menu-wrap .main_menu {
+  background: #333333;
+  padding: 10px 30px;
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 100%;
+  margin-left: 20px;
+  color: #ffffff;
+}
+/* line 41, ../sass/partials/header.scss */
+header .menu-wrap .main_menu h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 45, ../sass/partials/header.scss */
+header .menu-wrap .main_menu p {
+  font-size: 12px;
+  text-align: left;
+}
+/* line 49, ../sass/partials/header.scss */
+header .menu-wrap .main_menu ul {
+  padding: 0;
+}
+/* line 51, ../sass/partials/header.scss */
+header .menu-wrap .main_menu ul li {
+  padding: 10px 10px 7px 10px;
+  border-bottom: 1px solid #999999;
+  text-transform: uppercase;
+}
+/* line 57, ../sass/partials/header.scss */
+header .menu-wrap .main_menu ul.entypo-icons li {
+  display: inline-block;
+  font-size: 24px;
+  border-bottom: none;
+}
+/* line 62, ../sass/partials/header.scss */
+header .menu-wrap .main_menu ul.entypo-icons li:first-child {
+  padding-right: 10px;
+}
+/* line 67, ../sass/partials/header.scss */
+header .menu-wrap:hover {
+  right: 0px;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 /** TOOLBAR */
-/* line 34, ../sass/partials/header.scss */
+/* line 80, ../sass/partials/header.scss */
 .toolbar {
   background-color: #fff;
   height: auto;
 }
-/* line 37, ../sass/partials/header.scss */
+/* line 83, ../sass/partials/header.scss */
 .toolbar .main-search {
   float: right;
   max-width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
 }
-/* line 41, ../sass/partials/header.scss */
+/* line 87, ../sass/partials/header.scss */
 .toolbar #adv-search input,
 .toolbar .toolbar .input-group-btn,
 .toolbar .toolbar .dropdown-toggle {
   height: 40px;
 }
-/* line 46, ../sass/partials/header.scss */
+/* line 92, ../sass/partials/header.scss */
 .toolbar .dropdown.dropdown-lg .dropdown-menu {
   margin-top: -1px;
   padding: 6px 20px;
 }
-/* line 50, ../sass/partials/header.scss */
+/* line 96, ../sass/partials/header.scss */
 .toolbar .input-group-btn .btn-group {
   display: flex;
 }
-/* line 53, ../sass/partials/header.scss */
+/* line 99, ../sass/partials/header.scss */
 .toolbar #adv-search input,
 .toolbar .input-group-btn,
 .toolbar .dropdown-toggle {
   height: 40px;
 }
-/* line 58, ../sass/partials/header.scss */
+/* line 104, ../sass/partials/header.scss */
 .toolbar .dropdown.dropdown-lg .dropdown-menu {
   margin-top: -1px;
   padding: 6px 20px;
 }
-/* line 62, ../sass/partials/header.scss */
+/* line 108, ../sass/partials/header.scss */
 .toolbar .input-group-btn .btn-group {
   display: flex;
 }
-/* line 64, ../sass/partials/header.scss */
+/* line 110, ../sass/partials/header.scss */
 .toolbar .input-group-btn .btn-group .btn {
   border-radius: 0;
   margin-left: -1px;
 }
-/* line 69, ../sass/partials/header.scss */
+/* line 115, ../sass/partials/header.scss */
 .toolbar .form-horizontal .form-group {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 73, ../sass/partials/header.scss */
+/* line 119, ../sass/partials/header.scss */
 .toolbar .form-group .form-control:last-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-/* line 77, ../sass/partials/header.scss */
+/* line 123, ../sass/partials/header.scss */
 .toolbar #menu-remix {
   float: left;
   padding: 0;
   margin: 0;
 }
-/* line 81, ../sass/partials/header.scss */
+/* line 127, ../sass/partials/header.scss */
 .toolbar #menu-remix li {
   list-style: none;
   display: inline-block;
   padding: 0 20px;
   line-height: 40px;
 }
-/* line 86, ../sass/partials/header.scss */
+/* line 132, ../sass/partials/header.scss */
 .toolbar #menu-remix li:first-child {
   padding-left: 0;
 }
 
-/* line 94, ../sass/partials/header.scss */
+/* line 140, ../sass/partials/header.scss */
 .btn-group .btn {
   border-radius: 0;
   margin-left: -1px;
 }
 
-/* line 101, ../sass/partials/header.scss */
+/* line 147, ../sass/partials/header.scss */
 .form-horizontal .form-group {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 106, ../sass/partials/header.scss */
+/* line 152, ../sass/partials/header.scss */
 .form-group .form-control:last-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
