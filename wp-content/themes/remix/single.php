@@ -14,7 +14,9 @@ global $post
 		<span class="article-tag">Category</span>
 		<span class="author"><?php echo remix_post_author($post->ID); ?></span>
 		<span class="date"><?php echo $post->post_date; ?></span>
-		<span class="crumbs">Bread / Crumbs</span>
+		<span class="crumbs">
+		<?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
+		</span>
 	</div>
 	  <div class="row article_content">
 

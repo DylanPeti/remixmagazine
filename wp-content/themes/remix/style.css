@@ -181,25 +181,26 @@ body {
   width: 100%;
 }
 /* line 102, sass/partials/article.scss */
-.hero .article_exerpt a, .hero .article_exerpt a:hover {
+.hero .article_exerpt a,
+.hero .article_exerpt a:hover {
   color: #ffffff;
 }
-/* line 105, sass/partials/article.scss */
+/* line 106, sass/partials/article.scss */
 .hero .article_exerpt h2 {
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2em;
   margin: 10px 0 15px 0;
 }
-/* line 111, sass/partials/article.scss */
+/* line 112, sass/partials/article.scss */
 .hero .article_exerpt h2:hover {
   text-decoration: underline;
 }
-/* line 114, sass/partials/article.scss */
+/* line 115, sass/partials/article.scss */
 .hero .article_exerpt .article-tag {
   padding: 15px 35px;
 }
-/* line 117, sass/partials/article.scss */
+/* line 118, sass/partials/article.scss */
 .hero .article_exerpt span.author {
   display: block;
   bottom: 0;
@@ -207,7 +208,7 @@ body {
   position: absolute;
   font-size: 12px;
 }
-/* line 124, sass/partials/article.scss */
+/* line 125, sass/partials/article.scss */
 .hero .article_exerpt ul.entypo-icons {
   padding: 10px 35px;
 }
@@ -229,7 +230,7 @@ body {
 }
 
 /* ARTICLE GRID */
-/* line 134, sass/partials/article.scss */
+/* line 135, sass/partials/article.scss */
 .article {
   position: relative;
   background-color: #999;
@@ -239,16 +240,16 @@ body {
   margin-bottom: 25px;
   cursor: pointer;
 }
-/* line 142, sass/partials/article.scss */
+/* line 143, sass/partials/article.scss */
 .article:nth-child(n) {
   float: left;
   margin-right: 25.5px;
 }
-/* line 146, sass/partials/article.scss */
+/* line 147, sass/partials/article.scss */
 .article:nth-child(4n+1) {
   clear: left;
 }
-/* line 149, sass/partials/article.scss */
+/* line 150, sass/partials/article.scss */
 .article:nth-child(4n) {
   margin-right: 0;
 }
@@ -326,7 +327,7 @@ body {
   font-size: 18px;
 }
 
-/* line 156, sass/partials/article.scss */
+/* line 157, sass/partials/article.scss */
 .sidebar .article {
   width: 300px;
   margin: 0 auto 25px;
@@ -409,7 +410,7 @@ body {
 }
 
 /* EDITORS CHOICE */
-/* line 169, sass/partials/article.scss */
+/* line 170, sass/partials/article.scss */
 .article-editors-choice {
   position: relative;
   float: right;
@@ -494,7 +495,7 @@ body {
 }
 
 /* LATEST ARTICLE */
-/* line 183, sass/partials/article.scss */
+/* line 184, sass/partials/article.scss */
 .article-latest {
   position: relative;
   float: left;
@@ -505,20 +506,20 @@ body {
   clear: both;
   cursor: pointer;
 }
-/* line 192, sass/partials/article.scss */
+/* line 193, sass/partials/article.scss */
 .article-latest .remix-img {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
-/* line 198, sass/partials/article.scss */
+/* line 199, sass/partials/article.scss */
 .article-latest .article-latest-tag {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 203, sass/partials/article.scss */
+/* line 204, sass/partials/article.scss */
 .article-latest .article-latest-exerpt {
   position: absolute;
   width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
@@ -528,7 +529,7 @@ body {
   padding: 15px;
   background: #ffffff;
 }
-/* line 211, sass/partials/article.scss */
+/* line 212, sass/partials/article.scss */
 .article-latest .article-latest-exerpt ul {
   float: right;
   position: absolute;
@@ -538,18 +539,18 @@ body {
   margin: 0;
   padding: 0;
 }
-/* line 220, sass/partials/article.scss */
+/* line 221, sass/partials/article.scss */
 .article-latest .article-latest-exerpt h2 {
   font-weight: 900;
   font-size: 30px;
   margin-top: 15px;
   line-height: 1.2em;
 }
-/* line 226, sass/partials/article.scss */
+/* line 227, sass/partials/article.scss */
 .article-latest .article-latest-exerpt h2:hover {
   text-decoration: underline;
 }
-/* line 229, sass/partials/article.scss */
+/* line 230, sass/partials/article.scss */
 .article-latest .article-latest-exerpt span.article-latest-author {
   display: block;
   bottom: 10px;
@@ -570,7 +571,7 @@ body {
 }
 
 /* ARTICLE COLLECTION - what is this? */
-/* line 244, sass/partials/article.scss */
+/* line 245, sass/partials/article.scss */
 .article-collection:nth-last-child(1), .article-collection:nth-last-child(2), .article-collection:nth-last-child(3),
 .article-editors-choice:nth-last-child(1),
 .article-editors-choice:nth-last-child(2),
@@ -579,17 +580,17 @@ body {
 }
 
 /* ARTICLE PAGE */
-/* line 254, sass/partials/article.scss */
+/* line 255, sass/partials/article.scss */
 body.single-post {
   background: #ffffff;
 }
 
-/* line 258, sass/partials/article.scss */
+/* line 259, sass/partials/article.scss */
 .single-post .container {
   padding: 0;
 }
 
-/* line 262, sass/partials/article.scss */
+/* line 263, sass/partials/article.scss */
 .article-hero {
   width: 100%;
   display: inline-block;
@@ -600,7 +601,7 @@ body.single-post {
   background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
   background-size: cover;
 }
-/* line 271, sass/partials/article.scss */
+/* line 272, sass/partials/article.scss */
 .article-hero h2 {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
@@ -610,35 +611,46 @@ body.single-post {
   font-size: 40px;
 }
 
-/* line 282, sass/partials/article.scss */
+/* line 283, sass/partials/article.scss */
 .article_single .toolbar {
   border-bottom: solid 1px #f0f0f0;
   display: block;
   height: 50px;
+  padding: 0 60px;
 }
-/* line 286, sass/partials/article.scss */
-.article_single .toolbar span {
+/* line 288, sass/partials/article.scss */
+.article_single .toolbar span.article-tag,
+.article_single .toolbar span.author,
+.article_single .toolbar span.date,
+.article_single .toolbar span.crumbs {
   display: inline-block;
   float: left;
-  padding: 17px 35px;
+  padding: 17px 25px 17px 0;
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 292, sass/partials/article.scss */
-.article_single .toolbar span:last-child {
+/* line 298, sass/partials/article.scss */
+.article_single .toolbar span.crumbs {
   float: right;
+  padding-right: 0px;
 }
-/* line 296, sass/partials/article.scss */
+/* line 301, sass/partials/article.scss */
+.article_single .toolbar span.crumbs p {
+  font-family: helvetica, arial, verdana;
+  font-size: 12px;
+}
+/* line 306, sass/partials/article.scss */
 .article_single .toolbar .article-tag {
   text-transform: uppercase;
   font-weight: bold;
   width: inherit;
 }
-/* line 302, sass/partials/article.scss */
+/* line 312, sass/partials/article.scss */
 .article_single .article_content {
   background: #ffffff;
   display: block;
-  padding: 40px;
+  padding: 40px 0px 40px 60px;
+  width: 100%;
 }
 
 /* line 2, sass/partials/carousel.scss */

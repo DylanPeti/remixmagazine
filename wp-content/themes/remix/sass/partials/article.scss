@@ -59,7 +59,7 @@ body {
             font-size: 12px;
         }
         @include article_tag {}
-        @include article_social {} 
+        @include article_social {}
     }
     .article-latest.remix-img {
         height: 150px;
@@ -99,7 +99,8 @@ body {
         position: relative;
         color: #fff;
         @include article_tag {}
-        a, a:hover {
+        a,
+        a:hover {
             color: #ffffff;
         }
         h2 {
@@ -283,14 +284,23 @@ body.single-post {
         border-bottom: solid 1px #f0f0f0;
         display: block;
         height: 50px;
-        span {
+        padding: 0 60px;
+        span.article-tag,
+        span.author,
+        span.date,
+        span.crumbs {
             display: inline-block;
             float: left;
-            padding: 17px 35px;
+            padding: 17px 25px 17px 0;
             font-family: helvetica, arial, verdana;
             font-size: 12px;
-            &:last-child {
-                float: right;
+        }
+        span.crumbs {
+            float: right;
+            padding-right: 0px;
+            p {
+                font-family: helvetica, arial, verdana;
+                font-size: 12px;
             }
         }
         .article-tag {
@@ -302,6 +312,7 @@ body.single-post {
     .article_content {
         background: #ffffff;
         display: block;
-        padding: 40px;
+        padding: 40px 0px 40px 60px;
+        width: 100%;
     }
 }
