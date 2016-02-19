@@ -25,7 +25,7 @@ get_header();
 			<p>Proin ultrices urna non justo pharetra mattis. Maecenas at ultrices nisi, id suscipit nunc. Nam porta magna a ex porta, vitae consequat dui lobortis. Morbi risus justo, rhoncus eu tellus in, consectetur interdum nibh. Integer aliquet nulla id mauris porttitor, eget placerat neque efficitur. Praesent magna eros, fermentum nec neque eget, placerat pulvinar elit. Praesent et sollicitudin eros. Cras tempus egestas mi eu tincidunt. In et erat finibus, pharetra sapien non, pellentesque est. Nulla aliquam felis a sapien consequat aliquam. Donec eu pulvinar ipsum, eget vehicula orci. Aenean dictum sagittis condimentum. Nulla facilisi. Sed eu auctor dui, vitae facilisis sem. Nam elementum consectetur orci a rutrum. Vivamus tincidunt ornare lacus, sed gravida turpis sodales ac.</p>	
 		
 	   </div>
-	    <div class="col-md-4">
+	    <div class="col-md-4 sidebar">
 
 	    	<div class="ad">
 		    	<div class="ad-img"></div>
@@ -36,6 +36,22 @@ get_header();
 				 	<button class="ad-btn">Learn More</button>
 				 </div>
 			</div>
+
+			<article class="article">
+      	<div class=" article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
+      	</div>
+		 <div class="article_exerpt">
+		  	<span class="article-tag <?php echo $cat_class; ?>"><?php echo $article->name; ?></span>
+		 	<h2><?php echo remix_post_title($article->name); ?></h2>
+		 	<span class="author"><?php echo remix_post_author($article->name); ?></span>
+		 	<ul class="entypo-icons">
+             <li class="entypo-facebook"></li>
+             <li class="entypo-twitter"></li>
+            </ul>
+
+		 </div>
+
+      </article>
 
 	   </div>
 	 </div>

@@ -4,15 +4,33 @@ body {
 }
 
 @mixin article_tag {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0 0 15px;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: bold;
-    font-family: helvetica, arial, verdana;
-    width: 100%;
+    .article-tag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0 0 15px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: bold;
+        font-family: helvetica, arial, verdana;
+        width: 100%;
+    }
+}
+
+@mixin article_social {
+    ul.entypo-icons {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0px 15px;
+    }
+    ul.entypo-icons li {
+        display: inline-block;
+        font-size: 16px;
+    }
+    ul.entypo-icons li:first-child {
+        padding-right: 10px;
+    }
 }
 
 @mixin article_exerpt {
@@ -34,15 +52,14 @@ body {
         h2:hover {
             text-decoration: underline;
         }
-        .article-tag {
-            @include article_tag
-        }
         span.author {
             display: block;
             bottom: 10px;
             position: absolute;
             font-size: 12px;
         }
+        @include article_tag {}
+        @include article_social {} 
     }
     .article-latest.remix-img {
         height: 150px;
@@ -81,8 +98,8 @@ body {
         background: rgba(0, 0, 0, 0.7);
         position: relative;
         color: #fff;
-        a,
-        a:hover {
+        @include article_tag {}
+        a, a:hover {
             color: #ffffff;
         }
         h2 {
@@ -95,9 +112,6 @@ body {
             text-decoration: underline;
         }
         .article-tag {
-            @include article_tag
-        }
-        .article-tag {
             padding: 15px 35px;
         }
         span.author {
@@ -108,18 +122,9 @@ body {
             font-size: 12px;
         }
         ul.entypo-icons {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            padding: 5px 35px;
+            padding: 10px 35px;
         }
-        ul.entypo-icons li {
-            display: inline-block;
-            font-size: 16px;
-        }
-        ul.entypo-icons li:first-child {
-            padding-right: 10px;
-        }
+        @include article_social
     }
 }
 
@@ -145,6 +150,17 @@ body {
         margin-right: 0;
     }
     @include article_exerpt
+}
+
+.sidebar {
+    .article {
+        width: 300px;
+        margin: 0 auto 25px;
+        background: #ffffff;
+        border: 1px solid #f0f0f0;
+        float: none;
+        @include article_exerpt
+    }
 }
 
 
@@ -210,22 +226,13 @@ body {
         h2:hover {
             text-decoration: underline;
         }
-        .article-tag {
-            @include article_tag
-        }
         span.article-latest-author {
             display: block;
             bottom: 10px;
             position: absolute;
             font-size: 12px;
         }
-        ul.entypo-icons li:first-child {
-            padding-right: 10px;
-        }
-        ul.entypo-icons li {
-            display: inline-block;
-            font-size: 16px;
-        }
+        @include article_tag
     }
 }
 
@@ -238,22 +245,6 @@ body {
     &:nth-last-child(2),
     &:nth-last-child(3) {
         margin-bottom: 0;
-    }
-    .article_exerpt ul {
-        float: right;
-        position: absolute;
-        right: 15px;
-        bottom: 10px;
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-    .article_exerpt ul.entypo-icons li {
-        display: inline-block;
-        font-size: 16px;
-    }
-    .article_exerpt ul.entypo-icons li:first-child {
-        padding-right: 10px;
     }
 }
 
@@ -283,6 +274,7 @@ body.single-post {
         margin: 300px 0 0 50px;
         max-width: 60%;
         color: #ffffff;
+        font-size: 40px;
     }
 }
 
@@ -294,7 +286,7 @@ body.single-post {
         span {
             display: inline-block;
             float: left;
-            padding: 17px 20px;
+            padding: 17px 35px;
             font-family: helvetica, arial, verdana;
             font-size: 12px;
             &:last-child {
