@@ -14,7 +14,7 @@ Text Domain: remix
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 /* line 1, sass/partials/header.scss */
 header {
-  height: 120px;
+  padding-bottom: 5px;
   background-color: #ffffff;
 }
 /* line 4, sass/partials/header.scss */
@@ -793,11 +793,11 @@ body {
 }
 
 /* line 43, sass/style.scss */
-body.home {
+body.home, body.category {
   background: #f0f0f0;
 }
 
-/* line 47, sass/style.scss */
+/* line 48, sass/style.scss */
 .h1,
 .h2,
 .h3,
@@ -814,7 +814,7 @@ li {
   line-height: 1.4;
 }
 
-/* line 63, sass/style.scss */
+/* line 64, sass/style.scss */
 input {
   background-color: transparent;
   border-radius: 0px;
@@ -824,18 +824,18 @@ input {
   border-right: 0px;
 }
 
-/* line 72, sass/style.scss */
+/* line 73, sass/style.scss */
 a {
   color: #3498db;
   text-decoration: none;
 }
 
-/* line 77, sass/style.scss */
+/* line 78, sass/style.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 81, sass/style.scss */
+/* line 82, sass/style.scss */
 p {
   font-weight: 400;
   font-style: normal;
@@ -846,7 +846,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* line 91, sass/style.scss */
+/* line 92, sass/style.scss */
 input,
 .btn,
 .btn-primary,
@@ -858,12 +858,12 @@ input,
   text-transform: capitalize;
 }
 
-/* line 100, sass/style.scss */
+/* line 101, sass/style.scss */
 ul li {
   list-style: none;
 }
 
-/* line 104, sass/style.scss */
+/* line 105, sass/style.scss */
 input {
   display: block;
   width: 100%;
@@ -883,7 +883,7 @@ input {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-/* line 123, sass/style.scss */
+/* line 124, sass/style.scss */
 input:focus {
   border-color: #66afe9;
   outline: 0;
@@ -891,17 +891,17 @@ input:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
-/* line 130, sass/style.scss */
+/* line 131, sass/style.scss */
 input:placeholder-shown {
   text-transform: uppercase;
 }
 
-/* line 134, sass/style.scss */
+/* line 135, sass/style.scss */
 .container {
   width: 1280px;
 }
 
-/* line 138, sass/style.scss */
+/* line 139, sass/style.scss */
 .btn-default,
 .btn-primary {
   border: 1px solid #ddd;
@@ -909,7 +909,7 @@ input:placeholder-shown {
   border-radius: 0;
 }
 
-/* line 145, sass/style.scss */
+/* line 146, sass/style.scss */
 #adv-search input {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -919,7 +919,7 @@ input:placeholder-shown {
   box-shadow: none;
 }
 
-/* line 154, sass/style.scss */
+/* line 155, sass/style.scss */
 .btn, .btn-primary, .btn-danger,
 button {
   -webkit-border-radius: 3;
@@ -943,7 +943,7 @@ button {
   transition: all 300ms ease;
 }
 
-/* line 177, sass/style.scss */
+/* line 178, sass/style.scss */
 .btn:hover, .btn-primary:hover, .btn-danger:hover,
 button:hover {
   background: #3cb0fd;
@@ -952,55 +952,55 @@ button:hover {
   border: 1px solid #3cb0fd;
 }
 
-/* line 193, sass/style.scss */
+/* line 194, sass/style.scss */
 section {
   width: 100%;
   padding: 25px 0 0;
 }
 
-/* line 198, sass/style.scss */
+/* line 199, sass/style.scss */
 #toolbar-section {
   padding-top: 30px;
   padding-bottom: 0;
 }
 
-/* line 203, sass/style.scss */
+/* line 204, sass/style.scss */
 .glyphicon {
   color: #ccc;
 }
 
-/* line 207, sass/style.scss */
+/* line 208, sass/style.scss */
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-/* line 212, sass/style.scss */
+/* line 213, sass/style.scss */
 .beauty {
   color: #6a7fdc;
 }
 
-/* line 216, sass/style.scss */
+/* line 217, sass/style.scss */
 .fashion {
   color: #da6adc;
 }
 
-/* line 220, sass/style.scss */
+/* line 221, sass/style.scss */
 .culture {
   color: #f58a76;
 }
 
-/* line 224, sass/style.scss */
+/* line 225, sass/style.scss */
 .lifestyle {
   color: #6adc9d;
 }
 
-/* line 228, sass/style.scss */
+/* line 229, sass/style.scss */
 .research {
   color: #f5cc76;
 }
 
-/* line 232, sass/style.scss */
+/* line 233, sass/style.scss */
 .outabout {
   color: #e6f074;
 }
