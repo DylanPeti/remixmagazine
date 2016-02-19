@@ -1,7 +1,4 @@
 $articleMargin: 25.5px;
-body {
-    background: #f0f0f0;
-}
 
 @mixin article_tag {
     .article-tag {
@@ -273,7 +270,7 @@ body.single-post {
         background: rgba(0, 0, 0, 0.7);
         padding: 10px 20px;
         margin: 300px 0 0 50px;
-        max-width: 60%;
+        max-width: 62.3%;
         color: #ffffff;
         font-size: 40px;
     }

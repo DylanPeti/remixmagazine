@@ -5,7 +5,9 @@ global $post
 ?>
 
 <div class="article-hero">
-	<h2><?php echo $post->post_title; ?></h2>
+	<div class="container">
+		<h2><?php echo $post->post_title; ?></h2>	
+	</div>
 </div>
 <div class="container">
 	<div class="article_single">

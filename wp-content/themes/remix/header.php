@@ -24,9 +24,11 @@
 
 <header>
 <div class="container">
-    <div class="logo">
-    	<h1>Fashion and Lifestyle</h1>
-    </div>
+    <a href="/">
+      <div class="logo">
+      	<h1>Fashion and Lifestyle</h1>
+      </div>
+    </a>
     <div class="main_menu">
     	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
     </div>
