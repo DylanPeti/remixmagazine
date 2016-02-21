@@ -22,7 +22,7 @@ global $post
 	</div>
 	  <div class="row article_content">
 
-	   <div class="col-md-8 ">
+	   <div class="col-md-8 content">
 	   			
 		<?php echo $post->post_content; ?>
 
