@@ -1,5 +1,5 @@
 header {
-    height: 120px;
+    padding-bottom: 5px;
     background-color: #ffffff;
     .logo {
         display: block;
@@ -14,17 +14,63 @@ header {
             padding-top: 80px;
         }
     }
-    .main_menu {
+    .menu-wrap {
+        width: 360px;
+        height: 100%;
         position: fixed;
-        top: 15px;
-        right: 40px;
+        right: -310px;
+        background: transparent;
         z-index: 99999;
+        top: 0;
         .glyphicon-menu-hamburger {
             color: #333;
-            float: right;
+            float: left;
             font-size: 32px;
             line-height: 80px !important;
+            display: inline-block;
         }
+        .main_menu {
+            background: #333333;
+            padding: 10px 30px;
+            display: inline-block;
+            float: left;
+            width: 300px;
+            height: 100%;
+            margin-left: 20px;
+            color: #ffffff;
+            h3 {
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 12px;
+                text-align: left;
+            }
+            ul {
+                padding: 0;
+                li {
+                    padding: 10px 10px 7px 10px;
+                    border-bottom: 1px solid #999999;
+                    text-transform: uppercase;
+                }
+            }
+            ul.entypo-icons li {
+                display: inline-block;
+                font-size: 24px;
+                border-bottom: none;
+            }
+            ul.entypo-icons li:first-child {
+                padding-right: 10px;
+            }
+        }
+    }
+    .menu-wrap:hover {
+        right: 0px;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
     }
 }
 
