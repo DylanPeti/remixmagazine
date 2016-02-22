@@ -17,9 +17,19 @@
 
 <body <?php body_class(); ?>>
 
-
+<!-- TYPEKIT -->
 <script src="https://use.typekit.net/jvi0csq.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<!-- FACEBOOK SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=258121944212488";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 <header>
