@@ -99,6 +99,13 @@ p,
     font-size: 10px;
 }
 
+.sidebar {
+    .widget {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
 input,
 .btn,
 .btn-primary,

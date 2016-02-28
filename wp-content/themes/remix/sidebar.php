@@ -10,7 +10,8 @@
 if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar( 'sidebar-1' )  ) : ?>
 	<div id="secondary" class="secondary">
 
-		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+<!-- .main-navigation -->
+		<!-- <?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<?php
 					// Primary navigation menu.
@@ -19,9 +20,10 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 						'theme_location' => 'primary',
 					) );
 				?>
-			</nav><!-- .main-navigation -->
-		<?php endif; ?>
-
+			</nav>
+		<?php endif; ?> -->
+		
+<!-- .social-navigation -->
 		<?php if ( has_nav_menu( 'social' ) ) : ?>
 			<nav id="social-navigation" class="social-navigation" role="navigation">
 				<?php
@@ -33,7 +35,7 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 						'link_after'     => '</span>',
 					) );
 				?>
-			</nav><!-- .social-navigation -->
+			</nav>
 		<?php endif; ?>
 
 		<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
