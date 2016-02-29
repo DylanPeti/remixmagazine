@@ -106,6 +106,21 @@ return locate_template($templates, true, false);
 }
 
 
+add_action('init', 'rewrite_tag');
+function rewrite_tag(){
+// add_rewrite_rule("http://remixmagazine.dev/wp-admin/admin.php", '([0-9]+)/?$');
+
+    add_rewrite_rule(
+        'auckland.php?article=([^/]*)',
+        'index.php?id=$matches[1]',
+        'top' );
+
+}
+
+
+
+
+
 
 
 

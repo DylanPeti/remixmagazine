@@ -203,7 +203,9 @@ header .menu-wrap:hover {
   cursor: pointer;
   background: #ffffff;
   height: 500px;
-  background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: cover;
 }
 /* line 89, sass/partials/article.scss */
@@ -1031,38 +1033,47 @@ section {
   color: #ccc;
 }
 
-/* line 216, sass/style.scss */
+
+/* line 203, sass/style.scss */
+.article-img {
+  background-size: cover;
+  background-position: center center;
+  height: 155px;
+}
+
+/* line 209, sass/style.scss */
+
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-/* line 221, sass/style.scss */
+
 .beauty {
   color: #6a7fdc;
 }
 
-/* line 225, sass/style.scss */
+
 .fashion {
   color: #da6adc;
 }
 
-/* line 229, sass/style.scss */
+
 .culture {
   color: #f58a76;
 }
 
-/* line 233, sass/style.scss */
+
 .lifestyle {
   color: #6adc9d;
 }
 
-/* line 237, sass/style.scss */
+
 .research {
   color: #f5cc76;
 }
 
-/* line 241, sass/style.scss */
+
 .outabout {
   color: #e6f074;
 }
