@@ -1,0 +1,7 @@
+[29-Feb-2016 20:54:14 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 2
+[29-Feb-2016 20:56:14 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 2
+[29-Feb-2016 20:58:14 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 2
+[29-Feb-2016 21:00:14 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 2
+[29-Feb-2016 21:02:14 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 2
+[29-Feb-2016 21:35:17 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 2
+[29-Feb-2016 21:36:12 UTC] PHP Parse error:  syntax error, unexpected '>>' (T_SR) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 5

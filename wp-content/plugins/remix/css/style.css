@@ -1,0 +1,31 @@
+ .admin-article {
+ 	width: 98%;
+ 	height: 800px;
+ 	padding: 0;
+ 	background: #fff;
+ 	margin: 30px 15px 0 0;
+
+ }
+ 
+ .admin-article h1 {
+ 	padding: 20px 20px 0 20px; 
+ 	font-weight: 100; 
+ 	font-family: 'helvetica';
+ }
+
+ .article-collections {
+ 	padding: 0 15px;
+ }
+
+ .col-md-6 {
+ 	position: relative;
+ 	float: left;
+ 	width: 50%;
+ }
+
+ .article-item {
+ 	width: 98%;
+ 	height: 200px;
+ 	border: 1px solid #eee;
+ 	border-radius: 3px;
+ }
