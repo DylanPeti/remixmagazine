@@ -203,7 +203,9 @@ header .menu-wrap:hover {
   cursor: pointer;
   background: #ffffff;
   height: 500px;
-  background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: cover;
 }
 /* line 89, sass/partials/article.scss */
