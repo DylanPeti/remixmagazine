@@ -1,8 +1,6 @@
 <?php
-
 global $remix_db_version;
 $remix_db_version = '1.0';
->>>>>>> 4a8646d70aca4b173fb5b4fcca528fe5483d25be
 /*
 Plugin Name: Remix
 Plugin URI:  http://#
@@ -15,32 +13,48 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Domain Path: /languages
 Text Domain: Remix
 */
-
 // defined( 'ABSsPATH' ) or die( 'No script kiddies please!' );
+// 
+// 
+
 
 
 add_action( 'admin_menu', 'my_plugin_menu' );
 
 function my_plugin_menu() {
-	 add_menu_page( 'My Plugin Menu', 'Remix', 'manage_options', 'remix', 'my_plugin_options' );
+	 add_menu_page( 'My Plugin Menu', 'Remix', 'manage_options', 'remix', 'remix_index' );
 
 }
 
-function my_plugin_options() {
-	if ( !current_user_can( 'manage_options' ) )  {
+function remix_index() {
+       if ( !current_user_can( 'manage_options' ) )  {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 	}
-	echo '<div class="wrap">';
-	echo '<p>Here is where the form would go if I actually had options.</p>';
-	echo '</div>';
+
+       require (dirname( __FILE__ ) . "/templates/index.php");
 }
+
 
 
 add_action('admin_menu', 'add_article_menu');
 
 function add_article_menu() {
-   add_submenu_page( 'remix', 'eemix', 'Articles', 'manage_options', 'remix-articles', 'articles_options'); 
+   add_submenu_page( 'remix', 'remix', 'All Collections', 'manage_options', 'remix-articles.php', 'articles_options');
+   add_submenu_page( 'remix', 'remix', 'Add New', 'manage_options', 'article-collection-new.php', 'article_collection_new_options');
+   add_submenu_page( 'remix', 'remix', 'Edit', 'manage_options', 'article-collection-edit.php', 'article_collection_edit_options');
+
+   add_submenu_page( 'remix', 'remix', 'Hero Edit', 'manage_options', 'article-collection-hero-edit.php', 'article_collection_hero_edit');
 }
+
+function article_collection_hero_edit() {
+
+		if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+
+       require (dirname( __FILE__ ) . "/templates/article-collection-hero-edit.php");
+}
+
 
 function articles_options() {
 
@@ -51,28 +65,44 @@ function articles_options() {
        require (dirname( __FILE__ ) . "/templates/articles.php");
 }
 
+function article_collection_new_options() {
+       if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+
+       require (dirname( __FILE__ ) . "/templates/article-collection-new.php");
+}
+
+function article_collection_edit_options() {
+       if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+
+       require (dirname( __FILE__ ) . "/templates/article-collection-edit.php");
+}
 
 
+$table_name = $wpdb->prefix . 'remix_articles';
+ 
+// function to create the DB / Options / Defaults					
 function remix_install() {
-	global $wpdb;
-	global $remix_db_version;
-
-	$table_name = $wpdb->prefix . 'remix_article_collection';
-	
-	$charset_collate = $wpdb->get_charset_collate();
-
-	$sql = "CREATE TABLE $table_name (
-	    ID mediumint(9) NOT NULL AUTO_INCREMENT,
+   	global $wpdb;
+  	global $table_name;
+ 
+	// create the ECPT metabox database table
+	if($wpdb->get_var("show tables like '$table_name'") != $table_name) 
+	{
+		$sql = "CREATE TABLE " . $table_name . " (
+		`id` mediumint(9) NOT NULL AUTO_INCREMENT,
 		time datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
-		collection_author bigint(20) NOT NULL,
-		collection_category bigint(10) NOT NULL, 
+	    article_author tinytext NOT NULL,
 		UNIQUE KEY id (id)
-	) $charset_collate;";
-
-	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-	dbDelta( $sql );
-
-	add_option( 'remix_db_version', $remix_db_version );
+		);";
+ 
+		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+		dbDelta($sql);
+	}
+ 
 }
 
 function remix_install_data() {
@@ -94,6 +124,27 @@ function remix_install_data() {
 register_activation_hook( __FILE__, 'remix_install' );
 register_activation_hook( __FILE__, 'remix_install_data' );
 
+///wp-admin/admin.php?page=remix-articles&article=4
+
+
+
+
+function articles_id( $query_vars ){
+    $query_vars[] = 'id';
+    return $query_vars;
+}
+
+add_filter( 'query_vars', 'articles_id' );
+
+
+
+
+
+
+
+
+
+define( 'REMIX_PLUGIN_PATH', plugin_dir_url( __FILE__ ) );
 /**
  * Proper way to enqueue scripts and styles.
  */
@@ -101,9 +152,20 @@ register_activation_hook( __FILE__, 'remix_install_data' );
 function remix_plugin_styles() {
     wp_register_style( 'remix_plugin',"/wp-content/plugins/remix/css/style.css" );
     wp_enqueue_style('remix_plugin');
+    wp_register_style('admin_boot', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'); 
+    wp_enqueue_style('admin_boot');
+
+    wp_register_style('fonta', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'); 
+    wp_enqueue_style('fonta');
+
+    
 }
 add_action( 'admin_init', 'remix_plugin_styles' );
 
+require_once('class.articles.php');
+require_once('class.collection.php');
+
+require_once('class.actions.php');
 
 ?>
 
@@ -123,4 +185,3 @@ add_action( 'admin_init', 'remix_plugin_styles' );
 
 
 
->>>>>>> 4a8646d70aca4b173fb5b4fcca528fe5483d25be
