@@ -171,6 +171,24 @@ p.meta {
     width: 100px;
 }
 
+.article-collection .btn-update {
+    display: block;
+    color: #4b4b4b;
+    text-align: center;
+    background: none;
+    border-radius: 2px;
+    padding: 3px 0;
+    border: 1px solid #54e1ff;
+    margin: 0;
+    width: 100px;
+    margin-top: 36px;
+    float: right;
+    margin-right: 0px;
+}
+
+
+
+
 .error-msg, .success-msg {
   border-radius: 3px;
   height: 40px;
@@ -191,11 +209,13 @@ p.meta {
 
 }
 
+.section-title h2 {
+  text-transform: capitalize;
+}
 
-
-
-
-
+.article-option {
+  text-transform: capitalize;
+}
 
 
 

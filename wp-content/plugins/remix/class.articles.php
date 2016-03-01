@@ -59,10 +59,10 @@ class Articles {
       
       global $wpdb;
 
+      
       $table = $wpdb->prefix . "remix_article_collection";
 
       $data = array(
-          'title' => $form['title'],
           'time' => current_time('mysql'),
           'collection_type' => $form['collection_type'],
           'collection_count' => $form['collection_count'],
@@ -86,5 +86,5 @@ class Articles {
 
 }
 
-//
+
 

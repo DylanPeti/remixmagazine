@@ -70,12 +70,6 @@ get_header();
 
 
 
-
-
-
-
-
-
 <?php $filter =  Collection::filter_posts("home"); ?>
 
 <section id="article-section" class="black">

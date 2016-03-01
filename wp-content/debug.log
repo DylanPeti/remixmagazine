@@ -1,0 +1,130 @@
+[29-Feb-2016 21:54:47 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 3
+[29-Feb-2016 22:06:26 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 52
+[29-Feb-2016 22:07:17 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 52
+[29-Feb-2016 22:08:28 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 52
+[29-Feb-2016 22:09:05 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 50
+[29-Feb-2016 22:09:14 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 50
+[29-Feb-2016 22:09:34 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[29-Feb-2016 22:09:43 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[29-Feb-2016 22:10:26 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[29-Feb-2016 22:11:08 UTC] PHP Parse error:  syntax error, unexpected '$latest_posts' (T_VARIABLE) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 34
+[29-Feb-2016 22:11:16 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 49
+[29-Feb-2016 22:11:31 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[29-Feb-2016 22:11:37 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[29-Feb-2016 22:11:59 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[29-Feb-2016 22:12:20 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[29-Feb-2016 22:12:48 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 54
+[29-Feb-2016 22:13:10 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[29-Feb-2016 22:13:41 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 60
+[29-Feb-2016 22:14:08 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:14:14 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:14:16 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:14:25 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:14:36 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:14:45 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:14:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:16:10 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:16:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:17:04 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:17:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:17:13 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:17:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:17:55 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:17:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:18:26 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 82
+[29-Feb-2016 22:18:26 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:18:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:18:35 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 82
+[29-Feb-2016 22:18:35 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:18:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:18:40 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:18:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:19:16 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:19:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:19:29 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:19:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:19:34 UTC] PHP Catchable fatal error:  Object of class WP_Post could not be converted to string in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 83
+[29-Feb-2016 22:19:41 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:19:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:20:01 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:20:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:20:40 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:20:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:20:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:20:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:22:33 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:22:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:22:45 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
+[29-Feb-2016 22:22:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:26:12 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:26:14 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 71
+[29-Feb-2016 22:26:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:30:57 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:31:05 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:31:07 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[29-Feb-2016 22:31:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 22:32:01 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:34:58 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:37:40 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[29-Feb-2016 22:39:40 UTC] PHP Notice:  Undefined variable: submit in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 52
+[29-Feb-2016 22:39:40 UTC] PHP Notice:  Undefined variable: submit in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 52
+[29-Feb-2016 22:39:40 UTC] PHP Notice:  Undefined variable: submit in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 52
+[29-Feb-2016 22:44:17 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[29-Feb-2016 22:44:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 23:01:53 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[29-Feb-2016 23:01:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 23:01:55 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[29-Feb-2016 23:01:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[29-Feb-2016 23:04:42 UTC] PHP Notice:  Undefined index: article in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 3
+[29-Feb-2016 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 24
+[29-Feb-2016 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 25
+[29-Feb-2016 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 39
+[29-Feb-2016 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 39
+[29-Feb-2016 23:04:42 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
+[01-Mar-2016 00:07:29 UTC] PHP Parse error:  syntax error, unexpected '$collection' (T_VARIABLE) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 14
+[01-Mar-2016 00:08:27 UTC] PHP Notice:  Undefined variable: POST in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 9
+[01-Mar-2016 00:08:27 UTC] PHP Notice:  Undefined index: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.articles.php on line 65
+[01-Mar-2016 00:09:06 UTC] PHP Notice:  Undefined variable: POST in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 9
+[01-Mar-2016 00:09:06 UTC] PHP Notice:  Undefined index: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.articles.php on line 65
+[01-Mar-2016 00:09:30 UTC] PHP Notice:  Undefined variable: POST in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 9
+[01-Mar-2016 00:20:28 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 166
+[01-Mar-2016 00:20:41 UTC] PHP Fatal error:  Call to undefined function int() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 121
+[01-Mar-2016 00:20:57 UTC] PHP Fatal error:  Call to undefined function int() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 121
+[01-Mar-2016 00:21:03 UTC] PHP Fatal error:  Call to undefined function int() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 122
+[01-Mar-2016 00:21:26 UTC] PHP Parse error:  syntax error, unexpected '$counts' (T_VARIABLE) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 124
+[01-Mar-2016 00:27:22 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 00:27:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 00:54:15 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 00:54:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:09:08 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 01:09:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:09:41 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 01:09:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:10:04 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 01:10:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:10:16 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 01:10:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:10:20 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 01:10:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:13:45 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 01:13:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:13:58 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 01:13:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:14:07 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
+[01-Mar-2016 01:14:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 01:15:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
+[01-Mar-2016 02:39:49 UTC] PHP Fatal error:  Call to undefined function get_pearmalink() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[01-Mar-2016 02:40:10 UTC] PHP Notice:  Undefined variable: item in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[01-Mar-2016 02:40:10 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[01-Mar-2016 02:40:11 UTC] PHP Notice:  Undefined variable: item in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[01-Mar-2016 02:40:11 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
+[01-Mar-2016 02:44:58 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
+[01-Mar-2016 02:45:23 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
+[01-Mar-2016 02:45:31 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 55
+[01-Mar-2016 02:45:38 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
+[01-Mar-2016 02:45:51 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
+[01-Mar-2016 02:46:04 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
+[01-Mar-2016 02:46:16 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
+[01-Mar-2016 02:46:35 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
+[01-Mar-2016 02:46:50 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
+[01-Mar-2016 02:47:06 UTC] PHP Fatal error:  Call to undefined function get_permalinkg() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56

@@ -24,63 +24,89 @@ class Collection {
 
     }
 
-    static function filter_posts($collection) {
+ static function filter_posts($collection) {
       
-     
-   if($collection == "home") {
     
-    $articles = Articles::read_articles(null, 'page', 'home')[0]; 
+    $articles = Articles::read_articles(null, 'page', $collection)[0]; 
 
+    if ($articles->collection_type == "the_latest_posts") :
 
-      if ($articles->collection_type == "latest_posts") {
-      
-      $collection = self::get_latest_articles('post', $articles->collection_count);
+        $collection = self::get_('post', $articles->collection_count);
+    
+    else: 
 
-        
-        $latest_posts = self::get_latest_articles('post', $articles->collection_count);
+       $collection = self::get_latest_from_categories('post', $articles->collection_count);
+
+    endif;  
+       
+        $post_type = $articles->collection_type;
+
         $posts = array();
 
-        foreach($latest_posts as $item) {
 
-          $cat = get_the_category($item->ID)[0]->name;
-        
-        $posts[] = [
-           'category' => $cat,
-           'title' => $item->post_title,
-           'image' => remix_thumbnail_url('', 'post', $item->ID), 
-           'cat_class' => 'culture',
-           'link' => '#',
-                 ];
+    
+        foreach($collection as $item) :
+            $cat = get_the_category($item->ID)[0]->name;
 
-        }
+ $category = (isset($item->ID) ? get_the_category($item->ID)[0]->name : " "); 
+ $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
+ $image = ($post_type == "the_latest_from_categories" ? remix_thumbnail_url($item->name, 'cat') : remix_thumbnail_url('', 'post', $item->ID)); 
+ $link = ($post_type == "the_latest_from_categories" ? get_category_link( get_cat_ID($item->name ) ) : get_permalink($item->ID));
+    
+               $posts[] = [  
+                           'category' => $category,
+                           'title' => $title,
+                           'image' => $image, 
+                           'link' => $link,
+                           ];
+        endforeach;
+               
 
-        return $posts;    
-
-    }
-  }
+  return $posts;    
 }
 
-    static function get_latest_from_catgories() {
 
-	   $categories = get_categories(); 
 
-	   $cat_ids = array();
+    static function get_latest_from_categories($post_count = null) {
 
-	        foreach ($categories as $category) :
+        $car_items = array(
+        get_cat_ID("fashion"), 
+        get_cat_ID("beauty"), 
+        get_cat_ID("Culture"),
+        get_cat_ID("Lifestyle"),
+        get_cat_ID("#soulsundaysessions"),
+        get_cat_ID("#notatourist"),
+        get_cat_ID("outandabout"),
+        get_cat_ID("Research")
+      
+        );
+      
+      
+      $testing = array(implode(',',$car_items));
+      
+      
+      $args = array(
+        'type'                     => 'post',
+        'child_of'                 => 0,
+        'orderby'                  => 'name',
+        'order'                    => 'ASC',
+        'include'                  => $testing[0],
+        'hide_empty'               => 1,
+        'hierarchical'             => 1,
+        'taxonomy'                 => 'category',
+        'pad_counts'               => false 
+      
+      ); 
 
-              $cat_ids[] = get_cat_ID($category->name);
+    $posts = get_categories( $args );
 
-	        endforeach;
 
-	   $ids = array(implode(',', $cat_ids));
-	  
-	   $args = array('include' => $ids[0]); 
-	   
-	   $posts = get_categories($args);
 
-	   return $posts;
+    return $posts;
 
-    }
+	    
+
+}
 
 
   static function get_category_latest($category = null, $post_count) {
