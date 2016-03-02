@@ -36,14 +36,52 @@ function remix_index() {
 
 
 
+ /**
+     * Add Remix Menu
+     *  
+     * Remix - All Sections
+     * Hero
+     * Articles
+     * Carousel
+     * 
+     */
+
+
 add_action('admin_menu', 'add_article_menu');
 
 function add_article_menu() {
+
+   $sections = array(
+   	"General",
+   	"Hero",
+   	"Articles",
+   	"Carousel" 
+   	)
+ 
+
+
+
+
+
+
+
    add_submenu_page( 'remix', 'remix', 'All Collections', 'manage_options', 'remix-articles.php', 'articles_options');
    add_submenu_page( 'remix', 'remix', 'Add New', 'manage_options', 'article-collection-new.php', 'article_collection_new_options');
    add_submenu_page( 'remix', 'remix', 'Edit', 'manage_options', 'article-collection-edit.php', 'article_collection_edit_options');
 
    add_submenu_page( 'remix', 'remix', 'Hero Edit', 'manage_options', 'article-collection-hero-edit.php', 'article_collection_hero_edit');
+
+    add_submenu_page( 'remix', 'remix', 'Instagram', 'manage_options', 'instagram.php', 'article_collection_instagram');
+}
+
+function article_collection_instagram() {
+
+		if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+
+       require (dirname( __FILE__ ) . "/templates/instagram.php");
+
 }
 
 function article_collection_hero_edit() {
@@ -165,7 +203,10 @@ add_action( 'admin_init', 'remix_plugin_styles' );
 require_once('class.articles.php');
 require_once('class.collection.php');
 
+require_once('class.instagram.php');
+
 require_once('class.actions.php');
+
 
 ?>
 

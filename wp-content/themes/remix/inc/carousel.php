@@ -14,7 +14,7 @@ $single_cats = wp_get_recent_posts($single_cat, OBJECT);
 <section id="carousel-section">
   <div class="container">
     <article class="article-carousel">
-      <div id="myCarousel" class="carousel slide article-carousel-box" data-ride="carousel">
+      <div id="instagramCarousel" class="carousel slide article-carousel-box" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <?php $split = array_chunk($single_cats, 5); ?>
           <?php $dog = array(); ?>
@@ -31,8 +31,8 @@ $single_cats = wp_get_recent_posts($single_cat, OBJECT);
           </div>
           <?php endforeach; ?>
         </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+        <a class="left carousel-control" href="#instagramCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <a class="right carousel-control" href="#instagramCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
         
       </div>
     </article>

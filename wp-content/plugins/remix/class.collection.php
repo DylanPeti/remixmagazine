@@ -31,7 +31,7 @@ class Collection {
 
     if ($articles->collection_type == "the_latest_posts") :
 
-        $collection = self::get_('post', $articles->collection_count);
+        $collection = self::get_latest_articles('post', $articles->collection_count);
     
     else: 
 
