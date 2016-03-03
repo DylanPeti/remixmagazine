@@ -2,7 +2,7 @@
 
 $collections = Collection::get_latest_articles('post', 3);
 
-$articles_read = Articles::read_articles(null, "collection_type", 'hero');
+$articles_read = Articles::read_articles(null, "type", 'hero');
 
 if($_POST) : 
 
@@ -44,7 +44,7 @@ if($_POST) :
 endif;
 
 
-$articles_read = Articles::read_articles(null, "collection_type", 'hero');
+$articles_read = Articles::read_articles(null, "type", 'hero');
 
 ?>
 

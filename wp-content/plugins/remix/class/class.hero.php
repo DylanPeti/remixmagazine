@@ -1,10 +1,14 @@
 <?php 
-class Articles {
+
+
+class Hero{
     
 
-	private function __construct() {
+	private function __construct($table) {
 		global $wpdb;
 		$this->table = $wpdb->prefix . "remix_articles";
+
+    $this->table = $table;
 	}
 	
 
@@ -12,24 +16,24 @@ class Articles {
 		
         global $wpdb;
 
+        print_r($this->table);
+
         $table = $wpdb->prefix . "remix_article_collection";
      
 
         $args = array(
           'title' => $article['title'],
           'time' => current_time('mysql'),
-          'post_id' => $article['post_id'],
-          'collection_author' => $article['collection_author'], 
+          'collection_author' => 3, 
           'collection_category' => 1,
           'collection_type' => $article['collection_type'],
           'collection_count' => $article['collection_count'],
-          'collection_status' => $article['collection_status']
         	);
 
         $wpdb->insert($table, $args);
 	}
 
-	static function read_articles($id = null, $column = null, $value = null ) {
+	static function read_articles($id = null) {
 
 		global $wpdb;
         
@@ -39,15 +43,9 @@ class Articles {
 
         $results = $query[0];
 
-        elseif($column) :
-         
-        $query = $wpdb->get_results('SELECT * FROM wp_remix_article_collection WHERE ' . $column . " = " . "'" . $value . "'"); 
-
-        $results = $query;
-
         else :
 
-		    $results = $wpdb->get_results("SELECT * FROM wp_remix_article_collection WHERE collection_type <> 'hero'");
+		$results = $wpdb->get_results('SELECT * FROM wp_remix_article_collection');
 
 	    endif;
 
@@ -59,10 +57,10 @@ class Articles {
       
       global $wpdb;
 
-      
       $table = $wpdb->prefix . "remix_article_collection";
 
       $data = array(
+          'title' => $form['title'],
           'time' => current_time('mysql'),
           'collection_type' => $form['collection_type'],
           'collection_count' => $form['collection_count'],
@@ -76,11 +74,7 @@ class Articles {
 
 	static function delete_articles($ID) {
 
-        global $wpdb;
-
-        $table = $wpdb->prefix . "remix_article_collection";
-
-        $wpdb->delete( $table, array( 'post_id' => $ID ) );
+        $wpdb->delete( 'table', array( 'ID' => $ID ) );
 
 	}
 

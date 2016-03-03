@@ -30,7 +30,7 @@ $data = $instagram->getOAuthToken($code);
 
 print_r($data);
 
-24395151.a161a83.c291e869129f49e2b10b5214e3e8b98d
+// 24395151.a161a83.c291e869129f49e2b10b5214e3e8b98d
 
 // echo 'Your username is: ' . $data->user->username;
 $instagram->setAccessToken($data);

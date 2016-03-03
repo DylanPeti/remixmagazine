@@ -1,386 +1,455 @@
-[29-Feb-2016 21:54:47 UTC] PHP Parse error:  syntax error, unexpected '<<' (T_SL) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 3
-[29-Feb-2016 22:06:26 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 52
-[29-Feb-2016 22:07:17 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 52
-[29-Feb-2016 22:08:28 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 52
-[29-Feb-2016 22:09:05 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 50
-[29-Feb-2016 22:09:14 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 50
-[29-Feb-2016 22:09:34 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[29-Feb-2016 22:09:43 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[29-Feb-2016 22:10:26 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[29-Feb-2016 22:11:08 UTC] PHP Parse error:  syntax error, unexpected '$latest_posts' (T_VARIABLE) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 34
-[29-Feb-2016 22:11:16 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 49
-[29-Feb-2016 22:11:31 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[29-Feb-2016 22:11:37 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[29-Feb-2016 22:11:59 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[29-Feb-2016 22:12:20 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[29-Feb-2016 22:12:48 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 54
-[29-Feb-2016 22:13:10 UTC] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[29-Feb-2016 22:13:41 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 60
-[29-Feb-2016 22:14:08 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:14:14 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:14:16 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:14:25 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:14:36 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:14:45 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:14:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:16:10 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:16:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:17:04 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:17:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:17:13 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:17:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:17:55 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:17:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:18:26 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 82
-[29-Feb-2016 22:18:26 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:18:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:18:35 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 82
-[29-Feb-2016 22:18:35 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:18:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:18:40 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:18:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:19:16 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:19:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:19:29 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:19:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:19:34 UTC] PHP Catchable fatal error:  Object of class WP_Post could not be converted to string in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 83
-[29-Feb-2016 22:19:41 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:19:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:20:01 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:20:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:20:40 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:20:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:20:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:20:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:22:33 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:22:33 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:22:45 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 59
-[29-Feb-2016 22:22:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:26:12 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:26:14 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 71
-[29-Feb-2016 22:26:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:30:57 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:31:05 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:31:07 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[29-Feb-2016 22:31:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 22:32:01 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:34:58 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:37:40 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[29-Feb-2016 22:39:40 UTC] PHP Notice:  Undefined variable: submit in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 52
-[29-Feb-2016 22:39:40 UTC] PHP Notice:  Undefined variable: submit in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 52
-[29-Feb-2016 22:39:40 UTC] PHP Notice:  Undefined variable: submit in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 52
-[29-Feb-2016 22:44:17 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[29-Feb-2016 22:44:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 23:01:53 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[29-Feb-2016 23:01:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 23:01:55 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[29-Feb-2016 23:01:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[29-Feb-2016 23:04:42 UTC] PHP Notice:  Undefined index: article in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 3
-[29-Feb-2016 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 24
-[29-Feb-2016 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 25
-[29-Feb-2016 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 39
-[29-Feb-2016 23:04:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 39
-[29-Feb-2016 23:04:42 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[01-Mar-2016 00:07:29 UTC] PHP Parse error:  syntax error, unexpected '$collection' (T_VARIABLE) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 14
-[01-Mar-2016 00:08:27 UTC] PHP Notice:  Undefined variable: POST in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 9
-[01-Mar-2016 00:08:27 UTC] PHP Notice:  Undefined index: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.articles.php on line 65
-[01-Mar-2016 00:09:06 UTC] PHP Notice:  Undefined variable: POST in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 9
-[01-Mar-2016 00:09:06 UTC] PHP Notice:  Undefined index: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.articles.php on line 65
-[01-Mar-2016 00:09:30 UTC] PHP Notice:  Undefined variable: POST in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 9
-[01-Mar-2016 00:20:28 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 166
-[01-Mar-2016 00:20:41 UTC] PHP Fatal error:  Call to undefined function int() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 121
-[01-Mar-2016 00:20:57 UTC] PHP Fatal error:  Call to undefined function int() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 121
-[01-Mar-2016 00:21:03 UTC] PHP Fatal error:  Call to undefined function int() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 122
-[01-Mar-2016 00:21:26 UTC] PHP Parse error:  syntax error, unexpected '$counts' (T_VARIABLE) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/articles.php on line 124
-[01-Mar-2016 00:27:22 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 00:27:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 00:54:15 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 00:54:15 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:09:08 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 01:09:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:09:41 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 01:09:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:10:04 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 01:10:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:10:16 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 01:10:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:10:20 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 01:10:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:13:45 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 01:13:45 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:13:58 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 01:13:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:14:07 UTC] PHP Notice:  Undefined variable: posts in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 70
-[01-Mar-2016 01:14:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 01:15:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 80
-[01-Mar-2016 02:39:49 UTC] PHP Fatal error:  Call to undefined function get_pearmalink() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[01-Mar-2016 02:40:10 UTC] PHP Notice:  Undefined variable: item in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[01-Mar-2016 02:40:10 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[01-Mar-2016 02:40:11 UTC] PHP Notice:  Undefined variable: item in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[01-Mar-2016 02:40:11 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 51
-[01-Mar-2016 02:44:58 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 02:45:23 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 02:45:31 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 55
-[01-Mar-2016 02:45:38 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 02:45:51 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 02:46:04 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 02:46:16 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 02:46:35 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 02:46:50 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 02:47:06 UTC] PHP Fatal error:  Call to undefined function get_permalinkg() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.collection.php on line 56
-[01-Mar-2016 03:22:08 UTC] PHP Fatal error:  Class 'Instagram' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 15
-[01-Mar-2016 03:23:32 UTC] PHP Fatal error:  Class 'Instagram' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 15
-[01-Mar-2016 03:23:45 UTC] PHP Fatal error:  Class 'Instagram' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 15
-[01-Mar-2016 03:24:01 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 3
-[01-Mar-2016 03:24:01 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 3
-[01-Mar-2016 03:24:10 UTC] PHP Fatal error:  Class 'Instagram' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 15
-[01-Mar-2016 03:24:35 UTC] PHP Warning:  Missing argument 1 for MetzWeb\Instagram\Instagram::__construct(), called in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 17 and defined in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 97
-[01-Mar-2016 03:24:35 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 99
-[01-Mar-2016 03:24:35 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 104
-[01-Mar-2016 03:24:35 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 108
-[01-Mar-2016 03:26:44 UTC] PHP Warning:  Missing argument 1 for MetzWeb\Instagram\Instagram::__construct(), called in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 17 and defined in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 97
-[01-Mar-2016 03:26:44 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 99
-[01-Mar-2016 03:26:44 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 104
-[01-Mar-2016 03:26:44 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 108
-[01-Mar-2016 03:26:51 UTC] PHP Warning:  Missing argument 1 for MetzWeb\Instagram\Instagram::__construct(), called in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 17 and defined in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 97
-[01-Mar-2016 03:26:51 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 99
-[01-Mar-2016 03:26:51 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 104
-[01-Mar-2016 03:26:51 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 108
-[01-Mar-2016 03:27:07 UTC] PHP Warning:  Missing argument 1 for MetzWeb\Instagram\Instagram::__construct(), called in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 17 and defined in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 97
-[01-Mar-2016 03:27:07 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 99
-[01-Mar-2016 03:27:07 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 104
-[01-Mar-2016 03:27:07 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 108
-[01-Mar-2016 03:27:09 UTC] PHP Warning:  Missing argument 1 for MetzWeb\Instagram\Instagram::__construct(), called in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 17 and defined in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 97
-[01-Mar-2016 03:27:09 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 99
-[01-Mar-2016 03:27:09 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 104
-[01-Mar-2016 03:27:09 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 108
-[01-Mar-2016 03:27:19 UTC] PHP Warning:  Missing argument 1 for MetzWeb\Instagram\Instagram::__construct(), called in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 17 and defined in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 97
-[01-Mar-2016 03:27:19 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 99
-[01-Mar-2016 03:27:19 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 104
-[01-Mar-2016 03:27:19 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 108
-[01-Mar-2016 21:31:10 UTC] PHP Warning:  Missing argument 1 for MetzWeb\Instagram\Instagram::__construct(), called in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 17 and defined in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 97
-[01-Mar-2016 21:31:10 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 99
-[01-Mar-2016 21:31:10 UTC] PHP Notice:  Undefined variable: config in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 104
-[01-Mar-2016 21:31:10 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 108
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:31:38 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 21:41:07 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 30
-[01-Mar-2016 21:41:07 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 30
-[01-Mar-2016 21:41:07 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:41:14 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 30
-[01-Mar-2016 21:41:14 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 30
-[01-Mar-2016 21:41:14 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:42:01 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 30
-[01-Mar-2016 21:42:01 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 30
-[01-Mar-2016 21:42:01 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:43:02 UTC] PHP Fatal error:  Call to undefined function getMedia() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 31
-[01-Mar-2016 21:43:06 UTC] PHP Fatal error:  Call to undefined function getMedia() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 31
-[01-Mar-2016 21:43:48 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 31
-[01-Mar-2016 21:43:48 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 31
-[01-Mar-2016 21:43:49 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:43:49 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:44:44 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:44:44 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:44:44 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:44:44 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:45:01 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:45:01 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:45:02 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:45:02 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:45:05 UTC] PHP Notice:  Undefined index: code in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 28
-[01-Mar-2016 21:45:07 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:45:07 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:45:07 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:45:07 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:45:55 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:45:55 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:45:55 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:45:55 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:46:46 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:46:46 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:46:46 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:46:46 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:46:48 UTC] PHP Notice:  Undefined index: code in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 28
-[01-Mar-2016 21:46:48 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:46:48 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:46:49 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:46:49 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:47:16 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 32
-[01-Mar-2016 21:47:16 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 32
-[01-Mar-2016 21:47:16 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:48:43 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:48:43 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:48:47 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:50:44 UTC] PHP Fatal error:  Call to undefined function getUserMedia() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:50:49 UTC] PHP Fatal error:  Call to undefined function getUserMedia() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:50:59 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:50:59 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:50:59 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:50:59 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:57:06 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:57:06 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:57:07 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:57:07 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:59:18 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:59:18 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:59:19 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:59:19 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 21:59:46 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:59:46 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 34
-[01-Mar-2016 21:59:46 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 21:59:46 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:01:05 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 35
-[01-Mar-2016 22:01:05 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 35
-[01-Mar-2016 22:01:05 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:01:05 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:02:36 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 35
-[01-Mar-2016 22:02:36 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 35
-[01-Mar-2016 22:02:37 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:02:37 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:03:04 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:03:04 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 38
-[01-Mar-2016 22:03:04 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 38
-[01-Mar-2016 22:03:05 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:04:45 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:04:45 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 38
-[01-Mar-2016 22:04:45 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 38
-[01-Mar-2016 22:04:45 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:04:56 UTC] PHP Notice:  Undefined index: code in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 28
-[01-Mar-2016 22:04:57 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:04:57 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 38
-[01-Mar-2016 22:04:57 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 38
-[01-Mar-2016 22:04:57 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:19:17 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:19:17 UTC] PHP Notice:  Undefined property: stdClass::$user in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 38
-[01-Mar-2016 22:19:17 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 38
-[01-Mar-2016 22:19:17 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:20:40 UTC] PHP Fatal error:  Call to undefined function getLoginUrl() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 18
-[01-Mar-2016 22:24:38 UTC] PHP Parse error:  syntax error, unexpected ',' in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 36
-[01-Mar-2016 22:24:40 UTC] PHP Parse error:  syntax error, unexpected ',' in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 36
-[01-Mar-2016 22:24:44 UTC] PHP Notice:  Undefined index: code in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 26
-[01-Mar-2016 22:24:45 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:24:45 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:24:58 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:25:02 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:25:18 UTC] PHP Notice:  Undefined index: X-Ratelimit-Remaining in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 631
-[01-Mar-2016 22:26:40 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:26:55 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:36:52 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:36:53 UTC] PHP Notice:  Undefined index: code in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 26
-[01-Mar-2016 22:36:53 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:40:46 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 128
-[01-Mar-2016 22:40:59 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 128
-[01-Mar-2016 22:41:04 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 128
-[01-Mar-2016 22:41:26 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\InstagramException' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 128
-[01-Mar-2016 22:41:29 UTC] PHP Notice:  Undefined index: code in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 27
-[01-Mar-2016 22:41:29 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:41:50 UTC] PHP Notice:  Undefined index: code in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 27
-[01-Mar-2016 22:41:51 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:43:00 UTC] PHP Notice:  Undefined index: code in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 27
-[01-Mar-2016 22:43:00 UTC] PHP Notice:  Undefined property: stdClass::$access_token in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class.instagram.php on line 735
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:43:02 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[01-Mar-2016 22:46:50 UTC] PHP Warning:  require(/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php): failed to open stream: No such file or directory in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 57
-[01-Mar-2016 22:46:50 UTC] PHP Fatal error:  require(): Failed opening required '/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php' (include_path='.:/usr/local/Cellar/php56/5.6.10/lib/php') in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 57
-[01-Mar-2016 22:47:07 UTC] PHP Warning:  require(/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php): failed to open stream: No such file or directory in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 57
-[01-Mar-2016 22:47:07 UTC] PHP Fatal error:  require(): Failed opening required '/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php' (include_path='.:/usr/local/Cellar/php56/5.6.10/lib/php') in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 57
-[01-Mar-2016 22:49:24 UTC] PHP Notice:  Undefined variable: id in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 16
-[01-Mar-2016 22:49:24 UTC] PHP Notice:  Undefined variable: status in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 18
-[01-Mar-2016 22:49:24 UTC] PHP Notice:  Undefined variable: status in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 18
-[01-Mar-2016 22:49:24 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:49:24 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:49:24 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[01-Mar-2016 22:49:39 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 24
-[01-Mar-2016 22:49:39 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 25
-[01-Mar-2016 22:49:39 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 26
-[01-Mar-2016 22:49:58 UTC] PHP Notice:  Undefined variable: status in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 18
-[01-Mar-2016 22:49:58 UTC] PHP Notice:  Undefined variable: status in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 18
-[01-Mar-2016 22:49:58 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:49:58 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:49:58 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[01-Mar-2016 22:50:20 UTC] PHP Notice:  Undefined variable: active in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 7
-[01-Mar-2016 22:50:20 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:50:20 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:50:20 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[01-Mar-2016 22:50:25 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:50:25 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:50:25 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[01-Mar-2016 22:50:58 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:50:58 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:50:58 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[01-Mar-2016 22:51:03 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:51:03 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:51:03 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[01-Mar-2016 22:51:08 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:51:08 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:51:08 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[01-Mar-2016 22:54:59 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:54:59 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:54:59 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[01-Mar-2016 22:55:11 UTC] PHP Notice:  Undefined variable: title in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 27
-[01-Mar-2016 22:55:11 UTC] PHP Notice:  Undefined variable: date in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 28
-[01-Mar-2016 22:55:11 UTC] PHP Notice:  Undefined variable: author in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/instagram.php on line 29
-[02-Mar-2016 00:14:35 UTC] PHP Notice:  Undefined index: article in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 3
-[02-Mar-2016 00:14:35 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 24
-[02-Mar-2016 00:14:35 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 25
-[02-Mar-2016 00:14:35 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 39
-[02-Mar-2016 00:14:35 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 39
-[02-Mar-2016 00:14:35 UTC] PHP Fatal error:  Call to undefined method Collection::get_latest_from_catgories() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/article-collection-edit.php on line 41
-[02-Mar-2016 00:16:05 UTC] PHP Parse error:  syntax error, unexpected 'add_submenu_page' (T_STRING) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 63
-[02-Mar-2016 00:18:05 UTC] PHP Parse error:  syntax error, unexpected 'add_submenu_page' (T_STRING) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 70
-[02-Mar-2016 00:20:05 UTC] PHP Parse error:  syntax error, unexpected 'callable' (T_CALLABLE) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 64
-[02-Mar-2016 00:22:06 UTC] PHP Parse error:  syntax error, unexpected 'callable' (T_CALLABLE) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 68
-[02-Mar-2016 00:26:46 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 21
-[02-Mar-2016 00:27:00 UTC] PHP Notice:  Undefined variable: sections in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 67
-[02-Mar-2016 00:27:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 67
-[02-Mar-2016 00:37:05 UTC] PHP Fatal error:  Using $this when not in object context in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 85
-[02-Mar-2016 00:38:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-includes/plugin.php on line 945
-[02-Mar-2016 00:38:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-includes/plugin.php on line 945
-[02-Mar-2016 00:38:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-includes/plugin.php on line 945
-[02-Mar-2016 00:38:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-includes/plugin.php on line 945
-[02-Mar-2016 00:42:28 UTC] PHP Parse error:  syntax error, unexpected 'a161a83' (T_STRING) in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 33
-[02-Mar-2016 00:46:18 UTC] PHP Notice:  Undefined variable: remix in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 78
-[02-Mar-2016 00:46:18 UTC] PHP Notice:  Undefined variable: remix in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 78
-[02-Mar-2016 00:46:18 UTC] PHP Notice:  Undefined variable: remix in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 78
-[02-Mar-2016 00:46:18 UTC] PHP Notice:  Undefined variable: remix in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix.php on line 78
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
-[02-Mar-2016 00:47:37 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 04:25:32 UTC] PHP Fatal error:  Call to undefined function fill_tables() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 146
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:34 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:34 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:34 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:34 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:34 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:34 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:34 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:34 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:34 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:34 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:36 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:36 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:36 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:36 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:36 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:36 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:36 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:36 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:36 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:37 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:38 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:39 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:25:40 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:40 UTC] PHP Fatal error:  Call to undefined function fill_tables() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 146
+[03-Mar-2016 04:25:40 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:25:40 UTC] PHP Fatal error:  Call to undefined function fill_tables() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 146
+[03-Mar-2016 04:26:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:06 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:26:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:08 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:26:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:26:09 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:27:01 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:01 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:05 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:05 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:07 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:08 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:27:09 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:09 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:27:09 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:27:09 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:27:09 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:27:09 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:27:09 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:27:09 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:27:09 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:27:09 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:27:09 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:27:09 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:28:07 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:07 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:08 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:09 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:11 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:11 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:11 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:11 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:11 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:11 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:11 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:11 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:11 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:12 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:12 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:13 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:14 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:28:15 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:15 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:28:15 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:28:15 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:28:16 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:28:16 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:28:16 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:28:16 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:28:16 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:28:16 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:28:16 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:28:16 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:29:36 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 185
+[03-Mar-2016 04:29:36 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 185
+[03-Mar-2016 04:29:36 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 185
+[03-Mar-2016 04:29:48 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:48 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:48 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:48 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:48 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:49 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:29:49 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:49 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:49 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:49 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:49 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:49 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:50 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:51 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:29:51 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:51 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:51 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:51 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:51 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:29:52 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 170
+[03-Mar-2016 04:32:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 170
+[03-Mar-2016 04:32:11 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 170
+[03-Mar-2016 04:32:24 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 170
+[03-Mar-2016 04:32:24 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 170
+[03-Mar-2016 04:32:24 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 170
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:32:35 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:35 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:37 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:39 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:39 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:39 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:40 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:40 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:41 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:41 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:32:43 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:43 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:32:43 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:32:43 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:32:43 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:32:43 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:32:43 UTC] PHP Notice:  Trying to get property of non-object in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 151
+[03-Mar-2016 04:32:43 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:32:43 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:32:43 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 160
+[03-Mar-2016 04:32:43 UTC] PHP Notice:  Undefined variable: wpdb in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:32:43 UTC] PHP Fatal error:  Call to a member function insert() on null in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:33:57 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:57 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:57 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:57 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:57 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:58 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:33:58 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:58 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:58 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:58 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:58 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:58 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:33:59 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:34:00 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:34:00 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:34:00 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:34:00 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:34:00 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:34:00 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:34:01 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:34:01 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 162
+[03-Mar-2016 04:36:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:03 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:04 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_hero ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:36:04 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:04 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:04 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:04 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:04 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:04 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:05 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_articles ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:36:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:05 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_carousel ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] WordPress database error Duplicate key name 'id' for query ALTER TABLE wp_remix_social ADD UNIQUE KEY `id` (ID) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:06 UTC] PHP Notice:  Undefined offset: 1 in /Users/dylanpeti/Sites/remixmagazine/wp-admin/includes/upgrade.php on line 2164
+[03-Mar-2016 04:36:07 UTC] WordPress database error Multiple primary key defined for query ALTER TABLE wp_remix_socialmeta ADD PRIMARY KEY (`meta_id`) made by activate_plugin, do_action('activate_remix/remix.php'), call_user_func_array, tableBuilder::table_init, dbDelta
+[03-Mar-2016 04:36:07 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 165
+[03-Mar-2016 04:36:07 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 165
+[03-Mar-2016 04:36:07 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 165
+[03-Mar-2016 04:36:19 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 165
+[03-Mar-2016 04:36:19 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 165
+[03-Mar-2016 04:36:19 UTC] PHP Notice:  Use of undefined constant active - assumed 'active' in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php on line 165
+[03-Mar-2016 04:41:39 UTC] PHP Notice:  Undefined index: collection_type in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 69
+[03-Mar-2016 04:41:39 UTC] PHP Notice:  Undefined index: collection_count in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 70
+[03-Mar-2016 04:41:39 UTC] WordPress database error Table 'remixmagazine.wp_remix_article_collection' doesn't exist for query SHOW FULL COLUMNS FROM `wp_remix_article_collection` made by do_action('remix_page_remix-collection-articles'), call_user_func_array, Menu::views, require('/plugins/remix/templates/remix-collection-articles.php'), Articles::update_articles
+[03-Mar-2016 04:42:05 UTC] WordPress database error Table 'remixmagazine.wp_remix_article_collection' doesn't exist for query SHOW FULL COLUMNS FROM `wp_remix_article_collection` made by do_action('remix_page_remix-collection-articles'), call_user_func_array, Menu::views, require('/plugins/remix/templates/remix-collection-articles.php'), Articles::update_articles
+[03-Mar-2016 20:12:57 UTC] PHP Notice:  Undefined variable: articles_read in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 6
+[03-Mar-2016 20:12:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 6
+[03-Mar-2016 20:12:57 UTC] PHP Fatal error:  Class 'MetzWeb\Instagram\Instagram' not found in /Users/dylanpeti/Sites/remixmagazine/wp-content/themes/remix/front-page.php on line 17
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "read_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:10 UTC] PHP Notice:  map_meta_cap was called <strong>incorrectly</strong>. The post type shop_order is not registered, so it may not be reliable to check the capability "edit_post" against a post of that type. Please see <a href="https://codex.wordpress.org/Debugging_in_WordPress">Debugging in WordPress</a> for more information. (This message was added in version 4.4.0.) in /Users/dylanpeti/Sites/remixmagazine/wp-includes/functions.php on line 3792
+[03-Mar-2016 20:13:14 UTC] PHP Fatal error:  Call to undefined method Articles::article_table() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 36
+[03-Mar-2016 20:13:15 UTC] PHP Fatal error:  Call to undefined method Articles::article_table() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 36
+[03-Mar-2016 20:13:17 UTC] PHP Fatal error:  Call to undefined method Articles::article_table() in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 36
+[03-Mar-2016 20:13:41 UTC] PHP Fatal error:  Using $this when not in object context in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 36
+[03-Mar-2016 20:21:25 UTC] PHP Fatal error:  Using $this when not in object context in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 36
+[03-Mar-2016 20:24:02 UTC] PHP Fatal error:  Using $this when not in object context in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 37
+[03-Mar-2016 20:24:19 UTC] PHP Fatal error:  Using $this when not in object context in /Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.articles.php on line 36
+[03-Mar-2016 20:24:23 UTC] WordPress database error Table 'remixmagazine.remix' doesn't exist for query SELECT * FROM remix  WHERE type <> 'hero' made by do_action('remix_page_remix-collection-articles'), call_user_func_array, Menu::views, require('/plugins/remix/templates/remix-collection-articles.php'), Articles::read_articles
+[03-Mar-2016 20:27:58 UTC] WordPress database error Table 'remixmagazine.remix' doesn't exist for query SELECT * FROM remix  WHERE type <> 'hero' made by do_action('remix_page_remix-collection-articles'), call_user_func_array, Menu::views, require('/plugins/remix/templates/remix-collection-articles.php'), Articles::read_articles

@@ -71,7 +71,7 @@ $collection = Articles::read_articles();
 
  ?>
        
-   <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-articles.php" method="post">
+   <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-articles.php" method="post">
             <div class="col-md-12">
   
 
@@ -95,7 +95,7 @@ $collection = Articles::read_articles();
               <div class="row">
                 <div class="col-md-12">
                   <div>
-                    <p>Count: <?php echo $article->collection_count; ?></p>
+                    <p>Count: <?php echo $article->count; ?></p>
                     <p class="meta">Last updated: 3 Marc 2015</p>
                     <p class="meta">Author: Carl Thompson</p>
 
@@ -105,12 +105,12 @@ $collection = Articles::read_articles();
               </div>
               </div>
 
-          <?php $set_option = $article->collection_type; ?>
+          <?php $set_option = $article->type; ?>
 
            <div class="col-md-3">
              <div class="form-group">
                 <label for="sel1">Post Type</label>
-                <select name="collection_type" class="form-control" id="sel1" selected="selected">
+                <select name="type" class="form-control" id="sel1" selected="selected">
                  <?php foreach ($options as $option) : ?>
                        <option class="article-option" value="<?php echo $option ?>" <?php echo ($set_option == $option ? "selected" : ""); ?>><?php echo ucwords(str_replace("_", " ", $option)); ?></option>
                  <?php endforeach; ?>
@@ -118,12 +118,12 @@ $collection = Articles::read_articles();
             </div>
               </div>
 
-           <?php $set_count = $article->collection_count; ?>
+           <?php $set_count = $article->count; ?>
 
               <div class="col-md-3">
              <div class="form-group">
               <label for="sel1">How many Posts</label>
-                <select name="collection_count" class="form-control" id="sel1" selected="selected">
+                <select name="count" class="form-control" id="sel1" selected="selected">
           
                  <?php foreach($counts as $count) : ?>
               <option class="count" value="<?php echo $count; ?>" <?php echo ($set_count == $count ? "selected" : ""); ?>><?php echo $count; ?></option>
