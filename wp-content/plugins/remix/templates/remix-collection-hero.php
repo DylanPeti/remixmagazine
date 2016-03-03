@@ -1,15 +1,15 @@
 <?php 
-
+$class = "Remix";
 $collections = Collection::get_latest_articles('post', 3);
 
-$articles_read = Articles::read_articles(null, "type", 'hero');
+$articles_read = $class::read("hero");
 
 if($_POST) : 
 
 
 	if( $_POST['submit'] == "Remove" ) :
       
-      $articles_delete = Articles::delete_articles($_POST['post_id']);
+      $articles_delete = $class::delete("hero", $_POST['post_id']);
 
       $success = "Hero deleted";
 
@@ -19,7 +19,7 @@ if($_POST) :
 
             foreach($articles_read as $item) :
 
-                if ($item->collection_status == 'active') :
+                if ($item->status == 'active') :
                 	
                 	$active_articles++;
 
@@ -29,7 +29,7 @@ if($_POST) :
 
            if ($active_articles < 3) :
 
-              $articles_create = Articles::create_articles($_POST);
+              $articles_create = $class::create("hero", $_POST);
 
               $success = "Hero updated!"; 
 
@@ -44,7 +44,7 @@ if($_POST) :
 endif;
 
 
-$articles_read = Articles::read_articles(null, "type", 'hero');
+$articles_read = $class::read("hero");
 
 ?>
 
@@ -85,7 +85,7 @@ $articles_read = Articles::read_articles(null, "type", 'hero');
 	
 	<div class="row">
 		
-    <?php $collection_article = array(); ?>
+    <?php $article = array(); ?>
 
     <?php $do_not_duplicate = array();
 
@@ -104,15 +104,15 @@ $articles_read = Articles::read_articles(null, "type", 'hero');
 
 		<?php foreach ($merge as $article) :
 
-        $author = (isset($article->post_author) ? get_the_author_meta('display_name', $article->post_author) : $article->collection_author);
+        $author = (isset($article->post_author) ? get_the_author_meta('display_name', $article->post_author) : $article->author);
 
-        $title = (isset($article->post_title) ? $article->post_title : $article->title);
+        $title = (isset($article->post_title) ? $article->post_title : get_the_title($article->post_id));
 
         $id = (isset($article->post_id) ? $article->post_id : $article->ID);
 
         $date = (isset($article->post_date) ? $article->post_date : $article->time);
 
-        $status = (isset($article->collection_status) ? $article->collection_status : "inactive");
+        $status = (isset($article->status) ? $article->status : "inactive");
 
         $submit = ($status == "active" ? "Remove" : "Set");
 
@@ -120,7 +120,7 @@ $articles_read = Articles::read_articles(null, "type", 'hero');
     ?>
 
 
-        <form action="http://remixmagazine.dev/wp-admin/admin.php?page=article-collection-hero-edit.php" method="post"> 
+        <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-hero.php" method="post"> 
            <div class="col-md-6">
 
 			   
@@ -155,13 +155,12 @@ $articles_read = Articles::read_articles(null, "type", 'hero');
                       
                       <?php if ($status == "inactive") : ?>
 
-						 <input type="hidden" name="title" value="<?php echo $title ?>">
-						 <input type="hidden" name="collection_type" value="<?php echo 'hero'; ?>">
-						 <input type="hidden" name="collection_author" value="<?php echo $author; ?>">
-						 <input type="hidden" name="post_id" value="">
-						 <input type="hidden" name="post_id" value="<?php echo $id ?>">
-						 <input type="hidden" name="collection_count" value="<?php echo '1'; ?>">
-						 <input type="hidden" name="collection_status" value="active">
+                      	<?php $data = array(); ?>
+
+		 <input type="hidden" name="data['author']" value="<?php echo $author; ?>">
+		 <input type="hidden" name="data['post_id']" value="<?php echo $id ?>">
+		 <input type="hidden" name="data['count']" value="<?php echo '1'; ?>">
+		 <input type="hidden" name="data['status']" value="active">
 
 					  <?php else: ?>
 

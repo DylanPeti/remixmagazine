@@ -1,14 +1,15 @@
 <?php 
 
+$class = "Remix";
+
 if($_POST) :
 // $save = Articles::create_articles($_POST);
 
-
-$save = Articles::update_articles($_POST, $_POST['id']);
+$save = $class::update("article", $_POST, $_POST['id']);
 
 endif; 
 
-$collection = Articles::read_articles();
+$collection = $class::read("article");
 
 ?>
 <div class="remix-wrapper">
@@ -68,10 +69,11 @@ $collection = Articles::read_articles();
  $counts[] = "12";
  $counts[] = "16";
 
+$data = array(); 
 
  ?>
        
-   <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-articles.php" method="post">
+   <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-article.php" method="post">
             <div class="col-md-12">
   
 
@@ -110,7 +112,7 @@ $collection = Articles::read_articles();
            <div class="col-md-3">
              <div class="form-group">
                 <label for="sel1">Post Type</label>
-                <select name="type" class="form-control" id="sel1" selected="selected">
+                <select name="data['type']" class="form-control" id="sel1" selected="selected">
                  <?php foreach ($options as $option) : ?>
                        <option class="article-option" value="<?php echo $option ?>" <?php echo ($set_option == $option ? "selected" : ""); ?>><?php echo ucwords(str_replace("_", " ", $option)); ?></option>
                  <?php endforeach; ?>
@@ -123,7 +125,7 @@ $collection = Articles::read_articles();
               <div class="col-md-3">
              <div class="form-group">
               <label for="sel1">How many Posts</label>
-                <select name="count" class="form-control" id="sel1" selected="selected">
+                <select name="data['count']" class="form-control" id="sel1" selected="selected">
           
                  <?php foreach($counts as $count) : ?>
               <option class="count" value="<?php echo $count; ?>" <?php echo ($set_count == $count ? "selected" : ""); ?>><?php echo $count; ?></option>

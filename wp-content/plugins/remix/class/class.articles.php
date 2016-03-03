@@ -1,5 +1,5 @@
 <?php 
-class Articles {
+class Remix {
 
 static $table;
 
@@ -18,78 +18,65 @@ static $table;
      return self::$table;
   }
     
-	static function create_articles($article) {
+	static function create($table, $form) {
 		
         global $wpdb;
+        $table = $wpdb->prefix . "remix_" . $table;
 
-        $table = self::article_table();
+         $args = array();
 
-        $args = array(
-          'time' => current_time('mysql'),
-          'author' => $article['author'], 
-          'page' => $article['page'],
-          'type' => $article['type'],
-          'count' => $article['count'],
-          'status' => $article['status']
-        	);
+         foreach ($form['data'] as $key => $value) {
+      
+         $key = str_replace("'", "", $key);
+         $args[$key] = $value;
 
-        $wpdb->insert($table, $args);
+         }
+
+         $args['time'] = current_time('mysql');
+
+
+         $wpdb->insert($table, $args);
 	}
 
 
-	static function read_articles($id = null, $column = null, $value = null ) {
-    
-     $table = self::$table = "remix";
-     print_r($table);
+	static function read($table, $id = null, $column = null, $value = null ) {
 
 		global $wpdb;
-        
-        if($id) :
+    $table = $wpdb->prefix . "remix_" . $table;
 
-        $query = $wpdb->get_results('SELECT * FROM ' . $table . ' WHERE id =' . $id);
-
-        $results = $query[0];
-
-        elseif($column) :
-
-        $query = $wpdb->get_results('SELECT * FROM ' . $table . ' WHERE ' . $column . " = " . "'" . $value . "'"); 
-
-        $results = $query;
-
-        else :
-
-		    $results = $wpdb->get_results("SELECT * FROM $table  WHERE type <> 'hero'");
-
-	     endif;
+		    $results = $wpdb->get_results("SELECT * FROM $table");
 
 		return $results;
 
 	}
 
-	static function update_articles($form, $ID) {
+	static function update($table, $form) {
       
       global $wpdb;
-      
-      $table = self::article_table();
 
-      $data = array(
-          'time' => current_time('mysql'),
-          'type' => $form['type'],
-          'count' => $form['count'],
-      );
+      $table = $wpdb->prefix . "remix_" . $table;
 
-      $where = array( 'ID' => $ID );
+      $data = array();
+
+       foreach ($form['data'] as $key => $value) {
+         $key = str_replace("'", "", $key);
+         $data[$key] = $value;
+       }
+ 
+      $data['time'] = current_time('mysql');
+
+      $where = array( 'ID' => $form['id'] );
 
       $wpdb->update( $table, $data, $where , $format = null, $where_format = null ); 
 
 	}
 
-	static function delete_articles($ID) {
+	static function delete($table, $ID) {
 
         global $wpdb;
-
-        $table = self::article_table();
-
+  
+        $table = $wpdb->prefix . "remix_" . $table;
+ 
         $wpdb->delete( $table, array( 'post_id' => $ID ) );
 
 	}

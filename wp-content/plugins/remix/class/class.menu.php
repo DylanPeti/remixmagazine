@@ -15,7 +15,7 @@ class Menu  {
       function __construct() {
 
         $main = "remix";
-        $submenu = array("Hero", "Articles", "Carousel");
+        $submenu = array("Hero", "Article", "Carousel");
 
         $mainmenu = $this->menuitems($main, $submenu);
 
