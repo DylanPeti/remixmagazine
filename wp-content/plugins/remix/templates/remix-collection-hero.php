@@ -175,7 +175,7 @@ $articles_read = $class::read("hero");
 							<div class="hero-image">
 
 						    <div class="img" style="background-image: url(<?php echo remix_thumbnail_url('', 'post', $id) ?>)"></div>
-						<input href="#" name="submit" class="btn-update" type="submit" value="<?php echo $submit; ?>">
+						<input href="#" name="submit" class="hero btn-update" type="submit" value="<?php echo $submit; ?>">
 						      </div>
 							</div>
 							

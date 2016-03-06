@@ -82,7 +82,7 @@ function the_latest_posts($count) {
 
       $do_not_duplicate = array();
 
-	  $args = array('numberposts' => 10);
+	  $args = array('numberposts' => $count);
 
 	  $posts = wp_get_recent_posts( $args, OBJECT );
       
@@ -118,15 +118,71 @@ function the_latest_from_categories($count) {
    
     $post = get_categories( $args );
 
-    $result = $items;
+    $result = $post;
    
     return $result;
 
 }
 
 
+function article($item) {
 
 
+
+ $category = (isset($item->ID) ? get_the_category($item->ID)[0]->name : " "); 
+ $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
+ $image = remix_thumbnail_url($item); 
+ // $link = ($post_type == "the_latest_from_categories" ? get_category_link( get_cat_ID($item->name ) ) : get_permalink($item->ID));
+ 
+$cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
+        
+        <article class="article">
+       
+         <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
+          </div>
+        
+          <div class="article_exerpt">
+            <span class="article-tag <?php echo strtolower($item->cat_name); ?>"><?php echo $item->title ?></span>
+            
+            <h2><?php echo substr($title, 0, 52); ?></h2>
+            
+            <ul class="entypo-icons">
+              <li class="entypo-facebook"></li>
+              <li class="entypo-twitter"></li>
+            </ul>
+          
+          </div>
+       
+        </article>
+<?php }
+
+
+
+function remix_thumbnail_url($object) {
+
+       
+      if($object->taxonomy == "category") {
+        $name = $object->name;
+        $cat_id = get_cat_ID( $name );
+
+        $args = array( 'numberposts' => 1, 'category' => $cat_id, 'post_type' => 'post');
+
+        $latest_post = get_posts( $args );
+
+        $thumb_id = get_post_thumbnail_id($latest_post[0]->ID);
+
+      } else {
+
+         $thumb_id = get_post_thumbnail_id($object->ID);
+
+      }
+       
+       $post_thumbnail_url = wp_get_attachment_url( $thumb_id );
+
+   
+       return $post_thumbnail_url;
+  
+     }
 
 
 

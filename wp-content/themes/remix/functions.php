@@ -11,29 +11,8 @@ require ('core-functions.php');
    */
   
 
-function remix_thumbnail_url($cat_name = null, $post_type, $id = null) {
-if($post_type == "cat") :
 
-$cat_id = get_cat_ID( $cat_name );
-  $defaults = array(
-'numberposts' => 1,
-'category' => $cat_id,
-'post_type' => 'post',
-);
-$latest_post = get_posts( $defaults );
-$thumb_id = get_post_thumbnail_id($latest_post[0]->ID);
 
-elseif($post_type == "post") :
-
-$thumb_id = get_post_thumbnail_id($id);
-
-endif;
-
-$post_thumbnail_url = wp_get_attachment_url( $thumb_id );
-
-return $post_thumbnail_url;
-
-}
 
 function remix_post_author($cat_name) {
 

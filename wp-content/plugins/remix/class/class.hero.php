@@ -16,7 +16,6 @@ class Hero{
 		
         global $wpdb;
 
-        print_r($this->table);
 
         $table = $wpdb->prefix . "remix_article_collection";
      

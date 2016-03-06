@@ -121,25 +121,27 @@ class Collection {
 
     }
 
-    static function remix_thumbnail_url($cat_name = null, $post_type, $id = null) {
-       if($post_type == "cat") :
-       
-       $cat_id = get_cat_ID( $cat_name );
-         $defaults = array(
-       'numberposts' => 1,
-       'category' => $cat_id,
-       'post_type' => 'post',
-       );
+    static function remix_thumbnail_url($object) {
 
-       $latest_post = get_posts( $defaults );
 
-       $thumb_id = get_post_thumbnail_id($latest_post[0]->ID);
        
-       elseif($post_type == "post") :
-       
-       $thumb_id = get_post_thumbnail_id($id);
-       
-       endif;
+      if(isset($object->taxonomy) && $object->taxonomy == "category") {
+
+        $name = $object->name;
+        $cat_id = get_cat_ID( $name );
+
+        $args = array( 'numberposts' => 1, 'category' => $cat_id, 'post_type' => 'post');
+
+        $latest_post = get_posts( $args );
+
+        $thumb_id = get_post_thumbnail_id($latest_post[0]->ID);
+
+      } else {
+
+         $thumb_id = get_post_thumbnail_id($item->ID);
+
+      }
+
        
        $post_thumbnail_url = wp_get_attachment_url( $thumb_id );
        

@@ -171,6 +171,12 @@ p.meta {
     width: 100px;
 }*/
 
+.hero.btn-update {
+    width: 100px;
+    margin: 10px auto 0 auto;
+    float: none;
+}
+
 .btn-update {
   -webkit-border-radius: 3;
     -moz-border-radius: 3;
