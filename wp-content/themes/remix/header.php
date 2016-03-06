@@ -12,7 +12,9 @@
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css'; ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/admin.css'; ?>">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -39,23 +41,21 @@
       	<h1>Fashion and Lifestyle</h1>
       </div>
     </a>
-    <div class="menu-wrap">
-      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-      <div class="main_menu">
-        <ul class="entypo-icons">
-          <a href="https://www.facebook.com/remixmagazinenz" title="Remix Magazine Facebook"><li class="entypo-facebook"></li></a>
-        </ul>
-        <div class="main-search">
-          <?php include ('wp-content/themes/remix/inc/search.html'); ?>
+    <section id="toolbar-section">
+      <div class="toolbar">
+        <div class="container">
+          <div class="main-search">
+           <?php include ('wp-content/themes/remix/inc/search.html'); ?>
+          </div>
+          <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'menu-remix')); ?>
         </div>
-        <ul>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-        </ul>
+      </div>
+    </section>
+
+    <!-- Right Menu -->
+    <div class="right-menu-wrap">
+      <span class="icon-subscribe"><i class="fa fa-envelope fa-3x"></i></span>
+      <div class="main_menu">
         <div class="mailer-wrap">
           <h3>Join The Mailer</h3>
           <form action="http://remix.us2.list-manage.com/subscribe/post?u=7f9be996e2c6cb5ef2d2df5fb&amp;id=acc14b56d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
@@ -77,6 +77,20 @@
       </div>
     </div>
     
+        <!-- Left Menu -->
+    <div class="left-menu-wrap">
+      <span class="icon-subscribe"><i class="fa fa-bars fa-3x"></i></span>
+      <div class="main_menu">
+        <ul>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+          <li>Menu Item</li>
+        </ul>
+      </div>
+    </div>
     
 </div>
 </header>
