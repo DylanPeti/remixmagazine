@@ -14,7 +14,7 @@ header {
             padding-top: 80px;
         }
     }
-    .menu-wrap {
+    .right-menu-wrap {
         width: 360px;
         height: 100%;
         position: fixed;
@@ -22,12 +22,13 @@ header {
         background: transparent;
         z-index: 99999;
         top: 0;
-        .glyphicon-menu-hamburger {
+        .icon-subscribe i {
             color: #333;
             float: left;
             font-size: 32px;
             line-height: 80px !important;
             display: inline-block;
+            margin: 0 20px 0 0;
         }
         .main_menu {
             background: #333333;
@@ -36,7 +37,6 @@ header {
             float: left;
             width: 300px;
             height: 100%;
-            margin-left: 20px;
             color: #ffffff;
             h3 {
                 font-size: 18px;
@@ -64,8 +64,66 @@ header {
             }
         }
     }
-    .menu-wrap:hover {
+    .right-menu-wrap:hover {
         right: 0px;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+    }
+    .left-menu-wrap {
+        width: 360px;
+        height: 100%;
+        position: fixed;
+        left: -310px;
+        background: transparent;
+        z-index: 99999;
+        top: 0;
+        .icon-subscribe i {
+            color: #333;
+            float: right;
+            font-size: 32px;
+            line-height: 80px !important;
+            display: inline-block;
+            margin: 0 0 0 20px;
+        }
+        .main_menu {
+            background: #333333;
+            padding: 10px 30px;
+            display: inline-block;
+            float: left;
+            width: 300px;
+            height: 100%;
+            color: #ffffff;
+            h3 {
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 12px;
+                text-align: left;
+            }
+            ul {
+                padding: 0;
+                li {
+                    padding: 10px 10px 7px 10px;
+                    border-bottom: 1px solid #999999;
+                    text-transform: uppercase;
+                }
+            }
+            ul.entypo-icons li {
+                display: inline-block;
+                font-size: 24px;
+                border-bottom: none;
+            }
+            ul.entypo-icons li:first-child {
+                padding-right: 10px;
+            }
+        }
+    }
+    .left-menu-wrap:hover {
+        left: 0px;
         -webkit-transition: all 500ms ease-in-out;
         -moz-transition: all 500ms ease-in-out;
         -ms-transition: all 500ms ease-in-out;
@@ -155,4 +213,19 @@ header {
 }
 
 
-/** END TOOLBAR */
+/** MENU BAR */
+
+.toolbar #adv-search {
+    .btn {
+        border: 1px solid #ddd;
+        border-left: 0px;
+        color: #ddd;
+    }
+    input {
+        margin: 0;
+        border-radius: 0px;
+        border: 1px solid #ddd;
+        border-right: 0px;
+        box-shadow: none;
+    }
+}
