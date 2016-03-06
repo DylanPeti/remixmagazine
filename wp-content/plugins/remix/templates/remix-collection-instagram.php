@@ -1,10 +1,28 @@
+<?php
+use MetzWeb\Instagram\Instagram;
+?>
+
+
+
 <div class="remix-wrapper">
 	<div class="container">
 	
 	<div class="title">
 		<h1>Instagram</h1>
 	</div>
-<?php $status = "active"; ?>
+
+<?php
+
+
+
+$instagram = new Instagram(array(
+    'apiKey'      => 'a161a834de38496cbac86a62a441d923',
+    'apiSecret'   => '6d2c978b1bfd48caaebef1d508f7500c',
+    'apiCallback' => 'http://remixmagazine.dev/'
+));
+
+echo $instagram->getLoginUrl();
+?>
 
 
 <div class="row">
@@ -13,7 +31,7 @@
 <h4>Settings</h4>
 <p>Manage App: <a target="_blank" href="https://www.instagram.com/developer/clients/manage/">www.instagram.com/developer/clients/manage</a></p>
   <fieldset class="form-group">
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="App Key">
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="<?php echo $social->api_key ?>">
   </fieldset>
 
     <fieldset class="form-group">

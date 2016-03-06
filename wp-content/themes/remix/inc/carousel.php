@@ -1,4 +1,6 @@
 <?php
+
+
 $single_cat = array(
 'numberposts' => 20,
 'offset' => 0,
@@ -9,6 +11,8 @@ $single_cat = array(
 'post_status' => 'publish',
 'suppress_filters' => true
 );
+
+
 $single_cats = wp_get_recent_posts($single_cat, OBJECT);
 ?>
 <section id="carousel-section">
@@ -17,15 +21,17 @@ $single_cats = wp_get_recent_posts($single_cat, OBJECT);
       <div id="instagramCarousel" class="carousel slide article-carousel-box" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <?php $split = array_chunk($single_cats, 5); ?>
+
           <?php $dog = array(); ?>
-          <?php foreach ($split as $items) : ?>
+          <?php $img = get_instagram(); ?>
+          <?php foreach ($img as $items) : ?>
           <?php $dog[] = $items; ?>
           
           <div class="item article-carousel-item  <?php echo (count($dog) == 1 ? "active" : '');  ?>">
             <?php foreach ($items as $item) : ?>
             
             <div class="col-md-2">
-              <div class="carousel-image" style="background: url(<?php echo remix_thumbnail_url('', 'post', $item->ID); ?>);"></div>
+              <div class="carousel-image" style="background: url(<?php echo $item ?>);"></div>
             </div>
             <?php endforeach; ?>
           </div>

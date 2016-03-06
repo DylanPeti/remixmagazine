@@ -41,6 +41,8 @@ require_once('/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/clas
 require_once('/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.collection.php');
 require_once('/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.tablebuilder.php');
 require_once('/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.menu.php');
+require_once('/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/remix-functions.php');
+require_once('/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/class/class.instagram.php');
 
 $build = new tableBuilder;
 

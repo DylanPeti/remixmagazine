@@ -32,12 +32,11 @@ static $table;
 
          }
 
-         $args['time'] = current_time('mysql');
+         // $args['time'] = current_time('mysql');
 
 
          $wpdb->insert($table, $args);
 	}
-
 
 	static function read($table, $id = null, $column = null, $value = null ) {
 

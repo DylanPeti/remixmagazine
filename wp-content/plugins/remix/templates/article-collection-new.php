@@ -1,4 +1,7 @@
+<?php 
 
+$class = "Remix";
+?>
 
 <div class="remix-wrapper">
 	<div class="container">

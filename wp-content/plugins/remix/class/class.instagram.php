@@ -197,7 +197,7 @@ class Instagram
         $params = array();
 
         if ($limit > 0) {
-            $params['count'] = $limit;
+            $params['count'] = $limit;  
         }
 
         return $this->_makeCall('users/' . $id . '/media/recent', strlen($this->getAccessToken()), $params);

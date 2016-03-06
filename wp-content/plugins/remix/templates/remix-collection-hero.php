@@ -4,6 +4,7 @@ $collections = Collection::get_latest_articles('post', 3);
 
 $articles_read = $class::read("hero");
 
+
 if($_POST) : 
 
 
