@@ -19,7 +19,7 @@ class tableBuilder {
        	 
        	$prefix = $wpdb->prefix . "remix_";
 
-       	$table = array("hero", "articles", "carousel", "social", "socialmeta");
+       	$table = array("hero", "article", "carousel", "social", "socialmeta");
        
         $tables = $this->table($table, $prefix);
  
@@ -65,7 +65,7 @@ class tableBuilder {
 
         			break;
 
-        		case 'wp_remix_articles':
+        		case 'wp_remix_article':
 
         		$sql[] = "CREATE TABLE " . $table . " (
 		                  `ID` mediumint(9) NOT NULL AUTO_INCREMENT,
@@ -152,7 +152,7 @@ class tableBuilder {
 
        global $wpdb;
 
-        $table = $wpdb->prefix . "remix_articles";
+        $table = $wpdb->prefix . "remix_article";
        
        foreach($pages as $page) :
         $args = array(
