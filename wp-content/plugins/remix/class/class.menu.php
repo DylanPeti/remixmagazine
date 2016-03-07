@@ -65,7 +65,7 @@ class Menu  {
 	    
 	     }
 
-       require (REMIX_PLUGIN_PATH . "/" . $page);
+       require (REMIX_PLUGIN_PATH . "/templates/" . $page);
 
      }
 
