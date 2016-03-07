@@ -152,7 +152,7 @@ class tableBuilder {
 
        global $wpdb;
 
-        $table = $wpdb->prefix . "remix_articles";
+        $table = $wpdb->prefix . "remix_article";
        
        foreach($pages as $page) :
         $args = array(
