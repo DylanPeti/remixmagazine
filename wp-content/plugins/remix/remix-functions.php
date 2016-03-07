@@ -128,15 +128,15 @@ function the_latest_from_categories($count) {
 function article($item) {
 
 
-
  $category = (isset($item->ID) ? get_the_category($item->ID)[0]->name : " "); 
  $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
  $image = remix_thumbnail_url($item); 
- // $link = ($post_type == "the_latest_from_categories" ? get_category_link( get_cat_ID($item->name ) ) : get_permalink($item->ID));
+ $link = thumbnail_link($item);
  
 $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
-        
+  
         <article class="article">
+        <a href="<?php echo $link; ?>">
        
          <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
           </div>
@@ -152,9 +152,26 @@ $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?
             </ul>
           
           </div>
+          </a>
        
         </article>
 <?php }
+
+function thumbnail_link($object) {
+
+  if($object->taxonomy == "category") {
+
+    $link = get_category_link( get_cat_ID($item->name ) );
+
+    } else {
+
+    $link = get_permalink($object->ID);
+
+    }
+
+    return $link;
+
+}
 
 
 

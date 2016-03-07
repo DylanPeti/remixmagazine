@@ -138,7 +138,9 @@ header {
 .toolbar {
     background-color: #fff;
     height: auto;
+    margin-bottom: 20px;
     .main-search {
+        display: none;
         float: right;
         max-width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
     }
@@ -179,14 +181,17 @@ header {
         border-bottom-left-radius: 4px;
     }
     #menu-remix {
-        float: left;
+        float: none;
+        text-align: center;
         padding: 0;
         margin: 0;
         li {
-            list-style: none;
-            display: inline-block;
-            padding: 0 20px;
-            line-height: 40px;
+                list-style: none;
+               font-size: 19px;
+               display: inline-block;
+               text-align: center;
+               padding: 0 40px;
+               line-height: 40px;
             &:first-child {
                 padding-left: 0;
             }
