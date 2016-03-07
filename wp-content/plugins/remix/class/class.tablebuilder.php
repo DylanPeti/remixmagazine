@@ -19,7 +19,7 @@ class tableBuilder {
        	 
        	$prefix = $wpdb->prefix . "remix_";
 
-       	$table = array("hero", "articles", "carousel", "social", "socialmeta");
+       	$table = array("hero", "article", "carousel", "social", "socialmeta");
        
         $tables = $this->table($table, $prefix);
  
