@@ -42,7 +42,7 @@ class Menu  {
 
        $main_slug = $main . ".php"; 
  
-       add_menu_page('My Plugin Menu', $main, 'manage_options', $main_slug, array('Menu', 'views'));
+       add_menu_page('My Plugin Menu', 'Remix', 'manage_options', $main_slug, array('Menu', 'views'));
 
        foreach($submenu as $menu_item) :
      

@@ -73,7 +73,7 @@ $data = array();
 
  ?>
        
-   <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-article.php" method="post">
+   <form action="<?php echo REMIX_BASE_URL . '/wp-admin/admin.php?page=remix-collection-article.php' ?>" method="post">
             <div class="col-md-12">
   
 

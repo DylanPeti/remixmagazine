@@ -162,7 +162,7 @@ $thumb = wp_get_attachment_url( $thumb_id );
 
     ?>
 
-    <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-hero.php" method="post"> 
+    <form action="<?php echo REMIX_BASE_URL . '/wp-admin/admin.php?page=remix-collection-hero.php' ?>" method="post"> 
 
 
            <div class="col-md-6">

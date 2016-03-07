@@ -20,6 +20,8 @@ Text Domain: Remix
 
 define("PATH", __FILE__);
 define( 'REMIX_PLUGIN_PATH', __dir__ );
+define("REMIX_BASE_URL", get_site_url());
+
 
 /**
  * Proper way to enqueue scripts and styles.

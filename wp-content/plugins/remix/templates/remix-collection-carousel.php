@@ -39,7 +39,7 @@ $instagram = new Instagram(array(
 <?php $status = "active"; ?>
 <?php $data = array(); ?>
 
-<form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-carousel.php" method="post">
+<form action="<?php echo REMIX_BASE_URL . '/wp-admin/admin.php?page=remix-collection-carousel.php' ?>" method="post">
 
 <div class="row">
 <div class='col-md-6'>
