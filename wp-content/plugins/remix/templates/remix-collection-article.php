@@ -112,7 +112,7 @@ $data = array();
            <div class="col-md-3">
              <div class="form-group">
                 <label for="sel1">Post Type</label>
-                <select name="data['type']" class="form-control" id="sel1" selected="selected">
+                <select name="data['type']" id="select" class="form-control" id="sel1" selected="selected">
                  <?php foreach ($options as $option) : ?>
                        <option class="article-option" value="<?php echo $option ?>" <?php echo ($set_option == $option ? "selected" : ""); ?>><?php echo ucwords(str_replace("_", " ", $option)); ?></option>
                  <?php endforeach; ?>

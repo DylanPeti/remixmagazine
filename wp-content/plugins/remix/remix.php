@@ -33,6 +33,24 @@ function remix_plugin_styles() {
 
     wp_register_style('fonta', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'); 
     wp_enqueue_style('fonta');
+
+
+     wp_register_style( 'selectcss',"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2-rc.1/css/select2.min.css" );
+
+     wp_enqueue_style('selectcss');
+
+     wp_register_script( 'selectjs',"https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2-rc.1/js/select2.min.js" );
+
+      wp_enqueue_script('selectjs');
+
+        wp_register_script( 'remixjs',"/wp-content/plugins/remix/js/remix.js" );
+
+          wp_enqueue_script('remixjs');
+
+
+
+
+
 }
 
 add_action( 'admin_init', 'remix_plugin_styles' );

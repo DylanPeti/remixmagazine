@@ -161,7 +161,7 @@ function thumbnail_link($object) {
 
   if($object->taxonomy == "category") {
 
-    $link = get_category_link( get_cat_ID($item->name ) );
+    $link = get_category_link( get_cat_ID($object->name ) );
 
     } else {
 
@@ -176,7 +176,8 @@ function thumbnail_link($object) {
 
 
 function remix_thumbnail_url($object) {
-
+   
+   
        
       if($object->taxonomy == "category") {
         $name = $object->name;

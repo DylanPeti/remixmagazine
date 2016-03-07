@@ -7,7 +7,6 @@ $articles_read = $class::read("hero");
 
 if($_POST) : 
 
-
 	if( $_POST['submit'] == "Remove" ) :
       
       $articles_delete = $class::delete("hero", $_POST['post_id']);
@@ -83,9 +82,7 @@ $articles_read = $class::read("hero");
     <?php endif; ?>
 
 
-	
-	<div class="row">
-		
+
     <?php $article = array(); ?>
 
     <?php $do_not_duplicate = array();
@@ -103,7 +100,52 @@ $articles_read = $class::read("hero");
 
      ?>
 
-		<?php foreach ($merge as $article) :
+
+
+<div class="row">
+
+<?php if(count($articles_read)) { ?>
+
+<div class="col-md-12">
+<h4>Active Slides</h4>
+</div>
+
+<?php } else { ?>
+
+<div class="col-md-12">
+<h4>No active Slides</h4>
+</div>
+
+<?php } ?>
+
+
+<?php foreach($articles_read as $item) { ?>
+<form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-hero.php" method="post"> 
+ <div class="col-md-3">
+<div class="remix-sections">
+<?php 
+
+$thumb_id = get_post_thumbnail_id($item->post_id);
+$thumb = wp_get_attachment_url( $thumb_id );
+
+?>
+ <div class="img remix-hero" style="background-image: url(<?php echo $thumb ?>)"></div>
+ <p class="active-hero-text"> <?php echo get_the_title($item->post_id) ?></p>
+  <input type="hidden" name="post_id" value="<?php echo $item->post_id ?>">
+  <input href="#" name="submit" class="hero btn-update" type="submit" value="<?php echo "Remove"; ?>">
+  </div>
+  </div>
+
+  </form>
+<?php } ?>
+</div>
+
+  <div class="row">
+    <div class="col-md-12">
+<h4>Latest Articles</h4>
+
+</div>
+		<?php foreach ($collections as $article) :
 
         $author = (isset($article->post_author) ? get_the_author_meta('display_name', $article->post_author) : $article->author);
 
@@ -120,8 +162,9 @@ $articles_read = $class::read("hero");
 
     ?>
 
+    <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-hero.php" method="post"> 
 
-        <form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-hero.php" method="post"> 
+
            <div class="col-md-6">
 
 			   
@@ -133,8 +176,8 @@ $articles_read = $class::read("hero");
 								 <div class="details">
 										
 							      <div class="section-title"><h2 class="hero"><?php echo $id; ?></h2></div>
-								  <div class="pointer"><i class="fa fa-long-arrow-right"></i></div>
-								  <div class="status <?php echo $status; ?>"><p><?php echo $status; ?></p></div>
+<!-- 								  <div class="pointer"><i class="fa fa-long-arrow-right"></i></div> -->
+							<!-- 	  <div class="status <?php echo $status; ?>"><p><?php echo $status; ?></p></div> -->
 								 
 										
 									</div>
@@ -166,7 +209,7 @@ $articles_read = $class::read("hero");
 					  <?php else: ?>
 
 
-                          <input type="hidden" name="post_id" value="<?php echo $id ?>">
+                  <input type="hidden" name="post_id" value="<?php echo $id ?>">
 					  
 					  <?php endif; ?>
 
@@ -174,7 +217,7 @@ $articles_read = $class::read("hero");
 						<div class="col-md-6">
 							<div class="hero-image">
 
-						    <div class="img" style="background-image: url(<?php echo remix_thumbnail_url('', 'post', $id) ?>)"></div>
+						    <div class="img" style="background-image: url(<?php echo remix_thumbnail_url($article) ?>)"></div>
 						<input href="#" name="submit" class="hero btn-update" type="submit" value="<?php echo $submit; ?>">
 						      </div>
 							</div>
@@ -183,8 +226,8 @@ $articles_read = $class::read("hero");
 					</div>
 					</div>
 
-			   </form>
-
+			  
+ </form>
                <?php endforeach; ?>
 
 
