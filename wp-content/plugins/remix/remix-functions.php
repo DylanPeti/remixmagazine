@@ -85,7 +85,7 @@ function get_instagram($id = 'self', $limit = 0) {
 function the_latest_posts($count) {
 
       $do_not_duplicate = array();
-
+    $count = $count + 1;
 	  $args = array('numberposts' => $count);
 
 	  $posts = wp_get_recent_posts( $args, OBJECT );
@@ -94,9 +94,11 @@ function the_latest_posts($count) {
       $do_not_duplicate[] = (isset($duplicates[1]) ? $duplicates[1] : false);
       $do_not_duplicate[] = (isset($duplicates[2]) ? $duplicates[2] : false);
 
-      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate);
+      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
 
       $items = wp_get_recent_posts( $new_args, OBJECT );
+
+      array_shift($items);
 
       $result = $items;
   
