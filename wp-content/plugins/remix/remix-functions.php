@@ -9,6 +9,7 @@ function get_hero() {
 
   $heros = $class::read("hero");
 
+
   $post = array();
 
   foreach ($heros as $hero ) :
@@ -44,6 +45,7 @@ function get_instagram($id = 'self', $limit = 0) {
 
 
   $class = "Remix";
+  if(isset($class::read("social")[0])) {
 
   $social = $class::read("social")[0];
   
@@ -73,6 +75,8 @@ function get_instagram($id = 'self', $limit = 0) {
  return $img;
 
   }
+
+}
 
 }
 
@@ -190,12 +194,12 @@ function remix_thumbnail_url($object) {
         $thumb_id = get_post_thumbnail_id($latest_post[0]->ID);
 
       } else {
-
          $thumb_id = get_post_thumbnail_id($object->ID);
 
       }
        
        $post_thumbnail_url = wp_get_attachment_url( $thumb_id );
+
 
    
        return $post_thumbnail_url;

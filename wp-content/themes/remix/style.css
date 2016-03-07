@@ -291,10 +291,11 @@ header .left-menu-wrap:hover {
   cursor: pointer;
   background: #ffffff;
   height: 500px;
-  background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-/* line 89, sass/partials/article.scss */
+/* line 90, sass/partials/article.scss */
 .hero .article_exerpt {
   width: 40%;
   display: inline-block;
@@ -317,27 +318,27 @@ header .left-menu-wrap:hover {
   font-family: helvetica, arial, verdana;
   width: 100%;
 }
-/* line 99, sass/partials/article.scss */
+/* line 100, sass/partials/article.scss */
 .hero .article_exerpt a,
 .hero .article_exerpt a:hover {
   color: #ffffff;
 }
-/* line 103, sass/partials/article.scss */
+/* line 104, sass/partials/article.scss */
 .hero .article_exerpt h2 {
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2em;
   margin: 10px 0 15px 0;
 }
-/* line 109, sass/partials/article.scss */
+/* line 110, sass/partials/article.scss */
 .hero .article_exerpt h2:hover {
   text-decoration: underline;
 }
-/* line 112, sass/partials/article.scss */
+/* line 113, sass/partials/article.scss */
 .hero .article_exerpt .article-tag {
   padding: 15px 35px;
 }
-/* line 115, sass/partials/article.scss */
+/* line 116, sass/partials/article.scss */
 .hero .article_exerpt span.author {
   display: block;
   bottom: 0;
@@ -345,7 +346,7 @@ header .left-menu-wrap:hover {
   position: absolute;
   font-size: 12px;
 }
-/* line 122, sass/partials/article.scss */
+/* line 123, sass/partials/article.scss */
 .hero .article_exerpt ul.entypo-icons {
   padding: 10px 35px;
 }
@@ -367,7 +368,7 @@ header .left-menu-wrap:hover {
 }
 
 /* ARTICLE GRID */
-/* line 132, sass/partials/article.scss */
+/* line 133, sass/partials/article.scss */
 .article {
   position: relative;
   background-color: #999;
@@ -377,16 +378,16 @@ header .left-menu-wrap:hover {
   margin-bottom: 25px;
   cursor: pointer;
 }
-/* line 140, sass/partials/article.scss */
+/* line 141, sass/partials/article.scss */
 .article:nth-child(n) {
   float: left;
   margin-right: 25.5px;
 }
-/* line 144, sass/partials/article.scss */
+/* line 145, sass/partials/article.scss */
 .article:nth-child(4n+1) {
   clear: left;
 }
-/* line 147, sass/partials/article.scss */
+/* line 148, sass/partials/article.scss */
 .article:nth-child(4n) {
   margin-right: 0;
 }
@@ -464,7 +465,7 @@ header .left-menu-wrap:hover {
   font-size: 18px;
 }
 
-/* line 154, sass/partials/article.scss */
+/* line 155, sass/partials/article.scss */
 .sidebar .article {
   width: 300px;
   margin: 0 auto 25px;
@@ -547,7 +548,7 @@ header .left-menu-wrap:hover {
 }
 
 /* EDITORS CHOICE */
-/* line 167, sass/partials/article.scss */
+/* line 168, sass/partials/article.scss */
 .article-editors-choice {
   position: relative;
   float: right;
@@ -632,7 +633,7 @@ header .left-menu-wrap:hover {
 }
 
 /* LATEST ARTICLE */
-/* line 181, sass/partials/article.scss */
+/* line 182, sass/partials/article.scss */
 .article-latest {
   position: relative;
   float: left;
@@ -643,20 +644,20 @@ header .left-menu-wrap:hover {
   clear: both;
   cursor: pointer;
 }
-/* line 190, sass/partials/article.scss */
+/* line 191, sass/partials/article.scss */
 .article-latest .remix-img {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
-/* line 196, sass/partials/article.scss */
+/* line 197, sass/partials/article.scss */
 .article-latest .article-latest-tag {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 201, sass/partials/article.scss */
+/* line 202, sass/partials/article.scss */
 .article-latest .article-latest-exerpt {
   position: absolute;
   width: calc(99.99% * 1/3 - (30px - 30px * 1/3));
@@ -666,7 +667,7 @@ header .left-menu-wrap:hover {
   padding: 15px;
   background: #ffffff;
 }
-/* line 209, sass/partials/article.scss */
+/* line 210, sass/partials/article.scss */
 .article-latest .article-latest-exerpt ul {
   float: right;
   position: absolute;
@@ -676,18 +677,18 @@ header .left-menu-wrap:hover {
   margin: 0;
   padding: 0;
 }
-/* line 218, sass/partials/article.scss */
+/* line 219, sass/partials/article.scss */
 .article-latest .article-latest-exerpt h2 {
   font-weight: 900;
   font-size: 30px;
   margin-top: 15px;
   line-height: 1.2em;
 }
-/* line 224, sass/partials/article.scss */
+/* line 225, sass/partials/article.scss */
 .article-latest .article-latest-exerpt h2:hover {
   text-decoration: underline;
 }
-/* line 227, sass/partials/article.scss */
+/* line 228, sass/partials/article.scss */
 .article-latest .article-latest-exerpt span.article-latest-author {
   display: block;
   bottom: 10px;
@@ -708,7 +709,7 @@ header .left-menu-wrap:hover {
 }
 
 /* ARTICLE COLLECTION - what is this? */
-/* line 242, sass/partials/article.scss */
+/* line 243, sass/partials/article.scss */
 .article-collection:nth-last-child(1), .article-collection:nth-last-child(2), .article-collection:nth-last-child(3),
 .article-editors-choice:nth-last-child(1),
 .article-editors-choice:nth-last-child(2),
@@ -717,17 +718,17 @@ header .left-menu-wrap:hover {
 }
 
 /* ARTICLE PAGE */
-/* line 252, sass/partials/article.scss */
+/* line 253, sass/partials/article.scss */
 body.single-post {
   background: #ffffff;
 }
 
-/* line 256, sass/partials/article.scss */
+/* line 257, sass/partials/article.scss */
 .single-post .container {
   padding: 0;
 }
 
-/* line 260, sass/partials/article.scss */
+/* line 261, sass/partials/article.scss */
 .article-hero {
   width: 100%;
   display: inline-block;
@@ -738,7 +739,7 @@ body.single-post {
   background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
   background-size: cover;
 }
-/* line 269, sass/partials/article.scss */
+/* line 270, sass/partials/article.scss */
 .article-hero h2 {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
@@ -748,14 +749,14 @@ body.single-post {
   font-size: 40px;
 }
 
-/* line 280, sass/partials/article.scss */
+/* line 281, sass/partials/article.scss */
 .article_single .toolbar {
   border-bottom: solid 1px #f0f0f0;
   display: block;
   height: 50px;
   padding: 0 60px;
 }
-/* line 285, sass/partials/article.scss */
+/* line 286, sass/partials/article.scss */
 .article_single .toolbar span.article-tag,
 .article_single .toolbar span.author,
 .article_single .toolbar span.date,
@@ -766,23 +767,23 @@ body.single-post {
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 295, sass/partials/article.scss */
+/* line 296, sass/partials/article.scss */
 .article_single .toolbar span.crumbs {
   float: right;
   padding-right: 0px;
 }
-/* line 298, sass/partials/article.scss */
+/* line 299, sass/partials/article.scss */
 .article_single .toolbar span.crumbs p {
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 303, sass/partials/article.scss */
+/* line 304, sass/partials/article.scss */
 .article_single .toolbar .article-tag {
   text-transform: uppercase;
   font-weight: bold;
   width: inherit;
 }
-/* line 309, sass/partials/article.scss */
+/* line 310, sass/partials/article.scss */
 .article_single .article_content {
   background: #ffffff;
   display: block;

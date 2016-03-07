@@ -16,7 +16,7 @@
     if($count == 1) { $active = "active";  } else { $active = ''; } ?>
 
     <div class="item <?php echo $active; ?>">
-      <div class="hero" style="backgroundund-image: url(<?php echo remix_thumbnail_url($dog) ?>)">
+      <div class="hero" style="background-image: url(<?php echo remix_thumbnail_url($dog) ?>)">
         <div class="container">
           <div class="article_exerpt">
             <span class="article-tag">Category</span>

@@ -157,8 +157,7 @@ class tableBuilder {
        global $wpdb;
 
         $table = $wpdb->prefix . "remix_article";
-       
-       if($wpdb->get_var("SHOW TABLES LIKE '$table'") != $table) {
+      
 
        foreach($pages as $page) :
         $args = array(
@@ -174,7 +173,7 @@ class tableBuilder {
 
         endforeach;
 
-      }
+      
 
      }
 }
