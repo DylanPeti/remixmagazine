@@ -65,7 +65,7 @@ class tableBuilder {
 
         			break;
 
-        		case 'wp_remix_articles':
+        		case 'wp_remix_article':
 
         		$sql[] = "CREATE TABLE " . $table . " (
 		                  `ID` mediumint(9) NOT NULL AUTO_INCREMENT,
