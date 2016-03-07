@@ -65,7 +65,7 @@ class Menu  {
 	    
 	     }
 
-       require ("/Users/dylanpeti/Sites/remixmagazine/wp-content/plugins/remix/templates/" . $page);
+       require (REMIX_PLUGIN_PATH . "/" . $page);
 
      }
 
