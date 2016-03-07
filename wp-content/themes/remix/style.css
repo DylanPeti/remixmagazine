@@ -1161,3 +1161,8 @@ section {
 .outabout {
   color: #e6f074;
 }
+
+/* line 253, sass/style.scss */
+.sharebtns {
+  margin-top: 30px;
+}
