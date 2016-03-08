@@ -42,8 +42,6 @@ function get_articles() {
 
 function get_instagram($id = 'self', $limit = 0) {
 
-
-
   $class = "Remix";
   if(isset($class::read("social")[0])) {
 
@@ -138,11 +136,10 @@ function article($item) {
  $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
  $image = remix_thumbnail_url($item); 
  $link = thumbnail_link($item);
- 
-$cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
+ $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
   
         <article class="article">
-        <a href="<?php echo $link; ?>">
+<!--         <a href="<?php echo $link; ?>"> -->
        
          <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
           </div>
@@ -151,14 +148,13 @@ $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?
             <span class="article-tag <?php echo strtolower($item->cat_name); ?>"><?php echo $item->title ?></span>
             
             <h2><?php echo substr($title, 0, 52); ?></h2>
-            
             <ul class="entypo-icons">
-              <li class="entypo-facebook"></li>
-              <li class="entypo-twitter"></li>
+             <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>"><li class="entypo-facebook"></li></div>
+              <div class="social-btn"><li class="entypo-twitter"></li></div>
             </ul>
           
           </div>
-          </a>
+<!--           </a> -->
        
         </article>
 <?php }

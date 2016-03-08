@@ -366,7 +366,7 @@ class Instagram
     public function getTag($name)
     {
         return $this->_makeCall('tags/' . $name);
-    }
+    }   
 
     /**
      * Get a recently tagged media.
