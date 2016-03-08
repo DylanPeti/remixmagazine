@@ -1367,3 +1367,9 @@ section {
 .sharebtns {
   margin-top: 30px;
 }
+
+/* Mail munch brand remove */
+/* line 271, sass/style.scss */
+.branding-container {
+  display: none;
+}
