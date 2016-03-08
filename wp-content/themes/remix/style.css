@@ -974,7 +974,7 @@ footer p {
     padding: 0px 15px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
   /* line 17, sass/media.scss */
   .menu-main-menu-container {
     display: none;
@@ -1002,34 +1002,33 @@ footer p {
 
   /* line 36, sass/media.scss */
   .article-latest .article-latest-exerpt h2 {
-    font-weight: 900;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 15px;
     line-height: 1.2em;
   }
 
-  /* line 42, sass/media.scss */
+  /* line 41, sass/media.scss */
   .hero .article_exerpt {
     width: 92.5%;
     position: absolute;
     bottom: 0;
   }
-  /* line 46, sass/media.scss */
+  /* line 45, sass/media.scss */
   .hero .article_exerpt h2 {
     font-size: 20px;
   }
-  /* line 49, sass/media.scss */
+  /* line 48, sass/media.scss */
   .hero .article_exerpt p {
     display: none;
   }
 }
-@media screen and (max-width: 1000px) {
-  /* line 56, sass/media.scss */
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+  /* line 55, sass/media.scss */
   .menu-main-menu-container {
     display: none;
   }
 
-  /* line 59, sass/media.scss */
+  /* line 58, sass/media.scss */
   .article,
   .article-latest,
   .article-editors-choice {
@@ -1037,7 +1036,7 @@ footer p {
     margin-bottom: 25px;
   }
 
-  /* line 65, sass/media.scss */
+  /* line 64, sass/media.scss */
   .article-latest .article-latest-exerpt {
     position: absolute;
     width: 100%;
@@ -1049,31 +1048,37 @@ footer p {
     background: #ffffff;
   }
 
-  /* line 75, sass/media.scss */
+  /* line 74, sass/media.scss */
   .article-latest .article-latest-exerpt h2 {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 20px;
     margin-top: 15px;
     line-height: 1.2em;
   }
 
-  /* line 81, sass/media.scss */
+  /* line 80, sass/media.scss */
   .hero .article_exerpt {
     width: 92.5%;
     position: absolute;
     bottom: 0;
   }
-  /* line 85, sass/media.scss */
+  /* line 84, sass/media.scss */
   .hero .article_exerpt h2 {
     font-size: 20px;
   }
-  /* line 88, sass/media.scss */
+  /* line 87, sass/media.scss */
   .hero .article_exerpt p {
     display: none;
   }
+
+  /* line 92, sass/media.scss */
+  body.home .social-btn,
+  body.home .author {
+    display: none !important;
+  }
 }
 @media screen and (min-height: 800px) {
-  /* line 95, sass/media.scss */
+  /* line 100, sass/media.scss */
   .hero {
     height: 500px;
   }
