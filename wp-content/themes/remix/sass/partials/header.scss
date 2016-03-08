@@ -18,27 +18,35 @@ header {
             padding-top: 80px;
         }
     }
+     .icon-white {
+            color: #fff !important;
+        }
     .right-menu-wrap {
         width: 360px;
         height: 100%;
         position: fixed;
-        right: -310px;
+        right: 0;
         background: transparent;
         z-index: 99999;
         top: 0;
+        
         .icon-subscribe i {
+            position: absolute;
+            right: 0;
             color: #333;
-            float: left;
+            float: right;
             font-size: 32px;
             line-height: 80px !important;
             display: inline-block;
             margin: 0 20px 0 0;
         }
+
         .main_menu {
             background: #333333;
             padding: 10px 30px;
             display: inline-block;
-            float: left;
+            display: none;
+            float: right;
             width: 300px;
             height: 100%;
             color: #ffffff;
@@ -68,32 +76,28 @@ header {
             }
         }
     }
-    .right-menu-wrap:hover {
-        right: 0px;
-        -webkit-transition: all 500ms ease-in-out;
-        -moz-transition: all 500ms ease-in-out;
-        -ms-transition: all 500ms ease-in-out;
-        -o-transition: all 500ms ease-in-out;
-        transition: all 500ms ease-in-out;
-    }
+
     .left-menu-wrap {
         width: 360px;
         height: 100%; 
         position: fixed;
-        left: -310px;
+        left: 0;
         background: transparent;
         z-index: 99999;
         top: 0;
         .icon-subscribe i {
+            position: absolute;
+            left: 0;
             color: #333;
             float: right;
             font-size: 32px;
             line-height: 80px !important;
             display: inline-block;
-            margin: 0 0 0 20px;
+            margin: 0 0 0 30px;
         }
         .main-search {
             margin-bottom: 30px;
+            margin-top: 60px;
             .btn {
                 padding: 6px 17px;
                 margin-top: 10px;
@@ -109,8 +113,10 @@ header {
             background: #333333;
             padding: 10px 30px;
             display: inline-block;
+            display: none;
             float: left;
             width: 300px;
+            
             height: 100%;
             color: #ffffff;
             h3 {

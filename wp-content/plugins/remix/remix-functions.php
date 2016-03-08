@@ -137,6 +137,15 @@ function article($item) {
  $image = remix_thumbnail_url($item); 
  $link = thumbnail_link($item);
  $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
+
+
+ <?php if($item->taxonomy) { 
+     
+   $args = array( 'numberposts' => 1, 'category' => $item->cat_ID, 'post_type' => 'post');
+
+   $latest_post = get_posts( $args );
+
+ } ?>
   
         <article class="article">
          <a href="<?php echo $link; ?>"> 
@@ -145,9 +154,15 @@ function article($item) {
           </div>
         
           <div class="article_exerpt">
-            <span class="article-tag <?php echo strtolower($item->cat_name); ?>"><?php echo $item->title ?></span>
-            
-            <h2><?php echo substr($title, 0, 52); ?></h2>
+           <?php if(isset($latest_post)) {  ?>
+            <span class="article-tag <?php echo strtolower($item->cat_name); ?>"><?php echo substr($title, 0, 52); ?></span>
+                <h2 class=""><?php echo substr($latest_post[0]->post_title, 0, 52); ?></h2>
+             <?php } else { ?>
+            <h2 class="<?php echo $cat_class ?>"><?php echo substr($title, 0, 52); ?></h2>
+            <?php } ?>
+        
+        
+
             <ul class="entypo-icons">
              <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>"><li class="entypo-facebook"></li></div>
               <div class="social-btn"><li class="entypo-twitter"></li></div>

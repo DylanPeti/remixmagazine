@@ -153,7 +153,7 @@ class tableBuilder {
     
     public static function fill_tables() {
 
-      $pages = array("Home", "Category", "Blog");
+      $pages = array("Home", "Home", "Blog");
 
        global $wpdb;
 
