@@ -139,7 +139,7 @@ function article($item) {
  $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
   
         <article class="article">
-<!--         <a href="<?php echo $link; ?>"> -->
+         <a href="<?php echo $link; ?>"> 
        
          <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
           </div>
@@ -154,7 +154,7 @@ function article($item) {
             </ul>
           
           </div>
-<!--           </a> -->
+         </a> 
        
         </article>
 <?php }
