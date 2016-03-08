@@ -67,8 +67,57 @@
     display: none;
   }
 }
+@media screen and (max-width: 1000px) {
+  /* line 56, sass/media.scss */
+  .menu-main-menu-container {
+    display: none;
+  }
+
+  /* line 59, sass/media.scss */
+  .article,
+  .article-latest,
+  .article-editors-choice {
+    width: calc(99.99% * 1/2 - (25.5px - 25.5px * 1/2));
+    margin-bottom: 25px;
+  }
+
+  /* line 65, sass/media.scss */
+  .article-latest .article-latest-exerpt {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    height: 135px;
+    padding: 15px;
+    background: #ffffff;
+  }
+
+  /* line 75, sass/media.scss */
+  .article-latest .article-latest-exerpt h2 {
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 1.2em;
+  }
+
+  /* line 81, sass/media.scss */
+  .hero .article_exerpt {
+    width: 92.5%;
+    position: absolute;
+    bottom: 0;
+  }
+  /* line 85, sass/media.scss */
+  .hero .article_exerpt h2 {
+    font-size: 20px;
+  }
+  /* line 88, sass/media.scss */
+  .hero .article_exerpt p {
+    display: none;
+  }
+}
 @media screen and (min-height: 800px) {
-  /* line 57, sass/media.scss */
+  /* line 95, sass/media.scss */
   .hero {
     height: 500px;
   }
