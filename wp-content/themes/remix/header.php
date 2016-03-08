@@ -8,6 +8,9 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
+
+  <script src="https://use.typekit.net/jvi0csq.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
  
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css'; ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
@@ -20,8 +23,7 @@
 <body <?php body_class(); ?>>
 
 <!-- TYPEKIT -->
-<script src="https://use.typekit.net/jvi0csq.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 
 <!-- FACEBOOK SDK -->
 <div id="fb-root"></div>
@@ -48,9 +50,6 @@
     <section id="toolbar-section">
       <div class="toolbar">
         <div class="container">
-          <div class="main-search">
-           <?php include ('wp-content/themes/remix/inc/search.html'); ?>
-          </div>
           <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'menu-remix')); ?>
         </div>
       </div>
@@ -85,6 +84,9 @@
     <div class="left-menu-wrap">
       <span class="icon-subscribe"><i class="fa fa-bars fa-3x"></i></span>
       <div class="main_menu">
+        <div class="main-search">
+          <?php include ('wp-content/themes/remix/inc/search.html'); ?>
+        </div>
         <ul>
           <li>Menu Item</li>
           <li>Menu Item</li>
