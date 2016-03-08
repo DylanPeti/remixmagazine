@@ -3,8 +3,11 @@ use MetzWeb\Instagram\Instagram;
 $class="Remix";
 
 if($_POST) :
-
-$save = $class::create("social", $_POST);
+  if(empty($class::read("social")[0])) {
+    $save = $class::create("social", $_POST);
+   } else {
+    $update = $class::update("social", $_POST);
+   }
 
 endif;
 
@@ -58,6 +61,12 @@ $instagram = new Instagram(array(
     <input type="text" name="data['app_callback']" class="form-control" id="exampleInputPassword1" placeholder="<?php echo $social->app_callback ?>">
   </fieldset>
       <input type="hidden" name="data['provider']" value="instagram">
+
+      <?php if(!empty($class::read("social")[0])) { ?>
+      <input type="hidden" name="id" value="<?php echo 1; ?>">
+      <?php } ?>
+
+
      <input href="#" name="<?php echo $submit; ?>" class="btn-update" type="submit" value="Update">
     
   </div>

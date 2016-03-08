@@ -31,15 +31,15 @@ echo $instagram->getLoginUrl();
 <h4>Settings</h4>
 <p>Manage App: <a target="_blank" href="https://www.instagram.com/developer/clients/manage/">www.instagram.com/developer/clients/manage</a></p>
   <fieldset class="form-group">
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="<?php echo $social->api_key ?>">
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="<?php echo $social->app_key ?>">
   </fieldset>
 
     <fieldset class="form-group">
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="App Secret">
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="<?php echo $social->app_secret ?>">
   </fieldset>
 
     <fieldset class="form-group">
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="App Callback">
+    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="<?php echo $social->app_callback ?>">
   </fieldset>
 
   <button class="btn btn-primary">Update</button>
