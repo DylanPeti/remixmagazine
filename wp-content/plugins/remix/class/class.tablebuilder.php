@@ -52,8 +52,7 @@ class tableBuilder {
 
         	switch ($table) :
         		case 'wp_remix_hero':
-                   
-                 $sql[] = "CREATE TABLE " . $table . " (
+                 $sql[$table] = "CREATE TABLE " . $table . " (
 		                  `ID` mediumint(9) NOT NULL AUTO_INCREMENT,
 		                  `post_id` bigint(20) DEFAULT NULL,
 		                  `time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -62,12 +61,10 @@ class tableBuilder {
 		                  `count` int(11) DEFAULT NULL,
 		                   UNIQUE KEY `id` (ID)
 		                    );";
-
         			break;
 
         		case 'wp_remix_article':
-
-        		$sql[] = "CREATE TABLE " . $table . " (
+        		$sql[$table] = "CREATE TABLE " . $table . " (
 		                  `ID` mediumint(9) NOT NULL AUTO_INCREMENT,
 		                  `time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
 		                  `author` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -79,10 +76,9 @@ class tableBuilder {
 		                    );";
 
         	        break;
-
         	    case 'wp_remix_carousel':
 
-        	    $sql[] = "CREATE TABLE " . $table . " (
+        	    $sql[$table] = "CREATE TABLE " . $table . " (
 		                  `ID` mediumint(9) NOT NULL AUTO_INCREMENT,
 		                  `provider_id` bigint(20) unsigned NOT NULL DEFAULT '0',
                           `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -94,7 +90,7 @@ class tableBuilder {
         		
         		case 'wp_remix_social':
 
-        		$sql[] = "CREATE TABLE " . $table . " (
+        		$sql[$table] = "CREATE TABLE " . $table . " (
 		                  `ID` mediumint(9) NOT NULL AUTO_INCREMENT,
 		                  `provider` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
                           `app_key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -107,7 +103,7 @@ class tableBuilder {
 
         		case 'wp_remix_socialmeta':
 
-        		$sql[] = "CREATE TABLE " . $table . " (
+        		$sql[$table] = "CREATE TABLE " . $table . " (
 		                  `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
 		                  `provider_id` bigint(20) unsigned NOT NULL DEFAULT '0',
 		                  `meta_property` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -133,14 +129,22 @@ class tableBuilder {
     }
 
     public static function table_init() {
+
+        global $wpdb;
         
         require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 
         $sql = self::table_sql();
-        
-        foreach($sql as $database_table) :
+
+        $tables = self::$_tables;
+
+        foreach($sql as $key => $database_table) :
+
+         if($wpdb->get_var("SHOW TABLES LIKE '$key'") != $key) {
 
             dbDelta($database_table);
+
+        }
 
         endforeach;
 
@@ -153,7 +157,8 @@ class tableBuilder {
        global $wpdb;
 
         $table = $wpdb->prefix . "remix_article";
-       
+      
+
        foreach($pages as $page) :
         $args = array(
           'time' => current_time('mysql'),
@@ -161,30 +166,14 @@ class tableBuilder {
           'page' => $page,
           'type' => "the_latest_posts",
           'count' => 8,
-          'status' => active
+          'status' => 'active'
           );
 
         $wpdb->insert($table, $args);
 
         endforeach;
 
+      
+
      }
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

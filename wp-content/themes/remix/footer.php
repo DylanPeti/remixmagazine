@@ -1,3 +1,5 @@
+
+
 <footer>
 	<div class="container">
 		<div class="row">
@@ -29,3 +31,90 @@
 		</div>
 	</div>
 </footer>
+
+<script type="text/javascript">
+
+// jQuery(document).ready(function($) {
+
+//   $.ajaxSetup({ cache: true });
+
+//   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+
+//     FB.init({
+//       appId      : '573967432759585',
+//       xfbml      : true,
+//       version    : 'v2.5'
+//     });     
+
+//     // $('#loginbutton,#feedbutton').removeAttr('disabled');
+//     // FB.getLoginStatus(updateStatusCallback);
+
+//     $("#fbshare").on("click", function(){
+
+//     	 var item = $(this);
+    	 
+//     	 var items = item.data("share").split(',');
+
+//     	 var url = items[0];
+//     	 var title = items[1];
+//     	 var image = items[2];
+//     	 console.log(image);
+
+
+//     FB.ui({
+//         display: 'popup',
+//         method: 'share_open_graph',
+//         action_type: 'og.shares',
+//         action_properties: JSON.stringify({
+//         	object: {
+//             url: url,
+//             title: title,
+//             description: "works",
+//             image: {
+//             	url: image,
+//             	width: 300,
+//             	height: 200
+//             }
+//        }
+//     })
+//   });
+
+//   });
+
+// });
+//   });
+
+
+
+
+
+
+ //  function fbShare(this) {
+   
+ //   // var x = this.getAttribute("data");
+ //   console.log(this);
+
+
+ //  }
+
+ // //    document.getElementById('fbshare').onclick = function() {
+      
+ //  FB.ui({
+ //    display: 'popup',
+ //    method: 'share_open_graph',
+ //    action_type: 'og.shares',
+ //    action_properties: JSON.stringify({
+ //    	object: {
+ //        url: <?php echo "'" . 'http://test.com' . "'"; ?>,
+ //        title: <?php echo "'" . 'title' . "'"; ?>,
+ //        description: <?php echo "'" . 'description' . "'"; ?>,
+ //        image: <?php echo "'" . 'http://remixmagazine.dev/wp-content/uploads/2016/02/Screen-Shot-2016-02-10-at-11.41.16-am.png' . "'"; ?>
+ //       }
+ //    })
+ //  }, function(response){});
+ // }
+   
+</script>
+
+
+

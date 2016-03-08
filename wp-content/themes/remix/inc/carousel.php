@@ -14,16 +14,19 @@ $single_cat = array(
 
 
 $single_cats = wp_get_recent_posts($single_cat, OBJECT);
+$split = array_chunk($single_cats, 5); 
+$dog = array(); 
+
+if(!empty(get_instagram()) ) { 
+$img = get_instagram(); 
+
 ?>
 <section id="carousel-section">
   <div class="container">
     <article class="article-carousel">
       <div id="instagramCarousel" class="carousel slide article-carousel-box" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
-          <?php $split = array_chunk($single_cats, 5); ?>
 
-          <?php $dog = array(); ?>
-          <?php $img = get_instagram(); ?>
           <?php foreach ($img as $items) : ?>
           <?php $dog[] = $items; ?>
           
@@ -44,3 +47,7 @@ $single_cats = wp_get_recent_posts($single_cat, OBJECT);
     </article>
   </div>
 </section>
+
+<?php } ?>
+
+

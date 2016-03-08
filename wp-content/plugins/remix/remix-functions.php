@@ -9,6 +9,7 @@ function get_hero() {
 
   $heros = $class::read("hero");
 
+
   $post = array();
 
   foreach ($heros as $hero ) :
@@ -41,9 +42,8 @@ function get_articles() {
 
 function get_instagram($id = 'self', $limit = 0) {
 
-
-
   $class = "Remix";
+  if(isset($class::read("social")[0])) {
 
   $social = $class::read("social")[0];
   
@@ -76,12 +76,14 @@ function get_instagram($id = 'self', $limit = 0) {
 
 }
 
+}
+
 
 
 function the_latest_posts($count) {
 
       $do_not_duplicate = array();
-
+    $count = $count + 1;
 	  $args = array('numberposts' => $count);
 
 	  $posts = wp_get_recent_posts( $args, OBJECT );
@@ -90,9 +92,11 @@ function the_latest_posts($count) {
       $do_not_duplicate[] = (isset($duplicates[1]) ? $duplicates[1] : false);
       $do_not_duplicate[] = (isset($duplicates[2]) ? $duplicates[2] : false);
 
-      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate);
+      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
 
       $items = wp_get_recent_posts( $new_args, OBJECT );
+
+      array_shift($items);
 
       $result = $items;
   
@@ -132,11 +136,10 @@ function article($item) {
  $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
  $image = remix_thumbnail_url($item); 
  $link = thumbnail_link($item);
- 
-$cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
+ $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
   
         <article class="article">
-        <a href="<?php echo $link; ?>">
+<!--         <a href="<?php echo $link; ?>"> -->
        
          <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
           </div>
@@ -145,14 +148,13 @@ $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?
             <span class="article-tag <?php echo strtolower($item->cat_name); ?>"><?php echo $item->title ?></span>
             
             <h2><?php echo substr($title, 0, 52); ?></h2>
-            
             <ul class="entypo-icons">
-              <li class="entypo-facebook"></li>
-              <li class="entypo-twitter"></li>
+             <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>"><li class="entypo-facebook"></li></div>
+              <div class="social-btn"><li class="entypo-twitter"></li></div>
             </ul>
           
           </div>
-          </a>
+<!--           </a> -->
        
         </article>
 <?php }
@@ -190,12 +192,12 @@ function remix_thumbnail_url($object) {
         $thumb_id = get_post_thumbnail_id($latest_post[0]->ID);
 
       } else {
-
          $thumb_id = get_post_thumbnail_id($object->ID);
 
       }
        
        $post_thumbnail_url = wp_get_attachment_url( $thumb_id );
+
 
    
        return $post_thumbnail_url;

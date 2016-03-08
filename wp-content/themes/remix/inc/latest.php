@@ -22,7 +22,8 @@ $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
 <div class="container">
 <?php $latest_categories = get_the_category($recent_post[0]->ID); ?>
 <?php $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $latest_categories[0]->name)); ?>
- <article class="article-latest remix-img" style="background-image: url(<?php echo remix_thumbnail_url('', 'post', $recent_post[0]->ID) ?>)">
+ <article class="article-latest remix-img" style="background-image: url(<?php echo remix_thumbnail_url($recent_post[0]) ?>)">
+ <a href="<?php echo get_the_permalink($recent_post[0]->ID); ?>">
 
         <span class="article-latest-tag">THE LATEST FROM REMIX</span>
         <div class="article-latest-exerpt">
@@ -39,7 +40,7 @@ $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
               </ul>
 
         </div>
-   
+ </a>  
  </article>
 
 <?php include('editors-choice.php'); ?>

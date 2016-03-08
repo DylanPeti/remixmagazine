@@ -120,7 +120,7 @@ $articles_read = $class::read("hero");
 
 
 <?php foreach($articles_read as $item) { ?>
-<form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-hero.php" method="post"> 
+<form action="<?php echo REMIX_BASE_URL . '/wp-admin/admin.php?page=remix-collection-hero.php' ?>" method="post"> 
  <div class="col-md-3">
 <div class="remix-sections">
 <?php 

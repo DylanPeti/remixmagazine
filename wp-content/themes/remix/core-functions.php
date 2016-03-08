@@ -18,12 +18,7 @@ wp_enqueue_script('remix_js', get_template_directory_uri() . '/js/remix.js', arr
 /* css */
 
 }
-if( is_category() ) {
-  wp_enqueue_script();
-}
-if( is_single() ) {
-  wp_enqueue_script();
-}
+
 }
 add_action ('wp_enqueue_scripts', 'remix_js_scripts');
 /**
