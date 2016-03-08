@@ -96,6 +96,7 @@ class tableBuilder {
                           `app_key` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
                           `app_secret` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
                           `app_callback` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+                          `access_token` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
 		                   UNIQUE KEY `id` (ID)
 		                    );";
 

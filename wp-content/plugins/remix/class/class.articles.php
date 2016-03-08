@@ -59,10 +59,19 @@ static $table;
 
        foreach ($form['data'] as $key => $value) {
          $key = str_replace("'", "", $key);
+
+         if(!empty($value)) {
          $data[$key] = $value;
+         }
        }
+
+      $rows = $wpdb->get_results("SELECT * FROM $table");
+
+      if(isset($rows[0]->time)) {
  
-      $data['time'] = current_time('mysql');
+         $data['time'] = current_time('mysql');
+
+      }
 
       $where = array( 'ID' => $form['id'] );
 
