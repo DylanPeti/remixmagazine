@@ -1,3 +1,5 @@
+@import "partials/variables";
+
 header {
     padding-bottom: 5px;
     background-color: #ffffff;
@@ -13,7 +15,7 @@ header {
         }
         h1 {
             font-size: 16px;
-            color: #000;
+            color: $title-grey;
             text-align: center;
             padding-top: 80px;
         }
@@ -30,7 +32,7 @@ header {
             position: absolute;
             left: -60px;
             i {
-                color: #333;
+                color: $title-grey;
                 float: left;
                 font-size: 32px;
                 line-height: 80px !important;
@@ -92,7 +94,7 @@ header {
             position: absolute;
             right: -60px;
             i {
-                color: #333;
+                color: $title-grey;
                 float: right;
                 font-size: 32px;
                 line-height: 80px !important;
@@ -220,6 +222,13 @@ header {
             &:first-child {
                 padding-left: 0;
             }
+            a {
+                color: $title-grey;
+            }
+            a:hover {
+                color: $title-grey;
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -259,3 +268,5 @@ header {
         box-shadow: none;
     }
 }
+
+

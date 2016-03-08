@@ -1,4 +1,5 @@
-$articleMargin: 25.5px;
+
+@import "partials/variables";
 
 @mixin article_tag {
     .article-tag {
@@ -41,10 +42,10 @@ $articleMargin: 25.5px;
         padding: 15px;
         background: #ffffff;
         h2 {
-            font-weight: 900;
-            font-size: 20px;
+            font-weight: 600;
+            font-size: 17px;
             margin-top: 15px;
-            line-height: 1.2em;
+            line-height: 1.4em;
         }
         h2:hover {
             text-decoration: underline;
@@ -84,7 +85,6 @@ $articleMargin: 25.5px;
     cursor: pointer;
     background: #ffffff;
     height: 350px;
-    background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
     background-size: cover;
     .article_exerpt {
         width: 40%;
@@ -216,8 +216,8 @@ $articleMargin: 25.5px;
             padding: 0;
         }
         h2 {
-            font-weight: 900;
-            font-size: 30px;
+            font-weight: 600;
+            font-size: 26px;
             margin-top: 15px;
             line-height: 1.2em;
         }
@@ -264,7 +264,6 @@ body.single-post {
     cursor: pointer;
     background: #ffffff;
     height: 500px;
-    background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
     background-size: cover;
     h2 {
         background: rgba(0, 0, 0, 0.7);
