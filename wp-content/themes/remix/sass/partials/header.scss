@@ -7,9 +7,9 @@ header {
         background: #fff;
         margin-top: 30px;
         img {
-        margin: 0 auto;
-        width: 250px;
-        display: inherit;
+            margin: 0 auto;
+            width: 250px;
+            display: inherit;
         }
         h1 {
             font-size: 16px;
@@ -91,6 +91,19 @@ header {
             line-height: 80px !important;
             display: inline-block;
             margin: 0 0 0 20px;
+        }
+        .main-search {
+            margin-bottom: 30px;
+            .btn {
+                padding: 6px 17px;
+                margin-top: 10px;
+            }
+            .btn-primary {
+                background: #3cb0fd;
+            }
+            .btn-primary:hover {
+                background: #63bffb;
+            }
         }
         .main_menu {
             background: #333333;
@@ -190,12 +203,12 @@ header {
         padding: 0;
         margin: 0;
         li {
-                list-style: none;
-               font-size: 19px;
-               display: inline-block;
-               text-align: center;
-               padding: 0 40px;
-               line-height: 40px;
+            list-style: none;
+            font-size: 19px;
+            display: inline-block;
+            text-align: center;
+            padding: 0 40px;
+            line-height: 40px;
             &:first-child {
                 padding-left: 0;
             }
