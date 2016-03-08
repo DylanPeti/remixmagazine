@@ -6,7 +6,7 @@
 		
 		<div class=row>
 			<div class="col-md-6">
-			<a href="/wp-admin/admin.php?page=article-collection-hero-edit.php">
+			<a href="/wp-admin/admin.php?page=remix-collection-hero.php">
 				<div class="remix-sections">
 					<div class="row">
 						<div class="col-md-12">
@@ -38,6 +38,7 @@
 
 		<div class=row>
 			<div class="col-md-6">
+			 <a href="/wp-admin/admin.php?page=remix-collection-article.php">
 				<div class="remix-sections">
 					<div class="row">
 						<div class="col-md-12">
@@ -64,11 +65,13 @@
 					</div>
 			
 				</div>
+				</a>
 			</div>
 		</div>
 
 		<div class=row>
 			<div class="col-md-6">
+			 <a href="/wp-admin/admin.php?page=remix-collection-carousel.php">
 				<div class="remix-sections">
 					<div class="row">
 						<div class="col-md-12">
@@ -95,6 +98,7 @@
 					</div>
 			
 				</div>
+				</a>
 			</div>
 		</div>
 		
