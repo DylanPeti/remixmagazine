@@ -827,17 +827,17 @@ body.single-post {
   background-image: none;
 }
 
-/* line 7, sass/partials/carousel.scss */
+/* line 8, sass/partials/carousel.scss */
 .article-carousel {
   padding: 30px;
 }
 
-/* line 15, sass/partials/carousel.scss */
+/* line 14, sass/partials/carousel.scss */
 .carousel-inner .item .col-md-4 {
   padding: 45px;
 }
 
-/* line 19, sass/partials/carousel.scss */
+/* line 18, sass/partials/carousel.scss */
 .carousel-inner .item img {
   width: 300px;
   height: 250px;
@@ -845,7 +845,7 @@ body.single-post {
   margin: 0 auto;
 }
 
-/* line 26, sass/partials/carousel.scss */
+/* line 25, sass/partials/carousel.scss */
 .carousel-image {
   background-repeat: no-repeat !important;
   background-position: center center !important;
@@ -853,7 +853,7 @@ body.single-post {
   height: 200px;
 }
 
-/* line 34, sass/partials/carousel.scss */
+/* line 33, sass/partials/carousel.scss */
 .carousel-control.right, .carousel-control.left {
   background-image: none !important;
 }
@@ -869,6 +869,22 @@ body.single-post {
 /*.carousel-inner .active.left { position: relative; left: -10% !important; }
 .carousel-inner .next        { position: relative;  left:  10% !important; }
 .carousel-inner .prev        { position: relative;  left: -10% !important; }*/
+/* line 53, sass/partials/carousel.scss */
+#carousel-section {
+  padding: 25px 0;
+}
+/* line 55, sass/partials/carousel.scss */
+#carousel-section .container {
+  background: #fff;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+}
+/* line 62, sass/partials/carousel.scss */
+#carousel-section .instainfo p {
+  text-align: center;
+}
+
 /* line 1, sass/partials/footer.scss */
 footer {
   width: 100%;

@@ -21,7 +21,6 @@
           <div class="article_exerpt">
             <span class="article-tag">Category</span>
             <h2><?php echo $dog->post_title; ?></h2>
-            <p><strong><a href=""> READ FULL ARTICLE</strong></a></p>
             <span class="author"><?php echo $dog->post_author; ?></span>
             <ul class="entypo-icons">
               <li class="entypo-facebook"></li>
