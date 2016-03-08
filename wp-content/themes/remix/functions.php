@@ -80,7 +80,7 @@ function get_section( $name = null ) {
 
   // Backward compat code will be removed in a future release
   
-return locate_template($templates, true, false);
+   return locate_template($templates, true, false);
 
 }
 

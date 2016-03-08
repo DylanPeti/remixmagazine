@@ -10,6 +10,6 @@ get_section('articles');
   
 get_section('carousel');
 
-get_section('articles');
+get_section('articles-bottom');
   
 get_footer();

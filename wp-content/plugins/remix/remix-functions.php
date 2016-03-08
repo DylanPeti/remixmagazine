@@ -23,11 +23,11 @@ function get_hero() {
 }
 
 
-function get_articles() {
+function get_articles($index = 0) {
 
    global $class; 
 
-   $article = $class::read("article")[0];
+   $article = $class::read("article")[$index];
  
    if($article->page == "Home") :
 
