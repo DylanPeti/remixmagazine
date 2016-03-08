@@ -1,6 +1,4 @@
-
 @import "partials/variables";
-
 @mixin article_tag {
     .article-tag {
         position: absolute;
@@ -40,6 +38,7 @@
         bottom: 0;
         height: 135px;
         padding: 15px;
+        color: $title-grey;
         background: #ffffff;
         h2 {
             font-weight: 600;
@@ -206,6 +205,7 @@
         right: 0;
         padding: 15px;
         background: #ffffff;
+        color: $title-grey;
         ul {
             float: right;
             position: absolute;
