@@ -67,3 +67,9 @@
     display: none;
   }
 }
+@media screen and (min-height: 800px) {
+  /* line 57, sass/media.scss */
+  .hero {
+    height: 500px;
+  }
+}

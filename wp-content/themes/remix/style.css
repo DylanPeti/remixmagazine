@@ -1012,6 +1012,12 @@ footer p {
     display: none;
   }
 }
+@media screen and (min-height: 800px) {
+  /* line 57, sass/media.scss */
+  .hero {
+    height: 500px;
+  }
+}
 /* line 24, sass/style.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
