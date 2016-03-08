@@ -286,9 +286,7 @@ header .left-menu-wrap:hover {
   cursor: pointer;
   background: #ffffff;
   height: 500px;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
   background-size: cover;
 }
 /* line 89, sass/partials/article.scss */
@@ -1116,79 +1114,45 @@ section {
   color: #ccc;
 }
 
-<<<<<<< HEAD
-
-/* line 203, sass/style.scss */
-=======
 /* line 216, sass/style.scss */
->>>>>>> bbb5036dd91c5a21a7cc1ccb155ce7235df8b217
 .article-img {
   background-size: cover;
   background-position: center center;
   height: 155px;
 }
 
-<<<<<<< HEAD
-/* line 209, sass/style.scss */
-
-=======
 /* line 222, sass/style.scss */
->>>>>>> bbb5036dd91c5a21a7cc1ccb155ce7235df8b217
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-<<<<<<< HEAD
-
-=======
 /* line 227, sass/style.scss */
->>>>>>> bbb5036dd91c5a21a7cc1ccb155ce7235df8b217
 .beauty {
   color: #6a7fdc;
 }
 
-<<<<<<< HEAD
-
-=======
 /* line 231, sass/style.scss */
->>>>>>> bbb5036dd91c5a21a7cc1ccb155ce7235df8b217
 .fashion {
   color: #da6adc;
 }
 
-<<<<<<< HEAD
-
-=======
 /* line 235, sass/style.scss */
->>>>>>> bbb5036dd91c5a21a7cc1ccb155ce7235df8b217
 .culture {
   color: #f58a76;
 }
 
-<<<<<<< HEAD
-
-=======
 /* line 239, sass/style.scss */
->>>>>>> bbb5036dd91c5a21a7cc1ccb155ce7235df8b217
 .lifestyle {
   color: #6adc9d;
 }
 
-<<<<<<< HEAD
-
-=======
 /* line 243, sass/style.scss */
->>>>>>> bbb5036dd91c5a21a7cc1ccb155ce7235df8b217
 .research {
   color: #f5cc76;
 }
 
-<<<<<<< HEAD
-
-=======
 /* line 247, sass/style.scss */
->>>>>>> bbb5036dd91c5a21a7cc1ccb155ce7235df8b217
 .outabout {
   color: #e6f074;
 }
