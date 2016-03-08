@@ -42,10 +42,8 @@
 
 
 <div class="container">
-    <a href="/">
-      <div class="logo">
-      	<h1>Fashion and Lifestyle</h1>
-      </div>
+    <a href="/" class="logo">
+      <img src="/wp-content/themes/remix/images/remix-magazine-logo.png" alt="Remix Magazine">
     </a>
     <section id="toolbar-section">
       <div class="toolbar">
