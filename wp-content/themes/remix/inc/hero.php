@@ -12,16 +12,20 @@
     $hero = get_hero();
     foreach ($hero as $dog) {
     $count++;
+ ?>
 
-    if($count == 1) { $active = "active";  } else { $active = ''; } ?>
+
+   <?php if($count == 1) { $active = "active";  } else { $active = ''; } ?>
 
     <div class="item <?php echo $active; ?>">
       <div class="hero" style="background-image: url(<?php echo remix_thumbnail_url($dog) ?>)">
         <div class="container">
           <div class="article_exerpt">
-            <span class="article-tag">Category</span>
+         <!--    <span class="article-tag">Category</span> -->
+           <a href="<?php echo get_the_permalink($dog->ID); ?>">
             <h2><?php echo $dog->post_title; ?></h2>
-            <span class="author"><?php echo $dog->post_author; ?></span>
+                </a>
+<!--             <span class="author"><?php echo $dog->post_author; ?></span> -->
             <ul class="entypo-icons">
               <li class="entypo-facebook"></li>
               <li class="entypo-twitter"></li>
@@ -30,8 +34,10 @@
         </div>
       </div>
     </div>
+    
 
     <?php } ?>
+
   </div>
 
   

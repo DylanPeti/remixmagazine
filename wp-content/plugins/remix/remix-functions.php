@@ -194,8 +194,6 @@ function thumbnail_link($object) {
 
 function remix_thumbnail_url($object) {
    
-   
-       
       if($object->taxonomy == "category") {
         $name = $object->name;
         $cat_id = get_cat_ID( $name );
@@ -213,8 +211,6 @@ function remix_thumbnail_url($object) {
        
        $post_thumbnail_url = wp_get_attachment_url( $thumb_id );
 
-
-   
        return $post_thumbnail_url;
   
      }
