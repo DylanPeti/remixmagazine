@@ -33,7 +33,7 @@ html {
 body {
     margin: 0;
     height: 0;
-    font-family: Bookmania, Times, 'Times new roman';
+    font-family: Times, 'Times new roman', sans;
     color: #333;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -57,11 +57,16 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    line-height: 1.4;
+    font-family: 'Museo Sans', verdana, sans-serif;
+}
 li {
     line-height: 1.4;
     font-family: 'Museo Sans', verdana, sans-serif;
 }
+
+
 
 input {
     background-color: transparent;
