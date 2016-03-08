@@ -1185,7 +1185,12 @@ section {
   color: #e6f074;
 }
 
-/* line 254, sass/style.scss */
+/* line 253, sass/style.scss */
+.social-btn {
+  display: inline-block;
+}
+
+/* line 257, sass/style.scss */
 .sharebtns {
   margin-top: 30px;
 }
