@@ -947,7 +947,7 @@ html {
 body {
   margin: 0;
   height: 0;
-  font-family: Bookmania, Times, 'Times new roman';
+  font-family: Times, 'Times new roman', sans;
   color: #333;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -973,13 +973,18 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  line-height: 1.4;
+  font-family: 'Museo Sans', verdana, sans-serif;
+}
+
+/* line 64, sass/style.scss */
 li {
   line-height: 1.4;
   font-family: 'Museo Sans', verdana, sans-serif;
 }
 
-/* line 66, sass/style.scss */
+/* line 71, sass/style.scss */
 input {
   background-color: transparent;
   border-radius: 0px;
@@ -989,18 +994,18 @@ input {
   border-right: 0px;
 }
 
-/* line 75, sass/style.scss */
+/* line 80, sass/style.scss */
 a {
   color: #333;
   text-decoration: none;
 }
 
-/* line 81, sass/style.scss */
+/* line 86, sass/style.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 85, sass/style.scss */
+/* line 90, sass/style.scss */
 p,
 .article_content .content {
   font-weight: 400;
@@ -1011,25 +1016,25 @@ p,
   text-align: justify;
   margin-bottom: 20px;
 }
-/* line 94, sass/style.scss */
+/* line 99, sass/style.scss */
 p img,
 .article_content .content img {
   display: block;
   margin: 20px 0;
 }
 
-/* line 100, sass/style.scss */
+/* line 105, sass/style.scss */
 .smalltext {
   font-size: 10px;
 }
 
-/* line 105, sass/style.scss */
+/* line 110, sass/style.scss */
 .sidebar .widget {
   width: 300px;
   margin: 0 auto;
 }
 
-/* line 111, sass/style.scss */
+/* line 116, sass/style.scss */
 input,
 .btn,
 .btn-primary,
@@ -1041,12 +1046,12 @@ input,
   text-transform: capitalize;
 }
 
-/* line 120, sass/style.scss */
+/* line 125, sass/style.scss */
 ul li {
   list-style: none;
 }
 
-/* line 124, sass/style.scss */
+/* line 129, sass/style.scss */
 input {
   display: block;
   width: 100%;
@@ -1066,7 +1071,7 @@ input {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-/* line 143, sass/style.scss */
+/* line 148, sass/style.scss */
 input:focus {
   border-color: #66afe9;
   outline: 0;
@@ -1074,17 +1079,17 @@ input:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
-/* line 150, sass/style.scss */
+/* line 155, sass/style.scss */
 input:placeholder-shown {
   text-transform: uppercase;
 }
 
-/* line 154, sass/style.scss */
+/* line 159, sass/style.scss */
 .container {
   width: 1280px;
 }
 
-/* line 158, sass/style.scss */
+/* line 163, sass/style.scss */
 .btn-default,
 .btn-primary {
   border: 1px solid #ddd;
@@ -1092,7 +1097,7 @@ input:placeholder-shown {
   border-radius: 0;
 }
 
-/* line 165, sass/style.scss */
+/* line 170, sass/style.scss */
 .btn, .btn-primary, .btn-danger,
 button {
   -webkit-border-radius: 3;
@@ -1116,7 +1121,7 @@ button {
   transition: all 300ms ease;
 }
 
-/* line 188, sass/style.scss */
+/* line 193, sass/style.scss */
 .btn:hover, .btn-primary:hover, .btn-danger:hover,
 button:hover {
   background: #3cb0fd;
@@ -1125,72 +1130,72 @@ button:hover {
   border: 1px solid #3cb0fd;
 }
 
-/* line 204, sass/style.scss */
+/* line 209, sass/style.scss */
 section {
   width: 100%;
   padding: 25px 0 0;
 }
 
-/* line 209, sass/style.scss */
+/* line 214, sass/style.scss */
 #toolbar-section {
   padding-top: 30px;
   padding-bottom: 0;
 }
 
-/* line 214, sass/style.scss */
+/* line 219, sass/style.scss */
 .glyphicon {
   color: #ccc;
 }
 
-/* line 218, sass/style.scss */
+/* line 223, sass/style.scss */
 .article-img {
   background-size: cover;
   background-position: center center;
   height: 155px;
 }
 
-/* line 224, sass/style.scss */
+/* line 229, sass/style.scss */
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-/* line 229, sass/style.scss */
+/* line 234, sass/style.scss */
 .beauty {
   color: #6a7fdc;
 }
 
-/* line 233, sass/style.scss */
+/* line 238, sass/style.scss */
 .fashion {
   color: #da6adc;
 }
 
-/* line 237, sass/style.scss */
+/* line 242, sass/style.scss */
 .culture {
   color: #f58a76;
 }
 
-/* line 241, sass/style.scss */
+/* line 246, sass/style.scss */
 .lifestyle {
   color: #6adc9d;
 }
 
-/* line 245, sass/style.scss */
+/* line 250, sass/style.scss */
 .research {
   color: #f5cc76;
 }
 
-/* line 249, sass/style.scss */
+/* line 254, sass/style.scss */
 .outabout {
   color: #e6f074;
 }
 
-/* line 253, sass/style.scss */
+/* line 258, sass/style.scss */
 .social-btn {
   display: inline-block;
 }
 
-/* line 257, sass/style.scss */
+/* line 262, sass/style.scss */
 .sharebtns {
   margin-top: 30px;
 }
