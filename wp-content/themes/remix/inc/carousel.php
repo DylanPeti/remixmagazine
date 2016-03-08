@@ -49,6 +49,7 @@ $img = get_instagram();
         
       </div>
     </article>
+    <div class="instainfo"><p>Instagram: <a href="https://www.instagram.com/remixmagazine/" title="Remix Magazine Instagram">@remixmagazine</a></p></div>
   </div>
 </section>
 

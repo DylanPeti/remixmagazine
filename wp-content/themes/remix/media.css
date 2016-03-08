@@ -1,15 +1,75 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   /* line 2, sass/media.scss */
   #adv-search {
     margin: 0 auto;
   }
 
-  /* line 6, sass/media.scss */
+  /* line 5, sass/media.scss */
   .dropdown.dropdown-lg {
     position: static !important;
   }
-  /* line 9, sass/media.scss */
+  /* line 7, sass/media.scss */
   .dropdown.dropdown-lg .dropdown-menu {
     min-width: 500px;
+  }
+
+  /* line 11, sass/media.scss */
+  .toolbar #menu-remix li {
+    padding: 0px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 17, sass/media.scss */
+  .menu-main-menu-container {
+    display: none;
+  }
+
+  /* line 20, sass/media.scss */
+  .article,
+  .article-latest,
+  .article-editors-choice {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  /* line 26, sass/media.scss */
+  .article-latest .article-latest-exerpt {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    height: 135px;
+    padding: 15px;
+    background: #ffffff;
+  }
+
+  /* line 36, sass/media.scss */
+  .article-latest .article-latest-exerpt h2 {
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 15px;
+    line-height: 1.2em;
+  }
+
+  /* line 42, sass/media.scss */
+  .hero .article_exerpt {
+    width: 92.5%;
+    position: absolute;
+    bottom: 0;
+  }
+  /* line 46, sass/media.scss */
+  .hero .article_exerpt h2 {
+    font-size: 20px;
+  }
+  /* line 49, sass/media.scss */
+  .hero .article_exerpt p {
+    display: none;
+  }
+}
+@media screen and (min-height: 800px) {
+  /* line 57, sass/media.scss */
+  .hero {
+    height: 500px;
   }
 }

@@ -1,19 +1,18 @@
 .carousel-control {
-  &.left, &.right {
-    background-image: none;
-  }
+    &.left,
+    &.right {
+        background-image: none;
+    }
 }
 
 .article-carousel {
-  padding: 30px;
+    padding: 30px;
 }
 
-.carousel-inner {
-
-}
+.carousel-inner {}
 
 .carousel-inner .item .col-md-4 {
-  padding: 45px;
+    padding: 45px;
 }
 
 .carousel-inner .item img {
@@ -24,26 +23,44 @@
 }
 
 .carousel-image {
- background-repeat: no-repeat !important;
- background-position: center center !important;
- background-size: cover !important;
- height: 200px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    height: 200px;
 }
 
 .carousel-control {
-  &.right, &.left {
-    background-image: none !important;
-  }
+    &.right,
+    &.left {
+        background-image: none !important;
+    }
 }
 
 .article-carousel h1 {
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
+
 /** carousel */
+
 
 /*.carousel-inner .active.left { position: relative; left: -10% !important; }
 .carousel-inner .next        { position: relative;  left:  10% !important; }
 .carousel-inner .prev        { position: relative;  left: -10% !important; }*/
+
+#carousel-section {
+    padding: 25px 0;
+    .container {
+        background: #fff;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+    }
+    .instainfo {
+        p {
+            text-align: center;
+        }
+    }
+}

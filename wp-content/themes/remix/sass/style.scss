@@ -19,11 +19,13 @@ Text Domain: remix
 @import "partials/carousel";
 @import "partials/footer";
 @import "partials/advert";
+@import "partials/variables";
 @import "media";
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 [class*="entypo-"]:before {
     font-family: 'entypo', sans-serif;
 }
+
 
 html {
     margin: 0;
@@ -78,13 +80,13 @@ input {
 }
 
 a {
-    // color: #3498db;
-    color: #333;
+    color: $blue; 
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+    color: $blue-hover;
 }
 
 p,
@@ -157,7 +159,7 @@ input:placeholder-shown {
 }
 
 .container {
-    width: 1280px;
+    max-width: 1280px;
 }
 
 .btn-default,
@@ -175,13 +177,13 @@ button {
     margin-left: 20px;
     width: inherit;
     font-family: Arial;
-    color: #3498db;
+    color: $blue;
     background: transparent;
     padding: 7px 20px;
     float: right;
     display: block;
     text-decoration: none;
-    border: 1px solid #3498db;
+    border: 1px solid $blue;
     text-transform: uppercase;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
@@ -192,10 +194,10 @@ button {
 
 .btn:hover,
 button:hover {
-    background: #3cb0fd;
+    background: $blue;
     text-decoration: none;
     color: #ffffff;
-    border: 1px solid #3cb0fd;
+    border: 1px solid $blue;
 }
 
 .btn-primary {

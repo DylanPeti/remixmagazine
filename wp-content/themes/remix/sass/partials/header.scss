@@ -1,3 +1,5 @@
+@import "partials/variables";
+
 header {
     padding-bottom: 5px;
     background-color: #ffffff;
@@ -13,7 +15,7 @@ header {
         }
         h1 {
             font-size: 16px;
-            color: #000;
+            color: $title-grey;
             text-align: center;
             padding-top: 80px;
         }
@@ -22,30 +24,29 @@ header {
             color: #fff !important;
         }
     .right-menu-wrap {
-        width: 360px;
+        width: 300px;
         height: 100%;
         position: fixed;
-        right: 0;
+        right: -300px;
         background: transparent;
         z-index: 99999;
         top: 0;
-        
-        .icon-subscribe i {
+        .icon-subscribe {
             position: absolute;
-            right: 0;
-            color: #333;
-            float: right;
-            font-size: 32px;
-            line-height: 80px !important;
-            display: inline-block;
-            margin: 0 20px 0 0;
+            left: -60px;
+            i {
+                color: $title-grey;
+                float: left;
+                font-size: 32px;
+                line-height: 80px !important;
+                display: inline-block;
+                padding: 0 20px 0 0;
+            }
         }
-
-        .main_menu {
+        .slider-content {
             background: #333333;
             padding: 10px 30px;
             display: inline-block;
-            display: none;
             float: right;
             width: 300px;
             height: 100%;
@@ -75,25 +76,39 @@ header {
                 padding-right: 10px;
             }
         }
+
+      
     }
 
+    
+           .right-menu-wrap:hover {
+        right: 0px;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+     }
+
     .left-menu-wrap {
-        width: 360px;
-        height: 100%; 
+        width: 300px;
+        height: 100%;
         position: fixed;
-        left: 0;
+        left: -300px;
         background: transparent;
         z-index: 99999;
         top: 0;
-        .icon-subscribe i {
+        .icon-subscribe {
             position: absolute;
-            left: 0;
-            color: #333;
-            float: right;
-            font-size: 32px;
-            line-height: 80px !important;
-            display: inline-block;
-            margin: 0 0 0 30px;
+            right: -60px;
+            i {
+                color: $title-grey;
+                float: right;
+                font-size: 32px;
+                line-height: 80px !important;
+                display: inline-block;
+                padding: 0 0 0 20px;
+            }
         }
         .main-search {
             margin-bottom: 30px;
@@ -109,14 +124,11 @@ header {
                 background: #63bffb;
             }
         }
-        .main_menu {
+        .slider-content {
             background: #333333;
             padding: 10px 30px;
-            display: inline-block;
-            display: none;
             float: left;
             width: 300px;
-            
             height: 100%;
             color: #ffffff;
             h3 {
@@ -218,6 +230,13 @@ header {
             &:first-child {
                 padding-left: 0;
             }
+            a {
+                color: $title-grey;
+            }
+            a:hover {
+                color: $title-grey;
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -257,3 +276,5 @@ header {
         box-shadow: none;
     }
 }
+
+
