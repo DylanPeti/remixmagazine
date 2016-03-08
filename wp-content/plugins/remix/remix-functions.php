@@ -132,12 +132,11 @@ function the_latest_from_categories($count) {
 function article($item) {
 
 
- $category = (isset($item->ID) ? get_the_category($item->ID)[0]->name : " "); 
+ 
  $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
  $image = remix_thumbnail_url($item); 
  $link = thumbnail_link($item);
  $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
-
 
  <?php if($item->taxonomy) { 
      
@@ -145,7 +144,13 @@ function article($item) {
 
    $latest_post = get_posts( $args );
 
- } ?>
+   $category =  substr($title, 0, 52); 
+
+ } else {
+     
+   $category = (isset($item->ID) ? get_the_category($item->ID)[0]->name : " "); 
+  
+  } ?>
   
         <article class="article">
          <a href="<?php echo $link; ?>"> 
@@ -154,8 +159,8 @@ function article($item) {
           </div>
         
           <div class="article_exerpt">
+           <span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span>
            <?php if(isset($latest_post)) {  ?>
-            <span class="article-tag <?php echo strtolower($item->cat_name); ?>"><?php echo substr($title, 0, 52); ?></span>
                 <h2 class=""><?php echo substr($latest_post[0]->post_title, 0, 52); ?></h2>
              <?php } else { ?>
             <h2 class="<?php echo $cat_class ?>"><?php echo substr($title, 0, 52); ?></h2>
