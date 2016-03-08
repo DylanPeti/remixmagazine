@@ -3,8 +3,11 @@ use MetzWeb\Instagram\Instagram;
 $class="Remix";
 
 if($_POST) :
-
-$save = $class::create("social", $_POST);
+  if(empty($class::read("social")[0])) {
+    $save = $class::create("social", $_POST);
+   } else {
+    $update = $class::update("social", $_POST);
+   }
 
 endif;
 
@@ -15,14 +18,31 @@ $class = "Remix";
 
 $social = $class::read("social")[0];
 
-
+if(!empty($social)) {
 $instagram = new Instagram(array(
-    'apiKey'      => 'a161a834de38496cbac86a62a441d923',
-    'apiSecret'   => '6d2c978b1bfd48caaebef1d508f7500c',
-    'apiCallback' => 'http://remixmagazine.dev/'
+    'apiKey'      => $social->app_key,
+    'apiSecret'   => $social->app_secret,
+    'apiCallback' => $social->app_callback,
 ));
+}
+
+if(isset($_GET['code'])) {
+    $code = $_GET['code'];
+
+     $data = $instagram->getOAuthToken($code);
+     $instagram->setAccessToken($data);
+
+     $datas = array();
+
+     $datas['data']['access_token'] = $data->access_token;
+     $datas['id'] = 1;
 
 
+     $social = $class::update("social", $datas);
+    
+}
+
+$social = $class::read("social")[0];
 
 ?>
 
@@ -58,6 +78,12 @@ $instagram = new Instagram(array(
     <input type="text" name="data['app_callback']" class="form-control" id="exampleInputPassword1" placeholder="<?php echo $social->app_callback ?>">
   </fieldset>
       <input type="hidden" name="data['provider']" value="instagram">
+
+      <?php if(!empty($class::read("social")[0])) { ?>
+      <input type="hidden" name="id" value="<?php echo 1; ?>">
+      <?php } ?>
+
+
      <input href="#" name="<?php echo $submit; ?>" class="btn-update" type="submit" value="Update">
     
   </div>
@@ -87,9 +113,9 @@ $instagram = new Instagram(array(
         				<div class="col-md-12">
         					<div>
         			    <p><?php echo "Count: 12"; ?></p>
-                        <a href="<?php echo $instagram->getLoginUrl();
-?>">
- <button class="btn-update">Fetch</button></a>
+            <a class="btn-update" href="<?php echo $instagram->getLoginUrl();
+?>">Fetch</a>
+
         				
         					</div>
         				</div>
@@ -102,3 +128,6 @@ $instagram = new Instagram(array(
 
 
 </div>
+
+
+

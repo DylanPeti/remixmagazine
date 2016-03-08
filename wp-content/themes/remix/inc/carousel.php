@@ -17,8 +17,12 @@ $single_cats = wp_get_recent_posts($single_cat, OBJECT);
 $split = array_chunk($single_cats, 5); 
 $dog = array(); 
 
-if(!empty(get_instagram()) ) { 
+
+
+
+
 $img = get_instagram(); 
+
 
 ?>
 <section id="carousel-section">
@@ -48,6 +52,6 @@ $img = get_instagram();
   </div>
 </section>
 
-<?php } ?>
+
 
 
