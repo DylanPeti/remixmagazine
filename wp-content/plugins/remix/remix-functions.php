@@ -43,7 +43,7 @@ function get_articles() {
 function get_instagram($id = 'self', $limit = 0) {
 
   $class = "Remix";
-  if(isset($class::read("social")[0])) {
+  if(count($class::read("social")[0])) {
 
   $social = $class::read("social")[0];
   

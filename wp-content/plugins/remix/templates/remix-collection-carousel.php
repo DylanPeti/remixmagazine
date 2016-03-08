@@ -18,14 +18,31 @@ $class = "Remix";
 
 $social = $class::read("social")[0];
 
-
+if(!empty($social)) {
 $instagram = new Instagram(array(
-    'apiKey'      => 'a161a834de38496cbac86a62a441d923',
-    'apiSecret'   => '6d2c978b1bfd48caaebef1d508f7500c',
-    'apiCallback' => 'http://remixmagazine.dev/'
+    'apiKey'      => $social->app_key,
+    'apiSecret'   => $social->app_secret,
+    'apiCallback' => $social->app_callback,
 ));
+}
+
+if(isset($_GET['code'])) {
+    $code = $_GET['code'];
+
+     $data = $instagram->getOAuthToken($code);
+     $instagram->setAccessToken($data);
+
+     $datas = array();
+
+     $datas['data']['access_token'] = $data->access_token;
+     $datas['id'] = 1;
 
 
+     $social = $class::update("social", $datas);
+    
+}
+
+$social = $class::read("social")[0];
 
 ?>
 
@@ -96,9 +113,9 @@ $instagram = new Instagram(array(
         				<div class="col-md-12">
         					<div>
         			    <p><?php echo "Count: 12"; ?></p>
-                        <a href="<?php echo $instagram->getLoginUrl();
-?>">
- <button class="btn-update">Fetch</button></a>
+            <a class="btn-update" href="<?php echo $instagram->getLoginUrl();
+?>">Fetch</a>
+
         				
         					</div>
         				</div>
@@ -111,3 +128,6 @@ $instagram = new Instagram(array(
 
 
 </div>
+
+
+
