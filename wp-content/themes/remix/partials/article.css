@@ -507,3 +507,19 @@ body.single-post {
   padding: 40px 0px 40px 60px;
   width: 100%;
 }
+/* line 314, ../sass/partials/article.scss */
+.article_single .article_content .content .h1,
+.article_single .article_content .content .h2,
+.article_single .article_content .content .h3,
+.article_single .article_content .content .h4,
+.article_single .article_content .content .h5,
+.article_single .article_content .content .h6,
+.article_single .article_content .content h1,
+.article_single .article_content .content h2,
+.article_single .article_content .content h3,
+.article_single .article_content .content h4,
+.article_single .article_content .content h5,
+.article_single .article_content .content h6 {
+  line-height: 1.4;
+  font-family: Times, 'Times new roman', sans;
+}
