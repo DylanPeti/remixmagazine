@@ -11,9 +11,6 @@
     .toolbar #menu-remix li {
         padding: 0px 15px;
     }
-    .hero .article_exerpt {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -43,6 +40,7 @@
         line-height: 1.2em;
     }
     .hero .article_exerpt {
+    	width: 92.5%;
         position: absolute;
         bottom: 0;
         h2 {
@@ -53,3 +51,5 @@
         }
     }
 }
+
+

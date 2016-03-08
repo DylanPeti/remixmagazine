@@ -19,22 +19,26 @@ header {
         }
     }
     .right-menu-wrap {
-        width: 360px;
+        width: 300px;
         height: 100%;
         position: fixed;
-        right: -310px;
+        right: -300px;
         background: transparent;
         z-index: 99999;
         top: 0;
-        .icon-subscribe i {
-            color: #333;
-            float: left;
-            font-size: 32px;
-            line-height: 80px !important;
-            display: inline-block;
-            margin: 0 20px 0 0;
+        .icon-subscribe {
+            position: absolute;
+            left: -60px;
+            i {
+                color: #333;
+                float: left;
+                font-size: 32px;
+                line-height: 80px !important;
+                display: inline-block;
+                padding: 0 20px 0 0;
+            }
         }
-        .main_menu {
+        .slider-content {
             background: #333333;
             padding: 10px 30px;
             display: inline-block;
@@ -77,20 +81,24 @@ header {
         transition: all 500ms ease-in-out;
     }
     .left-menu-wrap {
-        width: 360px;
-        height: 100%; 
+        width: 300px;
+        height: 100%;
         position: fixed;
-        left: -310px;
+        left: -300px;
         background: transparent;
         z-index: 99999;
         top: 0;
-        .icon-subscribe i {
-            color: #333;
-            float: right;
-            font-size: 32px;
-            line-height: 80px !important;
-            display: inline-block;
-            margin: 0 0 0 20px;
+        .icon-subscribe {
+            position: absolute;
+            right: -60px;
+            i {
+                color: #333;
+                float: right;
+                font-size: 32px;
+                line-height: 80px !important;
+                display: inline-block;
+                padding: 0 0 0 20px;
+            }
         }
         .main-search {
             margin-bottom: 30px;
@@ -105,7 +113,7 @@ header {
                 background: #63bffb;
             }
         }
-        .main_menu {
+        .slider-content {
             background: #333333;
             padding: 10px 30px;
             display: inline-block;

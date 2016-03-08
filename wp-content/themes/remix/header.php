@@ -68,8 +68,8 @@
 
     <!-- Right Menu -->
     <div class="right-menu-wrap">
+      <div class="slider-content">
       <span class="icon-subscribe"><i class="fa fa-envelope fa-3x"></i></span>
-      <div class="main_menu">
         <div class="mailer-wrap">
           <h3>Join The Mailer</h3>
           <form action="http://remix.us2.list-manage.com/subscribe/post?u=7f9be996e2c6cb5ef2d2df5fb&amp;id=acc14b56d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
@@ -93,8 +93,8 @@
     
         <!-- Left Menu -->
     <div class="left-menu-wrap">
+      <div class="slider-content">
       <span class="icon-subscribe"><i class="fa fa-bars fa-3x"></i></span>
-      <div class="main_menu">
         <div class="main-search">
           <?php include ('wp-content/themes/remix/inc/search.html'); ?>
         </div>
