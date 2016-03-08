@@ -26,11 +26,14 @@ global $post
 	   			
 		<?php echo $post->post_content; ?>
 
+		<div class="sharebtns">
+			<?php echo do_shortcode('[apss_share]'); ?>			
+		</div>
+
 	   </div>
 	    <div class="col-md-4 sidebar">
-	    	
-	    	
-
+	    	<?php get_sidebar(); ?>
+	    
 	    	 <div class="ad">
 		    	<div class="ad-img"></div>
 		    	<div class="ad-content">
@@ -56,7 +59,6 @@ global $post
 
       </article>
       
-      <?php get_sidebar(); ?>
 
 	   </div>
 	 </div>
