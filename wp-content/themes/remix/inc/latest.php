@@ -34,7 +34,6 @@ $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
         	   <?php  echo wp_trim_words($recent_post[0]->post_excerpt, 30); ?>
         	</div>
              
-              <span class="article-latest-author"><?php echo remix_post_author($recent_post[0]->title); ?></span>
            
             <ul class="entypo-icons">
              <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>">
