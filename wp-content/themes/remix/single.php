@@ -11,7 +11,7 @@ $width = ($id == $number) ? 12 :  8;
 
 ?>
 
-<div class="article-hero">
+<div class="article-hero" style="background-image: url(<?php echo remix_thumbnail_url($post) ?>)">
 	<div class="container">
 		<h2><?php echo $post->post_title; ?></h2>	
 	</div>
@@ -55,10 +55,9 @@ $width = ($id == $number) ? 12 :  8;
 					 	<button class="ad-btn">Learn More</button>
 					 </div>
 				</div>
-
+<!-- 
 				<article class="article">
-			      	<div class=" article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
-			      	</div>
+
 					 <div class="article_exerpt">
 					  	<span class="article-tag <?php echo $cat_class; ?>"><?php echo $article->name; ?></span>
 				 	<h2><?php echo remix_post_title($article->name); ?></h2>
@@ -68,7 +67,7 @@ $width = ($id == $number) ? 12 :  8;
 		             <li class="entypo-twitter"></li>
 		            </ul>
 				</div>
-	      		</article>
+	      		</article> -->
 	      
 		   </div>
 		   <?php } ?>
