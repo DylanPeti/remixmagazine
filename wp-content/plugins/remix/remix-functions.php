@@ -23,7 +23,7 @@ function get_hero() {
 }
 
 
-function get_articles($index = 0, $ids = array()) {
+function get_articles($index = 0, $ids = array(), $offset = 0) {
 
    global $class; 
 
@@ -33,7 +33,7 @@ function get_articles($index = 0, $ids = array()) {
 
    	    $type = $article->type;
 
-   	    return $type($article->count, $ids);
+   	    return $type($article->count, $ids, $offset);
 
    endif;
 
@@ -84,7 +84,7 @@ function get_instagram($id = 'self', $limit = 0) {
 
 
 
-function the_latest_posts($count, $ids = array()) {
+function the_latest_posts($count, $ids = array(), $offset = 1) {
 
     $do_not_duplicate = array();
     $count = $count + 1;
@@ -100,7 +100,7 @@ function the_latest_posts($count, $ids = array()) {
         $do_not_duplicate[] = $id;
       }
 
-      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
+      $new_args = array('numberposts' => $count, 'offest' => '8', 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
 
       $items = wp_get_recent_posts( $new_args, OBJECT );
 

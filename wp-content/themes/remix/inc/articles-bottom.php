@@ -1,7 +1,17 @@
 <?php $categories = the_latest_from_categories(); ?>
 
 <?php $ids = array(); ?>
+<?php
 
+$new_args = array('numberposts' => 9, 'post_status' => 'publish',);
+
+$items = wp_get_recent_posts( $new_args, OBJECT );
+foreach ($items as $recent) {
+   $ids[] = $recent->ID;
+}
+
+
+?>
 
 <?php foreach($categories as $items) : ?>
 
