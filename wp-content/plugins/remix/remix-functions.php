@@ -110,6 +110,24 @@ function the_latest_posts($count, $ids = array()) {
 
 function the_latest_from_categories($count = null, $ids = array()) {
 
+
+$recent_posts = array(
+    'numberposts' => 1,
+    'offset' => 0,
+    'category' => 0,
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'suppress_filters' => true 
+
+ );
+
+
+$recent_post = wp_get_recent_posts( $recent_posts, OBJECT); 
+
+$late = $recent_post[0]->ID;
+
 	$categories = array("fashion", "beauty", "culture", "lifestyle", "#soulsundaysessions",
 		                 "#notatourist", "outandabout", "Research");
     $cat_ids = array();
@@ -119,6 +137,8 @@ function the_latest_from_categories($count = null, $ids = array()) {
       $cat_ids[] = get_cat_ID($cat);
 
     endforeach;
+
+    $ids[] = $late;
     
     $compact_cats = array(implode(',',$cat_ids));
 

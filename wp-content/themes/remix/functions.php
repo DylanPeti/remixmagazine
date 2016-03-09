@@ -81,7 +81,6 @@ function get_section( $name = null, $position = null) {
   // Backward compat code will be removed in a future release
    $file = 'wp-content/themes/remix' . "/" . $templates[1];
 
-   // file_put_contents($file, $position);
 
    return locate_template($templates, true, false);
 
