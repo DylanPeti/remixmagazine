@@ -167,7 +167,7 @@ $late = $recent_post[0]->ID;
 
 function article($item) {
 
-$description = wp_trim_words($item->post_content, 55);
+$description = wp_trim_words($item->post_content, 100);
 $title = $item->post_title;
 $link = thumbnail_link($item);
 $category = get_the_category($item->ID);

@@ -30,14 +30,16 @@ jQuery(document).ready(function($) {
     FB.ui({
         display: 'popup',
         method: 'share_open_graph',
-        action_type: 'og.shares',
+        action_type: 'og:likes',
         action_properties: JSON.stringify({
         	object: {
             url: url,
             title: title,
             description: description,
             image: {
-            	url: $.trim(image)
+            	url: $.trim(image),
+              width: 1200,
+              height: 628
             }
        }
     })
