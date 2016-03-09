@@ -39,8 +39,6 @@ jQuery(document).ready(function($) {
             description: description,
             image: {
             	url: $.trim(image),
-              width: 1200,
-              height: 628
             }
        }
     })
