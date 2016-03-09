@@ -64,13 +64,17 @@ function get_instagram($id = 'self', $limit = 0) {
   $thumb = array(); 
   
   foreach($url as $link) {
-   
-   $thumb[] = $link->images->standard_resolution->url;
+
+    $thumb[] = array(
+      'thumb' => $link->images->standard_resolution->url,
+      'link' => $link->link
+    );
   
   } 
 
   $img = array_chunk($thumb, 5); 
- return $img;
+
+  return $img;
 
   }
 

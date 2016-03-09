@@ -871,15 +871,16 @@ body.single-post {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
-  height: 200px;
+  height: 234px;
+  width: 234px;
 }
 
-/* line 33, sass/partials/carousel.scss */
+/* line 35, sass/partials/carousel.scss */
 .carousel-control.right, .carousel-control.left {
   background-image: none !important;
 }
 
-/* line 39, sass/partials/carousel.scss */
+/* line 41, sass/partials/carousel.scss */
 .article-carousel h1 {
   text-align: center;
   text-transform: uppercase;
@@ -890,18 +891,17 @@ body.single-post {
 /*.carousel-inner .active.left { position: relative; left: -10% !important; }
 .carousel-inner .next        { position: relative;  left:  10% !important; }
 .carousel-inner .prev        { position: relative;  left: -10% !important; }*/
-/* line 53, sass/partials/carousel.scss */
+/* line 55, sass/partials/carousel.scss */
 #carousel-section {
   padding: 25px 0;
 }
-/* line 55, sass/partials/carousel.scss */
+/* line 57, sass/partials/carousel.scss */
 #carousel-section .container {
-  background: #fff;
   margin: 0;
   width: 100%;
   max-width: none;
 }
-/* line 62, sass/partials/carousel.scss */
+/* line 64, sass/partials/carousel.scss */
 #carousel-section .instainfo p {
   text-align: center;
 }
