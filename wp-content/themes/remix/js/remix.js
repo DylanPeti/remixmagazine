@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
     FB.ui({
         display: 'popup',
         method: 'share_open_graph',
-        action_type: 'og:likes',
+        action_type: 'og.likes',
         action_properties: JSON.stringify({
         	object: {
             url: url,
