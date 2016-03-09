@@ -98,14 +98,7 @@
         <div class="main-search">
           <?php include ('wp-content/themes/remix/inc/search.html'); ?>
         </div>
-        <ul>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-        </ul>
+       <?php echo wp_nav_menu ( array("menu" => 'secondary') ); ?>
       </div>
     </div>
     
