@@ -1,7 +1,14 @@
 <?php
 
 get_header(); 
-global $post
+global $post;
+
+$id = $post->ID;
+$number = 9613;
+$width = ($id == $number) ? 12 :  8;
+
+	
+
 ?>
 
 <div class="article-hero">
@@ -24,7 +31,7 @@ global $post
 	<div class="container-fluid">
 		  <div class="row article_content">
 
-		   <div class="col-md-8 content">
+		   <div class="col-md-<?php echo $width ?> content">
 		   			
 			<?php echo $post->post_content; ?>
 
@@ -33,9 +40,12 @@ global $post
 			</div>
 
 		   </div>
+
+		   <?php if($id != $number) { ?>
 		    <div class="col-md-4 sidebar">
-		    	<?php get_sidebar(); ?>
-		    
+		  
+            <?php get_sidebar(); ?>
+		   
 		    	 <div class="ad">
 			    	<div class="ad-img"></div>
 			    	<div class="ad-content">
@@ -61,6 +71,7 @@ global $post
 	      		</article>
 	      
 		   </div>
+		   <?php } ?>
 		 </div>
 
 	</div>
