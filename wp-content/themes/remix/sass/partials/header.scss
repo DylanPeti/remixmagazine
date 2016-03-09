@@ -165,7 +165,7 @@ header {
 .toolbar {
     background-color: #fff;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     .main-search {
         display: none;
         float: right;
@@ -219,6 +219,7 @@ header {
             text-align: center;
             padding: 0 40px;
             line-height: 40px;
+            font-family: $serif;
             &:first-child {
                 padding-left: 0;
             }
