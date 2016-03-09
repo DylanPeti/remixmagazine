@@ -18,7 +18,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
+<?php if(is_single()) { ?>
+<meta property="og:url"                content="<?php echo the_permalink() ?>" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="<?php the_title() ?>" />
+<meta property="og:description"        content="How much does culture influence creative thinking?" />
+<meta property="og:image"              content="<? echo remix_thumbnail_url($post); ?>" />
 
+<?php } ?>
 
 
 <?php wp_head(); ?>

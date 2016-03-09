@@ -1,18 +1,46 @@
-jQuery( document ).ready(function($) {
-   
+jQuery(document).ready(function($) {
 
-  $(".right-menu-wrap .fa-envelope").stop().on("click", function() {
+  $.ajaxSetup({ cache: true });
 
-  	$(".right-menu-wrap .main_menu").animate({width: 'toggle'}, 100);
-  	$(".right-menu-wrap .fa-envelope").toggleClass("icon-white");
+  $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
 
+    FB.init({
+      appId      : '573967432759585',
+      xfbml      : true,
+      version    : 'v2.5'
+    });     
+
+    // $('#loginbutton,#feedbutton').removeAttr('disabled');
+    // FB.getLoginStatus(updateStatusCallback);
+
+    $("#fbshare").on("click", function(){
+
+    	 var item = $(this);
+    	 
+    	 var items = item.data("share").split(',');
+
+    	 var url = items[0];
+    	 var title = items[1];
+    	 var image = items[2];
+
+console.log(image);
+    FB.ui({
+        display: 'popup',
+        method: 'share_open_graph',
+        action_type: 'og.shares',
+        action_properties: JSON.stringify({
+        	object: {
+            url: url,
+            title: title,
+            description: "works",
+            image: {
+            	url: image
+            }
+       }
+    })
   });
-
-    $(".left-menu-wrap .fa-bars").on("click", function() {
-
-  	$(".left-menu-wrap .main_menu").animate({width: 'toggle'}, 100);
-  	$(".left-menu-wrap .fa-bars").toggleClass("icon-white");
 
   });
 
 });
+  });

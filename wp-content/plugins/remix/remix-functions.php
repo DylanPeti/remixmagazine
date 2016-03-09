@@ -174,25 +174,31 @@ $category = get_the_category($item->ID);
 $image = remix_thumbnail_url($item); 
 $category = $category[0]->name;
 ?>
+<article class="article">
+<!--   <a href="<?php echo $link; ?>"> -->
+    
+    <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
+    </div>
+    
+    <div class="article_exerpt">
+      <span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span>
+      <h2><?php echo substr($title, 0, 52); ?></h2>
+      <ul class="entypo-icons">
+        <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>">
+          <li class="entypo-facebook"></li>
+        </div>
+        <div class="social-btn">
+          <li class="entypo-twitter">
+            
+          </li>
+        </div>
+      </ul>
+      
+    </div>
+<!--   </a> -->
+  
+</article>
 
-        <article class="article">
-         <a href="<?php echo $link; ?>"> 
-       
-         <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
-          </div>
-        
-          <div class="article_exerpt">
-     <span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span> 
-            <h2><?php echo substr($title, 0, 52); ?></h2>
-            <ul class="entypo-icons">
-             <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>"><li class="entypo-facebook"></li></div>
-              <div class="social-btn"><li class="entypo-twitter"></li></div>
-            </ul>
-          
-          </div>
-         </a> 
-       
-        </article>
 <?php }
 
 function thumbnail_link($object) {
