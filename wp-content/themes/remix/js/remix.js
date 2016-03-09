@@ -22,8 +22,11 @@ jQuery(document).ready(function($) {
     	 var url = items[0];
     	 var title = items[1];
     	 var image = items[2];
+       var description = items[3];
 
-console.log(image);
+
+  console.log($.trim(image));
+
     FB.ui({
         display: 'popup',
         method: 'share_open_graph',
@@ -32,9 +35,9 @@ console.log(image);
         	object: {
             url: url,
             title: title,
-            description: "works",
+            description: description,
             image: {
-            	url: image
+            	url: $.trim(image)
             }
        }
     })

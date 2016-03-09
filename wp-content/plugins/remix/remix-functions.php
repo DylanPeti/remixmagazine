@@ -167,7 +167,7 @@ $late = $recent_post[0]->ID;
 
 function article($item) {
 
-
+$description = wp_trim_words($item->post_content, 55);
 $title = $item->post_title;
 $link = thumbnail_link($item);
 $category = get_the_category($item->ID);
@@ -175,16 +175,19 @@ $image = remix_thumbnail_url($item);
 $category = $category[0]->name;
 ?>
 <article class="article">
-<!--   <a href="<?php echo $link; ?>"> -->
-    
+
+   <a href="<?php echo $link; ?>"> 
     <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
     </div>
+   </a>
     
     <div class="article_exerpt">
       <span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span>
+       <a href="<?php echo $link; ?>"> 
       <h2><?php echo substr($title, 0, 52); ?></h2>
+      </a>
       <ul class="entypo-icons">
-        <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>">
+        <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>, <?php echo $description ?>">
           <li class="entypo-facebook"></li>
         </div>
         <div class="social-btn">
