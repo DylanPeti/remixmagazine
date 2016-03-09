@@ -275,10 +275,12 @@ body.single-post {
     background: #ffffff;
     height: 500px;
     background-size: cover;
+    background-position-y: 50%;
+
     h2 {
         background: rgba(0, 0, 0, 0.7);
         padding: 10px 20px;
-        margin: 300px 0 0 50px;
+        margin: 260px 0 0 50px;
         max-width: 62.3%;
         color: #ffffff;
         font-size: 40px;

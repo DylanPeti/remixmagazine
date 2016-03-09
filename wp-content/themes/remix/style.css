@@ -792,25 +792,26 @@ body.single-post {
   background: #ffffff;
   height: 500px;
   background-size: cover;
+  background-position-y: 50%;
 }
-/* line 278, sass/partials/article.scss */
+/* line 280, sass/partials/article.scss */
 .article-hero h2 {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
-  margin: 300px 0 0 50px;
+  margin: 260px 0 0 50px;
   max-width: 62.3%;
   color: #ffffff;
   font-size: 40px;
 }
 
-/* line 289, sass/partials/article.scss */
+/* line 291, sass/partials/article.scss */
 .article_single .toolbar {
   border-bottom: solid 1px #f0f0f0;
   display: block;
   height: 50px;
   padding: 0 60px;
 }
-/* line 294, sass/partials/article.scss */
+/* line 296, sass/partials/article.scss */
 .article_single .toolbar span.article-tag,
 .article_single .toolbar span.author,
 .article_single .toolbar span.date,
@@ -821,30 +822,30 @@ body.single-post {
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 304, sass/partials/article.scss */
+/* line 306, sass/partials/article.scss */
 .article_single .toolbar span.crumbs {
   float: right;
   padding-right: 0px;
 }
-/* line 307, sass/partials/article.scss */
+/* line 309, sass/partials/article.scss */
 .article_single .toolbar span.crumbs p {
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 312, sass/partials/article.scss */
+/* line 314, sass/partials/article.scss */
 .article_single .toolbar .article-tag {
   text-transform: uppercase;
   font-weight: bold;
   width: inherit;
 }
-/* line 318, sass/partials/article.scss */
+/* line 320, sass/partials/article.scss */
 .article_single .article_content {
   background: #ffffff;
   display: block;
   padding: 40px 0px 40px 60px;
   width: 100%;
 }
-/* line 324, sass/partials/article.scss */
+/* line 326, sass/partials/article.scss */
 .article_single .article_content .content .h1,
 .article_single .article_content .content .h2,
 .article_single .article_content .content .h3,
