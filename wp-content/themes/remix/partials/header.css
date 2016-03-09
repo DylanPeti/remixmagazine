@@ -196,7 +196,7 @@ header .left-menu-wrap:hover {
 .toolbar {
   background-color: #fff;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 /* line 177, ../sass/partials/header.scss */
 .toolbar .main-search {
@@ -264,47 +264,48 @@ header .left-menu-wrap:hover {
   text-align: center;
   padding: 0 40px;
   line-height: 40px;
+  font-family: Times, "Times new roman", serif;
 }
-/* line 230, ../sass/partials/header.scss */
+/* line 231, ../sass/partials/header.scss */
 .toolbar #menu-remix li:first-child {
   padding-left: 0;
 }
-/* line 233, ../sass/partials/header.scss */
+/* line 234, ../sass/partials/header.scss */
 .toolbar #menu-remix li a {
   color: #333333;
 }
-/* line 236, ../sass/partials/header.scss */
+/* line 237, ../sass/partials/header.scss */
 .toolbar #menu-remix li a:hover {
   color: #333333;
   text-decoration: underline;
 }
 
-/* line 245, ../sass/partials/header.scss */
+/* line 246, ../sass/partials/header.scss */
 .btn-group .btn {
   border-radius: 0;
   margin-left: -1px;
 }
 
-/* line 252, ../sass/partials/header.scss */
+/* line 253, ../sass/partials/header.scss */
 .form-horizontal .form-group {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 257, ../sass/partials/header.scss */
+/* line 258, ../sass/partials/header.scss */
 .form-group .form-control:last-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
 /** MENU BAR */
-/* line 266, ../sass/partials/header.scss */
+/* line 267, ../sass/partials/header.scss */
 .toolbar #adv-search .btn {
   border: 1px solid #ddd;
   border-left: 0px;
   color: #ddd;
 }
-/* line 271, ../sass/partials/header.scss */
+/* line 272, ../sass/partials/header.scss */
 .toolbar #adv-search input {
   margin: 0;
   border-radius: 0px;

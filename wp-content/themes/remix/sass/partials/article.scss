@@ -87,6 +87,7 @@
     background: #ffffff;
     height: 350px;
     background-size: cover;
+    background-position-y: 50%;
     .article_exerpt {
         width: 40%;
         display: inline-block;
@@ -319,5 +320,22 @@ body.single-post {
         display: block;
         padding: 40px 0px 40px 60px;
         width: 100%;
+        .content {
+            .h1,
+            .h2,
+            .h3,
+            .h4,
+            .h5,
+            .h6,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                line-height: 1.4;
+                font-family: Times, 'Times new roman', sans;
+            }
+        }
     }
 }
