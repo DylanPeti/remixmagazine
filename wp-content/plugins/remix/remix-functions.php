@@ -108,7 +108,7 @@ function the_latest_posts($count, $ids = array()) {
 }
 
 
-function the_latest_from_categories() {
+function the_latest_from_categories($count = null, $ids = array()) {
 
 	$categories = array("fashion", "beauty", "culture", "lifestyle", "#soulsundaysessions",
 		                 "#notatourist", "outandabout", "Research");
@@ -124,43 +124,32 @@ function the_latest_from_categories() {
 
     $args = array('include' => $compact_cats[0], 'taxonomy' => 'category');
    
-    $post = get_categories( $args );
+    $posts = get_categories( $args );
 
+    $items = array();
 
-    $result = $post;
+    foreach($posts as $post) {
+
+    $args = array('numberposts' => 1, 'post__not_in' => $ids, 'category' => $post->cat_ID, 'post_status' => 'publish');
+      $latest_post = get_posts( $args );
+      $items[] = $latest_post[0];
+    }
+
    
-    return $result;
+    return $items;
 
 }
 
 
 function article($item) {
 
- $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
- $image = remix_thumbnail_url($item); 
- $link = thumbnail_link($item);
- $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name));  ?>
 
-
- <?php if($item->taxonomy) { 
-     
-   $args = array( 'numberposts' => 1, 'category' => $item->cat_ID, 'post_type' => 'post');
-
-   $latest_post = get_posts( $args );
-
-   foreach ($latest_post as $item) {
-     $posts[] = $item->ID;
-   }
-
-   $category =  substr($title, 0, 52); 
-
- } else {
-     
-   $category = (isset($item->ID) ? get_the_category($item->ID)[0]->name : " "); 
-  
-  } ?>
-
-
+$title = $item->post_title;
+$link = thumbnail_link($item);
+$category = get_the_category($item->ID);
+$image = remix_thumbnail_url($item); 
+$category = $category[0]->name;
+?>
 
         <article class="article">
          <a href="<?php echo $link; ?>"> 
@@ -169,15 +158,8 @@ function article($item) {
           </div>
         
           <div class="article_exerpt">
-           <span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span>
-           <?php if(isset($latest_post)) {  ?>
-                <h2 class=""><?php echo substr($latest_post[0]->post_title, 0, 52); ?></h2>
-             <?php } else { ?>
-            <h2 class="<?php echo $cat_class ?>"><?php echo substr($title, 0, 52); ?></h2>
-            <?php } ?>
-        
-        
-
+     <span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span> 
+            <h2><?php echo substr($title, 0, 52); ?></h2>
             <ul class="entypo-icons">
              <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>"><li class="entypo-facebook"></li></div>
               <div class="social-btn"><li class="entypo-twitter"></li></div>
@@ -209,7 +191,7 @@ function thumbnail_link($object) {
 
 function remix_thumbnail_url($object) {
    
-      if($object->taxonomy == "category") {
+      if(isset($object->taxonomy)) {
         $name = $object->name;
         $cat_id = get_cat_ID( $name );
 

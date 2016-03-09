@@ -1,5 +1,6 @@
 <?php $categories = the_latest_from_categories(); ?>
 
+
 <?php $ids = array(); ?>
 
 <?php foreach($categories as $items) : ?>
@@ -16,8 +17,6 @@
 
 
 <?php endforeach; ?>
-
-<?php $articles = get_articles(1, $ids); ?>
 
 
 <section id="article-section" class="black">
