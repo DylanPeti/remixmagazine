@@ -23,7 +23,7 @@ function get_hero() {
 }
 
 
-function get_articles($index = 0) {
+function get_articles($index = 0, $ids = array()) {
 
    global $class; 
 
@@ -33,7 +33,7 @@ function get_articles($index = 0) {
 
    	    $type = $article->type;
 
-   	    return $type($article->count);
+   	    return $type($article->count, $ids);
 
    endif;
 
@@ -80,9 +80,9 @@ function get_instagram($id = 'self', $limit = 0) {
 
 
 
-function the_latest_posts($count) {
+function the_latest_posts($count, $ids = array()) {
 
-      $do_not_duplicate = array();
+    $do_not_duplicate = array();
     $count = $count + 1;
 	  $args = array('numberposts' => $count);
 
@@ -91,6 +91,10 @@ function the_latest_posts($count) {
       $do_not_duplicate[] = (isset($duplicates[0]) ? $duplicates[0] : false);
       $do_not_duplicate[] = (isset($duplicates[1]) ? $duplicates[1] : false);
       $do_not_duplicate[] = (isset($duplicates[2]) ? $duplicates[2] : false);
+
+      foreach($ids as $id) {
+        $do_not_duplicate[] = $id;
+      }
 
       $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
 
@@ -104,7 +108,7 @@ function the_latest_posts($count) {
 }
 
 
-function the_latest_from_categories($count) {
+function the_latest_from_categories() {
 
 	$categories = array("fashion", "beauty", "culture", "lifestyle", "#soulsundaysessions",
 		                 "#notatourist", "outandabout", "Research");
@@ -122,6 +126,7 @@ function the_latest_from_categories($count) {
    
     $post = get_categories( $args );
 
+
     $result = $post;
    
     return $result;
@@ -131,18 +136,21 @@ function the_latest_from_categories($count) {
 
 function article($item) {
 
-
- 
  $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
  $image = remix_thumbnail_url($item); 
  $link = thumbnail_link($item);
- $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
+ $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name));  ?>
+
 
  <?php if($item->taxonomy) { 
      
    $args = array( 'numberposts' => 1, 'category' => $item->cat_ID, 'post_type' => 'post');
 
    $latest_post = get_posts( $args );
+
+   foreach ($latest_post as $item) {
+     $posts[] = $item->ID;
+   }
 
    $category =  substr($title, 0, 52); 
 
@@ -151,7 +159,9 @@ function article($item) {
    $category = (isset($item->ID) ? get_the_category($item->ID)[0]->name : " "); 
   
   } ?>
-  
+
+
+
         <article class="article">
          <a href="<?php echo $link; ?>"> 
        

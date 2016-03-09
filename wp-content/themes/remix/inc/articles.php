@@ -1,6 +1,5 @@
 <?php $articles = get_articles(); ?>
 
-
 <section id="article-section" class="black">
   
   <div class="container">
