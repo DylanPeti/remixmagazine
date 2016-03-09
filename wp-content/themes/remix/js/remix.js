@@ -13,7 +13,8 @@ jQuery(document).ready(function($) {
     // $('#loginbutton,#feedbutton').removeAttr('disabled');
     // FB.getLoginStatus(updateStatusCallback);
 
-    $("#fbshare").on("click", function(){
+    $("body").on("click", "#fbshare", function(){
+      console.log($(this));
 
     	 var item = $(this);
     	 
