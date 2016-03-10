@@ -69,7 +69,7 @@ class Instagram
      *
      * @var string[]
      */
-    private $_scopes = array('basic', 'likes', 'comments', 'relationships');
+    private $_scopes = array('public_content', 'basic', 'likes', 'comments', 'relationships');
 
     /**
      * Available actions.
@@ -118,7 +118,7 @@ class Instagram
      *
      * @throws \MetzWeb\Instagram\InstagramException
      */
-    public function getLoginUrl($scopes = array('basic'))
+    public function getLoginUrl($scopes = array('basic', 'public_content'))
     {
         if (is_array($scopes) && count(array_intersect($scopes, $this->_scopes)) === count($scopes)) {
             return self::API_OAUTH_URL . '?client_id=' . $this->getApiKey() . '&redirect_uri=' . urlencode($this->getApiCallback()) . '&scope=' . implode('+',
@@ -526,8 +526,8 @@ class Instagram
 
             $auth = (strpos($apiCall[1], 'access_token') !== false);
 
-            if (isset($obj->pagination->next_max_id)) {
-                return $this->_makeCall($function, $auth, array('max_id' => $obj->pagination->next_max_id, 'count' => $limit));
+            if (isset($obj->pagination->max_tag_id)) {
+                return $this->_makeCall($function, $auth, array('max_id' => $obj->pagination->max_tag_id, 'count' => $limit));
             }
 
             return $this->_makeCall($function, $auth, array('cursor' => $obj->pagination->next_cursor, 'count' => $limit));
@@ -574,8 +574,10 @@ class Instagram
     protected function _makeCall($function, $auth = false, $params = null, $method = 'GET')
     {
         if (!$auth) {
+             $social = \Remix::read("social")[0];
             // if the call doesn't requires authentication
-            $authMethod = '?client_id=' . $this->getApiKey();
+           $authMethod = '?access_token=' . $social->access_token;
+/*            $authMethod = '?client_id=' . $social->app_key;*/
         } else {
             // if the call needs an authenticated user
             if (!isset($this->_accesstoken)) {
@@ -592,6 +594,7 @@ class Instagram
         }
 
         $apiCall = self::API_URL . $function . $authMethod . (('GET' === $method) ? $paramString : null);
+
 
         // we want JSON
         $headerData = array('Accept: application/json');

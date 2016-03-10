@@ -40,6 +40,8 @@ function get_articles($index = 0, $ids = array(), $offset = 0) {
 }
 
 
+
+
 function get_instagram($id = 'self', $limit = 0) {
 
   $class = "Remix";
@@ -81,7 +83,6 @@ function get_instagram($id = 'self', $limit = 0) {
 }
 
 }
-
 
 
 function the_latest_posts($count, $ids = array(), $offset = 1) {
