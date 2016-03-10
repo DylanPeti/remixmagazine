@@ -61,6 +61,12 @@
 }
 
 @media screen and (max-width: 470px) {
+    .article-hero h2 {
+        font-size: 16px;
+    }
+    .article-hero {
+        width: 100%;
+    }
     .menu-main-menu-container {
         display: none;
     }
