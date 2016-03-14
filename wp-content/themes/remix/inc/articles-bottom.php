@@ -3,7 +3,7 @@
 <?php $ids = array(); ?>
 <?php
 
-$new_args = array('numberposts' => 9, 'post_status' => 'publish',);
+$new_args = array('numberposts' => 8, 'post_status' => 'publish',);
 
 $items = wp_get_recent_posts( $new_args, OBJECT );
 foreach ($items as $recent) {
