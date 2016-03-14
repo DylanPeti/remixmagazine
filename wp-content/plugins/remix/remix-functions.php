@@ -133,8 +133,8 @@ $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
 
 $late = $recent_post[0]->ID;
 
-	$categories = array("fashion", "beauty", "culture", "lifestyle", "#soulsundaysessions",
-		                 "#notatourist", "events", "Research");
+	$categories = array("fashion", "beauty", "culture", "lifestyle", "events",
+		                 "men's", "research", "win");
     $cat_ids = array();
 
     foreach($categories as $cat) :
