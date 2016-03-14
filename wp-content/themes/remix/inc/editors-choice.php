@@ -1,6 +1,6 @@
 <?php 
 
-$post = get_post(9057);
+$post = get_post(9767);
 
 $category = get_the_category($post->ID);
 

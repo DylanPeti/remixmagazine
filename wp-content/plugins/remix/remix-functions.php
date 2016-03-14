@@ -144,7 +144,7 @@ $late = $recent_post[0]->ID;
     endforeach;
 
     $ids[] = $late;
-    $ids[] = 9057;
+    $ids[] = 9767;
     
     $compact_cats = array(implode(',',$cat_ids));
 
