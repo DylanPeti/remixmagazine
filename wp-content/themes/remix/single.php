@@ -46,7 +46,7 @@ $width = ($id == $number) ? 12 :  8;
 		  
             <?php get_sidebar(); ?>
 		   
-		    	 <div class="ad">
+		<!--     	 <div class="ad">
 			    	<div class="ad-img"></div>
 			    	<div class="ad-content">
 						<h2>Title Of Ad Here</h2>
@@ -54,7 +54,7 @@ $width = ($id == $number) ? 12 :  8;
 					 	<span class="ad-tag">PROMOTION</span>
 					 	<button class="ad-btn">Learn More</button>
 					 </div>
-				</div>
+				</div> -->
 <!-- 
 				<article class="article">
 
