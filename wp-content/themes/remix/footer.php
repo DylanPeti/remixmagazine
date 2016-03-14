@@ -9,7 +9,7 @@
 			<p>Digital strategy by <a href="http://gomomentum.marketing" target="blank" title="Momentum Marketing">Momentum Marketing</a></p>
 			</div>
 			<div class="col-md-4">
-			FOOTER MENU AREA
+<!-- 			FOOTER MENU AREA -->
 			</div>
 			<div class="col-md-4">
 				<form action="http://remix.us2.list-manage.com/subscribe/post?u=7f9be996e2c6cb5ef2d2df5fb&amp;id=acc14b56d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
