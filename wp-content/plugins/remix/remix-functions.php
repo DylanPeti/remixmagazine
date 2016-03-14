@@ -33,7 +33,7 @@ function get_articles($index = 0, $ids = array()) {
 
    	    $type = $article->type;
 
-   	    return $type($article->count, $ids);
+   	    return $type($article->count, $ids, $index);
 
    endif;
 
@@ -85,29 +85,33 @@ function get_instagram($id = 'self', $limit = 0) {
 }
 
 
-function the_latest_posts($count, $ids = array()) {
+function the_latest_posts($count, $ids = array(), $index) {
 
     $do_not_duplicate = array();
-    $count = $count;
+    if($index == 1) {
+      $count = $count + 1;
+    }
 	  $args = array('numberposts' => $count);
 
 	  $posts = wp_get_recent_posts( $args, OBJECT );
       
-      // $do_not_duplicate[] = (isset($duplicates[0]) ? $duplicates[0] : false);
-      // $do_not_duplicate[] = (isset($duplicates[1]) ? $duplicates[1] : false);
-      // $do_not_duplicate[] = (isset($duplicates[2]) ? $duplicates[2] : false);
+      $do_not_duplicate[] = (isset($duplicates[0]) ? $duplicates[0] : false);
+      $do_not_duplicate[] = (isset($duplicates[1]) ? $duplicates[1] : false);
+      $do_not_duplicate[] = (isset($duplicates[2]) ? $duplicates[2] : false);
       $do_not_duplicate[] = 9767;
 
       foreach($ids as $id) {
         $do_not_duplicate[] = $id;
       }
 
-
-      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish');
+      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
 
       $items = wp_get_recent_posts( $new_args, OBJECT );
 
+      if($index == 1) {
+      array_shift($items);
 
+      }
 
       $result = $items;
   
