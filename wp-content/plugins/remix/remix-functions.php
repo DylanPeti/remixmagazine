@@ -85,7 +85,7 @@ function get_instagram($id = 'self', $limit = 0) {
 }
 
 
-function the_latest_posts($count, $ids = array(), $offset = 1) {
+function the_latest_posts($count, $ids = array(), $offset = 0) {
 
     $do_not_duplicate = array();
     $count = $count + 1;
@@ -96,6 +96,7 @@ function the_latest_posts($count, $ids = array(), $offset = 1) {
       $do_not_duplicate[] = (isset($duplicates[0]) ? $duplicates[0] : false);
       $do_not_duplicate[] = (isset($duplicates[1]) ? $duplicates[1] : false);
       $do_not_duplicate[] = (isset($duplicates[2]) ? $duplicates[2] : false);
+      $do_not_duplicate[] = 9767;
 
       foreach($ids as $id) {
         $do_not_duplicate[] = $id;
