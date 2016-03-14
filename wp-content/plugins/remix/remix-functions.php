@@ -102,7 +102,7 @@ function the_latest_posts($count, $ids = array(), $offset = 0) {
         $do_not_duplicate[] = $id;
       }
 
-      $new_args = array('numberposts' => $count, 'offest' => '8', 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
+      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
 
       $items = wp_get_recent_posts( $new_args, OBJECT );
 
