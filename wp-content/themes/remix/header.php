@@ -64,7 +64,7 @@
 <div class="container">
 
 <div class="advert-temp">
-    
+    <img src="http://remixmagazine.com/wp-content/uploads/2016/03/CONVERSE_CTASII_camo_720x80-1.jpg">
 </div>
 
     <a href="/" class="logo">

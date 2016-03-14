@@ -1005,6 +1005,16 @@ footer p {
   margin-top: -6px;
 }
 
+/* line 39, sass/partials/advert.scss */
+.advert-temp {
+  display: block;
+  margin: 0 auto;
+  width: 720px;
+  height: 80px;
+  background: #eee;
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 768px) {
   /* line 2, sass/media.scss */
   #adv-search {
