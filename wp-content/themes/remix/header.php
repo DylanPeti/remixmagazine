@@ -62,6 +62,11 @@
 
 
 <div class="container">
+
+<div class="advert-temp">
+    
+</div>
+
     <a href="/" class="logo">
       <img src="/wp-content/themes/remix/images/remix-magazine-logo.png" alt="Remix Magazine">
     </a>
