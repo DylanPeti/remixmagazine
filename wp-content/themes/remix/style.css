@@ -383,8 +383,20 @@ ul.entypo-icons li:first-child {
   font-size: 18px;
 }
 
+/* line 80, sass/partials/article.scss */
+.article-editors-tag {
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
 /* HERO AREA HOME PAGE */
-/* line 83, sass/partials/article.scss */
+/* line 94, sass/partials/article.scss */
 .hero {
   width: 100%;
   display: inline-block;
@@ -395,7 +407,7 @@ ul.entypo-icons li:first-child {
   background-size: cover;
   background-position-y: 50%;
 }
-/* line 92, sass/partials/article.scss */
+/* line 103, sass/partials/article.scss */
 .hero .article_exerpt {
   width: 40%;
   display: inline-block;
@@ -418,27 +430,27 @@ ul.entypo-icons li:first-child {
   font-family: helvetica, arial, verdana;
   width: 100%;
 }
-/* line 102, sass/partials/article.scss */
+/* line 113, sass/partials/article.scss */
 .hero .article_exerpt a,
 .hero .article_exerpt a:hover {
   color: #ffffff;
 }
-/* line 106, sass/partials/article.scss */
+/* line 117, sass/partials/article.scss */
 .hero .article_exerpt h2 {
   font-weight: 900;
   font-size: 30px;
   line-height: 1.2em;
   margin: 10px 0 15px 0;
 }
-/* line 112, sass/partials/article.scss */
+/* line 123, sass/partials/article.scss */
 .hero .article_exerpt h2:hover {
   text-decoration: underline;
 }
-/* line 115, sass/partials/article.scss */
+/* line 126, sass/partials/article.scss */
 .hero .article_exerpt .article-tag {
   padding: 15px 35px;
 }
-/* line 118, sass/partials/article.scss */
+/* line 129, sass/partials/article.scss */
 .hero .article_exerpt span.author {
   display: block;
   bottom: 0;
@@ -446,7 +458,7 @@ ul.entypo-icons li:first-child {
   position: absolute;
   font-size: 12px;
 }
-/* line 125, sass/partials/article.scss */
+/* line 136, sass/partials/article.scss */
 .hero .article_exerpt ul.entypo-icons {
   padding: 10px 35px;
 }
@@ -468,7 +480,7 @@ ul.entypo-icons li:first-child {
 }
 
 /* ARTICLE GRID */
-/* line 135, sass/partials/article.scss */
+/* line 146, sass/partials/article.scss */
 .article {
   position: relative;
   background-color: #999;
@@ -478,20 +490,20 @@ ul.entypo-icons li:first-child {
   margin-bottom: 25px;
   cursor: pointer;
 }
-/* line 143, sass/partials/article.scss */
+/* line 154, sass/partials/article.scss */
 .article:nth-child(n) {
   float: left;
   margin-right: 25.5px;
 }
-/* line 147, sass/partials/article.scss */
+/* line 158, sass/partials/article.scss */
 .article:nth-child(4n+1) {
   clear: left;
 }
-/* line 150, sass/partials/article.scss */
+/* line 161, sass/partials/article.scss */
 .article:nth-child(4n) {
   margin-right: 0;
 }
-/* line 153, sass/partials/article.scss */
+/* line 164, sass/partials/article.scss */
 .article .article_exerpt a {
   color: #333;
 }
@@ -559,7 +571,7 @@ ul.entypo-icons li:first-child {
   width: 100%;
 }
 
-/* line 160, sass/partials/article.scss */
+/* line 171, sass/partials/article.scss */
 .sidebar .article {
   width: 300px;
   margin: 0 auto 25px;
@@ -632,7 +644,7 @@ ul.entypo-icons li:first-child {
 }
 
 /* EDITORS CHOICE */
-/* line 173, sass/partials/article.scss */
+/* line 184, sass/partials/article.scss */
 .article-editors-choice {
   position: relative;
   float: right;
@@ -707,7 +719,7 @@ ul.entypo-icons li:first-child {
 }
 
 /* LATEST ARTICLE */
-/* line 187, sass/partials/article.scss */
+/* line 198, sass/partials/article.scss */
 .article-latest {
   position: relative;
   float: left;
@@ -718,20 +730,20 @@ ul.entypo-icons li:first-child {
   clear: both;
   cursor: pointer;
 }
-/* line 196, sass/partials/article.scss */
+/* line 207, sass/partials/article.scss */
 .article-latest .remix-img {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
-/* line 202, sass/partials/article.scss */
+/* line 213, sass/partials/article.scss */
 .article-latest .article-latest-tag {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 207, sass/partials/article.scss */
+/* line 218, sass/partials/article.scss */
 .article-latest .article-latest-img {
   float: left;
   height: 100%;
@@ -739,7 +751,7 @@ ul.entypo-icons li:first-child {
   margin: 0;
   width: calc(100% * 2/3 - (0px - 0px * 2/3));
 }
-/* line 214, sass/partials/article.scss */
+/* line 225, sass/partials/article.scss */
 .article-latest .article-latest-exerpt {
   position: absolute;
   width: calc(99.99% * 1/3 - (0px - 0px * 1/3));
@@ -750,7 +762,7 @@ ul.entypo-icons li:first-child {
   background: #ffffff;
   color: #333333;
 }
-/* line 223, sass/partials/article.scss */
+/* line 234, sass/partials/article.scss */
 .article-latest .article-latest-exerpt ul {
   float: right;
   position: absolute;
@@ -760,18 +772,18 @@ ul.entypo-icons li:first-child {
   margin: 0;
   padding: 0;
 }
-/* line 232, sass/partials/article.scss */
+/* line 243, sass/partials/article.scss */
 .article-latest .article-latest-exerpt h2 {
   font-weight: 600;
   font-size: 26px;
   margin-top: 15px;
   line-height: 1.2em;
 }
-/* line 238, sass/partials/article.scss */
+/* line 249, sass/partials/article.scss */
 .article-latest .article-latest-exerpt h2:hover {
   text-decoration: underline;
 }
-/* line 241, sass/partials/article.scss */
+/* line 252, sass/partials/article.scss */
 .article-latest .article-latest-exerpt span.article-latest-author {
   display: block;
   bottom: 10px;
@@ -792,7 +804,7 @@ ul.entypo-icons li:first-child {
 }
 
 /* ARTICLE COLLECTION - what is this? */
-/* line 256, sass/partials/article.scss */
+/* line 267, sass/partials/article.scss */
 .article-collection:nth-last-child(1), .article-collection:nth-last-child(2), .article-collection:nth-last-child(3),
 .article-editors-choice:nth-last-child(1),
 .article-editors-choice:nth-last-child(2),
@@ -801,17 +813,17 @@ ul.entypo-icons li:first-child {
 }
 
 /* ARTICLE PAGE */
-/* line 266, sass/partials/article.scss */
+/* line 277, sass/partials/article.scss */
 body.single-post {
   background: #ffffff;
 }
 
-/* line 270, sass/partials/article.scss */
+/* line 281, sass/partials/article.scss */
 .single-post .container {
   padding: 0;
 }
 
-/* line 274, sass/partials/article.scss */
+/* line 285, sass/partials/article.scss */
 .article-hero {
   width: 100%;
   display: inline-block;
@@ -822,7 +834,7 @@ body.single-post {
   background-size: cover;
   background-position-y: 50%;
 }
-/* line 284, sass/partials/article.scss */
+/* line 295, sass/partials/article.scss */
 .article-hero h2 {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
@@ -832,14 +844,14 @@ body.single-post {
   font-size: 40px;
 }
 
-/* line 295, sass/partials/article.scss */
+/* line 306, sass/partials/article.scss */
 .article_single .toolbar {
   border-bottom: solid 1px #f0f0f0;
   display: block;
   height: 50px;
   padding: 0 60px;
 }
-/* line 300, sass/partials/article.scss */
+/* line 311, sass/partials/article.scss */
 .article_single .toolbar span.article-tag,
 .article_single .toolbar span.author,
 .article_single .toolbar span.date,
@@ -850,30 +862,30 @@ body.single-post {
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 310, sass/partials/article.scss */
+/* line 321, sass/partials/article.scss */
 .article_single .toolbar span.crumbs {
   float: right;
   padding-right: 0px;
 }
-/* line 313, sass/partials/article.scss */
+/* line 324, sass/partials/article.scss */
 .article_single .toolbar span.crumbs p {
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 318, sass/partials/article.scss */
+/* line 329, sass/partials/article.scss */
 .article_single .toolbar .article-tag {
   text-transform: uppercase;
   font-weight: bold;
   width: inherit;
 }
-/* line 324, sass/partials/article.scss */
+/* line 335, sass/partials/article.scss */
 .article_single .article_content {
   background: #ffffff;
   display: block;
   padding: 40px 0px 40px 60px;
   width: 100%;
 }
-/* line 330, sass/partials/article.scss */
+/* line 341, sass/partials/article.scss */
 .article_single .article_content .content .h1,
 .article_single .article_content .content .h2,
 .article_single .article_content .content .h3,
