@@ -19,11 +19,12 @@
 
 
 <?php if(is_single()) { ?>
-<meta property="og:url"                content="<?php echo the_permalink() ?>" />
-<meta property="og:type"               content="article" />
-<meta property="og:title"              content="<?php the_title() ?>" />
-<meta property="og:description"        content="How much does culture influence creative thinking?" />
-<meta property="og:image"              content="<? echo remix_thumbnail_url($post); ?>" />
+ <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta property="fb:app_id" content="573967432759585" /> 
+  <meta property="og:type"   content="article" /> 
+  <meta property="og:url"    content="Put your own URL to the object here" /> 
+  <meta property="og:title"  content="Sample Article" /> 
+  <meta property="og:image"  content="https://s-static.ak.fbcdn.net/images/devsite/attachment_blank.png" /> 
 
 <?php } ?>
 

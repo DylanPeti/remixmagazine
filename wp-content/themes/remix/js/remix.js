@@ -25,24 +25,32 @@ jQuery(document).ready(function($) {
     	 var image = items[2];
        var description = items[3];
 
+       FB.ui({
+  method: 'share_open_graph',
+  action_type: 'og.likes',
+  action_properties: JSON.stringify({
+    object: url,
+  })
+}, function(response){
+});
 
-  console.log($.trim(image));
 
-    FB.ui({
-        display: 'popup',
-        method: 'share_open_graph',
-        action_type: 'og.likes',
-        action_properties: JSON.stringify({
-        	object: {
-            url: url,
-            title: title,
-            description: description,
-            image: {
-            	url: $.trim(image),
-            }
-       }
-    })
-  });
+
+  //   FB.ui({
+  //       display: 'popup',
+  //       method: 'share_open_graph',
+  //       action_type: 'og.likes',
+  //       action_properties: JSON.stringify({
+  //       	article: {
+  //           url: url,
+  //           title: title,
+  //           description: description,
+  //           image: {
+  //           	url: $.trim(image),
+  //           }
+  //      }
+  //   })
+  // });
 
   });
 
