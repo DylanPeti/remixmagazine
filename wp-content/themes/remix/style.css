@@ -1434,3 +1434,9 @@ section {
 .branding-container {
   display: none;
 }
+
+/* line 273, sass/style.scss */
+.single figure {
+  float: left;
+  margin: 0 10px;
+}
