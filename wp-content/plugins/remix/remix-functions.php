@@ -186,10 +186,14 @@ $category = $category[0]->name;
           <li class="entypo-facebook"></li>
         </div>
         <div class="social-btn">
+<!--         <a class="twitter-mention-button"
+             href="https://twitter.com/intent/tweet">
           <li class="entypo-twitter">
             
           </li>
+          </a> -->
         </div>
+
       </ul>
       
     </div>
