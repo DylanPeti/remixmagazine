@@ -35,15 +35,16 @@ $width = ($id == $number) ? 12 :  8;
 
 		   <div class="col-md-<?php echo $width ?> content">
 
-		   <?php  if ( have_posts() ) {
-             	    while ( have_posts() ) {
-		   			
-			          the_content(); 
+		   <?php  
 
-			 	     } // end while
-                  } // end if
+		   if (have_posts()) :
+                while (have_posts()) :
+                   the_post();
+                   the_content();
+               endwhile;
+            endif; 
 
-			 ?>
+		   ?>
 
 			<div class="sharebtns">
 				<?php echo do_shortcode('[apss_share]'); ?>			
