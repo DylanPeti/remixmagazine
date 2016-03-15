@@ -31,9 +31,19 @@ $width = ($id == $number) ? 12 :  8;
 	<div class="container-fluid">
 		  <div class="row article_content">
 
+
+
 		   <div class="col-md-<?php echo $width ?> content">
+
+		   <?php  if ( have_posts() ) {
+             	    while ( have_posts() ) {
 		   			
-			<?php echo $post->post_content; ?>
+			          the_content(); 
+
+			 	     } // end while
+                  } // end if
+
+			 ?>
 
 			<div class="sharebtns">
 				<?php echo do_shortcode('[apss_share]'); ?>			
@@ -45,29 +55,7 @@ $width = ($id == $number) ? 12 :  8;
 		    <div class="col-md-4 sidebar">
 		  
             <?php get_sidebar(); ?>
-		   
-		<!--     	 <div class="ad">
-			    	<div class="ad-img"></div>
-			    	<div class="ad-content">
-						<h2>Title Of Ad Here</h2>
-					 	<p>Cal To Action Here</p>
-					 	<span class="ad-tag">PROMOTION</span>
-					 	<button class="ad-btn">Learn More</button>
-					 </div>
-				</div> -->
-<!-- 
-				<article class="article">
-
-					 <div class="article_exerpt">
-					  	<span class="article-tag <?php echo $cat_class; ?>"><?php echo $article->name; ?></span>
-				 	<h2><?php echo remix_post_title($article->name); ?></h2>
-				 	<span class="author"><?php echo remix_post_author($article->name); ?></span>
-				 	<ul class="entypo-icons">
-		             <li class="entypo-facebook"></li>
-		             <li class="entypo-twitter"></li>
-		            </ul>
-				</div>
-	      		</article> -->
+		  
 	      
 		   </div>
 		   <?php } ?>
