@@ -15,7 +15,7 @@ $category = $category[0]->name;
 	
 		 <div class="article_exerpt">
 		 <?php $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $category)); ?>
-		 <span class="article-tag <?php echo $cat_class; ?>"><?php echo $category; ?></span>
+		 <span class="article-tag <?php echo $cat_class; ?>">Editor's Choice</span>
 		 	<h2><?php echo $post->post_title; ?></h2>
 		 	<ul class="entypo-icons">
              <li class="entypo-facebook"></li>
