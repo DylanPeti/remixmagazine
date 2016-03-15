@@ -30,6 +30,9 @@ jQuery(document).ready(function($) {
   action_type: 'og.likes',
   action_properties: JSON.stringify({
     object: url,
+    image: {
+        url: $.trim(image)
+    }
   })
 }, function(response){
 });
