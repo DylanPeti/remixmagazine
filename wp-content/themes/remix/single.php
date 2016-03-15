@@ -1,10 +1,17 @@
 <?php
 
 get_header(); 
-global $post
+global $post;
+
+$id = $post->ID;
+$number = 9613;
+$width = ($id == $number) ? 12 :  8;
+
+	
+
 ?>
 
-<div class="article-hero">
+<div class="article-hero" style="background-image: url(<?php echo remix_thumbnail_url($post) ?>)">
 	<div class="container">
 		<h2><?php echo $post->post_title; ?></h2>	
 	</div>
@@ -24,7 +31,7 @@ global $post
 	<div class="container-fluid">
 		  <div class="row article_content">
 
-		   <div class="col-md-8 content">
+		   <div class="col-md-<?php echo $width ?> content">
 		   			
 			<?php echo $post->post_content; ?>
 
@@ -33,9 +40,12 @@ global $post
 			</div>
 
 		   </div>
+
+		   <?php if($id != $number) { ?>
 		    <div class="col-md-4 sidebar">
-		    	<?php get_sidebar(); ?>
-		    
+		  
+            <?php get_sidebar(); ?>
+		   
 		    	 <div class="ad">
 			    	<div class="ad-img"></div>
 			    	<div class="ad-content">
@@ -45,10 +55,9 @@ global $post
 					 	<button class="ad-btn">Learn More</button>
 					 </div>
 				</div>
-
+<!-- 
 				<article class="article">
-			      	<div class=" article-img" style="background-image: url(<?php echo remix_thumbnail_url($article->name, 'cat') ?>)">
-			      	</div>
+
 					 <div class="article_exerpt">
 					  	<span class="article-tag <?php echo $cat_class; ?>"><?php echo $article->name; ?></span>
 				 	<h2><?php echo remix_post_title($article->name); ?></h2>
@@ -58,9 +67,10 @@ global $post
 		             <li class="entypo-twitter"></li>
 		            </ul>
 				</div>
-	      		</article>
+	      		</article> -->
 	      
 		   </div>
+		   <?php } ?>
 		 </div>
 
 	</div>

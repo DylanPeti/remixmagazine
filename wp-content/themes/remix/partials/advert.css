@@ -42,3 +42,12 @@
   padding: 7px 12px;
   margin-top: -6px;
 }
+
+/* line 39, ../sass/partials/advert.scss */
+.advert-temp {
+  display: block;
+  margin: 0 auto;
+  width: 1400px;
+  height: 90px;
+  background: #eee;
+}

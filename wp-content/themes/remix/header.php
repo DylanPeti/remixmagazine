@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
@@ -18,7 +18,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
+<?php if(is_single()) { ?>
+<meta property="og:url"                content="<?php echo the_permalink() ?>" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="<?php the_title() ?>" />
+<meta property="og:description"        content="How much does culture influence creative thinking?" />
+<meta property="og:image"              content="<? echo remix_thumbnail_url($post); ?>" />
 
+<?php } ?>
 
 
 <?php wp_head(); ?>
@@ -55,6 +62,11 @@
 
 
 <div class="container">
+
+<div class="advert-temp">
+    
+</div>
+
     <a href="/" class="logo">
       <img src="/wp-content/themes/remix/images/remix-magazine-logo.png" alt="Remix Magazine">
     </a>
@@ -96,16 +108,9 @@
       <div class="slider-content">
       <span class="icon-subscribe"><i class="fa fa-bars fa-3x"></i></span>
         <div class="main-search">
-          <?php include ('wp-content/themes/remix/inc/search.html'); ?>
+          <?php //include ('wp-content/themes/remix/inc/search.html'); ?>
         </div>
-        <ul>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-          <li>Menu Item</li>
-        </ul>
+       <?php echo wp_nav_menu ( array("menu" => 'secondary') ); ?>
       </div>
     </div>
     

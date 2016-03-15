@@ -23,21 +23,23 @@ function get_hero() {
 }
 
 
-function get_articles() {
+function get_articles($index = 0, $ids = array(), $offset = 0) {
 
    global $class; 
 
-   $article = $class::read("article")[0];
+   $article = $class::read("article")[$index];
  
    if($article->page == "Home") :
 
    	    $type = $article->type;
 
-   	    return $type($article->count);
+   	    return $type($article->count, $ids, $offset);
 
    endif;
 
 }
+
+
 
 
 function get_instagram($id = 'self', $limit = 0) {
@@ -64,13 +66,17 @@ function get_instagram($id = 'self', $limit = 0) {
   $thumb = array(); 
   
   foreach($url as $link) {
-   
-   $thumb[] = $link->images->standard_resolution->url;
+
+    $thumb[] = array(
+      'thumb' => $link->images->standard_resolution->url,
+      'link' => $link->link
+    );
   
   } 
 
   $img = array_chunk($thumb, 5); 
- return $img;
+
+  return $img;
 
   }
 
@@ -79,10 +85,9 @@ function get_instagram($id = 'self', $limit = 0) {
 }
 
 
+function the_latest_posts($count, $ids = array(), $offset = 1) {
 
-function the_latest_posts($count) {
-
-      $do_not_duplicate = array();
+    $do_not_duplicate = array();
     $count = $count + 1;
 	  $args = array('numberposts' => $count);
 
@@ -92,7 +97,11 @@ function the_latest_posts($count) {
       $do_not_duplicate[] = (isset($duplicates[1]) ? $duplicates[1] : false);
       $do_not_duplicate[] = (isset($duplicates[2]) ? $duplicates[2] : false);
 
-      $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
+      foreach($ids as $id) {
+        $do_not_duplicate[] = $id;
+      }
+
+      $new_args = array('numberposts' => $count, 'offest' => '8', 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish',);
 
       $items = wp_get_recent_posts( $new_args, OBJECT );
 
@@ -104,10 +113,28 @@ function the_latest_posts($count) {
 }
 
 
-function the_latest_from_categories($count) {
+function the_latest_from_categories($count = null, $ids = array()) {
+
+
+$recent_posts = array(
+    'numberposts' => 1,
+    'offset' => 0,
+    'category' => 0,
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'suppress_filters' => true 
+
+ );
+
+
+$recent_post = wp_get_recent_posts( $recent_posts, OBJECT); 
+
+$late = $recent_post[0]->ID;
 
 	$categories = array("fashion", "beauty", "culture", "lifestyle", "#soulsundaysessions",
-		                 "#notatourist", "outandabout", "Research");
+		                 "#notatourist", "events", "Research");
     $cat_ids = array();
 
     foreach($categories as $cat) :
@@ -115,48 +142,67 @@ function the_latest_from_categories($count) {
       $cat_ids[] = get_cat_ID($cat);
 
     endforeach;
+
+    $ids[] = $late;
     
     $compact_cats = array(implode(',',$cat_ids));
 
     $args = array('include' => $compact_cats[0], 'taxonomy' => 'category');
    
-    $post = get_categories( $args );
+    $posts = get_categories( $args );
 
-    $result = $post;
+    $items = array();
+
+    foreach($posts as $post) {
+
+    $args = array('numberposts' => 1, 'post__not_in' => $ids, 'category' => $post->cat_ID, 'post_status' => 'publish');
+      $latest_post = get_posts( $args );
+      $items[] = $latest_post[0];
+    }
+
    
-    return $result;
+    return $items;
 
 }
 
 
 function article($item) {
 
+$description = wp_trim_words($item->post_content, 100);
+$title = $item->post_title;
+$link = thumbnail_link($item);
+$category = get_the_category($item->ID);
+$image = remix_thumbnail_url($item); 
+$category = $category[0]->name;
+?>
+<article class="article">
 
- $category = (isset($item->ID) ? get_the_category($item->ID)[0]->name : " "); 
- $title = (isset($item->post_title) ? $item->post_title : (isset($item->name) ? $item->name : " " ) ); 
- $image = remix_thumbnail_url($item); 
- $link = thumbnail_link($item);
- $cat_class = strtolower(preg_replace("/[^A-Za-z0-9 ]/", '', $item->cat_name)); ?>
-  
-        <article class="article">
-         <a href="<?php echo $link; ?>"> 
-       
-         <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
-          </div>
-        
-          <div class="article_exerpt">
-            <span class="article-tag <?php echo strtolower($item->cat_name); ?>"><?php echo $item->title ?></span>
+   <a href="<?php echo $link; ?>"> 
+    <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
+    </div>
+   </a>
+    
+    <div class="article_exerpt">
+      <span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span>
+       <a href="<?php echo $link; ?>"> 
+      <h2><?php echo substr($title, 0, 52); ?></h2>
+      </a>
+      <ul class="entypo-icons">
+        <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>, <?php echo $description ?>">
+          <li class="entypo-facebook"></li>
+        </div>
+        <div class="social-btn">
+          <li class="entypo-twitter">
             
-            <h2><?php echo substr($title, 0, 52); ?></h2>
-            <ul class="entypo-icons">
-             <div class="social-btn" id="fbshare" data-share="<?php echo $link ?>,<?php echo $title ?>,<?php echo $image ?>"><li class="entypo-facebook"></li></div>
-              <div class="social-btn"><li class="entypo-twitter"></li></div>
-            </ul>
-          
-          </div>
-         </a> 
-       
-        </article>
+          </li>
+        </div>
+      </ul>
+      
+    </div>
+<!--   </a> -->
+  
+</article>
+
 <?php }
 
 function thumbnail_link($object) {
@@ -179,9 +225,7 @@ function thumbnail_link($object) {
 
 function remix_thumbnail_url($object) {
    
-   
-       
-      if($object->taxonomy == "category") {
+      if(isset($object->taxonomy)) {
         $name = $object->name;
         $cat_id = get_cat_ID( $name );
 
@@ -198,8 +242,6 @@ function remix_thumbnail_url($object) {
        
        $post_thumbnail_url = wp_get_attachment_url( $thumb_id );
 
-
-   
        return $post_thumbnail_url;
   
      }

@@ -23,10 +23,12 @@
 }
 
 .carousel-image {
-    background-repeat: no-repeat !important;
+background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: cover !important;
-    height: 200px;
+    height: 234px;
+    width: 234px;
+
 }
 
 .carousel-control {
@@ -53,7 +55,7 @@
 #carousel-section {
     padding: 25px 0;
     .container {
-        background: #fff;
+
         margin: 0;
         width: 100%;
         max-width: none;

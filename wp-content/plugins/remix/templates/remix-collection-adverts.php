@@ -1,6 +1,9 @@
-<?php 
-
-
+<div class="remix-wrapper">
+   <div class="container">
+    <div class="title">
+   	  <h1>Adverts</h1>
+    </div>
+<?php
 
 $recent_posts = array(
     'numberposts' => 1,
@@ -37,10 +40,14 @@ $articles = get_articles(0, array($recent_post[0]->ID)); ?>
 
 </section>
 
+      
+
+
+  </div>
+
+</section>
 
 
 
-
-
-
-
+    </div>
+    </div>

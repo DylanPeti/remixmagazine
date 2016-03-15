@@ -1,4 +1,4 @@
-/*
+/*/*/*/*
 Theme Name: remix
 Theme URI: http://gomomentum.marketing/
 Author: Dylan Peti
@@ -655,7 +655,7 @@ ul.entypo-icons li:first-child {
   margin-top: 15px;
   line-height: 1.4em;
 }
-/* line 49, sass/partials/article.scss */
+ line 49, sass/partials/article.scss 
 .article-editors-choice .article_exerpt h2:hover {
   text-decoration: underline;
 }
@@ -1418,3 +1418,4 @@ section {
 .branding-container {
   display: none;
 }
+*/*/*/

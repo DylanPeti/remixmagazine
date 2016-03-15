@@ -67,7 +67,7 @@ endif;
    */
   
 
-function get_section( $name = null ) {
+function get_section( $name = null, $position = null) {
 
   do_action( 'get_section', $name );
 
@@ -79,8 +79,10 @@ function get_section( $name = null ) {
   $templates[] = 'inc/' . $name . '.php';
 
   // Backward compat code will be removed in a future release
-  
-return locate_template($templates, true, false);
+   $file = 'wp-content/themes/remix' . "/" . $templates[1];
+
+
+   return locate_template($templates, true, false);
 
 }
 

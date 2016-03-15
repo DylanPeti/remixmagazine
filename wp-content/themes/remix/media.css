@@ -18,61 +18,13 @@
     padding: 0px 15px;
   }
 }
-@media screen and (max-width: 360px) {
-  /* line 17, sass/media.scss */
+@media screen and (max-width: 1000px) {
+  /* line 19, sass/media.scss */
   .menu-main-menu-container {
     display: none;
   }
 
-  /* line 20, sass/media.scss */
-  .article,
-  .article-latest,
-  .article-editors-choice {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-
-  /* line 26, sass/media.scss */
-  .article-latest .article-latest-exerpt {
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    left: 0;
-    bottom: 0;
-    height: 135px;
-    padding: 15px;
-    background: #ffffff;
-  }
-
-  /* line 36, sass/media.scss */
-  .article-latest .article-latest-exerpt h2 {
-    font-size: 16px;
-    margin-top: 15px;
-    line-height: 1.2em;
-  }
-
-  /* line 41, sass/media.scss */
-  .hero .article_exerpt {
-    width: 92.5%;
-    position: absolute;
-    bottom: 0;
-  }
-  /* line 45, sass/media.scss */
-  .hero .article_exerpt h2 {
-    font-size: 20px;
-  }
-  /* line 48, sass/media.scss */
-  .hero .article_exerpt p {
-    display: none;
-  }
-}
-@media screen and (min-width: 360px) and (max-width: 1000px) {
-  /* line 55, sass/media.scss */
-  .menu-main-menu-container {
-    display: none;
-  }
-
-  /* line 58, sass/media.scss */
+  /* line 22, sass/media.scss */
   .article,
   .article-latest,
   .article-editors-choice {
@@ -80,7 +32,7 @@
     margin-bottom: 25px;
   }
 
-  /* line 64, sass/media.scss */
+  /* line 28, sass/media.scss */
   .article-latest .article-latest-exerpt {
     position: absolute;
     width: 100%;
@@ -92,7 +44,7 @@
     background: #ffffff;
   }
 
-  /* line 74, sass/media.scss */
+  /* line 38, sass/media.scss */
   .article-latest .article-latest-exerpt h2 {
     font-weight: 600;
     font-size: 20px;
@@ -100,29 +52,87 @@
     line-height: 1.2em;
   }
 
-  /* line 80, sass/media.scss */
+  /* line 44, sass/media.scss */
   .hero .article_exerpt {
     width: 92.5%;
     position: absolute;
     bottom: 0;
   }
-  /* line 84, sass/media.scss */
+  /* line 48, sass/media.scss */
   .hero .article_exerpt h2 {
     font-size: 20px;
   }
-  /* line 87, sass/media.scss */
+  /* line 51, sass/media.scss */
   .hero .article_exerpt p {
     display: none;
   }
 
-  /* line 92, sass/media.scss */
+  /* line 56, sass/media.scss */
   body.home .social-btn,
   body.home .author {
     display: none !important;
   }
 }
+@media screen and (max-width: 470px) {
+  /* line 64, sass/media.scss */
+  .article-hero h2 {
+    font-size: 16px;
+  }
+
+  /* line 67, sass/media.scss */
+  .article-hero {
+    width: 100%;
+  }
+
+  /* line 70, sass/media.scss */
+  .menu-main-menu-container {
+    display: none;
+  }
+
+  /* line 73, sass/media.scss */
+  .article,
+  .article-latest,
+  .article-editors-choice {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  /* line 79, sass/media.scss */
+  .article-latest .article-latest-exerpt {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    height: 135px;
+    padding: 15px;
+    background: #ffffff;
+  }
+
+  /* line 89, sass/media.scss */
+  .article-latest .article-latest-exerpt h2 {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.2em;
+  }
+
+  /* line 94, sass/media.scss */
+  .hero .article_exerpt {
+    width: 92.5%;
+    position: absolute;
+    bottom: 0;
+  }
+  /* line 98, sass/media.scss */
+  .hero .article_exerpt h2 {
+    font-size: 20px;
+  }
+  /* line 101, sass/media.scss */
+  .hero .article_exerpt p {
+    display: none;
+  }
+}
 @media screen and (min-height: 800px) {
-  /* line 100, sass/media.scss */
+  /* line 110, sass/media.scss */
   .hero {
     height: 500px;
   }

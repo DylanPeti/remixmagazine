@@ -36,9 +36,11 @@ $img = get_instagram();
           
           <div class="item article-carousel-item  <?php echo (count($dog) == 1 ? "active" : '');  ?>">
             <?php foreach ($items as $item) : ?>
-            
+             
             <div class="col-md-2">
-              <div class="carousel-image" style="background: url(<?php echo $item ?>);"></div>
+            <a target="_blank" href="<?php echo $item['link'] ?>">
+              <div class="carousel-image" style="background: url(<?php echo $item['thumb'] ?>);"></div>
+            </a>
             </div>
             <?php endforeach; ?>
           </div>
