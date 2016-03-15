@@ -47,7 +47,7 @@ $width = ($id == $number) ? 12 :  8;
 		   ?>
 
 			<div class="sharebtns">
-				<?php echo do_shortcode('[apss_share]'); ?>			
+				<?php //echo do_shortcode('[apss_share]'); ?>			
 			</div>
 
 		   </div>
