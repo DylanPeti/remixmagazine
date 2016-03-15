@@ -9,7 +9,7 @@ $category = $category[0]->name;
 ?>
 
 <article class="article-editors-choice">
-
+<a href="<?php echo get_the_permalink($post->ID); ?>">
     	<div class="article-img" style="background-image: url(<?php echo remix_thumbnail_url($post) ?>)">
       	</div>
 	
@@ -23,7 +23,7 @@ $category = $category[0]->name;
             </ul>
 
 		 </div>
-
+</a>
 </article> 
 
 
