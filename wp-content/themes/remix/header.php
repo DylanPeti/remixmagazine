@@ -19,12 +19,7 @@
 
 
 <?php if(is_single()) { ?>
- <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-  <meta property="fb:app_id" content="573967432759585" /> 
-  <meta property="og:type"   content="article" /> 
-  <meta property="og:url"    content="Put your own URL to the object here" /> 
-  <meta property="og:title"  content="Sample Article" /> 
-  <meta property="og:image"  content="https://s-static.ak.fbcdn.net/images/devsite/attachment_blank.png" /> 
+
 
 <?php } ?>
 
