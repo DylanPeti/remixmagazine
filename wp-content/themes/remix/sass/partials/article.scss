@@ -322,6 +322,14 @@ body.single-post {
         .aligncenter {
             margin: 0 auto;
         }
+        .alignleft {
+            float: left;
+            margin-right: 20px;
+        }
+        .alignright {
+            float: right;
+            margin-left: 20px;
+        }
     }
     .article_content {
         background: #ffffff;

@@ -516,14 +516,24 @@ body.single-post {
 .article_single .toolbar .aligncenter {
   margin: 0 auto;
 }
-/* line 326, ../sass/partials/article.scss */
+/* line 325, ../sass/partials/article.scss */
+.article_single .toolbar .alignleft {
+  float: left;
+  margin-right: 20px;
+}
+/* line 329, ../sass/partials/article.scss */
+.article_single .toolbar .alignright {
+  float: right;
+  margin-left: 20px;
+}
+/* line 334, ../sass/partials/article.scss */
 .article_single .article_content {
   background: #ffffff;
   display: block;
   padding: 40px 0px 40px 60px;
   width: 100%;
 }
-/* line 332, ../sass/partials/article.scss */
+/* line 340, ../sass/partials/article.scss */
 .article_single .article_content .content .h1,
 .article_single .article_content .content .h2,
 .article_single .article_content .content .h3,
