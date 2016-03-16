@@ -1506,11 +1506,12 @@ section {
 }
 /* line 328, sass/style.scss */
 .user-profile-card .description {
+  padding: 15px 0;
   font-size: 16px;
   margin-top: 20px;
   text-align: justify;
 }
-/* line 335, sass/style.scss */
+/* line 336, sass/style.scss */
 .user-profile-card .email {
   padding: 20px 0;
 }
