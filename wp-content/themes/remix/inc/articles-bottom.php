@@ -30,8 +30,10 @@ foreach ($items as $recent) {
   <div class="container">
    
     <div class="article-collection">
-     
+     <?php $count = 0; ?>
       <?php foreach ($articles as $item) : ?>
+
+      	<?php $count++; ?>
      
          <?php
 

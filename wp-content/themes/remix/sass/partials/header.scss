@@ -10,6 +10,7 @@ header {
         margin-top: 30px;
         img {
             float: right;
+            margin-right: 70px;
         }
     }
     .logo {
@@ -40,10 +41,7 @@ header {
         background: transparent;
         z-index: 99999;
         top: 0;
-        .icon-subscribe {
-            position: absolute;
-            left: -60px;
-            i {
+        i {
                 color: $title-grey;
                 float: left;
                 font-size: 32px;
@@ -51,6 +49,23 @@ header {
                 display: inline-block;
                 padding: 0 20px 0 0;
             }
+
+        .icon-subscribe {
+            position: absolute;
+            left: -60px;
+            
+        }
+        .icon-twitter {
+            position: absolute;
+            left: -110px;
+        }
+        .icon-instagram {
+            position: absolute;
+            left: -160px;
+        }
+        .icon-facebook {
+            position: absolute;
+            left: -210px;
         }
         .slider-content {
             background: #333333;
@@ -100,7 +115,7 @@ header {
     }
 
     
-           .right-menu-wrap:hover {
+       .menu_slide {
         right: 0px;
         -webkit-transition: all 500ms ease-in-out;
         -moz-transition: all 500ms ease-in-out;

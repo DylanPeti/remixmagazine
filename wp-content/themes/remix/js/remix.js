@@ -1,5 +1,14 @@
 jQuery(document).ready(function($) {
 
+
+  $(".icon-subscribe").on("hover", function() {
+      $(".right-menu-wrap").addClass("menu_slide");
+  }); 
+
+  $(".right-menu-wrap").on("mouseleave", function(){
+       $(".right-menu-wrap").removeClass("menu_slide");
+  });
+
   $.ajaxSetup({ cache: true });
 
   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
