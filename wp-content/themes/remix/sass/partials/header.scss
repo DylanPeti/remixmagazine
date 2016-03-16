@@ -7,6 +7,10 @@ header {
         width: 100%;
         text-align: center;
         background-color: #ffffff;
+        margin-top: 30px;
+        img {
+            float: right;
+        }
     }
     .logo {
         display: block;
@@ -195,6 +199,9 @@ header {
 
 /** TOOLBAR */
 
+#toolbar-section {
+    padding-top: 50px !important;
+}
 .toolbar {
     background-color: #fff;
     height: auto;
@@ -253,6 +260,7 @@ header {
             padding: 0 40px;
             line-height: 40px;
             font-family: $serif;
+            text-transform: uppercase;
             &:first-child {
                 padding-left: 0;
             }
