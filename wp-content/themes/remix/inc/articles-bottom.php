@@ -48,5 +48,5 @@ foreach ($items as $recent) {
 </script>
 
 
-<button id="more" class="btn btn-primary" style="margin: 0 auto; display: block; float: none;">More Articles</button>
+<!-- <button id="more" class="btn btn-primary" style="margin: 0 auto; display: block; float: none;">More Articles</button> -->
 
