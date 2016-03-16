@@ -1325,7 +1325,7 @@ input:placeholder-shown {
 }
 
 /* line 160, sass/style.scss */
-.container {
+.container, #container {
   max-width: 1280px;
 }
 
