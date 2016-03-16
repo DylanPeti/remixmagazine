@@ -63,6 +63,25 @@ function remix_widgets_init() {
     'before_title'  => '<h2 class="widget-title">',
     'after_title'   => '</h2>',
   ) );
+
+    register_sidebar( array(
+    'name'          => 'Advert One',
+    'id'            => 'widget-article-advert-one',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="widget-article-adverts">',
+    'after_title'   => '</h2>',
+  ) );
+
+   register_sidebar( array(
+    'name'          => 'Advert Two',
+    'id'            => 'widget-article-advert-two',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="widget-article-adverts">',
+    'after_title'   => '</h2>',
+  ) );
+
 }
 
 

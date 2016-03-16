@@ -162,6 +162,7 @@ $late = $recent_post[0]->ID;
 
 function article($item) {
 
+
 $description = wp_trim_words($item->post_content, 100);
 $title = $item->post_title;
 $link = thumbnail_link($item);
@@ -244,6 +245,43 @@ function remix_thumbnail_url($object) {
   
      }
 
+
+function get_adverts($title) { 
+ob_start();
+$sidebar =  dynamic_sidebar($title); 
+$sidebar = ob_get_contents();
+ob_end_clean();
+
+if(isset($sidebar)) {
+
+$image = trim($sidebar);
+
+$split = explode("|", $image); 
+
+
+$link = (isset($split[0]) ? $split[0] : false );
+$image = (isset($split[1]) ? $split[1] : false);
+
+if(!empty($link) && !empty($image)) {
+
+return <<<HTML
+<article class="article">
+
+  <div class="ad">
+            <div class="ad-img" style="background-image: url($image)"></div>
+            <div class="ad-content">
+            <span class="ad-tag">PROMOTION</span>
+
+            <a href="$link"><button class="ad-btn">Learn More</button></a>
+           </div>
+        </div>
+  
+</article>
+HTML;
+
+  }
+ }
+}
 
 
 

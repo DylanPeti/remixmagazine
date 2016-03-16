@@ -30,6 +30,7 @@
 
 <body <?php body_class(); ?>>
 
+
 <!-- TYPEKIT -->
 
 
@@ -75,6 +76,9 @@
     <!-- Right Menu -->
     <div class="right-menu-wrap">
       <div class="slider-content">
+      <span class="icon-facebook"><i class="fa fa-facebook fa-3x"></i></span>
+       <span class="icon-instagram"><i class="fa fa-instagram fa-3x"></i></span>
+        <span class="icon-twitter"><i class="fa fa-twitter fa-3x"></i></span>
       <span class="icon-subscribe"><i class="fa fa-envelope fa-3x"></i></span>
         <div class="mailer-wrap">
           <h3>Join The Mailer</h3>
