@@ -1,8 +1,8 @@
 jQuery( document ).ready(function($) {
 
- $('select').select2({
- 	minimumResultsForSearch: Infinity
- });
+ // $('select').select2({
+ // 	minimumResultsForSearch: Infinity
+ // });
 
 
 });
