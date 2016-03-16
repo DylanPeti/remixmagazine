@@ -82,6 +82,15 @@ function remix_widgets_init() {
     'after_title'   => '</h2>',
   ) );
 
+     register_sidebar( array(
+    'name'          => 'Advert Three',
+    'id'            => 'widget-article-advert-three',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h2 class="widget-article-adverts">',
+    'after_title'   => '</h2>',
+  ) );
+
 }
 
 

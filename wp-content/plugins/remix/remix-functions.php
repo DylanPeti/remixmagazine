@@ -272,7 +272,7 @@ return <<<HTML
             <div class="ad-content">
             <span class="ad-tag">PROMOTION</span>
 
-            <a href="$link"><button class="ad-btn">Learn More</button></a>
+            <a href="$link" taget="_blank"><button class="ad-btn">Learn More</button></a>
            </div>
         </div>
   

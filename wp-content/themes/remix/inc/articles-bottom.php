@@ -33,7 +33,18 @@ foreach ($items as $recent) {
      
       <?php foreach ($articles as $item) : ?>
      
-         <?php article($item); ?>
+         <?php
+
+          if($count == 4) {
+                if(!empty(get_adverts('widget-article-advert-three') ) ){
+                    echo get_adverts('widget-article-advert-three');
+                    continue;
+                } 
+             }
+
+          article($item); 
+
+          ?>
        
       <?php endforeach; ?>
       
