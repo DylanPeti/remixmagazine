@@ -63,15 +63,23 @@
 
 <div class="container">
 
-<div class="advert-temp">
-   <a href="http://goo.gl/4LKGMQ" target="_blank">
-    <img src="http://remixmagazine.com/wp-content/uploads/2016/03/CONVERSE_CTASII_camo_720x80-1.jpg">
-    </a>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <a href="/" class="logo">
+        <img src="/wp-content/themes/remix/images/remix-magazine-logo.png" alt="Remix Magazine" class="img-responsive">
+      </a>
+    </div>
+    <div class="col-md-9">
+      <div class="advert-temp">
+        <a href="http://goo.gl/4LKGMQ" target="_blank">
+          <img src="http://remixmagazine.com/wp-content/uploads/2016/03/CONVERSE_CTASII_camo_720x80-1.jpg" class="img-responsive">
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
-    <a href="/" class="logo">
-      <img src="/wp-content/themes/remix/images/remix-magazine-logo.png" alt="Remix Magazine">
-    </a>
     <section id="toolbar-section">
       <div class="toolbar">
         <div class="container">
