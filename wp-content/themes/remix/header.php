@@ -86,7 +86,7 @@
       <div class="slider-content">
       <a href="https://www.facebook.com/remixmagazinenz/" target="_blank"  class="icon-facebook"><i class="fa fa-facebook fa-3x"></i></a>
        <a href="https://www.instagram.com/remixmagazine/" target="_blank" class="icon-instagram"><i class="fa fa-instagram fa-3x"></i></span>
-        <a href="https://twitter.com/REMIXmagazine" target="_blank" class="icon-twitter"><i class="fa fa-twitter fa-3x"></i></span>
+        <a href="https://twitter.com/REMIXmagazine" target="_blank" class="icon-twitter"><i class="fa fa-twitter fa-3x"></i></a>
       <span class="icon-subscribe"><i class="fa fa-envelope fa-3x"></i></span>
         <div class="mailer-wrap">
           <h3>Join The Mailer</h3>
