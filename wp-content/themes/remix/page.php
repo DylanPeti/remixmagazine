@@ -19,7 +19,7 @@ global $post
 		   </div>
 		    <div class="col-md-4 sidebar">
 
-		    	<div class="ad">
+	<!-- 	    	<div class="ad">
 			    	<div class="ad-img"></div>
 			    	<div class="ad-content">
 						<h2>Title Of Ad Here</h2>
@@ -41,7 +41,7 @@ global $post
 	             <li class="entypo-twitter"></li>
 	            </ul>
 			 </div>
-	      </article>
+	      </article> -->
 		   </div>
 		 </div>
 	 </div>

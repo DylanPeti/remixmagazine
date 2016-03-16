@@ -15,8 +15,12 @@ if( is_front_page() ) {
 // wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/remix.js', array('jquery') );
 wp_enqueue_script('bootstrapJS', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array('jquery') );
 wp_enqueue_script('remix_js', get_template_directory_uri() . '/js/remix.js', array('bootstrapJS') );
+wp_enqueue_script('postloader', get_template_directory_uri() . '/js/ajax.js', array('jquery'), '1.0', true );
 wp_enqueue_script('twitter_intents', 'https://platform.twitter.com/widgets.js', array('') );
 
+wp_localize_script( 'ajax-pagination', 'ajaxpagination', array(
+  'ajaxurl' => admin_url( 'admin-ajax.php' )
+));
 
 /* css */
 
