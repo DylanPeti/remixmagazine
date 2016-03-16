@@ -46,6 +46,11 @@ $width = ($id == $number) ? 12 :  8;
 
 		   ?>
 
+		   <div class="facebook-share">
+		   <h2>Add Your Comment!</h2>
+		   	<div class="fb-comments" data-href="<?php echo the_permalink($post->ID); ?>" data-numposts="5"></div>
+		   </div>
+
 			<div class="sharebtns">
 				<?php //echo do_shortcode('[apss_share]'); ?>			
 			</div>
