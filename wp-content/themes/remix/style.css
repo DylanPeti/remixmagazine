@@ -1466,7 +1466,7 @@ section {
 
 /* line 288, sass/style.scss */
 .user-profile-card {
-  height: 600px;
+  height: 450px;
   padding: 15px 0;
 }
 /* line 293, sass/style.scss */
@@ -1484,7 +1484,6 @@ section {
 }
 /* line 306, sass/style.scss */
 .user-profile-card p {
-  font-family: "museo-sans", verdana, sans-serif;
   text-align: center;
   line-height: 1.2;
   margin: 0;
@@ -1509,7 +1508,7 @@ section {
   padding: 15px 0;
   font-size: 16px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: left;
 }
 /* line 336, sass/style.scss */
 .user-profile-card .email {
