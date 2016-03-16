@@ -1466,28 +1466,30 @@ section {
 
 /* line 288, sass/style.scss */
 .user-profile-card {
-  height: 300px;
+  height: 600px;
   padding: 15px 0;
 }
 /* line 293, sass/style.scss */
 .user-profile-card .avatar {
   display: block;
   margin: 0 auto;
+  width: 150px;
+  height: 150px;
 }
-/* line 298, sass/style.scss */
+/* line 300, sass/style.scss */
 .user-profile-card .avatar img {
   display: block;
   margin: 0 auto;
   border-radius: 100%;
 }
-/* line 304, sass/style.scss */
+/* line 306, sass/style.scss */
 .user-profile-card p {
   font-family: "museo-sans", verdana, sans-serif;
   text-align: center;
   line-height: 1.2;
   margin: 0;
 }
-/* line 311, sass/style.scss */
+/* line 313, sass/style.scss */
 .user-profile-card .name {
   font-size: 16px;
   padding: 15px 0 0 0;
@@ -1502,12 +1504,13 @@ section {
   transform: translateX(-50%);
   min-width: 230px;
 }
-/* line 326, sass/style.scss */
+/* line 328, sass/style.scss */
 .user-profile-card .description {
   font-size: 16px;
   margin-top: 20px;
+  text-align: justify;
 }
-/* line 332, sass/style.scss */
+/* line 335, sass/style.scss */
 .user-profile-card .email {
   padding: 20px 0;
 }
