@@ -39,13 +39,6 @@ $user_Subscriptions = WC_Subscriptions_Manager::get_users_subscriptions( get_cur
 $user_group = do_shortcode('[groups_woocommerce_memberships]'); 
 
 
-
-
-
-
-
-
-
 		if ( $loop->have_posts() ) {
 			while ( $loop->have_posts() ) : $loop->the_post();
 				// woocommerce_get_template_part( 'content', 'product' );
@@ -85,13 +78,10 @@ $user_group = do_shortcode('[groups_woocommerce_memberships]');
 
 							<?php 
 
-							 $parent = get_page_by_title( 'My Issues', ARRAY_A );
+							 $parent = get_page_by_title( 'My Remix', ARRAY_A );
 							 $parentID = $parent['ID'];
 
 						
-
-
-
 							 // print_r( get_child_pages_by_parent_title( $parentID ) );
 
 							 $args = array(
