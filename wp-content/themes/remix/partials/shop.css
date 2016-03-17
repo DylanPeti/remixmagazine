@@ -1,9 +1,25 @@
 /* line 1, ../sass/partials/shop.scss */
+#container {
+  margin: 0 auto;
+}
+
+/* line 5, ../sass/partials/shop.scss */
+.single-product #container {
+  max-width: 980px;
+}
+
+/* line 9, ../sass/partials/shop.scss */
+.woocommerce div.product .product_title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 14, ../sass/partials/shop.scss */
 .magazine-title {
   text-align: center;
 }
 
-/* line 5, ../sass/partials/shop.scss */
+/* line 18, ../sass/partials/shop.scss */
 .issuuembed {
   margin: 0 auto;
 }

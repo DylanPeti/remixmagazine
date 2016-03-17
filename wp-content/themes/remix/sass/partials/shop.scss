@@ -1,3 +1,16 @@
+#container {
+	margin: 0 auto;
+}
+
+.single-product #container {
+	max-width: 980px;
+}
+
+.woocommerce div.product .product_title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
 .magazine-title {
     text-align: center;
 }
