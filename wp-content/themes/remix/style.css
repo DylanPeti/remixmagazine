@@ -1064,6 +1064,16 @@ footer p {
   margin-top: 15px;
 }
 
+/* line 1, sass/partials/shop.scss */
+.magazine-title {
+  text-align: center;
+}
+
+/* line 5, sass/partials/shop.scss */
+.issuuembed {
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
   /* line 2, sass/media.scss */
   #adv-search {
@@ -1203,18 +1213,18 @@ footer p {
     height: 500px;
   }
 }
-/* line 25, sass/style.scss */
+/* line 26, sass/style.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-/* line 30, sass/style.scss */
+/* line 31, sass/style.scss */
 html {
   margin: 0;
   height: 0;
 }
 
-/* line 35, sass/style.scss */
+/* line 36, sass/style.scss */
 body {
   margin: 0;
   height: 0;
@@ -1226,13 +1236,13 @@ body {
   background: #ffffff;
 }
 
-/* line 46, sass/style.scss */
+/* line 47, sass/style.scss */
 body.home,
 body.category {
   background: #f0f0f0;
 }
 
-/* line 51, sass/style.scss */
+/* line 52, sass/style.scss */
 .h1,
 .h2,
 .h3,
@@ -1249,13 +1259,13 @@ h6 {
   font-family: "museo-sans", verdana, sans-serif;
 }
 
-/* line 66, sass/style.scss */
+/* line 67, sass/style.scss */
 li {
   line-height: 1.4;
   font-family: "museo-sans", verdana, sans-serif;
 }
 
-/* line 72, sass/style.scss */
+/* line 73, sass/style.scss */
 input {
   background-color: transparent;
   border-radius: 0px;
@@ -1265,19 +1275,19 @@ input {
   border-right: 0px;
 }
 
-/* line 81, sass/style.scss */
+/* line 82, sass/style.scss */
 a {
   color: #3498db;
   text-decoration: none;
 }
 
-/* line 86, sass/style.scss */
+/* line 87, sass/style.scss */
 a:hover {
   text-decoration: underline;
   color: #58b3f0;
 }
 
-/* line 91, sass/style.scss */
+/* line 92, sass/style.scss */
 p,
 .article_content .content {
   font-weight: 400;
@@ -1288,25 +1298,25 @@ p,
   text-align: justify;
   margin-bottom: 20px;
 }
-/* line 100, sass/style.scss */
+/* line 101, sass/style.scss */
 p img,
 .article_content .content img {
   display: block;
   margin: 20px 0;
 }
 
-/* line 106, sass/style.scss */
+/* line 107, sass/style.scss */
 .smalltext {
   font-size: 10px;
 }
 
-/* line 111, sass/style.scss */
+/* line 112, sass/style.scss */
 .sidebar .widget {
   width: 300px;
   margin: 0 auto 30px;
 }
 
-/* line 117, sass/style.scss */
+/* line 118, sass/style.scss */
 input,
 .btn,
 .btn-primary,
@@ -1318,12 +1328,12 @@ input,
   text-transform: capitalize;
 }
 
-/* line 126, sass/style.scss */
+/* line 127, sass/style.scss */
 ul li {
   list-style: none;
 }
 
-/* line 130, sass/style.scss */
+/* line 131, sass/style.scss */
 input {
   display: block;
   width: 100%;
@@ -1343,7 +1353,7 @@ input {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-/* line 149, sass/style.scss */
+/* line 150, sass/style.scss */
 input:focus {
   border-color: #66afe9;
   outline: 0;
@@ -1351,17 +1361,17 @@ input:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
-/* line 156, sass/style.scss */
+/* line 157, sass/style.scss */
 input:placeholder-shown {
   text-transform: uppercase;
 }
 
-/* line 160, sass/style.scss */
+/* line 161, sass/style.scss */
 .container, #container {
   max-width: 1280px;
 }
 
-/* line 164, sass/style.scss */
+/* line 165, sass/style.scss */
 .btn-default,
 .btn-primary {
   border: 1px solid #ddd;
@@ -1369,7 +1379,7 @@ input:placeholder-shown {
   border-radius: 0;
 }
 
-/* line 171, sass/style.scss */
+/* line 172, sass/style.scss */
 .btn, .btn-primary, .btn-danger,
 button {
   -webkit-border-radius: 3;
@@ -1393,7 +1403,7 @@ button {
   transition: all 300ms ease;
 }
 
-/* line 194, sass/style.scss */
+/* line 195, sass/style.scss */
 .btn:hover, .btn-primary:hover, .btn-danger:hover,
 button:hover {
   background: #3498db;
@@ -1402,122 +1412,122 @@ button:hover {
   border: 1px solid #3498db;
 }
 
-/* line 210, sass/style.scss */
+/* line 211, sass/style.scss */
 section {
   width: 100%;
   padding: 25px 0 0;
 }
 
-/* line 215, sass/style.scss */
+/* line 216, sass/style.scss */
 #toolbar-section {
   padding-top: 30px;
   padding-bottom: 0;
 }
 
-/* line 220, sass/style.scss */
+/* line 221, sass/style.scss */
 .glyphicon {
   color: #ccc;
 }
 
-/* line 224, sass/style.scss */
+/* line 225, sass/style.scss */
 .article-img {
   background-size: cover;
   background-position: center center;
   height: 155px;
 }
 
-/* line 230, sass/style.scss */
+/* line 231, sass/style.scss */
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-/* line 235, sass/style.scss */
+/* line 236, sass/style.scss */
 .beauty {
   color: #6a7fdc;
 }
 
-/* line 239, sass/style.scss */
+/* line 240, sass/style.scss */
 .fashion {
   color: #da6adc;
 }
 
-/* line 243, sass/style.scss */
+/* line 244, sass/style.scss */
 .culture {
   color: #f58a76;
 }
 
-/* line 247, sass/style.scss */
+/* line 248, sass/style.scss */
 .lifestyle {
   color: #6adc9d;
 }
 
-/* line 251, sass/style.scss */
+/* line 252, sass/style.scss */
 .research {
   color: #f5cc76;
 }
 
-/* line 255, sass/style.scss */
+/* line 256, sass/style.scss */
 .outabout {
   color: #e6f074;
 }
 
-/* line 259, sass/style.scss */
+/* line 260, sass/style.scss */
 .social-btn {
   display: inline-block;
 }
 
-/* line 263, sass/style.scss */
+/* line 264, sass/style.scss */
 .sharebtns {
   margin-top: 30px;
 }
 
 /* Mail munch brand remove */
-/* line 271, sass/style.scss */
+/* line 272, sass/style.scss */
 .branding-container {
   display: none;
 }
 
-/* line 273, sass/style.scss */
+/* line 274, sass/style.scss */
 .single figure {
   float: left;
   margin: 0 10px;
 }
 
-/* line 279, sass/style.scss */
+/* line 280, sass/style.scss */
 .contributors-section {
   margin-top: 40px;
 }
 
-/* line 283, sass/style.scss */
+/* line 284, sass/style.scss */
 .contributors-section h2 {
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 288, sass/style.scss */
+/* line 289, sass/style.scss */
 .user-profile-card {
   padding: 15px 0;
 }
-/* line 292, sass/style.scss */
+/* line 293, sass/style.scss */
 .user-profile-card .avatar {
   display: block;
   margin: 0 auto;
   width: 150px;
   height: 150px;
 }
-/* line 299, sass/style.scss */
+/* line 300, sass/style.scss */
 .user-profile-card .avatar img {
   display: block;
   margin: 0 auto;
 }
-/* line 305, sass/style.scss */
+/* line 306, sass/style.scss */
 .user-profile-card p {
   text-align: center;
   line-height: 1.2;
   margin: 0;
 }
-/* line 312, sass/style.scss */
+/* line 313, sass/style.scss */
 .user-profile-card .name {
   font-size: 14px;
   padding: 15px 0 0 0;
@@ -1532,14 +1542,14 @@ section {
   transform: translateX(-50%);
   min-width: 170px;
 }
-/* line 327, sass/style.scss */
+/* line 328, sass/style.scss */
 .user-profile-card .description {
   padding: 15px 0;
   font-size: 16px;
   margin-top: 20px;
   text-align: left;
 }
-/* line 335, sass/style.scss */
+/* line 336, sass/style.scss */
 .user-profile-card .email {
   padding: 20px 0;
 }

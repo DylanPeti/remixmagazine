@@ -22,7 +22,7 @@ get_header();
 		$loop = new WP_Query( $args );
 
 $user_ID = get_current_user_id();
-$user_Subscriptions = WC_Subscriptions_Manager::get_users_subscriptions( get_current_user_id() );
+$user_Subscriptions = wcs_get_users_subscriptions( get_current_user_id() );
 $user_group = do_shortcode('[groups_woocommerce_memberships]'); 
 
 
