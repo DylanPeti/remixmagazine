@@ -1497,31 +1497,29 @@ section {
 
 /* line 288, sass/style.scss */
 .user-profile-card {
-  height: 450px;
   padding: 15px 0;
 }
-/* line 293, sass/style.scss */
+/* line 292, sass/style.scss */
 .user-profile-card .avatar {
   display: block;
   margin: 0 auto;
   width: 150px;
   height: 150px;
 }
-/* line 300, sass/style.scss */
+/* line 299, sass/style.scss */
 .user-profile-card .avatar img {
   display: block;
   margin: 0 auto;
-  border-radius: 100%;
 }
-/* line 306, sass/style.scss */
+/* line 305, sass/style.scss */
 .user-profile-card p {
   text-align: center;
   line-height: 1.2;
   margin: 0;
 }
-/* line 313, sass/style.scss */
+/* line 312, sass/style.scss */
 .user-profile-card .name {
-  font-size: 16px;
+  font-size: 14px;
   padding: 15px 0 0 0;
   font-weight: bold;
   color: #000;
@@ -1532,16 +1530,16 @@ section {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 230px;
+  min-width: 170px;
 }
-/* line 328, sass/style.scss */
+/* line 327, sass/style.scss */
 .user-profile-card .description {
   padding: 15px 0;
   font-size: 16px;
   margin-top: 20px;
   text-align: left;
 }
-/* line 336, sass/style.scss */
+/* line 335, sass/style.scss */
 .user-profile-card .email {
   padding: 20px 0;
 }

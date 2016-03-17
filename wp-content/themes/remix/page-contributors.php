@@ -20,13 +20,16 @@ get_header();
 
            foreach ( $blogusers as $user ) { ?>
 
-                 <div class="col-md-4">
+                 <div class="col-md-2">
                  <div class="user-profile-card">
+                 <a href="<?php echo get_author_posts_url($user->data->ID); ?>">
 
                      <div class="avatar"><?php echo get_avatar( $user->user_email , 182 ); ?></div>
                      <p class="name"><?php echo $user->display_name ?></p>
-                     <p class="description"><?php echo get_user_meta($user->data->ID)['description'][0] ?></p>
+<!--                      <p class="description"><?php echo get_user_meta($user->data->ID)['description'][0] ?></p> -->
                    <!--   <p class="email"><?php echo $user->user_email ?></p> -->
+
+                   </a>
                      
                  	
                  </div>

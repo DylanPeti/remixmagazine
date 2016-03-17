@@ -287,7 +287,6 @@ section {
 
 .user-profile-card {
 
- height: 450px;
  padding: 15px 0;
 
     .avatar {
@@ -300,7 +299,7 @@ section {
     .avatar img {
         display: block;
         margin: 0 auto;
-        border-radius: 100%;
+
     }
 
     p {
@@ -311,7 +310,7 @@ section {
     }
 
     .name {
-        font-size: 16px;
+        font-size: 14px;
         padding: 15px 0 0 0;
         font-weight: bold;
         color: #000;
@@ -322,7 +321,7 @@ section {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        min-width: 230px;
+        min-width: 170px;
     }
 
     .description {
