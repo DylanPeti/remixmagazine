@@ -8,23 +8,10 @@
 
 
 get_header(); 
-$van_page_type = van_page_type(); 
-
-
-van_breadcrumb(); 
-
-// $auth_check = WC_Subscriptions_Manager::get_subscription_key( $order_id, $product_id );
-
-// if(!$auth_check){
-//   wp_redirect('/');
-// }
-
-
-// [flipbook id="4"]
-
-
 
 ?>
+
+<div class="container">
 
 <ul class="products">
 	<?php
@@ -63,26 +50,17 @@ $user_group = do_shortcode('[groups_woocommerce_memberships]');
 					
 					<div class="entry-container">
 
-			<!-- 			<header id="entry-header">
-							<h1 class="entry-title magazine-title">
-								<?php the_title(); ?>
-							</h1> -->
-							<!-- .entry-title -->
-<!-- 						</header> -->
-
 						<div class="entry-content">
 
 							<div class="magazine-container">
-
-							<?php //the_content(); ?>
 
 							<?php 
 
 							 $parent = get_page_by_title( 'My Remix', ARRAY_A );
 							 $parentID = $parent['ID'];
 
-						
-							 // print_r( get_child_pages_by_parent_title( $parentID ) );
+
+					
 
 							 $args = array(
 	                          'post_parent' => $parentID,
@@ -94,10 +72,6 @@ $user_group = do_shortcode('[groups_woocommerce_memberships]');
 
 							 $my_wp_query = new WP_Query();
                              $all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
-
-
-
-
 
 
 							   $children_array =  get_page_children($parentID, $all_wp_pages);
@@ -134,29 +108,8 @@ $user_group = do_shortcode('[groups_woocommerce_memberships]');
 
 							
 
-					 <?php	 }
+					 <?php	 } ?>
  
-							
-
-
-							//print_r($user_Subscriptions);
-
-					    // make a parent category
-						// get all pages within category
-						// if user doesn't have read access.
-						// cannot view page
-						// Make a Redirect
-						
-
-
-						//get list of memberships
-						//return all pages with membership type
-						//list the pages content	
-
-							//
-							 ?>
-
-							<?php //echo do_shortcode('[flipbook id="7"]'); ?>
 
 							</div>
 							 
@@ -180,6 +133,7 @@ $user_group = do_shortcode('[groups_woocommerce_memberships]');
 	</div> <!-- #single-outer -->
 
 </div><!-- #main-content -->
+</div>
 
 <?php get_footer(); 
 ?>
