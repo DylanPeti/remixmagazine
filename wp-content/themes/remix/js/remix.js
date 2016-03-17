@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
 
-  $(".icon-subscribe").on("hover", function() {
+  $(".right-menu-wrap .icon-subscribe").on("hover", function() {
       $(".right-menu-wrap").addClass("menu_slide");
   }); 
 
