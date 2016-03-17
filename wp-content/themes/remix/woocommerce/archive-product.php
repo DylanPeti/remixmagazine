@@ -76,7 +76,7 @@ get_header( 'shop' ); ?>
 				 * woocommerce_after_shop_loop hook.
 				 *
 				 * @hooked woocommerce_pagination - 10
-				 */
+				 */	
 				do_action( 'woocommerce_after_shop_loop' );
 			?>
 
@@ -101,7 +101,7 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		do_action( 'woocommerce_sidebar' );
+		
 	?>
 
 <?php get_footer( 'shop' ); ?>
