@@ -861,7 +861,7 @@ body.single-post {
   background-size: cover;
   background-position-y: 50%;
 }
-/* line 295, sass/partials/article.scss */
+/* line 294, sass/partials/article.scss */
 .article-hero h2 {
   background: rgba(0, 0, 0, 0.7);
   padding: 10px 20px;
@@ -871,14 +871,14 @@ body.single-post {
   font-size: 40px;
 }
 
-/* line 306, sass/partials/article.scss */
+/* line 305, sass/partials/article.scss */
 .article_single .toolbar {
   border-bottom: solid 1px #f0f0f0;
   display: block;
   height: 50px;
   padding: 0 60px;
 }
-/* line 311, sass/partials/article.scss */
+/* line 310, sass/partials/article.scss */
 .article_single .toolbar span.article-tag,
 .article_single .toolbar span.author,
 .article_single .toolbar span.date,
@@ -889,30 +889,44 @@ body.single-post {
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 321, sass/partials/article.scss */
+/* line 320, sass/partials/article.scss */
 .article_single .toolbar span.crumbs {
   float: right;
   padding-right: 0px;
 }
-/* line 324, sass/partials/article.scss */
+/* line 323, sass/partials/article.scss */
 .article_single .toolbar span.crumbs p {
   font-family: helvetica, arial, verdana;
   font-size: 12px;
 }
-/* line 329, sass/partials/article.scss */
+/* line 328, sass/partials/article.scss */
 .article_single .toolbar .article-tag {
   text-transform: uppercase;
   font-weight: bold;
   width: inherit;
 }
-/* line 335, sass/partials/article.scss */
+/* line 333, sass/partials/article.scss */
+.article_single .toolbar .aligncenter {
+  margin: 0 auto;
+}
+/* line 336, sass/partials/article.scss */
+.article_single .toolbar .alignleft {
+  float: left;
+  margin-right: 20px;
+}
+/* line 340, sass/partials/article.scss */
+.article_single .toolbar .alignright {
+  float: right;
+  margin-left: 20px;
+}
+/* line 345, sass/partials/article.scss */
 .article_single .article_content {
   background: #ffffff;
   display: block;
   padding: 40px 0px 40px 60px;
   width: 100%;
 }
-/* line 341, sass/partials/article.scss */
+/* line 351, sass/partials/article.scss */
 .article_single .article_content .content .h1,
 .article_single .article_content .content .h2,
 .article_single .article_content .content .h3,
