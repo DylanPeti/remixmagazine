@@ -29,7 +29,7 @@ get_header();
 <!--                      <p class="description"><?php echo get_user_meta($user->data->ID)['description'][0] ?></p> -->
                    <!--   <p class="email"><?php echo $user->user_email ?></p> -->
 
-                   </a>
+                   
                      
                  	
                  </div>
