@@ -1,25 +1,87 @@
-/* line 1, ../sass/partials/shop.scss */
+/* line 3, ../sass/partials/shop.scss */
 #container {
   margin: 0 auto;
 }
 
-/* line 5, ../sass/partials/shop.scss */
+/* line 7, ../sass/partials/shop.scss */
 .single-product #container {
   max-width: 980px;
 }
 
-/* line 9, ../sass/partials/shop.scss */
+/* line 11, ../sass/partials/shop.scss */
 .woocommerce div.product .product_title {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* line 14, ../sass/partials/shop.scss */
+/* line 16, ../sass/partials/shop.scss */
 .magazine-title {
   text-align: center;
 }
 
-/* line 18, ../sass/partials/shop.scss */
+/* line 20, ../sass/partials/shop.scss */
 .issuuembed {
   margin: 0 auto;
+}
+
+/* line 24, ../sass/partials/shop.scss */
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+  width: 100% !important;
+}
+
+/* line 28, ../sass/partials/shop.scss */
+.cart_totals h2 {
+  margin: 0 0 20px 0;
+  line-height: 1;
+}
+
+/* line 33, ../sass/partials/shop.scss */
+.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  margin-left: 20px;
+  width: auto;
+  font-family: "museo-sans", verdana, sans-serif;
+  color: #3498db;
+  background: transparent;
+  padding: 7px 20px;
+  float: right;
+  display: block;
+  text-decoration: none;
+  border: 1px solid #3498db;
+  text-transform: uppercase;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/* line 55, ../sass/partials/shop.scss */
+.woocommerce ul.products li.product .button:hover, .woocommerce div.product form.cart .button:hover {
+  background: #3498db;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #3498db;
+}
+
+/* line 62, ../sass/partials/shop.scss */
+.woocommerce div.product form.cart .button {
+  margin-top: 10px !important;
+  height: 40px;
+  width: 150px;
+}
+
+/* line 67, ../sass/partials/shop.scss */
+.woocommerce ul.products li.product .button {
+  padding: 10px;
+  width: 136px;
+}
+
+/* line 72, ../sass/partials/shop.scss */
+.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button {
+  float: none;
+  margin: 0 auto;
+  display: block;
 }

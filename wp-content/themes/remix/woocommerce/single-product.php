@@ -52,6 +52,7 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
+		//;
 	?>
 
 <?php get_footer( 'shop' ); ?>

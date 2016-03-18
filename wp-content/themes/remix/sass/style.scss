@@ -163,7 +163,7 @@ input:placeholder-shown {
 }
 
 .btn-default,
-.btn-primary {
+.btn-primary, .woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button {
     border: 1px solid #ddd;
     box-shadow: none;
     border-radius: 0;
@@ -175,7 +175,7 @@ button {
     -moz-border-radius: 3;
     border-radius: 3px;
     margin-left: 20px;
-    width: inherit;
+    width: auto;
     font-family: $sans;
     color: $blue;
     background: transparent;
@@ -191,6 +191,7 @@ button {
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
+
 
 .btn:hover,
 button:hover {

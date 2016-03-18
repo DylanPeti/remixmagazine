@@ -1079,30 +1079,92 @@ footer p {
   margin-top: 15px;
 }
 
-/* line 1, sass/partials/shop.scss */
+/* line 3, sass/partials/shop.scss */
 #container {
   margin: 0 auto;
 }
 
-/* line 5, sass/partials/shop.scss */
+/* line 7, sass/partials/shop.scss */
 .single-product #container {
   max-width: 980px;
 }
 
-/* line 9, sass/partials/shop.scss */
+/* line 11, sass/partials/shop.scss */
 .woocommerce div.product .product_title {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* line 14, sass/partials/shop.scss */
+/* line 16, sass/partials/shop.scss */
 .magazine-title {
   text-align: center;
 }
 
-/* line 18, sass/partials/shop.scss */
+/* line 20, sass/partials/shop.scss */
 .issuuembed {
   margin: 0 auto;
+}
+
+/* line 24, sass/partials/shop.scss */
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+  width: 100% !important;
+}
+
+/* line 28, sass/partials/shop.scss */
+.cart_totals h2 {
+  margin: 0 0 20px 0;
+  line-height: 1;
+}
+
+/* line 33, sass/partials/shop.scss */
+.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  margin-left: 20px;
+  width: auto;
+  font-family: "museo-sans", verdana, sans-serif;
+  color: #3498db;
+  background: transparent;
+  padding: 7px 20px;
+  float: right;
+  display: block;
+  text-decoration: none;
+  border: 1px solid #3498db;
+  text-transform: uppercase;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/* line 55, sass/partials/shop.scss */
+.woocommerce ul.products li.product .button:hover, .woocommerce div.product form.cart .button:hover {
+  background: #3498db;
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #3498db;
+}
+
+/* line 62, sass/partials/shop.scss */
+.woocommerce div.product form.cart .button {
+  margin-top: 10px !important;
+  height: 40px;
+  width: 150px;
+}
+
+/* line 67, sass/partials/shop.scss */
+.woocommerce ul.products li.product .button {
+  padding: 10px;
+  width: 136px;
+}
+
+/* line 72, sass/partials/shop.scss */
+.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button {
+  float: none;
+  margin: 0 auto;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -1404,7 +1466,7 @@ input:placeholder-shown {
 
 /* line 165, sass/style.scss */
 .btn-default,
-.btn-primary {
+.btn-primary, .woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button {
   border: 1px solid #ddd;
   box-shadow: none;
   border-radius: 0;
@@ -1417,7 +1479,7 @@ button {
   -moz-border-radius: 3;
   border-radius: 3px;
   margin-left: 20px;
-  width: inherit;
+  width: auto;
   font-family: "museo-sans", verdana, sans-serif;
   color: #3498db;
   background: transparent;
@@ -1434,7 +1496,7 @@ button {
   transition: all 300ms ease;
 }
 
-/* line 195, sass/style.scss */
+/* line 196, sass/style.scss */
 .btn:hover, .btn-primary:hover, .btn-danger:hover,
 button:hover {
   background: #3498db;
@@ -1443,122 +1505,122 @@ button:hover {
   border: 1px solid #3498db;
 }
 
-/* line 211, sass/style.scss */
+/* line 212, sass/style.scss */
 section {
   width: 100%;
   padding: 25px 0 0;
 }
 
-/* line 216, sass/style.scss */
+/* line 217, sass/style.scss */
 #toolbar-section {
   padding-top: 30px;
   padding-bottom: 0;
 }
 
-/* line 221, sass/style.scss */
+/* line 222, sass/style.scss */
 .glyphicon {
   color: #ccc;
 }
 
-/* line 225, sass/style.scss */
+/* line 226, sass/style.scss */
 .article-img {
   background-size: cover;
   background-position: center center;
   height: 155px;
 }
 
-/* line 231, sass/style.scss */
+/* line 232, sass/style.scss */
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-/* line 236, sass/style.scss */
+/* line 237, sass/style.scss */
 .beauty {
   color: #6a7fdc;
 }
 
-/* line 240, sass/style.scss */
+/* line 241, sass/style.scss */
 .fashion {
   color: #da6adc;
 }
 
-/* line 244, sass/style.scss */
+/* line 245, sass/style.scss */
 .culture {
   color: #f58a76;
 }
 
-/* line 248, sass/style.scss */
+/* line 249, sass/style.scss */
 .lifestyle {
   color: #6adc9d;
 }
 
-/* line 252, sass/style.scss */
+/* line 253, sass/style.scss */
 .research {
   color: #f5cc76;
 }
 
-/* line 256, sass/style.scss */
+/* line 257, sass/style.scss */
 .outabout {
   color: #e6f074;
 }
 
-/* line 260, sass/style.scss */
+/* line 261, sass/style.scss */
 .social-btn {
   display: inline-block;
 }
 
-/* line 264, sass/style.scss */
+/* line 265, sass/style.scss */
 .sharebtns {
   margin-top: 30px;
 }
 
 /* Mail munch brand remove */
-/* line 272, sass/style.scss */
+/* line 273, sass/style.scss */
 .branding-container {
   display: none;
 }
 
-/* line 274, sass/style.scss */
+/* line 275, sass/style.scss */
 .single figure {
   float: left;
   margin: 0 10px;
 }
 
-/* line 280, sass/style.scss */
+/* line 281, sass/style.scss */
 .contributors-section {
   margin-top: 40px;
 }
 
-/* line 284, sass/style.scss */
+/* line 285, sass/style.scss */
 .contributors-section h2 {
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 289, sass/style.scss */
+/* line 290, sass/style.scss */
 .user-profile-card {
   padding: 15px 0;
 }
-/* line 293, sass/style.scss */
+/* line 294, sass/style.scss */
 .user-profile-card .avatar {
   display: block;
   margin: 0 auto;
   width: 150px;
   height: 150px;
 }
-/* line 300, sass/style.scss */
+/* line 301, sass/style.scss */
 .user-profile-card .avatar img {
   display: block;
   margin: 0 auto;
 }
-/* line 306, sass/style.scss */
+/* line 307, sass/style.scss */
 .user-profile-card p {
   text-align: center;
   line-height: 1.2;
   margin: 0;
 }
-/* line 313, sass/style.scss */
+/* line 314, sass/style.scss */
 .user-profile-card .name {
   font-size: 14px;
   padding: 15px 0 0 0;
@@ -1573,14 +1635,14 @@ section {
   transform: translateX(-50%);
   min-width: 170px;
 }
-/* line 328, sass/style.scss */
+/* line 329, sass/style.scss */
 .user-profile-card .description {
   padding: 15px 0;
   font-size: 16px;
   margin-top: 20px;
   text-align: left;
 }
-/* line 336, sass/style.scss */
+/* line 337, sass/style.scss */
 .user-profile-card .email {
   padding: 20px 0;
 }

@@ -1,7 +1,9 @@
  <?php
 
 get_header(); 
-global $post
+global $post;
+
+$page = (is_page('cart') ? 12 : 8);
 ?>
 <div class="container">
 	<div class="article_single">
@@ -12,9 +14,8 @@ global $post
 		</div>
 		  <div class="row article_content">
 
-		   <div class="col-md-8 ">
+		   <div class="col-md-<?php echo $page ?>">
 		   			
-
            <?php
 		// Start the loop.
 		while ( have_posts() ) : the_post();

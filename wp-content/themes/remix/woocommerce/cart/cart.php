@@ -22,7 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
-
+<div class="row">
+<div class="col-md-8">
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
@@ -154,11 +155,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 <?php do_action( 'woocommerce_after_cart_table' ); ?>
 
 </form>
+</div>
 
+
+
+<div class="col-md-4">
 <div class="cart-collaterals">
 
 	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
 
+</div>
+</div>
 </div>
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
