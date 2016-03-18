@@ -42,7 +42,7 @@
   -moz-border-radius: 3 !important;
   border-radius: 3px !important;
   margin-left: 20px !important;
-  width: auto !important;
+  width: auto;
   font-family: "museo-sans", verdana, sans-serif;
   color: #3498db !important;
   background: transparent !important;

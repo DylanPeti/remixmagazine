@@ -19,9 +19,13 @@
     .menu-main-menu-container {
         display: none;
     }
-    .article,
-    .article-latest,
-    .article-editors-choice {
+    .article:nth-child(n) {
+        margin-right: 12.5px;
+    }
+    .article-latest, .article-editors-choice {
+        width: calc(99.99% * 1/2 - (12.5px - 12.5px * 1/2));
+    }
+    .article {
         width: calc(99.99% * 1/2 - (25.5px - 25.5px * 1/2));
         margin-bottom: 25px;
     }
