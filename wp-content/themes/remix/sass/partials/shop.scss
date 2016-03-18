@@ -30,32 +30,39 @@
 	line-height: 1;
 }
 
-.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
-    -webkit-border-radius: 3;
-    -moz-border-radius: 3;
-    border-radius: 3px;
-    margin-left: 20px;
-    width: auto;
+.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button, 
+.woocommerce .cart .button, .woocommerce .cart input.button {
+    -webkit-border-radius: 3 !important;
+    -moz-border-radius: 3 !important;
+    border-radius: 3px !important;
+    margin-left: 20px !important;
+    width: auto !important;
     font-family: $sans;
-    color: $blue;
-    background: transparent;
+    color: $blue !important;
+    background: transparent !important;
     padding: 7px 20px;
     float: right;
-    display: block;
-    text-decoration: none;
-    border: 1px solid $blue;
-    text-transform: uppercase;
+    display: block !important;
+    text-decoration: none !important;
+    border: 1px solid $blue !important;
+    text-transform: uppercase !important;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
+    border: 1px solid $blue;
 }
 
-.woocommerce ul.products li.product .button:hover, .woocommerce div.product form.cart .button:hover {
-    background: $blue;
+.wc-proceed-to-checkout a.checkout-button {
+ padding: 15px 20px;
+}
+
+.woocommerce ul.products li.product .button:hover, .woocommerce div.product form.cart .button:hover, 
+.woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover  {
+    background: $blue  !important;
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff  !important;;
     border: 1px solid $blue;
 }
 
@@ -69,11 +76,18 @@
     width: 136px;
 }
 
+
 .woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button {
+
     float: none;
     margin: 0 auto;
     display: block;
-    
-  
+}
+.woocommerce .cart .button, .woocommerce .cart input.button {
+    margin: 0 10px;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+    width: 125px;
 }
 

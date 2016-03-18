@@ -36,52 +36,70 @@
 }
 
 /* line 33, ../sass/partials/shop.scss */
-.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
-  -webkit-border-radius: 3;
-  -moz-border-radius: 3;
-  border-radius: 3px;
-  margin-left: 20px;
-  width: auto;
+.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce .cart .button, .woocommerce .cart input.button {
+  -webkit-border-radius: 3 !important;
+  -moz-border-radius: 3 !important;
+  border-radius: 3px !important;
+  margin-left: 20px !important;
+  width: auto !important;
   font-family: "museo-sans", verdana, sans-serif;
-  color: #3498db;
-  background: transparent;
+  color: #3498db !important;
+  background: transparent !important;
   padding: 7px 20px;
   float: right;
-  display: block;
-  text-decoration: none;
-  border: 1px solid #3498db;
-  text-transform: uppercase;
+  display: block !important;
+  text-decoration: none !important;
+  border: 1px solid #3498db !important;
+  text-transform: uppercase !important;
   -webkit-transition: all 300ms ease;
   -moz-transition: all 300ms ease;
   -ms-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
-}
-
-/* line 55, ../sass/partials/shop.scss */
-.woocommerce ul.products li.product .button:hover, .woocommerce div.product form.cart .button:hover {
-  background: #3498db;
-  text-decoration: none;
-  color: #ffffff;
   border: 1px solid #3498db;
 }
 
-/* line 62, ../sass/partials/shop.scss */
+/* line 57, ../sass/partials/shop.scss */
+.wc-proceed-to-checkout a.checkout-button {
+  padding: 15px 20px;
+}
+
+/* line 61, ../sass/partials/shop.scss */
+.woocommerce ul.products li.product .button:hover, .woocommerce div.product form.cart .button:hover,
+.woocommerce .cart .button:hover, .woocommerce .cart input.button:hover, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
+  background: #3498db !important;
+  text-decoration: none;
+  color: #ffffff  !important;
+  border: 1px solid #3498db;
+}
+
+/* line 69, ../sass/partials/shop.scss */
 .woocommerce div.product form.cart .button {
   margin-top: 10px !important;
   height: 40px;
   width: 150px;
 }
 
-/* line 67, ../sass/partials/shop.scss */
+/* line 74, ../sass/partials/shop.scss */
 .woocommerce ul.products li.product .button {
   padding: 10px;
   width: 136px;
 }
 
-/* line 72, ../sass/partials/shop.scss */
+/* line 80, ../sass/partials/shop.scss */
 .woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button {
   float: none;
   margin: 0 auto;
   display: block;
+}
+
+/* line 86, ../sass/partials/shop.scss */
+.woocommerce .cart .button, .woocommerce .cart input.button {
+  margin: 0 10px;
+}
+
+/* line 90, ../sass/partials/shop.scss */
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+  width: 125px;
 }
