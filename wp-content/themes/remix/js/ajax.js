@@ -1,23 +1,46 @@
 jQuery(document).ready(function($) {
 
-    $(document).on( 'click', '#more', function( event ) {
-    	event.preventDefault();
+var ppp = 8; // Post per page
+var cat = 1;
 
-    		event.preventDefault();
 
-	        $.ajax({
-	        	url: ajaxpagination.ajaxurl,
-	        	type: 'post',
-	        	data: {
-	        		action: 'ajax_pagination'
-	        	},
-	        	
-	        	success: function( result ) {
-	        		alert( result );
-	        	}
-	        });
-            
-     
-    })
+function load_posts(){
+
+
+	var offset = $("#more-posts").data('offset');
+   
+    var str = '&offset=' + offset + '&ppp=' + ppp + '&action=more_post_ajax';
+
+    $.ajax({
+        type: "POST",
+        dataType: "html",
+        url: ajax_posts.ajaxurl,
+        data: str,
+        success: function(data){
+            var $data = $(data);
+            if($data.length){
+                $(".article-collection-bottom").append($data);
+                $("#more-posts").attr("disabled",false);
+            } else{
+                $("#more-posts").attr("disabled",true);
+            }
+        },
+        error : function(jqXHR, textStatus, errorThrown) {
+            $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+        }
+
+    });
+    return false;
+}
+
+$("#more-posts").on("click",function(){ // When btn is pressed.
+    $("#more-posts").attr("disabled",true); // Disable the button, temp.
+    load_posts();
+    var offset = $("#more-posts").data('offset');
+    var append = offset + 8;
+    $("#more-posts").data('offset', append);
+
+});
+
 
 });

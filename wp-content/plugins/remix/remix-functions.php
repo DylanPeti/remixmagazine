@@ -85,7 +85,7 @@ function get_instagram($id = 'self', $limit = 0) {
 }
 
 
-function the_latest_posts($count, $ids = array(), $index) {
+function the_latest_posts($count = 0, $ids = array(), $index = 0) {
 
     $do_not_duplicate = array();
     $do_not_duplicate[] = 9767;
@@ -163,15 +163,15 @@ $late = $recent_post[0]->ID;
 function article($item) {
 
 
+
 $description = wp_trim_words($item->post_content, 100);
-$title = $item->post_title;
+$title = (isset($item->post_title) ? $item->post_title : '');
 $link = thumbnail_link($item);
 $category = get_the_category($item->ID);
 $image = remix_thumbnail_url($item); 
 $category = $category[0]->name;
 ?>
 <article class="article">
-
    <a href="<?php echo $link; ?>"> 
     <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
     </div>

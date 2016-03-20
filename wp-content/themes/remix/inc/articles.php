@@ -30,6 +30,7 @@ $articles = get_articles(0, array($recent_post[0]->ID)); ?>
         
          <?php 
 
+
              $count++;
 
              if($count == 4) {
@@ -51,6 +52,7 @@ $articles = get_articles(0, array($recent_post[0]->ID)); ?>
           ?>
          
       <?php endforeach; ?>
+
       
     </div>
 

@@ -99,6 +99,54 @@ function rewrite_tag(){
 }
 
 
+/**
+ *
+ *
+ * Load more posts
+ */
+
+function more_post_ajax(){
+
+    $ppp = (isset($_POST["ppp"])) ? $_POST["ppp"] : 8;
+    $offset = (isset($_POST['offset'])) ? $_POST['offset'] : 16;
+
+
+
+
+    header("Content-Type: text/html");
+
+
+
+$args = array(
+    'posts_per_page' => 8,
+    'category' => 0,
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'post_type' => 'post',
+    'offset' => $offset,
+    'post_status' => 'publish',
+    'suppress_filters' => true 
+
+ );
+
+    $loop =  new WP_Query( $args, OBJECT);
+
+    $out = '';
+    global $post;
+
+    if ($loop -> have_posts()) :  while ($loop -> have_posts()) : $loop -> the_post();
+        $out .= article($post);
+
+    endwhile;
+    endif;
+    wp_reset_postdata();
+    die($out);
+}
+
+
+add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');
+add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
+
 
 
 

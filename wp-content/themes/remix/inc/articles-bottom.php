@@ -29,7 +29,7 @@ foreach ($items as $recent) {
   
   <div class="container">
    
-    <div class="article-collection">
+    <div class="article-collection article-collection-bottom">
      <?php $count = 0; ?>
       <?php foreach ($articles as $item) : ?>
 
@@ -51,6 +51,10 @@ foreach ($items as $recent) {
       <?php endforeach; ?>
       
     </div>
+
+    <?php $offset = 18; ?>
+
+    <button id="more-posts" data-offset=<?php echo $offset ?>>Load More</button>
 
   </div>
 

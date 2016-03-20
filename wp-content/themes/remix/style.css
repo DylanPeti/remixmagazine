@@ -1672,3 +1672,10 @@ section {
 .user-profile-card .email {
   padding: 20px 0;
 }
+
+/* line 343, sass/style.scss */
+#more-posts {
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
