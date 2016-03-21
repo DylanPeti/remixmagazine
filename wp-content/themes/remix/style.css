@@ -949,6 +949,12 @@ body.single-post {
   padding: 20px 0;
 }
 
+/* line 377, sass/partials/article.scss */
+.single-editor .article-editors-choice {
+  width: 300px;
+  float: none;
+}
+
 /* line 2, sass/partials/carousel.scss */
 .carousel-control.left, .carousel-control.right {
   background-image: none;

@@ -567,3 +567,9 @@ body.single-post {
   font-size: 20px;
   padding: 20px 0;
 }
+
+/* line 377, ../sass/partials/article.scss */
+.single-editor .article-editors-choice {
+  width: 300px;
+  float: none;
+}

@@ -57,12 +57,18 @@ $width = ($id == $number) ? 12 :  8;
 		  
             <?php get_sidebar(); ?>
 
+   <div class="single-editor">
+
+		     <?php include('inc/editors-choice.php'); ?>
+
+		    </div>
 
 		  
 	      
 		   </div>
 		   <?php } ?>
-		     <?php include('inc/editors-choice.php'); ?>
+
+		
 		 </div>
 
 	</div>
