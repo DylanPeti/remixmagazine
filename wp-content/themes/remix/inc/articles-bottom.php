@@ -52,7 +52,7 @@ foreach ($items as $recent) {
       
     </div>
 
-    <?php $offset = 8; ?>
+    <?php $offset = 9; ?>
 
     <button id="more-posts" data-offset=<?php echo $offset ?>>Load More</button>
 
