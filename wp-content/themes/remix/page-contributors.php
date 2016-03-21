@@ -24,7 +24,15 @@ get_header();
                  <div class="user-profile-card">
                  <a href="<?php echo get_author_posts_url($user->data->ID); ?>">
 
-                     <div class="single-avatar" style="background-image: url(<?php echo get_avatar_url( $user->user_email, array('size' => 136)); ?>)"></div>
+                 <?php 
+
+                 $args = array(
+                  'size' => 136,
+                  'force_default'  => false,
+                  );
+                  ?>
+
+                     <div class="single-avatar" style="background-image: url(<?php echo get_avatar_url( $user->user_email, $args); ?>)"></div>
                      <p class="name"><?php echo $user->display_name ?></p>
 
 

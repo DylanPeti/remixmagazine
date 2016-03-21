@@ -572,4 +572,5 @@ body.single-post {
 .single-editor .article-editors-choice {
   width: 300px;
   float: none;
+  margin: 0 auto 20px auto;
 }
