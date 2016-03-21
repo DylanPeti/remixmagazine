@@ -54,14 +54,16 @@ $width = ($id == $number) ? 12 :  8;
 
 		   <?php if($id != $number) { ?>
 		    <div class="col-md-4 sidebar">
-		  
-            <?php get_sidebar(); ?>
 
-   <div class="single-editor">
+		       <div class="single-editor">
 
 		     <?php include('inc/editors-choice.php'); ?>
 
 		    </div>
+		  
+            <?php get_sidebar(); ?>
+
+
 
 		  
 	      
