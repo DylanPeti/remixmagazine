@@ -24,14 +24,10 @@ get_header();
                  <div class="user-profile-card">
                  <a href="<?php echo get_author_posts_url($user->data->ID); ?>">
 
-                     <div class="avatar"><?php echo get_avatar( $user->user_email , 182 ); ?></div>
+                     <div class="single-avatar" style="background-image: url(<?php echo get_avatar_url( $user->user_email, array('size' => 136)); ?>)"></div>
                      <p class="name"><?php echo $user->display_name ?></p>
-<!--                      <p class="description"><?php echo get_user_meta($user->data->ID)['description'][0] ?></p> -->
-                   <!--   <p class="email"><?php echo $user->user_email ?></p> -->
 
-                   
-                     
-                 	
+
                  </div>
                  	
                  </div>

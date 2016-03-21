@@ -1712,3 +1712,13 @@ section {
 #toolbar-section {
   display: none;
 }
+
+/* line 354, sass/style.scss */
+.single-avatar {
+  width: 136px;
+  height: 136px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
