@@ -61,7 +61,7 @@ add_theme_support( 'html5', array(
 add_theme_support( 'post-formats', array(
     'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
   ) );
-add_theme_support( 'post-thumbnails', array('post', 'page', 'category') );
+add_theme_support( 'post-thumbnails', array('post', 'page', 'category', 'product') );
   set_post_thumbnail_size( 825, 510, true );
 
 }
