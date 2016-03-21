@@ -4,6 +4,18 @@ var ppp = 8; // Post per page
 var cat = 1;
 
 
+
+
+
+$(document).scroll(function() {
+var mouse = $(document).scrollTop();
+var load_position = $(".article-collection-bottom").position().top - $(".article-collection-bottom").height();
+
+
+
+});
+
+
 function load_posts(){
 
 
@@ -33,14 +45,35 @@ function load_posts(){
     return false;
 }
 
-$("#more-posts").on("click",function(){ // When btn is pressed.
-    $("#more-posts").attr("disabled",true); // Disable the button, temp.
-    load_posts();
-    var offset = $("#more-posts").data('offset');
-    var append = offset + 8;
-    $("#more-posts").data('offset', append);
+
+
+
+
+
+   
+   $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() == $(document).height() ){
+        	var offset = $("#more-posts").data('offset');
+
+          var append = offset + 8;
+          $("#more-posts").data('offset', append);
+           load_posts();
+   
+        }
+   
 
 });
+   });
 
 
-});
+
+
+
+
+
+
+
+
+
+
+
