@@ -30,9 +30,10 @@ get_header();
                   'size' => 136,
                   'force_default'  => false,
                   );
+                 $avatar = get_avatar( $user->data->ID);
                   ?>
 
-                     <div class="single-avatar" style="background-image: url(<?php echo get_avatar_url( $user->user_email, $args); ?>)"></div>
+                     <div class="single-avatar" style="background-image: url(<?php echo $avatar; ?>)"></div>
                      <p class="name"><?php echo $user->display_name ?></p>
 
 
