@@ -42,8 +42,11 @@ $width = ($id == $number) ? 12 :  8;
 					  <?php $args = array('numberposts' => 3 ,'cat' => $cat_ID, 'status' => 'publish' ); ?>
 
 					  <?php $posts_array = get_posts( $args ); ?>
+
+                 <div class="row">
                  <div class="col-md-12">
                    <h2>More like this</h2>
+                   </div>
                   </div>
 					  <?php
 
