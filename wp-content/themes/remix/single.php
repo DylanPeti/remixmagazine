@@ -56,10 +56,13 @@ $width = ($id == $number) ? 12 :  8;
 		    <div class="col-md-4 sidebar">
 		  
             <?php get_sidebar(); ?>
+
+
 		  
 	      
 		   </div>
 		   <?php } ?>
+		     <?php include('inc/editors-choice.php'); ?>
 		 </div>
 
 	</div>
