@@ -21,7 +21,7 @@ $width = ($id == $number) ? 12 :  8;
 	
 	<div class="toolbar">
 		<span class="article-tag">Category</span>
-		<span class="author"><?php echo remix_post_author($post->ID); ?></span>
+		<span class="author"><?php echo get_the_author_meta('display_name', $post->post_author); ?></span>
 		<span class="date"><?php echo $post->post_date; ?></span>
 		<span class="crumbs">
 		<?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
