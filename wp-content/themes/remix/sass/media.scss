@@ -16,6 +16,15 @@
 
 
 @media screen and (max-width: 1000px) {
+
+    header .advert-temp {
+        height: 40px;
+    }
+
+    header .advert-temp img {
+       margin: 0 auto;
+    }
+
     .menu-main-menu-container {
         display: none;
     }
@@ -65,6 +74,11 @@
 }
 
 @media screen and (max-width: 470px) {
+
+    header .right-menu-wrap {
+        display: none;
+    }
+
     .article-hero h2 {
         font-size: 16px;
     }

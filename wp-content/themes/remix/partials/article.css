@@ -561,3 +561,9 @@ body.single-post {
   line-height: 1.4;
   font-family: Times, 'Times new roman', sans;
 }
+
+/* line 370, ../sass/partials/article.scss */
+.author-title {
+  font-size: 20px;
+  padding: 20px 0;
+}
