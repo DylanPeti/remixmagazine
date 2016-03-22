@@ -61,7 +61,7 @@ $category = $category[0]->name;
 
 <?php include('editors-choice.php'); ?>
 
- <div class="banner-advert">
+<!--  <div class="banner-advert">
      <div class="banner-area">
         <a href="http://goo.gl/4LKGMQ" target="_blank">
           <img src="http://remixmagazine.com/wp-content/uploads/2016/03/CONVERSE_CTASII_camo_720x80-1.jpg" class="img-responsive">
@@ -71,7 +71,7 @@ $category = $category[0]->name;
         <h5>Promotion</h5>
         <button class="ad-btn">Learn More</button>
         </div>
- </div>
+ </div> -->
 
 </section>
 
