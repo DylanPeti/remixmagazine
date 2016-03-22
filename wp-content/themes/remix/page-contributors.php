@@ -16,6 +16,8 @@ get_header();
 		</div>
 
 		<?php
+
+
            $blogusers = get_users( 'blog_id=1&orderby=nicename&role=author' );
 
            foreach ( $blogusers as $user ) { ?>
@@ -33,7 +35,7 @@ get_header();
              
                $args = get_avatar_data( $user->data->ID, $args);
 
-               $url = $args['url'];
+               $url = get_wp_user_avatar_src($user->data->ID);
 
 
                   ?>
