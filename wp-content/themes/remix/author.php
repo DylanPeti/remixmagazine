@@ -23,7 +23,7 @@ get_header();
 
     <?php 
 
-    $args = array( 'author' => $author, 'posts_per_page' => 5, 'status' => 'publish' );
+    $args = array( 'author' => $author, 'posts_per_page' => 30, 'status' => 'publish' );
 
     $posts = get_posts($args);
 
@@ -32,26 +32,32 @@ get_header();
  	
  </div>
 
+<?php if(!empty($posts)) { ?>
  <section id="article-section" class="black">
   
   <div class="container">
 
 
-   <div class="row">
-    <div class="col-md-12"><h2 class="author-title">Articles by <?php echo get_the_author_meta('display_name', $author); ?></h2></div>
-    </div>
+     <div class="row">
+
+        <div class="col-md-12">
+            <h2 class="author-title">Articles by <?php echo get_the_author_meta('display_name', $author); ?></h2>
+        </div>
+      </div>
    
     <div class="article-collection">
 
     
-    <?php foreach($posts as $article) {
-    	article($article);
-    } ?>
+        <?php foreach($posts as $article) {
+        	article($article);
+        } ?>
 
     </div>
     </div>
-    </div>
 
+
+    </section>
+<?php } ?>
 
 </div>
 

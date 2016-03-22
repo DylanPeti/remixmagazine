@@ -17,10 +17,17 @@ get_header();
 
 		<?php
 
+    $remix_team = array('Lauren Matthews', 'Tim Phin', 'Steven Fernandez', 'Isabelle Truman', 'Daisy conroy-botica', 'Jamie Clements', 'Billie Cole');
+
+
+
 
            $blogusers = get_users( 'blog_id=1&orderby=nicename&role=author' );
 
            foreach ( $blogusers as $user ) { ?>
+
+           <?php $name = $user->data->display_name; ?>
+
 
                  <div class="col-md-2">
                  <div class="user-profile-card">
@@ -47,6 +54,11 @@ get_header();
                  </div>
                  	
                  </div>
+
+
+
+       
+
            
           <?php } ?>
 
