@@ -35,7 +35,7 @@
     -webkit-border-radius: 3 !important;
     -moz-border-radius: 3 !important;
     border-radius: 3px !important;
-    margin-left: 20px !important;
+    margin-left: 20px;
     width: auto;
     font-family: $sans;
     color: $blue !important;
@@ -77,12 +77,21 @@
 }
 
 
-.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button {
+.woocommerce div.product form.cart .button {
 
     float: none;
     margin: 0 auto;
     display: block;
 }
+
+.woocommerce ul.products li.product .button{
+ float: none;
+    margin: 0 auto;
+    display: block;
+  width: 134px;
+}
+
+
 .woocommerce .cart .button, .woocommerce .cart input.button {
     margin: 0 10px;
 }

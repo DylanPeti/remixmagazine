@@ -1146,7 +1146,7 @@ footer p {
   -webkit-border-radius: 3 !important;
   -moz-border-radius: 3 !important;
   border-radius: 3px !important;
-  margin-left: 20px !important;
+  margin-left: 20px;
   width: auto;
   font-family: "museo-sans", verdana, sans-serif;
   color: #3498db !important;
@@ -1193,18 +1193,26 @@ footer p {
 }
 
 /* line 80, sass/partials/shop.scss */
-.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button {
+.woocommerce div.product form.cart .button {
   float: none;
   margin: 0 auto;
   display: block;
 }
 
-/* line 86, sass/partials/shop.scss */
+/* line 87, sass/partials/shop.scss */
+.woocommerce ul.products li.product .button {
+  float: none;
+  margin: 0 auto;
+  display: block;
+  width: 134px;
+}
+
+/* line 95, sass/partials/shop.scss */
 .woocommerce .cart .button, .woocommerce .cart input.button {
   margin: 0 10px;
 }
 
-/* line 90, sass/partials/shop.scss */
+/* line 99, sass/partials/shop.scss */
 .woocommerce-cart table.cart td.actions .coupon .input-text {
   width: 125px;
 }
