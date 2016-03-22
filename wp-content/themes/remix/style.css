@@ -1738,3 +1738,18 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+/* line 363, sass/style.scss */
+.user-profile-image {
+  margin-top: 30px;
+}
+
+/* line 367, sass/style.scss */
+.author-avatar {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

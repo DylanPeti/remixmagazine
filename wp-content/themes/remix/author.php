@@ -9,7 +9,9 @@ get_header();
  <div class="col-md-3">
 
  	<div class="user-profile-image">
- 		  <div class="avatar"><?php echo get_avatar($author, 260 ); ?></div>
+ 		<?php $url = get_wp_user_avatar_src($author, 250); ?>
+
+                     <div class="author-avatar" style="background-image: url(<?php echo $url ?>)"></div>
  	</div>
  </div>
 
