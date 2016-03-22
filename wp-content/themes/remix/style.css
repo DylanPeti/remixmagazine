@@ -323,7 +323,7 @@ header .left-menu-wrap:hover {
 /* line 270, sass/partials/header.scss */
 .toolbar #menu-remix li {
   list-style: none;
-  font-size: 19px;
+  font-size: 22px;
   display: inline-block;
   text-align: center;
   padding: 0 40px;
@@ -1204,15 +1204,16 @@ footer p {
   float: none;
   margin: 0 auto;
   display: block;
-  width: 119px;
+  width: 100%;
+  text-align: center;
 }
 
-/* line 95, sass/partials/shop.scss */
+/* line 96, sass/partials/shop.scss */
 .woocommerce .cart .button, .woocommerce .cart input.button {
   margin: 0 10px;
 }
 
-/* line 99, sass/partials/shop.scss */
+/* line 100, sass/partials/shop.scss */
 .woocommerce-cart table.cart td.actions .coupon .input-text {
   width: 125px;
 }

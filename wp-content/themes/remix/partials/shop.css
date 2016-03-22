@@ -99,15 +99,16 @@
   float: none;
   margin: 0 auto;
   display: block;
-  width: 119px;
+  width: 100%;
+  text-align: center;
 }
 
-/* line 95, ../sass/partials/shop.scss */
+/* line 96, ../sass/partials/shop.scss */
 .woocommerce .cart .button, .woocommerce .cart input.button {
   margin: 0 10px;
 }
 
-/* line 99, ../sass/partials/shop.scss */
+/* line 100, ../sass/partials/shop.scss */
 .woocommerce-cart table.cart td.actions .coupon .input-text {
   width: 125px;
 }
