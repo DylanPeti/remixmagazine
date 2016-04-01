@@ -75,8 +75,8 @@
     </div>
     <div class="col-md-9">
       <div class="advert-temp">
-        <a href="http://goo.gl/4LKGMQ" target="_blank">
-          <img src="http://remixmagazine.com/wp-content/uploads/2016/03/CONVERSE_CTASII_camo_720x80-1.jpg" class="img-responsive">
+        <a href="https://goo.gl/XDl3ru" target="_blank">
+          <img src="http://remixmagazine.com/wp-content/uploads/2016/04/CONVERSE_CTASII_knit_720x80.jpg" class="img-responsive">
         </a>
       </div>
     </div>
