@@ -101,3 +101,30 @@
     width: 125px;
 }
 
+
+.woocommerce-cart {
+    font-family: "museo-sans", verdana, sans-serif;
+}
+
+.woocommerce-cart {
+
+  .cart-subtotal th, .order-total th {
+    color: #666;
+
+    } 
+
+    .recurring-totals th{
+        color: #3498db;
+    }
+
+    .amount, .recurring-total td  {
+    font-weight: 400;
+    color: #333;
+   }
+   .order-total.recurring-total th {
+    color: #3498db;
+   }
+}
+
+
+

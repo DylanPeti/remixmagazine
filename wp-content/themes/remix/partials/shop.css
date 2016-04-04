@@ -112,3 +112,26 @@
 .woocommerce-cart table.cart td.actions .coupon .input-text {
   width: 125px;
 }
+
+/* line 105, ../sass/partials/shop.scss */
+.woocommerce-cart {
+  font-family: "museo-sans", verdana, sans-serif;
+}
+
+/* line 111, ../sass/partials/shop.scss */
+.woocommerce-cart .cart-subtotal th, .woocommerce-cart .order-total th {
+  color: #666;
+}
+/* line 116, ../sass/partials/shop.scss */
+.woocommerce-cart .recurring-totals th {
+  color: #3498db;
+}
+/* line 120, ../sass/partials/shop.scss */
+.woocommerce-cart .amount, .woocommerce-cart .recurring-total td {
+  font-weight: 400;
+  color: #333;
+}
+/* line 124, ../sass/partials/shop.scss */
+.woocommerce-cart .order-total.recurring-total th {
+  color: #3498db;
+}

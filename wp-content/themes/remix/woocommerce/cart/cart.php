@@ -23,6 +23,11 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 <div class="row">
+<div class="col-md-12">
+		<h2><?php _e( 'Cart Totals', 'woocommerce' ); ?></h2>
+		</div>
+</div>
+<div class="row">
 <div class="col-md-8">
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
@@ -41,6 +46,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 	</thead>
 	<tbody>
 		<?php do_action( 'woocommerce_before_cart_contents' ); ?>
+
 
 		<?php
 		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
@@ -80,7 +86,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							if ( ! $_product->is_visible() ) {
 								echo apply_filters( 'woocommerce_cart_item_name', $_product->get_title(), $cart_item, $cart_item_key ) . '&nbsp;';
 							} else {
-								echo apply_filters( 'woocommerce_cart_item_name', sprintf( '<a href="%s">%s</a>', esc_url( $_product->get_permalink( $cart_item ) ), $_product->get_title() ), $cart_item, $cart_item_key );
+								echo $_product->get_title();
 							}
 
 							// Meta data
