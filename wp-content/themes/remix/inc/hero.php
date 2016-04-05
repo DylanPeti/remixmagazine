@@ -25,7 +25,9 @@
               <a href="<?php echo get_the_permalink($dog->ID); ?>">
                  <h2><?php echo $dog->post_title; ?></h2>
               </a>
-<!--               <p class="hero-desc"><?php echo wp_trim_words($dog->post_content, 15); ?></p> -->
+           <?php if(strlen($dog->post_title) < 59) { ?>
+      <p class="hero-desc"><?php echo wp_trim_words($dog->post_content, 15); ?></p>  
+      <?php } ?>
 
 <!--             <span class="author"><?php echo $dog->post_author; ?></span> -->
             <ul class="entypo-icons">
