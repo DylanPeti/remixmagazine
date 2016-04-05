@@ -37,7 +37,7 @@ get_header();
 
     ?>
 
-      <div class="col-md-2">
+<div class="col-md-2">
                  <div class="user-profile-card">
                  <a href="<?php echo get_author_posts_url($user->data->ID); ?>">
 
@@ -71,7 +71,13 @@ get_header();
 
 
   <?php
-           $blogusers = get_users( 'blog_id=1&orderby=rand&role=author' );
+
+  $args_two = array(
+    'blog_id' => '1',
+    'order' => 'rand',
+    'role' => 'author',
+    );
+           $blogusers = get_users( $args_two );
 
            foreach ( $blogusers as $user ) { ?>
 
