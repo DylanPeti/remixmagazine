@@ -36,7 +36,7 @@
 }
 
 /* line 33, ../sass/partials/shop.scss */
-.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce ul.products li.product .button, .woocommerce div.product form.cart .button,
 .woocommerce .cart .button, .woocommerce .cart input.button {
   -webkit-border-radius: 3 !important;
   -moz-border-radius: 3 !important;
@@ -118,20 +118,115 @@
   font-family: "museo-sans", verdana, sans-serif;
 }
 
-/* line 111, ../sass/partials/shop.scss */
-.woocommerce-cart .cart-subtotal th, .woocommerce-cart .order-total th {
+/* line 113, ../sass/partials/shop.scss */
+.woocommerce-cart .cart-subtotal th, .woocommerce-cart .order-total th, .woocommerce-cart .order-total.recurring-total th {
   color: #666;
 }
-/* line 116, ../sass/partials/shop.scss */
+/* line 118, ../sass/partials/shop.scss */
 .woocommerce-cart .recurring-totals th {
   color: #3498db;
 }
-/* line 120, ../sass/partials/shop.scss */
-.woocommerce-cart .amount, .woocommerce-cart .recurring-total td {
+/* line 122, ../sass/partials/shop.scss */
+.woocommerce-cart .amount, .woocommerce-cart .order-total.recurring-total td, .woocommerce-cart .subscription-details {
   font-weight: 400;
+}
+/* line 128, ../sass/partials/shop.scss */
+.woocommerce-cart .order-total th {
+  font-weight: 900;
   color: #333;
 }
-/* line 124, ../sass/partials/shop.scss */
-.woocommerce-cart .order-total.recurring-total th {
-  color: #3498db;
+/* line 133, ../sass/partials/shop.scss */
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
+  background-color: #3498db !important;
+  height: 52px !important;
+  padding: 17.5px !important;
+  border: none !important;
+}
+/* line 141, ../sass/partials/shop.scss */
+.woocommerce-cart .product-name {
+  font-weight: 100;
+}
+/* line 144, ../sass/partials/shop.scss */
+.woocommerce-cart .woocommerce .quantity .qty {
+  padding-right: 0;
+}
+/* line 148, ../sass/partials/shop.scss */
+.woocommerce-cart #coupon_code {
+  width: 135px;
+}
+/* line 152, ../sass/partials/shop.scss */
+.woocommerce-cart .cart_item td {
+  padding: 15px !important;
+}
+/* line 156, ../sass/partials/shop.scss */
+.woocommerce-cart .actions {
+  padding: 15px !important;
+}
+/* line 160, ../sass/partials/shop.scss */
+.woocommerce-cart .woocommerce a.remove {
+  font-size: 17.8px;
+  background: #eee;
+}
+/* line 165, ../sass/partials/shop.scss */
+.woocommerce-cart .article_content p {
+  margin: 0;
+}
+
+/* line 171, ../sass/partials/shop.scss */
+.shop-title {
+  margin: 0 0 15px 0 !important;
+  font-family: "proxima-nova",sans-serif;
+  font-weight: 700;
+}
+
+/* line 177, ../sass/partials/shop.scss */
+.woocommerce-checkout {
+  font-family: "proxima-nova",sans-serif;
+}
+/* line 181, ../sass/partials/shop.scss */
+.woocommerce-checkout form input[type=text], .woocommerce-checkout form input[type=email], .woocommerce-checkout form input.input-text, .woocommerce-checkout form input[type=password], .woocommerce-checkout form textarea {
+  height: 37px;
+  box-shadow: none;
+  color: #666;
+  font-weight: 400;
+}
+/* line 188, ../sass/partials/shop.scss */
+.woocommerce-checkout .col2-set#customer_details label {
+  font-size: 14px;
+  padding: 5px 5px 0 0;
+  line-height: 1;
+}
+/* line 194, ../sass/partials/shop.scss */
+.woocommerce-checkout .select2-container .select2-choice {
+  height: 37px;
+  font-size: 14px;
+}
+/* line 199, ../sass/partials/shop.scss */
+.woocommerce-checkout .checkout-info {
+  width: 500px;
+}
+/* line 203, ../sass/partials/shop.scss */
+.woocommerce-checkout .product-name {
+  font-weight: 400;
+}
+/* line 207, ../sass/partials/shop.scss */
+.woocommerce-checkout .payment_box .payment_method_stripe, .woocommerce-checkout .payment_method_stripe, .woocommerce-checkout .wc_payment_methods.payment_methods.methods {
+  display: none;
+}
+/* line 210, ../sass/partials/shop.scss */
+.woocommerce-checkout #add_payment_method #payment, .woocommerce-checkout .woocommerce-checkout #payment {
+  background: #fff;
+  border: none;
+}
+/* line 214, ../sass/partials/shop.scss */
+.woocommerce-checkout #add_payment_method #payment ul.payment_methods, .woocommerce-checkout .woocommerce-checkout #payment ul.payment_methods {
+  border-bottom: none;
+}
+/* line 218, ../sass/partials/shop.scss */
+.woocommerce-checkout .woocommerce #payment #place_order, .woocommerce-checkout .woocommerce-page #payment #place_order {
+  background-color: #3498db !important;
+  height: 52px !important;
+  padding: 17.5px !important;
+  border: none !important;
+  font-size: 18px;
 }

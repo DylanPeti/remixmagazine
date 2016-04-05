@@ -22,11 +22,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
-<div class="row">
-<div class="col-md-12">
-		<h2><?php _e( 'Cart Totals', 'woocommerce' ); ?></h2>
-		</div>
-</div>
+
+
+		<h2 class="shop-title"><?php _e( 'Cart', 'woocommerce' ); ?></h2>
+
 <div class="row">
 <div class="col-md-8">
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">

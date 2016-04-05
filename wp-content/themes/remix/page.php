@@ -3,7 +3,7 @@
 get_header(); 
 global $post;
 
-$page = (is_page('cart') ? 12 : 8);
+$page = (is_page('cart') ? 12 : (is_page('checkout') ? 12 : 8));
 ?>
 <div class="container">
 	<div class="article_single">

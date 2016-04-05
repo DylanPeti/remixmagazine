@@ -63,8 +63,8 @@ class WC_Subscriptions_Cart {
 		add_action( 'woocommerce_ajax_added_to_cart', __CLASS__ . '::pre_get_refreshed_fragments', 1, 1 );
 
 		// Display grouped recurring amounts after order totals on the cart/checkout pages
-		add_action( 'woocommerce_cart_totals_after_order_total', __CLASS__ . '::display_recurring_totals' );
-		add_action( 'woocommerce_review_order_after_order_total', __CLASS__ . '::display_recurring_totals' );
+		add_action( 'woocommerce_cart_totals_before_order_total', __CLASS__ . '::display_recurring_totals' );
+		add_action( 'woocommerce_review_order_before_order_total', __CLASS__ . '::display_recurring_totals' );
 
 		add_action( 'woocommerce_add_to_cart_validation', __CLASS__ . '::check_valid_add_to_cart', 10, 3 );
 

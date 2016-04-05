@@ -12,10 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $display_th = true;
-var_dump("hi");
 ?>
-
-		<!-- 	<tr class="recurring-totals">
+<!-- 
+			<tr class="recurring-totals">
 				<th colspan="2"><?php esc_html_e( 'Subscription', 'woocommerce-subscriptions' ); ?></th>
 			</tr> -->
 
@@ -25,9 +24,9 @@ var_dump("hi");
 				<?php endif; ?>
 				<tr class="cart-subtotal recurring-total">
 					<?php if ( $display_th ) : $display_th = false; ?>
-					<th rowspan="<?php echo esc_attr( $carts_with_multiple_payments ); ?>"><?php esc_html_e( 'Subtotal', 'woocommerce-subscriptions' ); ?></th>
+				<!-- 	<th rowspan="<?php echo esc_attr( $carts_with_multiple_payments ); ?>"><?php esc_html_e( 'Subtotal', 'woocommerce-subscriptions' ); ?></th>
 					<?php endif; ?>
-					<td><?php wcs_cart_totals_subtotal_html( $recurring_cart ); ?></td>
+					<td><?php wcs_cart_totals_subtotal_html( $recurring_cart ); ?></td> -->
 				</tr>
 			<?php endforeach; ?>
 			<?php $display_th = true; ?>
@@ -112,7 +111,7 @@ var_dump("hi");
 			<?php endif; ?>
 			<tr class="order-total recurring-total">
 				<?php if ( $display_th ) : $display_th = false; ?>
-				<th rowspan="<?php echo esc_attr( $carts_with_multiple_payments ); ?>"><?php esc_html_e( 'Recurring Total', 'woocommerce-subscriptions' ); ?></th>
+				<th rowspan="<?php echo esc_attr( $carts_with_multiple_payments ); ?>"><?php esc_html_e( 'Subscriptions', 'woocommerce-subscriptions' ); ?></th>
 				<?php endif; ?>
 				<td><?php wcs_cart_totals_order_total_html( $recurring_cart ); ?></td>
 			</tr>

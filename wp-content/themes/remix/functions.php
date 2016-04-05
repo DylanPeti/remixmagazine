@@ -148,7 +148,14 @@ add_action('wp_ajax_nopriv_more_post_ajax', 'more_post_ajax');
 add_action('wp_ajax_more_post_ajax', 'more_post_ajax');
 
 
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
+function custom_override_checkout_fields( $fields ) {
+     unset($fields['order']['order_comments']);
+     return $fields;
+}
+
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
 
 
