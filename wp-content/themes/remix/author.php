@@ -42,6 +42,7 @@ get_header();
 
         <div class="col-md-12">
             <h2 class="author-title">Articles by <?php echo get_the_author_meta('display_name', $author); ?></h2>
+                                 <p><?php echo get_user_meta($author, 'description', true) ?></p>
         </div>
       </div>
    
