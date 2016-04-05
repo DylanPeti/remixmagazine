@@ -17,11 +17,52 @@ get_header();
 
 		<?php
 
-    $remix_team = array('Lauren Matthews', 'Tim Phin', 'Steven Fernandez', 'Isabelle Truman', 'Daisy conroy-botica', 'Jamie Clements', 'Billie Cole');
+    $remix_team = array('daisyconroybotica@hotmail.com');
+
+    foreach($remix_team as $item) :  ?>
+
+    <?php
+
+    $user = get_user_by('email', $item); 
+
+
+
+    ?>
+
+      <div class="col-md-2">
+                 <div class="user-profile-card">
+                 <a href="<?php echo get_author_posts_url($user->data->ID); ?>">
+
+                 <?php 
+
+                 $args = array(
+                  'size' => 136,  
+                  'force_default'  => false,
+                  );
+             
+               $args = get_avatar_data( $user->data->ID, $args);
+
+               $url = get_wp_user_avatar_src($user->data->ID);
+
+
+                  ?>
+
+                     <div class="single-avatar" style="background-image: url(<?php echo $url ?>)"></div>
+                     <p class="name"><?php echo $user->display_name ?></p>
+
+
+                 </div>
+                  
+                 </div>
 
 
 
 
+    <?php endforeach; ?> 
+
+
+
+  <?php
            $blogusers = get_users( 'blog_id=1&orderby=nicename&role=author' );
 
            foreach ( $blogusers as $user ) { ?>
@@ -29,6 +70,13 @@ get_header();
            <?php $name = $user->data->display_name; ?>
 
 
+       
+
+       <?php if(in_array($user->user_email, $remix_team)) : continue; endif;   ?>
+      
+       
+
+   
                  <div class="col-md-2">
                  <div class="user-profile-card">
                  <a href="<?php echo get_author_posts_url($user->data->ID); ?>">
@@ -57,7 +105,6 @@ get_header();
 
 
 
-       
 
            
           <?php } ?>

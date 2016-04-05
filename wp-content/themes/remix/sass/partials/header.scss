@@ -215,7 +215,7 @@ header {
 /** TOOLBAR */
 
 #toolbar-section {
-    padding-top: 50px !important;
+    padding-top: 0px !important;
 }
 .toolbar {
     background-color: #fff;
@@ -281,6 +281,7 @@ header {
             }
             a {
                 color: $title-grey;
+                font-weight: 900;
             }
             a:hover {
                 color: $title-grey;

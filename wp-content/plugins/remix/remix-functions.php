@@ -170,6 +170,8 @@ $link = thumbnail_link($item);
 $category = get_the_category($item->ID);
 $image = remix_thumbnail_url($item); 
 $category = $category[0]->name;
+$cat_id = get_cat_ID($category);
+$category_link = get_category_link($cat_id);
 ?>
 <article class="article">
    <a href="<?php echo $link; ?>"> 
@@ -178,7 +180,7 @@ $category = $category[0]->name;
    </a>
     
     <div class="article_exerpt">
-      <span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span>
+      <a href="<?php echo esc_url( $category_link ); ?>"><span class="article-tag <?php echo strtolower($category); ?>"><?php echo $category; ?></span></a>
        <a href="<?php echo $link; ?>"> 
       <h2><?php echo substr($title, 0, 52); ?></h2>
       </a>

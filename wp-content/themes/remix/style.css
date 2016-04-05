@@ -253,7 +253,7 @@ header .left-menu-wrap:hover {
 /** TOOLBAR */
 /* line 217, sass/partials/header.scss */
 #toolbar-section {
-  padding-top: 50px !important;
+  padding-top: 0px !important;
 }
 
 /* line 220, sass/partials/header.scss */
@@ -338,39 +338,40 @@ header .left-menu-wrap:hover {
 /* line 282, sass/partials/header.scss */
 .toolbar #menu-remix li a {
   color: #333333;
+  font-weight: 900;
 }
-/* line 285, sass/partials/header.scss */
+/* line 286, sass/partials/header.scss */
 .toolbar #menu-remix li a:hover {
   color: #333333;
   text-decoration: underline;
 }
 
-/* line 294, sass/partials/header.scss */
+/* line 295, sass/partials/header.scss */
 .btn-group .btn, .btn-group .btn-primary, .btn-group .btn-danger {
   border-radius: 0;
   margin-left: -1px;
 }
 
-/* line 301, sass/partials/header.scss */
+/* line 302, sass/partials/header.scss */
 .form-horizontal .form-group {
   margin-left: 0;
   margin-right: 0;
 }
 
-/* line 306, sass/partials/header.scss */
+/* line 307, sass/partials/header.scss */
 .form-group .form-control:last-child {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
 /** MENU BAR */
-/* line 315, sass/partials/header.scss */
+/* line 316, sass/partials/header.scss */
 .toolbar #adv-search .btn, .toolbar #adv-search .btn-primary, .toolbar #adv-search .btn-danger {
   border: 1px solid #ddd;
   border-left: 0px;
   color: #ddd;
 }
-/* line 320, sass/partials/header.scss */
+/* line 321, sass/partials/header.scss */
 .toolbar #adv-search input {
   margin: 0;
   border-radius: 0px;

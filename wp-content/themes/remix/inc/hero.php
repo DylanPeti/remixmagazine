@@ -22,9 +22,10 @@
         <div class="container">
           <div class="article_exerpt">
          <!--    <span class="article-tag">Category</span> -->
-           <a href="<?php echo get_the_permalink($dog->ID); ?>">
-            <h2><?php echo $dog->post_title; ?></h2>
-                </a>
+              <a href="<?php echo get_the_permalink($dog->ID); ?>">
+                 <h2><?php echo $dog->post_title; ?></h2>
+              </a>
+           
 <!--             <span class="author"><?php echo $dog->post_author; ?></span> -->
             <ul class="entypo-icons">
               <li class="entypo-facebook"></li>
