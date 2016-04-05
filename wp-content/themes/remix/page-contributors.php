@@ -17,15 +17,23 @@ get_header();
 
 		<?php
 
-    $remix_team = array('daisyconroybotica@hotmail.com');
+    $remix_team = array('tim@remix.co.nz', 
+                        'steven@remix-magazine.com', 
+                        'isabelle+amber@remixmagazine.com',
+                        'isabelle+isaac@remixmagazine.com',
+                        'isabelle+julia@remixmagazine.com',
+                        'isabelle+katherine@remixmagazine.com',
+                        'isabelle+natalie@remixmagazine.com',
+                        'isabelle@remix.co.nz', 
+                        'isabelle+millie@remixmagazine.com',
+                        'isabelle+jupiterproject@remixmagazine.com'
+                        );
 
     foreach($remix_team as $item) :  ?>
 
     <?php
 
     $user = get_user_by('email', $item); 
-
-
 
     ?>
 
@@ -63,7 +71,7 @@ get_header();
 
 
   <?php
-           $blogusers = get_users( 'blog_id=1&orderby=nicename&role=author' );
+           $blogusers = get_users( 'blog_id=1&orderby=rand&role=author' );
 
            foreach ( $blogusers as $user ) { ?>
 
