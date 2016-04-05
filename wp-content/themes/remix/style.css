@@ -465,7 +465,7 @@ ul.entypo-icons li:first-child {
 }
 /* line 117, sass/partials/article.scss */
 .hero .article_exerpt h2 {
-  font-weight: 900;
+  font-weight: 400;
   font-size: 30px;
   line-height: 1.2em;
   margin: 10px 0 15px 0;
