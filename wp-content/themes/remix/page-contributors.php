@@ -111,6 +111,7 @@ get_header();
 
                      <div class="single-avatar" style="background-image: url(<?php echo $url ?>)"></div>
                      <p class="name"><?php echo $user->display_name ?></p>
+                     <p><?php echo get_user_meta($user->data->ID, 'description', true) ?></p>
 
 
                  </div>
