@@ -5,7 +5,8 @@
 		<div class="row">
 			<div class="col-md-4">
 			<img src="/wp-content/themes/remix/images/logo.png" alt="Remix Magazine" width="200">
-			<p>New Zealand's Fashion Magazine with over 17 years and 82 issues, Remix Magazine is the leading online and print publication for New Zealand fashion and lifestyle.</p>
+			<p>
+For almost 20 years Remix Magazine has been New Zealand’s leading authority on all things fashion, beauty, lifestyle and culture, providing the latest inspiration in both the print title and digital channels to a global readership. </p>
 			<p>Digital strategy by <a href="http://gomomentum.marketing" target="blank" title="Momentum Marketing">Momentum Marketing</a></p>
 			</div>
 			<div class="col-md-4">
