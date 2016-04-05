@@ -17,7 +17,7 @@ get_header();
 
 		<?php
 
-    $remix_team = array('tim@remix.co.nz', 
+    $remix_team = array('isabelle+tim@remixmagazine.com', 
                         'steven@remix-magazine.com', 
                         'isabelle+amber@remixmagazine.com',
                         'isabelle+isaac@remixmagazine.com',
