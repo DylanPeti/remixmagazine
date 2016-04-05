@@ -74,7 +74,7 @@ get_header();
 
   $args_two = array(
     'blog_id' => '1',
-    'orderby' => 'rand',
+    'orderby' => 'ID',
     'role' => 'author',
     );
            $blogusers = get_users( $args_two );
