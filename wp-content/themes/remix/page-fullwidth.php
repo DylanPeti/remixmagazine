@@ -5,7 +5,7 @@ get_header();
 global $post;
 
 ?>
-<div class="container">
+<div class="container about-page">
 	<div class="article_single">
 		<div class="toolbar">
 			<span class="crumbs">
