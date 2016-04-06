@@ -86,50 +86,50 @@
   }
 
   /* line 69, sass/media.scss */
-  body.home .social-btn,
   body.home .author {
     display: none !important;
   }
 }
 @media screen and (max-width: 470px) {
-  /* line 78, sass/media.scss */
+  /* line 77, sass/media.scss */
   .article-latest .article-latest-img {
     width: 100%;
   }
 
-  /* line 82, sass/media.scss */
+  /* line 81, sass/media.scss */
   .article-carousel {
     height: 234px;
     overflow: hidden;
   }
-  /* line 86, sass/media.scss */
+  /* line 85, sass/media.scss */
   .article-carousel .carousel-image {
     width: 300px;
   }
-  /* line 89, sass/media.scss */
+  /* line 88, sass/media.scss */
   .article-carousel .instainfo {
     margin-top: 25px;
   }
 
-  /* line 93, sass/media.scss */
+  /* line 92, sass/media.scss */
   #carousel-section {
     padding: 0;
   }
 
-  /* line 99, sass/media.scss */
+  /* line 98, sass/media.scss */
   .article.advert {
     height: 329px;
   }
 
-  /* line 103, sass/media.scss */
+  /* line 102, sass/media.scss */
   .article.advert .ad .ad-img {
     margin: 35px 0;
   }
 
-  /* line 106, sass/media.scss */
+  /* line 105, sass/media.scss */
   .article.advert .ad .ad-content .ad-btn {
     float: none;
     width: 265px;
+    margin: 0 auto;
   }
 
   /* line 111, sass/media.scss */

@@ -66,7 +66,6 @@
         }
     }
     body.home {
-        .social-btn, 
         .author {
             display: none !important;
         }
@@ -106,6 +105,7 @@
     .article.advert .ad .ad-content .ad-btn {
         float: none;
         width: 265px;
+        margin: 0 auto;
     }
 
     .article.advert .ad .ad-content .ad-tag {
