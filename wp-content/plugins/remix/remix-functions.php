@@ -267,7 +267,7 @@ $image = (isset($split[1]) ? $split[1] : false);
 if(!empty($link) && !empty($image)) {
 
 return <<<HTML
-<article class="article">
+<article class="article advert">
 
   <div class="ad">
   <a href="$link" target="_blank">

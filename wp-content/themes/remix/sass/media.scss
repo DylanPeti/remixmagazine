@@ -75,8 +75,54 @@
 
 @media screen and (max-width: 470px) {
 
+    .article-latest .article-latest-img {
+        width: 100%;
+    }
+
+    .article-carousel {
+        height: 234px;
+        overflow: hidden;
+
+        .carousel-image {
+           width: 300px;
+        }
+        .instainfo {
+            margin-top: 25px;
+        }
+    }
+    #carousel-section {
+        padding: 0;
+    }
+
+   
+
+    .article.advert {
+        height: 329px;
+    }
+
+    .article.advert .ad .ad-img{
+        margin: 35px 0;
+    }
+    .article.advert .ad .ad-content .ad-btn {
+        float: none;
+        width: 265px;
+    }
+
+    .article.advert .ad .ad-content .ad-tag {
+        display: none;
+    }
+
     header .right-menu-wrap {
         display: none;
+    }
+
+    .article_single .article_content {
+        margin: 10px 0 0 0;
+        text-align: left;
+        padding: 0;
+    }
+    .article_single .toolbar {
+        padding: 0 30px;
     }
 
     .article-hero h2 {
