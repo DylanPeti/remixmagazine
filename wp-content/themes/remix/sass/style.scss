@@ -23,6 +23,7 @@ Text Domain: remix
 @import "partials/shop";
 @import "media";
 @import url(http://weloveiconfonts.com/api/?family=entypo);
+
 [class*="entypo-"]:before {
     font-family: 'entypo', sans-serif;
 }

@@ -1562,18 +1562,18 @@ footer p {
     height: 500px;
   }
 }
-/* line 26, sass/style.scss */
+/* line 27, sass/style.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-/* line 31, sass/style.scss */
+/* line 32, sass/style.scss */
 html {
   margin: 0;
   height: 0;
 }
 
-/* line 36, sass/style.scss */
+/* line 37, sass/style.scss */
 body {
   margin: 0;
   height: 0;
@@ -1585,13 +1585,13 @@ body {
   background: #ffffff;
 }
 
-/* line 47, sass/style.scss */
+/* line 48, sass/style.scss */
 body.home,
 body.category {
   background: #f0f0f0;
 }
 
-/* line 52, sass/style.scss */
+/* line 53, sass/style.scss */
 .h1,
 .h2,
 .h3,
@@ -1608,13 +1608,13 @@ h6 {
   font-family: "museo-sans", verdana, sans-serif;
 }
 
-/* line 67, sass/style.scss */
+/* line 68, sass/style.scss */
 li {
   line-height: 1.4;
   font-family: "museo-sans", verdana, sans-serif;
 }
 
-/* line 73, sass/style.scss */
+/* line 74, sass/style.scss */
 input {
   background-color: transparent;
   border-radius: 0px;
@@ -1624,19 +1624,19 @@ input {
   border-right: 0px;
 }
 
-/* line 82, sass/style.scss */
+/* line 83, sass/style.scss */
 a {
   color: #3498db;
   text-decoration: none;
 }
 
-/* line 87, sass/style.scss */
+/* line 88, sass/style.scss */
 a:hover {
   text-decoration: underline;
   color: #58b3f0;
 }
 
-/* line 92, sass/style.scss */
+/* line 93, sass/style.scss */
 p,
 .article_content .content {
   font-weight: 400;
@@ -1647,25 +1647,25 @@ p,
   text-align: justify;
   margin-bottom: 20px;
 }
-/* line 101, sass/style.scss */
+/* line 102, sass/style.scss */
 p img,
 .article_content .content img {
   display: block;
   margin: 20px 0;
 }
 
-/* line 107, sass/style.scss */
+/* line 108, sass/style.scss */
 .smalltext {
   font-size: 10px;
 }
 
-/* line 112, sass/style.scss */
+/* line 113, sass/style.scss */
 .sidebar .widget {
   width: 300px;
   margin: 0 auto 30px;
 }
 
-/* line 118, sass/style.scss */
+/* line 119, sass/style.scss */
 input,
 .btn,
 .btn-primary,
@@ -1677,12 +1677,12 @@ input,
   text-transform: capitalize;
 }
 
-/* line 127, sass/style.scss */
+/* line 128, sass/style.scss */
 ul li {
   list-style: none;
 }
 
-/* line 131, sass/style.scss */
+/* line 132, sass/style.scss */
 input {
   display: block;
   width: 100%;
@@ -1702,7 +1702,7 @@ input {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-/* line 150, sass/style.scss */
+/* line 151, sass/style.scss */
 input:focus {
   border-color: #66afe9;
   outline: 0;
@@ -1710,17 +1710,17 @@ input:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
-/* line 157, sass/style.scss */
+/* line 158, sass/style.scss */
 input:placeholder-shown {
   text-transform: uppercase;
 }
 
-/* line 161, sass/style.scss */
+/* line 162, sass/style.scss */
 .container, #container {
   max-width: 1280px;
 }
 
-/* line 165, sass/style.scss */
+/* line 166, sass/style.scss */
 .btn-default,
 .btn-primary {
   border: 1px solid #ddd;
@@ -1728,7 +1728,7 @@ input:placeholder-shown {
   border-radius: 0;
 }
 
-/* line 172, sass/style.scss */
+/* line 173, sass/style.scss */
 .btn, .btn-primary, .btn-danger,
 button {
   -webkit-border-radius: 3;
@@ -1752,7 +1752,7 @@ button {
   transition: all 300ms ease;
 }
 
-/* line 196, sass/style.scss */
+/* line 197, sass/style.scss */
 .btn:hover, .btn-primary:hover, .btn-danger:hover,
 button:hover {
   background: #3498db;
@@ -1761,122 +1761,122 @@ button:hover {
   border: 1px solid #3498db;
 }
 
-/* line 212, sass/style.scss */
+/* line 213, sass/style.scss */
 section {
   width: 100%;
   padding: 25px 0 0;
 }
 
-/* line 217, sass/style.scss */
+/* line 218, sass/style.scss */
 #toolbar-section {
   padding-top: 30px;
   padding-bottom: 0;
 }
 
-/* line 222, sass/style.scss */
+/* line 223, sass/style.scss */
 .glyphicon {
   color: #ccc;
 }
 
-/* line 226, sass/style.scss */
+/* line 227, sass/style.scss */
 .article-img {
   background-size: cover;
   background-position: center center;
   height: 155px;
 }
 
-/* line 232, sass/style.scss */
+/* line 233, sass/style.scss */
 .col-md-2 {
   width: 20%;
   padding: 0;
 }
 
-/* line 237, sass/style.scss */
+/* line 238, sass/style.scss */
 .beauty {
   color: #6a7fdc;
 }
 
-/* line 241, sass/style.scss */
+/* line 242, sass/style.scss */
 .fashion {
   color: #da6adc;
 }
 
-/* line 245, sass/style.scss */
+/* line 246, sass/style.scss */
 .culture {
   color: #f58a76;
 }
 
-/* line 249, sass/style.scss */
+/* line 250, sass/style.scss */
 .lifestyle {
   color: #6adc9d;
 }
 
-/* line 253, sass/style.scss */
+/* line 254, sass/style.scss */
 .research {
   color: #f5cc76;
 }
 
-/* line 257, sass/style.scss */
+/* line 258, sass/style.scss */
 .outabout {
   color: #e6f074;
 }
 
-/* line 261, sass/style.scss */
+/* line 262, sass/style.scss */
 .social-btn {
   display: inline-block;
 }
 
-/* line 265, sass/style.scss */
+/* line 266, sass/style.scss */
 .sharebtns {
   margin-top: 30px;
 }
 
 /* Mail munch brand remove */
-/* line 273, sass/style.scss */
+/* line 274, sass/style.scss */
 .branding-container {
   display: none;
 }
 
-/* line 275, sass/style.scss */
+/* line 276, sass/style.scss */
 .single figure {
   float: left;
   margin: 0 10px;
 }
 
-/* line 281, sass/style.scss */
+/* line 282, sass/style.scss */
 .contributors-section {
   margin-top: 40px;
 }
 
-/* line 285, sass/style.scss */
+/* line 286, sass/style.scss */
 .contributors-section h2 {
   text-align: center;
   text-transform: uppercase;
 }
 
-/* line 290, sass/style.scss */
+/* line 291, sass/style.scss */
 .user-profile-card {
   padding: 15px 0;
 }
-/* line 294, sass/style.scss */
+/* line 295, sass/style.scss */
 .user-profile-card .avatar {
   display: block;
   margin: 0 auto;
   width: 150px;
   height: 150px;
 }
-/* line 301, sass/style.scss */
+/* line 302, sass/style.scss */
 .user-profile-card .avatar img {
   display: block;
   margin: 0 auto;
 }
-/* line 307, sass/style.scss */
+/* line 308, sass/style.scss */
 .user-profile-card p {
   text-align: center;
   line-height: 1.2;
   margin: 0;
 }
-/* line 314, sass/style.scss */
+/* line 315, sass/style.scss */
 .user-profile-card .name {
   font-size: 14px;
   padding: 15px 0 0 0;
@@ -1891,19 +1891,19 @@ section {
   transform: translateX(-50%);
   min-width: 170px;
 }
-/* line 329, sass/style.scss */
+/* line 330, sass/style.scss */
 .user-profile-card .description {
   padding: 15px 0;
   font-size: 16px;
   margin-top: 20px;
   text-align: left;
 }
-/* line 337, sass/style.scss */
+/* line 338, sass/style.scss */
 .user-profile-card .email {
   padding: 20px 0;
 }
 
-/* line 343, sass/style.scss */
+/* line 344, sass/style.scss */
 #more-posts {
   display: block;
   margin: 0 auto;
@@ -1911,7 +1911,7 @@ section {
   display: none;
 }
 
-/* line 354, sass/style.scss */
+/* line 355, sass/style.scss */
 .single-avatar {
   width: 136px;
   height: 136px;
@@ -1921,12 +1921,12 @@ section {
   background-repeat: no-repeat;
 }
 
-/* line 363, sass/style.scss */
+/* line 364, sass/style.scss */
 .user-profile-image {
   margin-top: 30px;
 }
 
-/* line 367, sass/style.scss */
+/* line 368, sass/style.scss */
 .author-avatar {
   width: 250px;
   height: 250px;
@@ -1936,7 +1936,7 @@ section {
   background-repeat: no-repeat;
 }
 
-/* line 376, sass/style.scss */
+/* line 377, sass/style.scss */
 .banner-advert {
   float: left;
   margin: 20px auto 0 auto;
@@ -1946,14 +1946,14 @@ section {
   background: #fff;
 }
 
-/* line 385, sass/style.scss */
+/* line 386, sass/style.scss */
 .banner-area {
   width: calc(99.99% * 3/4 - (48px - 30px * 3/4));
   float: left;
   margin-left: 18px;
 }
 
-/* line 392, sass/style.scss */
+/* line 393, sass/style.scss */
 .banner-tag h5 {
   font-size: 12px;
   color: #000;
@@ -1963,7 +1963,7 @@ section {
   font-family: helvetica, arial, verdana;
 }
 
-/* line 400, sass/style.scss */
+/* line 401, sass/style.scss */
 .banner-advert img {
   display: block;
   margin: 0 auto 0 auto;
@@ -1971,7 +1971,7 @@ section {
   width: 100%;
 }
 
-/* line 408, sass/style.scss */
+/* line 409, sass/style.scss */
 .banner-tag {
   float: right;
   width: calc(99.99% * 1/4 - (25.5px - 25.5px * 1/4));
@@ -1981,7 +1981,7 @@ section {
   height: 94px;
 }
 
-/* line 418, sass/style.scss */
+/* line 419, sass/style.scss */
 .banner-advert .ad-btn {
   float: none;
   margin: 0 auto;
