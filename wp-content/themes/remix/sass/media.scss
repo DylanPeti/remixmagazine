@@ -17,6 +17,11 @@
 
 @media screen and (max-width: 1000px) {
 
+    .article_content .content img {
+        width: 100%;
+        height: auto;
+    }
+
     header .advert-temp {
         height: 40px;
     }
