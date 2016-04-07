@@ -14,7 +14,9 @@
  
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css'; ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
+  <?php if(is_page('cart') || is_page('checkout')) { ?>
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/shop.css'; ?>">
+  <?php } ?>
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/admin.css'; ?>">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
