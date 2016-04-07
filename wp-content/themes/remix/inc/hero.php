@@ -26,7 +26,7 @@
                  <h2><?php echo $dog->post_title; ?></h2>
               </a>
            <?php if(strlen($dog->post_title) < 59) { ?>
-      <p class="hero-desc"><?php echo get_the_excerpt(); ?></p>  
+      <p class="hero-desc"><?php echo $dog->post_excerpt; ?></p>  
       <?php } ?>
 
 <!--             <span class="author"><?php echo $dog->post_author; ?></span> -->
