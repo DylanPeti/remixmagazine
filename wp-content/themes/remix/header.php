@@ -14,6 +14,7 @@
  
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css'; ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>">
+  <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/shop.css'; ?>">
   <link rel="stylesheet" type="text/css" href="<?php echo  get_template_directory_uri() . '/admin.css'; ?>">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -23,7 +24,11 @@
 
 <?php } ?>
 
+<?php
 
+$page = (is_page('cart') || is_page('checkout') ? 12 : 3);
+
+?>
 <?php wp_head(); ?>
 
 </head>
@@ -68,7 +73,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-<?php echo $page; ?>">
       <a href="/" class="logo">
         <img src="/wp-content/themes/remix/images/remix-magazine-logo.png" alt="Remix Magazine" class="img-responsive">
       </a>

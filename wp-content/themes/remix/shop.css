@@ -1,0 +1,20 @@
+header .advert-temp img, #toolbar-section, header .advert-temp, .right-menu-wrap{
+	display: none;
+}
+
+header .logo {
+	margin-top: 60px;
+}
+
+.checkout #order_review table td, .checkout #order_review table th {
+	border-top: none;
+}
+
+.checkout #order_review table.shop_table {
+	border: none;
+}
+
+.checkout #order_review table.shop_table tfoot th, .checkout #order_review .amount, .checkout #order_review .subscription-details,
+.checkout #order_review .recurring-total td{
+	font-weight: 400;
+}
