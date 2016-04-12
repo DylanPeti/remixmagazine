@@ -5,8 +5,11 @@ get_header();
 global $post;
 
 ?>
+
+	<?php get_section('hero-custom'); ?>
 <div class="container about-page">
 	<div class="article_single">
+
 		<div class="toolbar">
 			<span class="crumbs">
 			<?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>

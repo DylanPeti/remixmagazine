@@ -99,7 +99,7 @@
     background: #ffffff;
     height: 350px;
     background-size: cover;
-    background-position-y: 50%;
+    background-position: 50%;
     .article_exerpt {
         width: 40%;
         display: inline-block;
@@ -138,6 +138,26 @@
         }
         @include article_social
     }
+}
+
+
+.custom-hero { 
+
+max-width: 75%;
+margin: 30px auto 0 auto;
+
+.hero-custom {
+        width: 100%;
+    display: inline-block;
+    padding-top: 25px;
+    cursor: pointer;
+    background: #ffffff;
+    height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
 }
 
 
