@@ -159,8 +159,13 @@ header .left-menu-wrap {
   background: transparent;
   z-index: 99999;
   top: 0;
+  -webkit-transition: -webkit-all 500ms ease-in-out;
+  -moz-transition: -moz-all 500ms ease-in-out;
+  -ms-transition: -ms-all 500ms ease-in-out;
+  -o-transition: -o-all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
-/* line 135, sass/partials/header.scss */
+/* line 140, sass/partials/header.scss */
 header .left-menu-wrap .btn-primary {
   border-top-left-radius: 0;
   border-bottom-right-radius: 3px;
@@ -169,12 +174,12 @@ header .left-menu-wrap .btn-primary {
   height: 34px;
   border: 1px solid #ccc;
 }
-/* line 143, sass/partials/header.scss */
+/* line 148, sass/partials/header.scss */
 header .left-menu-wrap .icon-subscribe {
   position: absolute;
   right: -60px;
 }
-/* line 146, sass/partials/header.scss */
+/* line 151, sass/partials/header.scss */
 header .left-menu-wrap .icon-subscribe i {
   color: #333333;
   float: right;
@@ -183,21 +188,21 @@ header .left-menu-wrap .icon-subscribe i {
   display: inline-block;
   padding: 0 0 0 20px;
 }
-/* line 155, sass/partials/header.scss */
+/* line 160, sass/partials/header.scss */
 header .left-menu-wrap .main-search {
   margin-bottom: 30px;
   margin-top: 60px;
 }
-/* line 158, sass/partials/header.scss */
+/* line 163, sass/partials/header.scss */
 header .left-menu-wrap .main-search .btn, header .left-menu-wrap .main-search .btn-primary, header .left-menu-wrap .main-search .btn-danger {
   padding: 6px 17px;
   margin-top: 10px;
 }
-/* line 163, sass/partials/header.scss */
+/* line 168, sass/partials/header.scss */
 header .left-menu-wrap .main-search .btn-primary:hover {
   background: #fff;
 }
-/* line 167, sass/partials/header.scss */
+/* line 172, sass/partials/header.scss */
 header .left-menu-wrap .slider-content {
   background: #333333;
   padding: 10px 30px;
@@ -206,53 +211,48 @@ header .left-menu-wrap .slider-content {
   height: 100%;
   color: #ffffff;
 }
-/* line 174, sass/partials/header.scss */
+/* line 179, sass/partials/header.scss */
 header .left-menu-wrap .slider-content h3 {
   font-size: 18px;
   text-transform: uppercase;
 }
-/* line 178, sass/partials/header.scss */
+/* line 183, sass/partials/header.scss */
 header .left-menu-wrap .slider-content p {
   font-size: 12px;
   text-align: left;
 }
-/* line 182, sass/partials/header.scss */
+/* line 187, sass/partials/header.scss */
 header .left-menu-wrap .slider-content ul {
   padding: 0;
 }
-/* line 184, sass/partials/header.scss */
+/* line 189, sass/partials/header.scss */
 header .left-menu-wrap .slider-content ul li {
   padding: 10px 10px 7px 10px;
   text-transform: uppercase;
   font-size: 16px;
   text-transform: capitalize;
 }
-/* line 190, sass/partials/header.scss */
+/* line 195, sass/partials/header.scss */
 header .left-menu-wrap .slider-content ul li:hover {
   background-color: #403F3F;
 }
-/* line 196, sass/partials/header.scss */
+/* line 201, sass/partials/header.scss */
 header .left-menu-wrap .slider-content ul a {
   color: #fff;
 }
-/* line 200, sass/partials/header.scss */
+/* line 205, sass/partials/header.scss */
 header .left-menu-wrap .slider-content ul.entypo-icons li {
   display: inline-block;
   font-size: 24px;
   border-bottom: none;
 }
-/* line 205, sass/partials/header.scss */
+/* line 210, sass/partials/header.scss */
 header .left-menu-wrap .slider-content ul.entypo-icons li:first-child {
   padding-right: 10px;
 }
-/* line 210, sass/partials/header.scss */
+/* line 215, sass/partials/header.scss */
 header .left-menu-wrap:hover, header .left-menu-wrap:active {
   left: 0px;
-  -webkit-transition: -webkit-all 500ms ease-in-out;
-  -moz-transition: -moz-all 500ms ease-in-out;
-  -ms-transition: -ms-all 500ms ease-in-out;
-  -o-transition: -o-all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 /** TOOLBAR */
