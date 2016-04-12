@@ -128,8 +128,8 @@ $page = (is_page('cart') || is_page('checkout') ? 12 : 3);
     
         <!-- Left Menu -->
     <div class="left-menu-wrap">
+     <span class="icon-subscribe"><i class="fa fa-bars fa-3x"></i></span>
       <div class="slider-content">
-      <span class="icon-subscribe"><i class="fa fa-bars fa-3x"></i></span>
         <div class="main-search">
           <?php include ('wp-content/themes/remix/inc/search.php'); ?>
         </div>

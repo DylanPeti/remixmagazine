@@ -50,6 +50,7 @@ header {
                 padding: 0 20px 0 0;
             }
 
+
         .icon-subscribe {
             position: absolute;
             left: -60px;
@@ -67,6 +68,7 @@ header {
             position: absolute;
             left: -210px;
         }
+
         .slider-content {
             background: #333333;
             padding: 10px 30px;
@@ -124,6 +126,9 @@ header {
         transition: all 500ms ease-in-out;
      }
 
+
+
+
     .left-menu-wrap {
         width: 300px;
         height: 100%;
@@ -132,11 +137,7 @@ header {
         background: transparent;
         z-index: 99999;
         top: 0;
-                  -webkit-transition: -webkit-all 500ms ease-in-out;
-  -moz-transition: -moz-all 500ms ease-in-out;
-  -ms-transition: -ms-all 500ms ease-in-out;
-  -o-transition: -o-all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+
         .btn-primary {
            border-top-left-radius: 0;
            border-bottom-right-radius: 3px;
@@ -147,16 +148,26 @@ header {
         }
         .icon-subscribe {
             position: absolute;
-            right: -60px;
-            i {
+           left: 100%;
+            top: 15px;           
+         i {
                 color: $title-grey;
                 float: right;
                 font-size: 32px;
                 line-height: 80px !important;
                 display: inline-block;
                 padding: 0 0 0 20px;
-            }
+         }
+    
         }
+
+        .icon-subscribe.bars-white {
+          left: 0;
+         i {
+            color: #fff;
+         }
+        }
+
         .main-search {
             margin-bottom: 30px;
             margin-top: 60px;
@@ -171,10 +182,11 @@ header {
         }
         .slider-content {
             background: #333333;
-            padding: 10px 30px;
+            padding: 10px 20px;
             float: left;
             width: 300px;
             height: 100%;
+            margin-top: 20px;
             color: #ffffff;
             h3 {
                 font-size: 18px;
@@ -212,9 +224,11 @@ header {
             }
         }
     }
-    .left-menu-wrap:hover{
-        left: 0px;
-    }
+
+    .left_menu_slide {
+          left: 0;
+         }
+ 
 }
 
 

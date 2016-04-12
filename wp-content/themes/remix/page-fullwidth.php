@@ -5,7 +5,9 @@ get_header();
 global $post;
 
 ?>
-
+<div class="container">
+	<h2 class="about-page-title"><?php echo the_title(); ?></h2>
+</div>
 	<?php get_section('hero-custom'); ?>
 <div class="container about-page">
 	<div class="article_single">

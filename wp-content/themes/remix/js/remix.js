@@ -9,6 +9,11 @@ jQuery(document).ready(function($) {
        $(".right-menu-wrap").removeClass("menu_slide");
   });
 
+   $(".left-menu-wrap .fa-bars").on("click", function(){
+       $(".left-menu-wrap").toggleClass("left_menu_slide");
+       $(".left-menu-wrap .icon-subscribe").toggleClass("bars-white");
+  });
+
   $.ajaxSetup({ cache: true });
 
   $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
