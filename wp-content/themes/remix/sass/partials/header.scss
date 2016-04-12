@@ -132,6 +132,14 @@ header {
         background: transparent;
         z-index: 99999;
         top: 0;
+        .btn-primary {
+           border-top-left-radius: 0;
+           border-bottom-right-radius: 3px;
+           border-top-right-radius: 3px;
+           background: #fff;
+           height: 34px;
+           border: 1px solid #ccc;
+        }
         .icon-subscribe {
             position: absolute;
             right: -60px;
@@ -151,11 +159,9 @@ header {
                 padding: 6px 17px;
                 margin-top: 10px;
             }
-            .btn-primary {
-                background: #3cb0fd;
-            }
+
             .btn-primary:hover {
-                background: #63bffb;
+                background: #fff;
             }
         }
         .slider-content {
@@ -203,11 +209,11 @@ header {
     }
     .left-menu-wrap:hover {
         left: 0px;
-        -webkit-transition: all 500ms ease-in-out;
-        -moz-transition: all 500ms ease-in-out;
-        -ms-transition: all 500ms ease-in-out;
-        -o-transition: all 500ms ease-in-out;
-        transition: all 500ms ease-in-out;
+          -webkit-transition: -webkit-all 500ms ease-in-out;
+  -moz-transition: -moz-all 500ms ease-in-out;
+  -ms-transition: -ms-all 500ms ease-in-out;
+  -o-transition: -o-all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
     }
 }
 
