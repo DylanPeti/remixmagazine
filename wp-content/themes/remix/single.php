@@ -4,6 +4,10 @@ global $post;
 $id = $post->ID;
 $number = 9613;
 $width = ($id == $number) ? 12 :  8;
+
+$category = get_the_category($post->ID);
+
+$cat = $category[0]->name;
 	
 ?>
 <div class="article-hero" style="background-image: url(<?php echo remix_thumbnail_url($post) ?>)">
@@ -15,7 +19,7 @@ $width = ($id == $number) ? 12 :  8;
 	<div class="article_single">
 		
 		<div class="toolbar">
-			<span class="article-tag">Category</span>
+			<span class="article-tag"><?php echo $cat; ?></span>
 			<span class="author"><?php echo get_the_author_meta('display_name', $post->post_author); ?></span>
 			<span class="date"><?php echo $post->post_date; ?></span>
 			<span class="crumbs">

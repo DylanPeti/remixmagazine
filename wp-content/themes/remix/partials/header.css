@@ -237,7 +237,7 @@ header .left-menu-wrap .slider-content ul.entypo-icons li:first-child {
   padding-right: 10px;
 }
 /* line 215, ../sass/partials/header.scss */
-header .left-menu-wrap:hover, header .left-menu-wrap:active {
+header .left-menu-wrap:hover {
   left: 0px;
 }
 
