@@ -54,7 +54,10 @@ foreach ($items as $recent) {
 
     <?php $offset = 9; ?>
 
-    <button id="more-posts" data-offset=<?php echo $offset ?>>Load More</button>
+    <div id="more-posts" data-offset=<?php echo $offset ?>>
+    <h5>Loading more articles</h5>
+    <i class="fa fa-spinner" aria-hidden="true"></i>
+    </div>
 
   </div>
 

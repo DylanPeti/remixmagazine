@@ -23,6 +23,8 @@ function load_posts(){
    
     var str = '&offset=' + offset + '&ppp=' + ppp + '&action=more_post_ajax';
 
+    $("#more-posts").show();
+
     $.ajax({
         type: "POST",
         dataType: "html",
@@ -31,6 +33,7 @@ function load_posts(){
         success: function(data){
             var $data = $(data);
             if($data.length){
+                 $("#more-posts").hide();
                 $(".article-collection-bottom").append($data);
                 $("#more-posts").attr("disabled",false);
             } else{

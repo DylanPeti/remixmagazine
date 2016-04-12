@@ -1943,13 +1943,52 @@ section {
 
 /* line 344, sass/style.scss */
 #more-posts {
+  clear: both;
   display: block;
   margin: 0 auto;
   float: none;
   display: none;
+  padding-top: 30px;
 }
-
-/* line 355, sass/style.scss */
+/* line 352, sass/style.scss */
+#more-posts h5 {
+  text-align: center;
+  color: #3498db;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 359, sass/style.scss */
+#more-posts i {
+  padding-top: 10px;
+  display: block;
+  text-align: center;
+  font-size: 48px;
+  width: 50px;
+  margin: 0 auto;
+  webkit-animation: spin 1000ms infinite linear;
+  animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 396, sass/style.scss */
 .single-avatar {
   width: 136px;
   height: 136px;
@@ -1959,12 +1998,12 @@ section {
   background-repeat: no-repeat;
 }
 
-/* line 364, sass/style.scss */
+/* line 405, sass/style.scss */
 .user-profile-image {
   margin-top: 30px;
 }
 
-/* line 368, sass/style.scss */
+/* line 409, sass/style.scss */
 .author-avatar {
   width: 250px;
   height: 250px;
@@ -1974,7 +2013,7 @@ section {
   background-repeat: no-repeat;
 }
 
-/* line 377, sass/style.scss */
+/* line 418, sass/style.scss */
 .banner-advert {
   float: left;
   margin: 20px auto 0 auto;
@@ -1984,14 +2023,14 @@ section {
   background: #fff;
 }
 
-/* line 386, sass/style.scss */
+/* line 427, sass/style.scss */
 .banner-area {
   width: calc(99.99% * 3/4 - (48px - 30px * 3/4));
   float: left;
   margin-left: 18px;
 }
 
-/* line 393, sass/style.scss */
+/* line 434, sass/style.scss */
 .banner-tag h5 {
   font-size: 12px;
   color: #000;
@@ -2001,7 +2040,7 @@ section {
   font-family: helvetica, arial, verdana;
 }
 
-/* line 401, sass/style.scss */
+/* line 442, sass/style.scss */
 .banner-advert img {
   display: block;
   margin: 0 auto 0 auto;
@@ -2009,7 +2048,7 @@ section {
   width: 100%;
 }
 
-/* line 409, sass/style.scss */
+/* line 450, sass/style.scss */
 .banner-tag {
   float: right;
   width: calc(99.99% * 1/4 - (25.5px - 25.5px * 1/4));
@@ -2019,13 +2058,13 @@ section {
   height: 94px;
 }
 
-/* line 419, sass/style.scss */
+/* line 460, sass/style.scss */
 .banner-advert .ad-btn {
   float: none;
   margin: 0 auto;
 }
 
-/* line 424, sass/style.scss */
+/* line 465, sass/style.scss */
 .about-page-title {
   text-align: center;
 }

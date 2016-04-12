@@ -342,10 +342,51 @@ section {
 }
 
 #more-posts {
+    clear: both;
     display: block;
     margin: 0 auto;
     float: none;
     display: none;
+    padding-top: 30px;
+
+    h5 {
+        text-align: center;
+    color: #3498db;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+    i {
+            padding-top: 10px;
+            display: block;
+            text-align: center;
+            font-size: 48px;
+            width: 50px;
+            margin: 0 auto;
+
+            webkit-animation: spin 1000ms infinite linear;
+            animation: spin 1000ms infinite linear;
+    }
+    @-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
 }
 
 #toolbar-section {
