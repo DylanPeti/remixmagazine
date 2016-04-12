@@ -207,7 +207,7 @@ header {
             }
         }
     }
-    .left-menu-wrap:hover {
+    .left-menu-wrap:hover,  .left-menu-wrap:active {
         left: 0px;
           -webkit-transition: -webkit-all 500ms ease-in-out;
   -moz-transition: -moz-all 500ms ease-in-out;

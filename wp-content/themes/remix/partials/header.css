@@ -232,7 +232,7 @@ header .left-menu-wrap .slider-content ul.entypo-icons li:first-child {
   padding-right: 10px;
 }
 /* line 210, ../sass/partials/header.scss */
-header .left-menu-wrap:hover {
+header .left-menu-wrap:hover, header .left-menu-wrap:active {
   left: 0px;
   -webkit-transition: -webkit-all 500ms ease-in-out;
   -moz-transition: -moz-all 500ms ease-in-out;
