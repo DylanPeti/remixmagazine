@@ -30,6 +30,7 @@ $cat = $category[0]->name;
 			<div class="row article_content">
 				<div class="col-md-<?php echo $width ?> content">
 					<?php
+
 					if (have_posts()) :
 					while (have_posts()) :
 					  the_post();
@@ -41,14 +42,8 @@ $cat = $category[0]->name;
 
 					 $image = remix_thumbnail_url($post);
 
-
-
-
+					 ?>
       
-					  ?>
-      
-		
-
 		<ul class="single-article entypo-icons">
         <div class="social-btn" id="fbshare" data-share="<?php echo the_permalink(); ?>,<?php the_title(); ?>,<?php echo $image; ?>, <?php echo $about; ?>">
           <li class="entypo-facebook"><span>Share</span></li>

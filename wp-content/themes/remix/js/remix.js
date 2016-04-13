@@ -11,7 +11,9 @@ jQuery(document).ready(function($) {
 
    $(".left-menu-wrap .fa-bars").on("click", function(){
        $(".left-menu-wrap").toggleClass("left_menu_slide");
+       $(".left-menu-wrap").toggleClass("overflow-y");
        $(".left-menu-wrap .icon-subscribe").toggleClass("bars-white");
+
   });
 
   $.ajaxSetup({ cache: true });
