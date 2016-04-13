@@ -42,7 +42,7 @@ $cat = $category[0]->name;
 
       
 					  ?>
-
+      
 		
 
 		<ul class="single-article entypo-icons">
@@ -60,6 +60,10 @@ $cat = $category[0]->name;
     
 
       </ul>
+
+      <br>
+
+      	  <?php echo do_shortcode('[fbcomments url="" width="100%" count="off" num="3" countmsg="wonderful comments!"]'); ?>
 
 
       <?php 
