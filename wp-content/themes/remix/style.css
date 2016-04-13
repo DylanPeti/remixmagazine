@@ -2153,3 +2153,31 @@ section {
 .about-page-title {
   text-align: center;
 }
+
+/* line 469, sass/style.scss */
+.single-article.entypo-icons {
+  position: relative;
+  padding: 0;
+}
+/* line 473, sass/style.scss */
+.single-article.entypo-icons .entypo-facebook, .single-article.entypo-icons .entypo-twitter {
+  border: 1px solid #3498db;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  padding: 0;
+  border-radius: 3px;
+  color: #3498db;
+}
+/* line 486, sass/style.scss */
+.single-article.entypo-icons .entypo-facebook:hover, .single-article.entypo-icons .entypo-twitter:hover {
+  background-color: #58b3f0;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 492, sass/style.scss */
+.single-article.entypo-icons .entypo-facebook span, .single-article.entypo-icons .entypo-twitter span {
+  font-size: 11px;
+  padding-left: 5px;
+}

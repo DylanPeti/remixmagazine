@@ -448,7 +448,7 @@ section {
 }
 
 .banner-tag {
-       float: right;
+    float: right;
     width: calc(99.99% * 1/4 - (25.5px - 25.5px * 1/4));
     background: #fff;
     margin-right: 0;
@@ -466,6 +466,34 @@ section {
     text-align: center;
 }
 
+.single-article.entypo-icons {
+position: relative;
+padding: 0;
 
+.entypo-facebook, .entypo-twitter {
 
+     border: 1px solid #3498db;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0;
+    border-radius: 3px;
+    color: #3498db;
+
+}
+
+.entypo-facebook:hover, .entypo-twitter:hover {
+    background-color: $blue-hover;
+    color: #fff;
+    cursor: pointer;
+}
+
+.entypo-facebook span, .entypo-twitter span {
+    font-size: 11px;
+    padding-left: 5px;
+}
+}
+
+   
 

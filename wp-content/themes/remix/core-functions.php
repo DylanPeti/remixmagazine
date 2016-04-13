@@ -24,9 +24,6 @@ wp_enqueue_script('postloader', get_template_directory_uri() . '/js/ajax.js', ar
 wp_enqueue_script('twitter_intents', 'https://platform.twitter.com/widgets.js', array('') );
 
 
-// Register the script
-wp_register_script( 'remix_ajax', get_template_directory_uri() . '/js/remix.js' );
-
 // Localize the script with new data
 $translation_array = array(
     'ajaxurl' => admin_url( 'admin-ajax.php' ),
@@ -37,11 +34,16 @@ wp_localize_script( 'remix_ajax', 'ajax_posts', $translation_array );
 
 // Enqueued script with localized data.
 // 
-wp_enqueue_script( 'remix_ajax' );
+
 
 /* css */
 
 }
+
+// Register the script
+wp_register_script( 'remix_ajax', get_template_directory_uri() . '/js/remix.js' );
+wp_enqueue_script( 'remix_ajax' );
+
 
 }
 add_action ('wp_enqueue_scripts', 'remix_js_scripts');

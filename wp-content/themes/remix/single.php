@@ -34,18 +34,43 @@ $cat = $category[0]->name;
 					while (have_posts()) :
 					  the_post();
 					  the_content();
+
+					 $words = substr(get_the_content($post->ID), 0, 200);
+
+
+      
+					  ?>
+
+		<ul class="single-article entypo-icons">
+        <div class="social-btn" id="fbshare" data-share="<?php echo the_permalink(); ?>,<?php echo the_title(); ?>,<?php echo thumbnail_link($post); ?>, <?php echo $words; ?>">
+          <li class="entypo-facebook"><span>Share</span></li>
+        </div>
+          <div class="social-btn">
+        <a class="twitter-mention-button" target="_blank"
+             href="https://twitter.com/intent/tweet?url=<?php echo the_permalink(); ?>&text=<?php echo the_title() ?> - &via=REMIXmagazine">
+          <li class="entypo-twitter"><span>Tweet</span>
+            
+          </li>	
+          </a>
+        </div>
+    
+
+      </ul>
+
+
+      <?php 
 					 endwhile;
 					endif;
 					?>
-					<div class="sharebtns">
-						<?php //echo do_shortcode('[apss_share]'); ?>
-					</div>
+			
 
 					  <?php $cat_ID = get_the_category()[0]->cat_ID; ?>
 
 					  <?php $args = array('numberposts' => 3 ,'cat' => $cat_ID, 'status' => 'publish' ); ?>
 
 					  <?php $posts_array = get_posts( $args ); ?>
+
+
 
                  <div class="row">
                  <div class="col-md-12">
