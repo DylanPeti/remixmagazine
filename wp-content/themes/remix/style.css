@@ -1470,7 +1470,7 @@ footer p {
 }
 @media screen and (max-width: 470px) {
   /* line 82, sass/media.scss */
-  .remix-text {
+  .remix-hidden {
     display: none;
   }
 

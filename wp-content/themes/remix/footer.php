@@ -5,14 +5,14 @@
 		<div class="row">
 			<div class="col-md-4">
 			<img class="footer-logo" src="/wp-content/themes/remix/images/logo.png" alt="Remix Magazine" width="200">
-			<p class="remix-text">
+			<p class="remix-hidden">
 For almost 20 years Remix Magazine has been New Zealand’s leading authority on all things fashion, beauty, lifestyle and culture, providing the latest inspiration in both the print title and digital channels to a global readership. </p>
 			<p>Digital strategy by <a href="http://gomomentum.marketing" target="blank" title="Momentum Marketing">Momentum Marketing</a></p>
 			</div>
-			<div class="col-md-4 hidden-sm">
+			<div class="col-md-4 remix-hidden">
 <!-- 			FOOTER MENU AREA -->
 			</div>
-			<div class="col-md-4 hidden-sm">
+			<div class="col-md-4 remix-hidden">
 				<form action="http://remix.us2.list-manage.com/subscribe/post?u=7f9be996e2c6cb5ef2d2df5fb&amp;id=acc14b56d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
 					<div class="mc-field-group">
 						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
