@@ -185,8 +185,9 @@ header {
             padding: 10px 20px;
             float: left;
             width: 300px;
-            height: 100%;
+            min-height: 100%;
             color: #ffffff;
+            overflow-y: scroll;
             h3 {
                 font-size: 18px;
                 text-transform: uppercase;
