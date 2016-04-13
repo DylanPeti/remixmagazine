@@ -25,26 +25,26 @@ function load_posts(){
 
     $("#more-posts").show();
 
-    $.ajax({
-        type: "POST",
-        dataType: "html",
-        url: ajax_posts.ajaxurl,
-        data: str,
-        success: function(data){
-            var $data = $(data);
-            if($data.length){
-                 $("#more-posts").hide();
-                $(".article-collection-bottom").append($data);
-                $("#more-posts").attr("disabled",false);
-            } else{
-                $("#more-posts").attr("disabled",true);
-            }
-        },
-        error : function(jqXHR, textStatus, errorThrown) {
-            $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
-        }
+    // $.ajax({
+    //     type: "POST",
+    //     dataType: "html",
+    //     url: ajax_posts.ajaxurl,
+    //     data: str,
+    //     success: function(data){
+    //         var $data = $(data);
+    //         if($data.length){
+    //              $("#more-posts").hide();
+    //             $(".article-collection-bottom").append($data);
+    //             $("#more-posts").attr("disabled",false);
+    //         } else{
+    //             $("#more-posts").attr("disabled",true);
+    //         }
+    //     },
+    //     error : function(jqXHR, textStatus, errorThrown) {
+    //         $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+    //     }
 
-    });
+    // });
     return false;
 }
 

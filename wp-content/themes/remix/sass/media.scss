@@ -79,6 +79,19 @@
 
 @media screen and (max-width: 470px) {
 
+    .remix-text {
+        display: none;
+    }
+
+    .footer-logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
     header .logo img {
         width: 200px;
     }
