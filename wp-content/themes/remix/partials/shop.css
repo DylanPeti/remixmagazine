@@ -230,3 +230,71 @@
   border: none !important;
   font-size: 18px;
 }
+
+/* line 229, ../sass/partials/shop.scss */
+.my-remix-login-form {
+  clear: both;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f7f7f7;
+  padding: 20px 50px 50px 50px;
+  border-radius: 3px;
+}
+
+/* line 238, ../sass/partials/shop.scss */
+.my-remix-login-form label {
+  font-family: "proxima-nova",sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 245, ../sass/partials/shop.scss */
+.my-remix-login-form .btn-primary {
+  width: 100%;
+}
+
+/* line 249, ../sass/partials/shop.scss */
+.remix-checkbox {
+  line-height: 20px !important;
+  padding-top: 20px;
+}
+
+/* line 254, ../sass/partials/shop.scss */
+.remix-checkbox input {
+  float: left;
+  width: 20px;
+  clear: both;
+}
+
+/* line 260, ../sass/partials/shop.scss */
+.remix-checkbox .lost_password {
+  font-size: 14px;
+  padding-left: 7px;
+}
+
+/* line 265, ../sass/partials/shop.scss */
+.no-issues-notice {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* line 270, ../sass/partials/shop.scss */
+.no-issues-notice p {
+  text-align: center;
+}
+
+/* line 274, ../sass/partials/shop.scss */
+.my-remix-form h1 {
+  text-align: center;
+}
+
+/* line 278, ../sass/partials/shop.scss */
+.no-issues-notice .btn-primary {
+  clear: both;
+  margin: 0 auto;
+  display: block;
+  float: none;
+  margin-bottom: 20px;
+  width: 200px;
+  text-align: center;
+}

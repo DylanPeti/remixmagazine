@@ -101,9 +101,39 @@ $user_group = do_shortcode('[groups_woocommerce_memberships]');
 
 							   } else { ?>
 
-                                  <div class='woocommerce'>
-							       <h1 class='entry-title magazine-title'>Pick up your digital copy of Remix!</h1>
-							       <a  class='button btn-issue' href='/shop'>Shop Magazines</a>
+                   <div class='woocommerce my-remix-form'>
+                   <h1>My Remix</h1>
+                   <div class="no-issues-notice">
+                   <p>If you haven't purchased any of our issues, make sure to check them out by visiting our shop </p>  
+                     <a  class='btn-primary' href='/shop'>View Magazines</a>
+                     </div>
+			 
+         
+			  <form class="my-remix-login-form" method="post" class="login">
+              
+              <h3>Login</h3>
+
+			<p class="form-row form-row-wide">
+				<label for="username">Username or email address <span class="required">*</span></label>
+				<input type="text" class="input-text" name="username" id="username" value="">
+			</p>
+			<p class="form-row form-row-wide">
+				<label for="password">Password <span class="required">*</span></label>
+				<input class="input-text" type="password" name="password" id="password">
+			</p>
+
+			
+			<p class="form-row">
+				<input type="hidden" id="_wpnonce" name="_wpnonce" value="d40b23ea40"><input type="hidden" name="_wp_http_referer" value="/my-remix/">				<input type="submit" class="btn-primary" name="login" value="Login">
+				<label for="rememberme" class="remix-checkbox">
+					<input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember me				</label>
+			</p>
+			<p class="lost_password">
+				<a href="http://remixmagazine.dev/my-account/lost-password/">Lost your password?</a>
+			</p>
+
+			
+		</form>
 							      </div>
 
 							
@@ -128,7 +158,7 @@ $user_group = do_shortcode('[groups_woocommerce_memberships]');
 			<?php endwhile; ?>
 
 		<?php endif;  ?>
-		<?php comments_template( '', true ); ?>
+
 
 	</div> <!-- #single-outer -->
 
