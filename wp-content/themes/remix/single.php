@@ -41,7 +41,7 @@ $cat = $category[0]->name;
       
 					  ?>
 
-					  <?php echo do_shortcode('[fbcomments url="http://peadig.com/wordpress-plugins/facebook-comments/" width="375" count="off" num="3" countmsg="wonderful comments!"]'); ?>
+					  <?php echo do_shortcode('[fbcomments url='' width="375" count="off" num="3" countmsg="wonderful comments!"]'); ?>
 
 		<ul class="single-article entypo-icons">
         <div class="social-btn" id="fbshare" data-share="<?php echo the_permalink(); ?>,<?php echo the_title(); ?>,<?php echo thumbnail_link($post); ?>, <?php echo $words; ?>">
