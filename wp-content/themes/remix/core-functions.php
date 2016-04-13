@@ -30,7 +30,7 @@ $translation_array = array(
     'noposts' => __('No older posts found', 'remix')
 );
 
-wp_localize_script( 'remix_ajax', 'ajax_posts', $translation_array );
+
 
 // Enqueued script with localized data.
 // 
@@ -42,6 +42,7 @@ wp_localize_script( 'remix_ajax', 'ajax_posts', $translation_array );
 
 // Register the script
 wp_register_script( 'remix_ajax', get_template_directory_uri() . '/js/remix.js' );
+wp_localize_script( 'remix_ajax', 'ajax_posts', $translation_array );
 wp_enqueue_script( 'remix_ajax' );
 
 
