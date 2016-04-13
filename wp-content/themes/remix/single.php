@@ -39,6 +39,10 @@ $cat = $category[0]->name;
 
 					 $about = strip_tags($words);
 
+					 $image = remix_thumbnail_url($post);
+
+
+
 
       
 					  ?>
@@ -46,7 +50,7 @@ $cat = $category[0]->name;
 		
 
 		<ul class="single-article entypo-icons">
-        <div class="social-btn" id="fbshare" data-share="<?php echo the_permalink(); ?>,<?php the_title(); ?>,<?php echo thumbnail_link($post); ?>, <?php echo $about; ?>">
+        <div class="social-btn" id="fbshare" data-share="<?php echo the_permalink(); ?>,<?php the_title(); ?>,<?php echo $image; ?>, <?php echo $about; ?>">
           <li class="entypo-facebook"><span>Share</span></li>
         </div>
           <div class="social-btn">
