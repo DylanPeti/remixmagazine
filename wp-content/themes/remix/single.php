@@ -44,7 +44,7 @@ $cat = $category[0]->name;
 		
 
 		<ul class="single-article entypo-icons">
-        <div class="social-btn" id="fbshare" data-share="<?php echo the_permalink(); ?>,<?php echo the_title(); ?>,<?php echo thumbnail_link($post); ?>, <?php echo $words; ?>">
+        <div class="social-btn" id="fbshare" data-share="<?php echo the_permalink(); ?>,<?php the_title(); ?>,<?php echo thumbnail_link($post); ?>, <?php echo $words; ?>">
           <li class="entypo-facebook"><span>Share</span></li>
         </div>
           <div class="social-btn">
