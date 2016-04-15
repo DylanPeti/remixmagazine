@@ -62,6 +62,7 @@
 	width: 100%;
 	height: 40px;
 	padding-left: 15px;
+  border-radius: 3px;
 }
 
 
@@ -252,8 +253,8 @@ button:hover {
      border: 1px solid red;
     background: rgba(235,77,77, 0.1);
 }
-
-.success-msg {
+.remix-sections h3
+.success-msg { margin: 0 0 15px 0;
      border: 1px solid #5bcf80;
 	 background: rgba(91,207,128, 0.1);
 
@@ -268,6 +269,143 @@ button:hover {
 }
 
 
+/**  **/
+
+#advert-create-section .remix-sections h3 {
+ margin: 0 0 15px 0;
+}
+
+.article.advert {
+  width: 265.84px;
+  height: 290px;
+  position: relative;
+    background-color: #fff;
+    height: 290px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border: 1px solid #a5a5a5;
+}
+
+.article.advert .ad {
+
+    background: #ffffff;
+    padding: 0;
+    margin: 0 auto 25px auto;
+
+}
+
+.article.advert .ad .ad-content {
+  position: absolute;
+    padding: 25px 15px;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: #fff;
+}
+.article.advert .ad .ad-content .ad-tag {
+font-size: 10px;
+    color: #999999;
+    font-weight: bold;
+    font-family: helvetica, arial, verdana;
+  }
+
+.article.advert .ad .ad-content .ad-btn {
+      float: right;
+    font-size: 12px;
+    padding: 7px 12px;
+    margin-top: -6px;
+        -webkit-border-radius: 3;
+    -moz-border-radius: 3;
+    border-radius: 3px;
+    margin-left: 20px;
+    width: auto;
+    font-family: "museo-sans", verdana, sans-serif;
+    color: #3498db;
+    background: transparent;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #3498db;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+
+  }
+
+  .article.advert .ad .ad-img {
+    background-size: contain;
+    height: 220px;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .slot-section {
+    margin: 0px auto 0 auto;
+    width: 240px;
+    float: left;
+    overflow-y: scroll;
+  }
+
+   .slot.cross:before, .slot.tick:before {
+    font-family: FontAwesome;
+
+    font-size: 32px;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 
+  }
+
+  .slot.cross:before {
+    color: red;
+    content:  "\f00d";
+  }
+
+  .slot.tick:before {
+    color: #4cae4c;
+    content: "\f00c";
+  }
+
+  .slot {
+       position: relative;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 10px 10px 0;
+    float: left;
+    cursor: pointer;
+    background: #333;
+  }
+  
+  .create-advert {
+
+  }
+
+  .preview-advert-image {
+    background-size: contain;
+    height: 220px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  .preview-advert h4 {
+      margin: 0;
+    margin-top: 50%;
+    padding: 0;
+    transform: translateY(-50%);
+  }
+
+  .preview-advert h4.pos-number {
+    font-size: 58px;
+    color:#3498db;
+    text-align: center;
+  }
 

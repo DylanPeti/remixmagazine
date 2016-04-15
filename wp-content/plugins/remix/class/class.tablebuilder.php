@@ -19,7 +19,7 @@ class tableBuilder {
        	 
        	$prefix = $wpdb->prefix . "remix_";
 
-       	$table = array("hero", "article", "carousel", "social", "socialmeta", "Adverts");
+       	$table = array("hero", "article", "carousel", "social", "socialmeta", "adverts");
        
         $tables = $this->table($table, $prefix);
  
@@ -114,6 +114,16 @@ class tableBuilder {
 		                    );";
   
         		    break;
+
+              $sql[$table] = "CREATE TABLE" . $table . " (
+                     `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                     `title` varchar(50) DEFAULT '',
+                     `image` varchar(255) DEFAULT NULL,
+                     `status` varchar(20) DEFAULT NULL,
+                     `location` varchar(20) DEFAULT NULL,
+                     `position` int(11) DEFAULT NULL,
+                     PRIMARY KEY (`id`)
+                     );";
 
         		default:
 

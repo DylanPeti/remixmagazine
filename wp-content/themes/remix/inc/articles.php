@@ -1,4 +1,4 @@
-<?php 
+  <?php 
 
 
 
@@ -20,7 +20,7 @@ $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
 
 $articles = get_articles(0, array($recent_post[0]->ID)); ?>
 
-<section id="article-section" class="black">
+<section id="article-section" class="black" >
   
   <div class="container">
    

@@ -1418,4 +1418,63 @@ section {
 .branding-container {
   display: none;
 }
+/* line 1, ../sass/partials/advert.scss */
+.ad {
+  background: #ffffff;
+  padding: 0;
+  margin: 0 auto 25px auto;
+}
+/* line 6, ../sass/partials/advert.scss */
+.ad .ad-img {
+  background: #fff url("/wp-content/themes/remix/images/cara.jpg") no-repeat 50% 40%;
+  background-size: contain;
+  height: 220px;
+  width: 100%;
+}
+/* line 12, ../sass/partials/advert.scss */
+.ad .ad-content {
+  position: absolute;
+  padding: 25px 15px;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background: #fff;
+}
+/* line 19, ../sass/partials/advert.scss */
+.ad .ad-content h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+/* line 25, ../sass/partials/advert.scss */
+.ad .ad-content p {
+  font-size: 16px;
+}
+/* line 28, ../sass/partials/advert.scss */
+.ad .ad-content .ad-tag {
+  font-size: 10px;
+  color: #999999;
+  font-weight: bold;
+  font-family: helvetica, arial, verdana;
+}
+/* line 34, ../sass/partials/advert.scss */
+.ad .ad-content .ad-btn {
+  float: right;
+  font-size: 12px;
+  padding: 7px 12px;
+  margin-top: -6px;
+  width: 115px;
+}
+
+/* line 44, ../sass/partials/advert.scss */
+.advert-temp {
+  display: block;
+  margin: 0 auto;
+  width: 720px;
+  height: 80px;
+  background: #eee;
+  margin-top: 15px;
+}
+
 */*/*/
