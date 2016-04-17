@@ -32,7 +32,7 @@ define("REMIX_BASE_URL", get_site_url());
 function remix_register_styles() {
 
     wp_register_style('remix_plugin',"/wp-content/plugins/remix/css/style.css" );
-    wp_register_style('remix_plugin_articles',"/wp-content/plugins/remix/css/articles.css" );
+    wp_register_style('remix_plugin_articles',"/wp-content/plugins/remix/css/article.css" );
     $actual_link = "$_SERVER[REQUEST_URI]";
     if(strpos($actual_link, 'remix')) {
     wp_register_style('admin_boot', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'); 
@@ -53,7 +53,7 @@ function remix_enqueue_styles() {
     if(is_admin()) {
 
     wp_enqueue_style('remix_plugin');
-     // wp_enqueue_style('remix_plugin_articles');
+      wp_enqueue_style('remix_plugin_articles');
     wp_enqueue_style('admin_boot');
     wp_enqueue_style('fontawesome');
     wp_enqueue_style('selectcss');

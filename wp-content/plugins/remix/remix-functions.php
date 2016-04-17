@@ -160,7 +160,7 @@ $late = $recent_post[0]->ID;
 }
 
 
-function article($item) {
+function article($item, $advert = null, $count = null) {
 
 
 
@@ -172,8 +172,17 @@ $image = remix_thumbnail_url($item);
 $category = $category[0]->name;
 $cat_id = get_cat_ID($category);
 $category_link = get_category_link($cat_id);
+$count = (isset($count) ? $count : "");
 ?>
-<article class="article">
+<article class="article" data-position="<?php echo $count ?>">
+<div class="advert-overlay green-overlay">
+ <div class="advert-taken">
+  <h4>Slot Selected</h4>
+  <p>About</p>
+   <h5>Advert Slot Unavailable</h5>
+   <p>Note: If you choose this slot, the current advert slot will be replaced by the new advert.</p>
+  </div>
+</div>
    <a href="<?php echo $link; ?>"> 
     <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
     </div>
@@ -247,28 +256,49 @@ function remix_thumbnail_url($object) {
   
      }
 
+function get_advert($position) {
 
-function get_adverts($title) { 
-ob_start();
-$sidebar =  dynamic_sidebar($title); 
-$sidebar = ob_get_contents();
-ob_end_clean();
+   global $class;
 
-if(isset($sidebar)) {
+   $adverts = $class::read("adverts");
 
-$image = trim($sidebar);
+   $items = array();
 
-$split = explode("|", $image); 
+   foreach ($adverts as $advert) {
+    if($advert->location == $position) {
+      $items[] = $advert;
+    }
+   }
 
+   return $items;
 
-$link = (isset($split[0]) ? $split[0] : false );
-$image = (isset($split[1]) ? $split[1] : false);
+}
 
-if(!empty($link) && !empty($image)) {
+function get_adverts($advert, $count) { 
+
+$image = $advert->image;
+
+$link = $advert->link;
+
+$count = (isset($count) ? $count : "");
 
 return <<<HTML
-<article class="article advert">
-
+<article class="article advert" data-position="$count"> 
+<div class="advert-overlay blue-overlay">
+  <div class="advert-taken">
+  <h4>Current Advert</h4>
+  <p>$advert->title</p>
+   <h5>Advert Slot Unavailable</h5>
+   <p>Note: If you choose this slot, the current advert slot will be replaced by the new advert.</p>
+  </div>
+</div>
+<div class="advert-overlay green-overlay">
+  <div class="advert-taken">
+  <h4>SELECTED</h4>
+  <p>$advert->title</p>
+   <p>Note: This article will now be replaced by the new advert.</p>
+  </div>
+</div>
   <div class="ad">
   <a href="$link" target="_blank">
             <div class="ad-img" style="background-image: url($image)"></div>
@@ -282,9 +312,6 @@ return <<<HTML
   
 </article>
 HTML;
-
-  }
- }
 }
 
 

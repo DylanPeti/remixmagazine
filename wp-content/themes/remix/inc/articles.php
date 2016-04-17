@@ -33,21 +33,16 @@ $articles = get_articles(0, array($recent_post[0]->ID)); ?>
 
              $count++;
 
-             if($count == 4) {
-                if(!empty(get_adverts('widget-article-advert-one') ) ){
-                    echo get_adverts('widget-article-advert-one');
-                    continue;
-                } 
-             }
-
-             if($count == 8) {
-               if(!empty(get_adverts('widget-article-advert-two') ) ){
-                   echo get_adverts('widget-article-advert-two');
+           foreach(get_advert("top") as $advert) {
+              $position = $advert->position;
+              if($count == $position) {
+                   get_advert($item, "advert"); 
                    continue;
-                 }
-             }
+              }
+               article($item); 
+            }
 
-             article($item); 
+            
 
           ?>
          

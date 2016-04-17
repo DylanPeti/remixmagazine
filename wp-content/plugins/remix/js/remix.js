@@ -37,16 +37,19 @@ $(".upload-media").on("click", function(){
 
 /** slot */
 
-$(".slot").on("click", function() {
- $(".slot").removeClass("tick");
 
- $(this).addClass("tick");
+$(".next").on("click", function() {
+   $(".advert-creator").addClass("advert-location").removeClass("advert-creator");
+   $(".create-advert").hide();
+   $(".choose-location").show();
+});
 
- var position = $(this).data("pos");
+$(".article").on("click", function() {
+  $(".article").find(".green-overlay").hide();
+  $(this).find(".green-overlay").show();
 
- $(".pos-number").html(position);
- $(".data-position").val(position);
-
+  var position = $(this).data("position");
+  $(".data-position").val(position);
 });
 
 

@@ -1,9 +1,7 @@
 <?php
-
 if($_POST) :
 $save = Remix::create("adverts", $_POST);
 endif;
-
 $recent_posts = array(
 'numberposts' => 1,
 'offset' => 0,
@@ -16,74 +14,74 @@ $recent_posts = array(
 );
 $count = 0;
 $recent_post = wp_get_recent_posts( $recent_posts, OBJECT);
-
+$articles = get_articles(0, array($recent_post[0]->ID));
 $data = array();
 ?>
 <section id="advert-create-section" class="black">
-	<div class="container">
-		<div class="title">
-			<h1>Adverts</h1>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-12">
+	<div class="title">
+		<h1>ADVERT BUILDER</h1>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="remix-sections advert-creator">
 				
-				<div class="remix-sections create-advert">
-					<div class="col-md-6">
-						<h3>Create</h3>
-						<form action="<?php echo REMIX_BASE_URL . '/wp-admin/admin.php?page=remix-collection-advertscreate.php' ?>" method="post">
-							
-							<div class="form-group">
-								<input name="data['title']" class="create-title-input" type="text" name="title" placeholder="Advert title">
-							</div>
-							<div class="form-group">
-								<input name="data['link']" class="create-title-input" type="text" name="title" placeholder="Link to website">
-							</div>
+				
+				<form action="<?php echo REMIX_BASE_URL . '/wp-admin/admin.php?page=remix-collection-advertscreate.php' ?>" method="post">
+					<div class="create-advert">
+						<h3>CREATE</h3>
+						<div class="form-group">
+							<input name="data['title']" class="create-title-input" type="text" name="title" placeholder="Advert title">
+						</div>
+						<div class="form-group">
+							<input name="data['link']" class="create-title-input" type="text" name="title" placeholder="Link to website">
+						</div>
+						
+						<div class="form-group">
 							<div class="preview"></div>
-							<div class="form-group">
-
-							 <input class="data-image" type="hidden" name="data['image']" value="">
-							 <input class="data-status" type="hidden" name="data['status']" value="active">
-							 <input class="data-location" type="hidden" name="data['location']" value="top">
-							 <input class="data-position" type="hidden" name="data['position']" value="">
-								<a href="#" class="btn-update upload-media">Upload Media</a>
-								<button class="btn btn-update" type="submit">Submit</button>
-							</div>
-						</form>
-					</div>
-					<div class="col-md-6">
-						<div class="col-md-12">
-							<h3>Location</h3>
+							<p class="img-note">Note: if you see space inside the dotted lines, you'll need
+							to resize the advert image. Ideal dimensions are: 300 x 250</p>
+							<input class="data-image" type="hidden" name="data['image']" value="">
+							<input class="data-status" type="hidden" name="data['status']" value="active">
+					
+							<a href="#" class="btn-update upload-media">Upload Media</a>
+							
 						</div>
-						<div class="preview-advert">
+						<a href="#" class="btn-update next">NEXT</a>
+					</div>
+					<div class="choose-location">
+						<div class="location-title"><h2>TOP</h2></div>
+						<div class="article-collection">
+							<?php $count = 0; ?>
+							<?php foreach ($articles as $item) : ?>
+							
 							<?php
-							$articles = get_articles(0, array($recent_post[0]->ID));
-							$count = 0;
-							//$articles = $get_the_articles; ?>
-							<div class="col-md-3"><h4>TOP</h4></div>
-							<div class="col-md-6">
-								<div class="slot-section">
-									<?php foreach ($articles as $article) { ?>
-									<?php $count++; ?>
-									<?php $cross = ($count == 4 ? "cross" : ""); ?>
-									
-									<div class="slot <?php echo $cross; ?>" data-pos="<?php echo $count; ?>"></div>
-									
-									<?php } ?>
-								</div>
-							</div>
-							<div class="col-md-3"><h4 class="pos-number">0</h4></div>
+							$count++;
+							$exclude = array();
+							foreach (get_advert("top") as $advert) {
+							$exclude[] = $advert->position;
+							if($advert->position == $count) {
+							echo get_adverts($advert, $count);
+							continue;
+							}
+							}
+							if(in_array($count, $exclude)){
+							continue;
+							}
+							article($item, null, $count);
+							?>
+							
+							<?php endforeach; ?>
 						</div>
-						
+						<input class="data-location" type="hidden" name="data['location']" value="top">
+						<input class="data-position" type="hidden" name="data['position']" value="">
+						<button class="btn-update submit" type="submit">Create Advert</button>
 						
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
+				</form>
 				
 			</div>
 		</div>
 	</div>
+	
 </section>
