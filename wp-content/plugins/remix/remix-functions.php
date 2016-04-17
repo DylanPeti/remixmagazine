@@ -287,6 +287,7 @@ $link = $advert->link;
 
 $count = (isset($count) ? $count : "");
 
+if(is_admin()) {
 return <<<HTML
 <article class="article advert" data-position="$count"> 
 <div class="advert-overlay blue-overlay">
@@ -300,7 +301,7 @@ return <<<HTML
 <div class="advert-overlay green-overlay">
   <div class="advert-taken">
   <h4>SELECTED</h4>
-  <p>$advert->title</p>
+  <p>$advert->title</p>   
    <p>Note: This article will now be replaced by the new advert.</p>
   </div>
 </div>
@@ -317,6 +318,23 @@ return <<<HTML
   
 </article>
 HTML;
+} else {
+  return <<<HTML
+<article class="article advert" data-position="$count"> 
+  <div class="ad">
+  <a href="$link" target="_blank">
+            <div class="ad-img" style="background-image: url($image)"></div>
+  </a>
+            <div class="ad-content">
+            <span class="ad-tag">PROMOTION</span>
+
+            <a href="$link" target="_blank"><button class="ad-btn">Learn More</button></a>
+           </div>
+        </div>
+  
+</article>
+HTML;
+}
 }
 
 

@@ -1,7 +1,5 @@
   <?php 
 
-
-
 $recent_posts = array(
     'numberposts' => 1,
     'offset' => 0,
@@ -25,15 +23,27 @@ $articles = get_articles(0, array($recent_post[0]->ID)); ?>
   <div class="container">
    
     <div class="article-collection">
+
+    <?php 
+
+    $array = get_advert("top");
+    $articles = array_replace($articles, $array); ?>
+
      
       <?php foreach ($articles as $item) : ?>
         
          <?php 
 
 
-             $count++;
+            $count++;
 
+            if(isset($item->location)) {
+             echo get_adverts($item, $count);
+            
+            } else {
+         
             article($item); 
+          }
             
 
           ?>
