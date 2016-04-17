@@ -37,13 +37,6 @@ foreach ($items as $recent) {
      
          <?php
 
-          if($count == 4) {
-                if(!empty(get_adverts('widget-article-advert-three') ) ){
-                    echo get_adverts('widget-article-advert-three');
-                    continue;
-                } 
-             }
-
           article($item); 
 
           ?>

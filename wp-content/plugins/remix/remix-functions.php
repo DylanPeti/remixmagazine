@@ -173,8 +173,12 @@ $category = $category[0]->name;
 $cat_id = get_cat_ID($category);
 $category_link = get_category_link($cat_id);
 $count = (isset($count) ? $count : "");
+
+
 ?>
 <article class="article" data-position="<?php echo $count ?>">
+
+<?php if(is_admin()) { ?>
 <div class="advert-overlay green-overlay">
  <div class="advert-taken">
   <h4>Slot Selected</h4>
@@ -183,6 +187,7 @@ $count = (isset($count) ? $count : "");
    <p>Note: If you choose this slot, the current advert slot will be replaced by the new advert.</p>
   </div>
 </div>
+<?php } ?>
    <a href="<?php echo $link; ?>"> 
     <div class="article-img" style="background-image: url(<?php echo $image; ?>)">
     </div>

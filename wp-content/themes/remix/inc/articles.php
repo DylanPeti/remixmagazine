@@ -33,15 +33,7 @@ $articles = get_articles(0, array($recent_post[0]->ID)); ?>
 
              $count++;
 
-           foreach(get_advert("top") as $advert) {
-              $position = $advert->position;
-              if($count == $position) {
-                   get_advert($item, "advert"); 
-                   continue;
-              }
-               article($item); 
-            }
-
+            article($item); 
             
 
           ?>

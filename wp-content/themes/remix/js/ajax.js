@@ -35,6 +35,7 @@ function load_posts(){
             if($data.length){
                  $("#more-posts").hide();
                 $(".article-collection-bottom").append($data);
+                $(".advert-overlay").css("display", "none");
                 $("#more-posts").attr("disabled",false);
             } else{
                 $("#more-posts").attr("disabled",true);

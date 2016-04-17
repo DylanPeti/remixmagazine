@@ -1,8 +1,10 @@
 <?php 
 
+
 $post = get_post(10479);
 
 if(isset($post)) {
+
 $category = get_the_category($post->ID);
 
 $category = $category[0]->name;
@@ -26,7 +28,9 @@ $category = $category[0]->name;
 
 		 </div>
 </a>
+
 </article> 
 
 
 <?php } ?>
+
