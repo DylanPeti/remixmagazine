@@ -504,4 +504,18 @@ display: none;
     width: 200px;
     text-align: center;
   }
+
+  .warning {
+    display: none;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid red;
+    border-radius: 3px;
+    color: #000;
+    
+  }
  

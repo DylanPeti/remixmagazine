@@ -39,9 +39,13 @@ $(".upload-media").on("click", function(){
 
 
 $(".next").on("click", function() {
+  if(!$(".create-title").val() || !$(".create-link").val() || !$(".data-image").val()) {
+     $(".warning").show();
+  } else {
    $(".advert-creator").addClass("advert-location").removeClass("advert-creator");
    $(".create-advert").hide();
    $(".choose-location").show();
+ }
 });
 
 $(".article").on("click", function() {
@@ -51,7 +55,10 @@ $(".article").on("click", function() {
   var position = $(this).data("position");
   $(".data-position").val(position);
 });
-
-
-
 });
+
+
+
+
+
+

@@ -31,10 +31,10 @@ $data = array();
 					<div class="create-advert">
 						<h3>CREATE</h3>
 						<div class="form-group">
-							<input name="data['title']" class="create-title-input" type="text" name="title" placeholder="Advert title">
+							<input name="data['title']" class="create-title create-title-input" type="text" name="title" placeholder="Advert title" required>
 						</div>
 						<div class="form-group">
-							<input name="data['link']" class="create-title-input" type="text" name="title" placeholder="Link to website">
+							<input name="data['link']" class="create-link create-title-input" type="text" name="title" placeholder="Link to website" required>
 						</div>
 						
 						<div class="form-group">
@@ -47,6 +47,7 @@ $data = array();
 							<a href="#" class="btn-update upload-media">Upload Media</a>
 							
 						</div>
+						<p class="warning">Finish creating the advert before proceeding</p>
 						<a href="#" class="btn-update next">NEXT</a>
 					</div>
 					<div class="choose-location">
