@@ -107,7 +107,7 @@ $page = (is_page('cart') || is_page('checkout') ? 12 : 3);
         <a href="https://twitter.com/REMIXmagazine" target="_blank" class="icon-twitter"><i class="fa fa-twitter fa-3x"></i></a>
       <span class="icon-subscribe"><i class="fa fa-envelope fa-3x"></i></span>
         <div class="mailer-wrap">
-          <h3>Join The Mailer</h3>
+          <h3>Get weekly Remix inspiration</h3>
           <form action="http://remix.us2.list-manage.com/subscribe/post?u=7f9be996e2c6cb5ef2d2df5fb&amp;id=acc14b56d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
             <div class="mc-field-group">
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
