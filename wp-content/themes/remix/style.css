@@ -2186,13 +2186,7 @@ section {
   padding-left: 5px;
 }
 
-/* line 499, sass/style.scss */
-.article_content iframe {
-  width: 100%;
-  height: 385px;
-}
-
-/* line 504, sass/style.scss */
+/* line 498, sass/style.scss */
 .search-form {
   position: relative;
   width: 100%;
@@ -2202,7 +2196,7 @@ section {
   margin-bottom: 20px;
 }
 
-/* line 513, sass/style.scss */
+/* line 507, sass/style.scss */
 .search-field {
   width: 80% !important;
   float: left;
@@ -2211,7 +2205,7 @@ section {
   margin: 0;
 }
 
-/* line 521, sass/style.scss */
+/* line 515, sass/style.scss */
 .search-form .fa-search {
   position: absolute;
   line-height: 39px;
@@ -2221,7 +2215,7 @@ section {
   font-weight: 100;
 }
 
-/* line 530, sass/style.scss */
+/* line 524, sass/style.scss */
 .search-submit {
   width: 20%;
   float: left;
@@ -2231,7 +2225,7 @@ section {
   margin: 0;
 }
 
-/* line 539, sass/style.scss */
+/* line 533, sass/style.scss */
 .main-search {
   margin-bottom: 20px;
 }
