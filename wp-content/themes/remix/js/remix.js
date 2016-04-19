@@ -4,7 +4,8 @@ $(document).scroll(function() {
 var mouse = $(document).scrollTop();
 var activate = $("#toolbar-section").position().top + $("#toolbar-section").height();
 if(mouse > activate) {
-  $(".top-toolbar").addClass("top-toolbar-active", 3000);
+      $(".top-toolbar").addClass("top-toolbar-active").animate({opacity: 1}, 2000);
+
   $(".logo-header").css("margin-top", "44px");
 } else {
   $(".top-toolbar").removeClass("top-toolbar-active", 500);

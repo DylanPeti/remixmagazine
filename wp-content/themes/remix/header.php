@@ -93,6 +93,7 @@ $page = (is_page('cart') || is_page('checkout') ? 12 : 3);
 
     <div class="right-menu-wrap">
           <div class="social-icons">
+        
          <a href="https://www.facebook.com/remixmagazinenz/" target="_blank"  class="icon-spotify"><i class="fa fa-spotify" aria-hidden="true"></i></a>
       <a href="https://www.facebook.com/remixmagazinenz/" target="_blank"  class="icon-facebook"><i class="fa fa-facebook fa-3x"></i></a>
        <a href="https://www.instagram.com/remixmagazine/" target="_blank" class="icon-instagram"><i class="fa fa-instagram fa-3x"></i></span>

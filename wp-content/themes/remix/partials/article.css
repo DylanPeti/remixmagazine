@@ -51,7 +51,7 @@ ul.entypo-icons li:first-child {
   background: #ffffff;
   height: 350px;
   background-size: cover;
-  background-position: 50%;
+  background-position: 50% 0;
 }
 /* line 103, ../sass/partials/article.scss */
 .hero .article_exerpt {
