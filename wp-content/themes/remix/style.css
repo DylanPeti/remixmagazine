@@ -76,7 +76,7 @@ header .top-toolbar .top-toolbar-menu {
 }
 /* line 56, sass/partials/header.scss */
 header .social-icons {
-  position: relative;
+  position: absolute;
   right: 0;
   float: right;
   top: 0;
