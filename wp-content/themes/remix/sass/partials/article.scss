@@ -8,7 +8,6 @@
         text-transform: uppercase;
         font-size: 10px;
         font-weight: bold;
-        font-family: helvetica, arial, verdana;
         width: 100%;
     }
 }
@@ -334,14 +333,12 @@ body.single-post {
             display: inline-block;
             float: left;
             padding: 17px 25px 17px 0;
-            font-family: helvetica, arial, verdana;
             font-size: 12px;
         }
         span.crumbs {
             float: right;
             padding-right: 0px;
             p {
-                font-family: helvetica, arial, verdana;
                 font-size: 12px;
             }
         }
@@ -381,7 +378,6 @@ body.single-post {
             h5,
             h6 {
                 line-height: 1.4;
-                font-family: Times, 'Times new roman', sans;
             }
         }
     }

@@ -36,9 +36,8 @@
   font-size: 10px;
   color: #999999;
   font-weight: bold;
-  font-family: helvetica, arial, verdana;
 }
-/* line 34, ../sass/partials/advert.scss */
+/* line 33, ../sass/partials/advert.scss */
 .ad .ad-content .ad-btn {
   float: right;
   font-size: 12px;
@@ -47,7 +46,7 @@
   width: 115px;
 }
 
-/* line 44, ../sass/partials/advert.scss */
+/* line 43, ../sass/partials/advert.scss */
 .advert-temp {
   display: block;
   margin: 0 auto;

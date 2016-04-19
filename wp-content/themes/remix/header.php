@@ -41,6 +41,8 @@ $page = (is_page('cart') || is_page('checkout') ? 12 : 3);
 
 <!-- TYPEKIT -->
 
+<script src="https://use.typekit.net/nog2wem.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <!-- FACEBOOK SDK -->
 
@@ -90,10 +92,10 @@ $page = (is_page('cart') || is_page('checkout') ? 12 : 3);
     <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'menu-remix')); ?>
     </div>
     </div>
-
+   
     <div class="right-menu-wrap">
           <div class="social-icons">
-        
+
          <a href="https://www.facebook.com/remixmagazinenz/" target="_blank"  class="icon-spotify"><i class="fa fa-spotify" aria-hidden="true"></i></a>
       <a href="https://www.facebook.com/remixmagazinenz/" target="_blank"  class="icon-facebook"><i class="fa fa-facebook fa-3x"></i></a>
        <a href="https://www.instagram.com/remixmagazine/" target="_blank" class="icon-instagram"><i class="fa fa-instagram fa-3x"></i></span>

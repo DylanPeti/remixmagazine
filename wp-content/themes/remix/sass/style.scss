@@ -37,14 +37,22 @@ html {
 body {
     margin: 0;
     height: 0;
-    font-family: $serif;
     color: #333;
+    font-family: $sans;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     line-height: 1.4;
     background: #ffffff;
     height: 100%;
     overflow-x: hidden;
+}
+
+body, li, a, p, h1, h2, h3, h4, h5, h6, button {
+    font-family: "Museo Sans", verdana, sans-serif;
+}
+.toolbar #menu-remix li a {
+     font-family: "Proxima Nova", verdana, sans-serif;
+     font-weight: 100;
 }
 
 body.home,
@@ -65,11 +73,10 @@ h4,
 h5,
 h6 {
     line-height: 1.4;
-    font-family: $sans;
+
 }
 li {
     line-height: 1.4;
-    font-family: $sans;
 }
 
 
@@ -179,7 +186,6 @@ button {
     border-radius: 3px;
     margin-left: 20px;
     width: auto;
-    font-family: $sans;
     color: $blue;
     background: transparent;
     padding: 7px 20px;
@@ -439,7 +445,6 @@ section {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: helvetica, arial, verdana;
 }
 .banner-advert img {
        display: block;
