@@ -1,19 +1,26 @@
 jQuery(document).ready(function($) {
 
+$(document).scroll(function() {
+var mouse = $(document).scrollTop();
+var activate = $("#toolbar-section").position().top + $("#toolbar-section").height();
+if(mouse > activate) {
+  $(".top-toolbar").addClass("top-toolbar-active", 3000);
+  $(".logo-header").css("margin-top", "44px");
+} else {
+  $(".top-toolbar").removeClass("top-toolbar-active", 500);
+   $(".logo-header").css("margin-top", "0px");
+}
+});
 
-  $(".right-menu-wrap .icon-subscribe").on("hover", function() {
-      $(".right-menu-wrap").addClass("menu_slide");
-  }); 
 
-  $(".right-menu-wrap").on("mouseleave", function(){
-       $(".right-menu-wrap").removeClass("menu_slide");
+   $(".fa-bars").on("click", function(){
+       $(".left-menu-wrap .slider-content").toggleClass("show");
+       $(".left-menu-wrap").toggleClass("left-menu-wrap-active");
   });
 
-   $(".left-menu-wrap .fa-bars").on("click", function(){
-       $(".left-menu-wrap").toggleClass("left_menu_slide");
-       $(".left-menu-wrap").toggleClass("overflow-y");
-       $(".left-menu-wrap .icon-subscribe").toggleClass("bars-white");
 
+  $(".fa-envelope").on("click", function(){
+    $(".right-menu-wrap .slider-content").toggleClass("show");
   });
 
   $.ajaxSetup({ cache: true });
@@ -26,11 +33,8 @@ jQuery(document).ready(function($) {
       version    : 'v2.5'
     });     
 
-    // $('#loginbutton,#feedbutton').removeAttr('disabled');
-    // FB.getLoginStatus(updateStatusCallback);
 
     $("body").on("click", "#fbshare", function(){
-      console.log($(this));
 
     	 var item = $(this);
     	 
@@ -41,18 +45,6 @@ jQuery(document).ready(function($) {
     	 var image = items[2];
        var description = items[3];
 
-
-//        FB.ui({
-//   method: 'share_open_graph',
-//   action_type: 'og.likes',
-//   action_properties: JSON.stringify({
-//     object: url,
-//     image: {
-//         url: $.trim(image)
-//     }
-//   })
-// }, function(response){
-// });
 
 
 

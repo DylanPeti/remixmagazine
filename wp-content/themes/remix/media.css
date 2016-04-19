@@ -97,106 +97,111 @@
   }
 }
 @media screen and (max-width: 470px) {
-  /* line 82, sass/media.scss */
+  /* line 81, sass/media.scss */
+  .small-logo {
+    display: none;
+  }
+
+  /* line 84, sass/media.scss */
   .remix-hidden {
     display: none;
   }
 
-  /* line 86, sass/media.scss */
+  /* line 88, sass/media.scss */
   .footer-logo {
     display: block;
     margin: 0 auto;
   }
 
-  /* line 91, sass/media.scss */
+  /* line 93, sass/media.scss */
   footer p {
     text-align: center;
   }
 
-  /* line 95, sass/media.scss */
+  /* line 97, sass/media.scss */
   header .logo img {
     width: 200px;
   }
 
-  /* line 99, sass/media.scss */
+  /* line 101, sass/media.scss */
   .article-latest .article-latest-img {
     width: 100%;
   }
 
-  /* line 103, sass/media.scss */
+  /* line 105, sass/media.scss */
   .article-carousel {
     height: 234px;
     overflow: hidden;
   }
-  /* line 107, sass/media.scss */
+  /* line 109, sass/media.scss */
   .article-carousel .carousel-image {
     width: 300px;
   }
-  /* line 110, sass/media.scss */
+  /* line 112, sass/media.scss */
   .article-carousel .instainfo {
     margin-top: 25px;
   }
 
-  /* line 114, sass/media.scss */
+  /* line 116, sass/media.scss */
   #carousel-section {
     padding: 0;
   }
 
-  /* line 120, sass/media.scss */
+  /* line 122, sass/media.scss */
   .article.advert {
     height: 329px;
   }
 
-  /* line 124, sass/media.scss */
+  /* line 126, sass/media.scss */
   .article.advert .ad .ad-img {
     margin: 35px 0;
   }
 
-  /* line 127, sass/media.scss */
+  /* line 129, sass/media.scss */
   .article.advert .ad .ad-content .ad-btn {
     float: none;
     width: 265px;
     margin: 0 auto;
   }
 
-  /* line 133, sass/media.scss */
+  /* line 135, sass/media.scss */
   .article.advert .ad .ad-content .ad-tag {
     display: none;
   }
 
-  /* line 137, sass/media.scss */
+  /* line 139, sass/media.scss */
   header .right-menu-wrap {
     display: none;
   }
 
-  /* line 141, sass/media.scss */
+  /* line 143, sass/media.scss */
   .article_single .article_content {
     margin: 58px 0 0 0;
     text-align: left;
     padding: 0;
   }
 
-  /* line 146, sass/media.scss */
+  /* line 148, sass/media.scss */
   .article_single .toolbar {
     padding: 0 30px;
   }
 
-  /* line 150, sass/media.scss */
+  /* line 152, sass/media.scss */
   .article-hero h2 {
     font-size: 16px;
   }
 
-  /* line 153, sass/media.scss */
+  /* line 155, sass/media.scss */
   .article-hero {
     width: 100%;
   }
 
-  /* line 156, sass/media.scss */
+  /* line 158, sass/media.scss */
   .menu-main-menu-container {
     display: none;
   }
 
-  /* line 159, sass/media.scss */
+  /* line 161, sass/media.scss */
   .article,
   .article-latest,
   .article-editors-choice {
@@ -204,7 +209,7 @@
     margin-bottom: 25px;
   }
 
-  /* line 165, sass/media.scss */
+  /* line 167, sass/media.scss */
   .article-latest .article-latest-exerpt {
     position: absolute;
     width: 100%;
@@ -216,30 +221,30 @@
     background: #ffffff;
   }
 
-  /* line 175, sass/media.scss */
+  /* line 177, sass/media.scss */
   .article-latest .article-latest-exerpt h2 {
     font-size: 16px;
     margin-top: 15px;
     line-height: 1.2em;
   }
 
-  /* line 180, sass/media.scss */
+  /* line 182, sass/media.scss */
   .hero .article_exerpt {
     width: 92.5%;
     position: absolute;
     bottom: 0;
   }
-  /* line 184, sass/media.scss */
+  /* line 186, sass/media.scss */
   .hero .article_exerpt h2 {
     font-size: 20px;
   }
-  /* line 187, sass/media.scss */
+  /* line 189, sass/media.scss */
   .hero .article_exerpt p {
     display: none;
   }
 }
 @media screen and (min-height: 800px) {
-  /* line 196, sass/media.scss */
+  /* line 198, sass/media.scss */
   .hero {
     height: 500px;
   }

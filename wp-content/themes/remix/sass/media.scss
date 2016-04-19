@@ -78,7 +78,9 @@
 }
 
 @media screen and (max-width: 470px) {
-
+    .small-logo {
+        display: none;
+    }
     .remix-hidden {
         display: none;
     }

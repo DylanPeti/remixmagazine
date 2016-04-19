@@ -69,12 +69,67 @@ $page = (is_page('cart') || is_page('checkout') ? 12 : 3);
 
 <header>
 
+    <!-- Right Menu -->
+    <div class="top-toolbar">
+
+        <!-- Left Menu -->
+        <span class="icon-subscribe"><i class="fa fa-bars fa-3x"></i></span>
+    <div class="left-menu-wrap">
+     
+      <div class="slider-content">
+        <div class="main-search">
+          <?php include ('wp-content/themes/remix/inc/search.php'); ?>
+        </div>
+       <?php echo wp_nav_menu ( array("menu" => 'secondary') ); ?>
+      </div>
+    </div>
+
+    <div class="top-toolbar-menu">
+   <div class="container">
+   <img class="small-logo" src="/wp-content/themes/remix/images/remix-magazine-logo-white.png">
+    <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'menu-remix')); ?>
+    </div>
+    </div>
+
+    <div class="right-menu-wrap">
+          <div class="social-icons">
+         <a href="https://www.facebook.com/remixmagazinenz/" target="_blank"  class="icon-spotify"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/remixmagazinenz/" target="_blank"  class="icon-facebook"><i class="fa fa-facebook fa-3x"></i></a>
+       <a href="https://www.instagram.com/remixmagazine/" target="_blank" class="icon-instagram"><i class="fa fa-instagram fa-3x"></i></span>
+        <a href="https://twitter.com/REMIXmagazine" target="_blank" class="icon-twitter"><i class="fa fa-twitter fa-3x"></i></a>
+       <span href="#"><i class="fa fa fa-envelope fa-3x"></i></span>
+     </div>
+      <div class="slider-content">
+
+        <div class="mailer-wrap">
+          <h3>Get weekly Remix inspiration</h3>
+          <form action="http://remix.us2.list-manage.com/subscribe/post?u=7f9be996e2c6cb5ef2d2df5fb&amp;id=acc14b56d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <div class="mc-field-group">
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+            </div>
+            <div class="mc-field-group">
+              <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_7f9be996e2c6cb5ef2d2df5fb_acc14b56d6" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+            <p class="smalltext">We hate spam too. Unsubscribe at any time.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    
+    </div>
 
 
+
+<div class="logo-header">
 
 <div class="container">
-
-<div class="container-fluid">
   <div class="row">
     <div class="col-md-<?php echo $page; ?>">
       <a href="/" class="logo">
@@ -99,44 +154,6 @@ $page = (is_page('cart') || is_page('checkout') ? 12 : 3);
       </div>
     </section>
 
-    <!-- Right Menu -->
-    <div class="right-menu-wrap">
-      <div class="slider-content">
-      <a href="https://www.facebook.com/remixmagazinenz/" target="_blank"  class="icon-facebook"><i class="fa fa-facebook fa-3x"></i></a>
-       <a href="https://www.instagram.com/remixmagazine/" target="_blank" class="icon-instagram"><i class="fa fa-instagram fa-3x"></i></span>
-        <a href="https://twitter.com/REMIXmagazine" target="_blank" class="icon-twitter"><i class="fa fa-twitter fa-3x"></i></a>
-      <span class="icon-subscribe"><i class="fa fa-envelope fa-3x"></i></span>
-        <div class="mailer-wrap">
-          <h3>Get weekly Remix inspiration</h3>
-          <form action="http://remix.us2.list-manage.com/subscribe/post?u=7f9be996e2c6cb5ef2d2df5fb&amp;id=acc14b56d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-            <div class="mc-field-group">
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-            </div>
-            <div class="mc-field-group">
-              <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
-            </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;"><input type="text" name="b_7f9be996e2c6cb5ef2d2df5fb_acc14b56d6" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-            <p class="smalltext">We hate spam too. Unsubscribe at any time.</p>
-          </form>
-        </div>
-      </div>
-    </div>
-    
-        <!-- Left Menu -->
-    <div class="left-menu-wrap">
-     <span class="icon-subscribe"><i class="fa fa-bars fa-3x"></i></span>
-      <div class="slider-content">
-        <div class="main-search">
-          <?php include ('wp-content/themes/remix/inc/search.php'); ?>
-        </div>
-       <?php echo wp_nav_menu ( array("menu" => 'secondary') ); ?>
-      </div>
-    </div>
     
 </div>
 </header>
