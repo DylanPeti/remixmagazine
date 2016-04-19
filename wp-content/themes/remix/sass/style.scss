@@ -50,10 +50,6 @@ body {
 body, li, a, p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Museo Sans", verdana, sans-serif;
 }
-.toolbar #menu-remix li a {
-     font-family: "Proxima Nova", verdana, sans-serif;
-     font-weight: 100;
-}
 
 body.home,
 body.category {
@@ -225,7 +221,7 @@ section {
 
 #toolbar-section {
     padding-top: 30px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
 }
 
 .glyphicon {
