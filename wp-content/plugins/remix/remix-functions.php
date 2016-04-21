@@ -340,7 +340,7 @@ $array = get_adverts($location);
 
           $position = $advert->position -1;
     
-          array_splice($articles, $position, 0, array($advert));
+          array_splice($articles, $position, 1, array($advert));
 
     }
 
