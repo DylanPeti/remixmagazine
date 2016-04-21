@@ -36,7 +36,7 @@ foreach ($items as $recent) {
       	 $count++; 
      
             if(isset($item->location)) {
-             echo get_adverts($item, $count);
+             echo advert($item, $count);
             
             } else {
          

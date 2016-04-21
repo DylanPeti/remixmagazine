@@ -49,14 +49,14 @@ $recent_posts = array(
 
     $articles = get_articles(0, array($recent_post[0]->ID)); 
 
-    $articles_with_adverts = articles_with_adverts("top", $articles);
+    $posts = (count(get_adverts("top")) ? articles_with_adverts("top", $articles) : $articles);
 
-    foreach ($articles_with_adverts as $item) : 
+    foreach ($posts as $item) : 
 
             $count++;
 
             if(isset($item->location)) {
-             echo get_adverts($item, $count);
+             echo advert($item, $count);
             
             } else {
          

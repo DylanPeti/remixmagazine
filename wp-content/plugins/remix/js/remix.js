@@ -27,8 +27,8 @@ function open_media_uploader_image()
     media_uploader.open();
 }
 
-$(".upload-media").on("click", function(){
-   
+$(".upload-media").on("click", function(e){
+   e.preventDefault();
 
    open_media_uploader_image();
 

@@ -256,7 +256,7 @@ function remix_thumbnail_url($object) {
   
      }
 
-function get_advert($position) {
+function get_adverts($position) {
 
    global $class;
 
@@ -274,7 +274,7 @@ function get_advert($position) {
 
 }
 
-function get_adverts($advert, $count) { 
+function advert($advert, $count) { 
 
 $image = $advert->image;
 
@@ -334,7 +334,7 @@ HTML;
 
 function articles_with_adverts ($location, $articles) {
 
-$array = get_advert($location);
+$array = get_adverts($location);
 
  foreach($array as $advert) {
 

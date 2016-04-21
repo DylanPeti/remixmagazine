@@ -41,12 +41,21 @@ function remix_register_styles() {
    
 }
 
-function enqueue_media_uploader() {
-   
-    wp_enqueue_media();
+if( is_admin() ) {
+    function my_admin_load_styles_and_scripts() {
+        $mode = get_user_option( 'media_library_mode', get_current_user_id() ) ? get_user_option( 'media_library_mode', get_current_user_id() ) : 'grid';
+        $modes = array( 'grid', 'list' );
+        if ( isset( $_GET['mode'] ) && in_array( $_GET['mode'], $modes ) ) {
+            $mode = $_GET['mode'];
+            update_user_option( get_current_user_id(), 'media_library_mode', $mode );
+        }
+        if( ! empty ( $_SERVER['PHP_SELF'] ) && 'upload.php' === basename( $_SERVER['PHP_SELF'] ) && 'grid' !== $mode ) {
+            wp_dequeue_script( 'media' );
+        }
+        wp_enqueue_media();
+    }
+    add_action( 'admin_enqueue_scripts', 'my_admin_load_styles_and_scripts' );
 }
-
-add_action("admin_enqueue_scripts", "enqueue_media_uploader");
  
 function remix_enqueue_styles() {
 
