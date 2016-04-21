@@ -89,7 +89,8 @@ function the_latest_posts($count = 0, $ids = array(), $index = 0) {
 
     $do_not_duplicate = array();
     $do_not_duplicate[] = 9767;
-    $offset = ($index == 0 ? 1 : 7);
+    $bottom_offset = 9 - count(get_adverts("top"));
+    $offset = ($index == 0 ? 1 : $bottom_offset);
 
 	  $args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish', 'offset' => $offset);
       
@@ -335,10 +336,9 @@ HTML;
 function articles_with_adverts ($location, $articles) {
 
 $array = get_adverts($location);
-
  foreach($array as $advert) {
 
-          $position = $advert->position - 1;
+          $position = $advert->position -1;
     
           array_splice($articles, $position, 0, array($advert));
 

@@ -42,9 +42,14 @@ $(".next").on("click", function() {
   if(!$(".create-title").val() || !$(".create-link").val() || !$(".data-image").val()) {
      $(".warning").show();
   } else {
+    var location = $("#sel1 option:selected").val();
    $(".advert-creator").addClass("advert-location").removeClass("advert-creator");
    $(".create-advert").hide();
-   $(".choose-location").show();
+   if(location == "bottom") {
+      $(".choose-location-bottom").show();
+   } else {
+      $(".choose-location").show();
+   } 
  }
 });
 

@@ -426,7 +426,7 @@ font-size: 10px;
   height: 700px;
 }
 
-#advert-create-section .choose-location {
+#advert-create-section .choose-location, #advert-create-section .choose-location-bottom {
 display: none;
 }
 
@@ -517,5 +517,17 @@ display: none;
     border-radius: 3px;
     color: #000;
     
+  }
+
+  .message-success{
+       width: 100%;
+    text-align: center;
+    background: rgba(41,175,44,0.1);
+    border: 1px solid rgba(41,175,44,1);
+    border-radius: 3px;
+    line-height: 40px;
+    color: #;
+    height: 40px;
+    margin-bottom: 10px;
   }
  

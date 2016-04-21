@@ -29,12 +29,22 @@ $data = array();
 				
 				<form action="<?php echo REMIX_BASE_URL . '/wp-admin/admin.php?page=remix-collection-advertscreate.php' ?>" method="post">
 					<div class="create-advert">
+						<?php if($_POST) : ?>
+						<div class="message-success">Advert created</div>
+						<?php endif; ?>
 						<h3>CREATE</h3>
 						<div class="form-group">
 							<input name="data['title']" class="create-title create-title-input" type="text" name="title" placeholder="Advert title" required>
 						</div>
 						<div class="form-group">
 							<input name="data['link']" class="create-link create-title-input" type="text" name="title" placeholder="Link to website" required>
+						</div>
+						<div class="form-group">
+							<label for="sel1">Choose a Location</label>
+							<select name="data['location']" class="form-control" id="sel1" selected="selected">
+								<option value="top" selected>Top</option>
+								<option value="bottom">Bottom</option>
+							</select>
 						</div>
 						
 						<div class="form-group">
@@ -43,13 +53,15 @@ $data = array();
 							to resize the advert image. Ideal dimensions are: 300 x 250</p>
 							<input class="data-image" type="hidden" name="data['image']" value="">
 							<input class="data-status" type="hidden" name="data['status']" value="active">
-					
+							
 							<a href="#" class="btn-update upload-media">Upload Media</a>
 							
 						</div>
 						<p class="warning">Finish creating the advert before proceeding</p>
 						<a href="#" class="btn-update next">NEXT</a>
 					</div>
+
+
 					<div class="choose-location">
 						<div class="location-title"><h2>TOP</h2></div>
 						<div class="article-collection">
@@ -74,11 +86,41 @@ $data = array();
 							
 							<?php endforeach; ?>
 						</div>
-						<input class="data-location" type="hidden" name="data['location']" value="top">
 						<input class="data-position" type="hidden" name="data['position']" value="">
 						<button class="btn-update submit" type="submit">Create Advert</button>
 						
 					</div>
+
+					<div class="choose-location-bottom">
+						<div class="location-title"><h2>Bottom</h2></div>
+						<div class="article-collection">
+							<?php $count = 0; ?>
+							<?php foreach ($articles as $item) : ?>
+							
+							<?php
+							$count++;
+							$exclude = array();
+							foreach (get_adverts("bottom") as $advert) {
+							$exclude[] = $advert->position;
+							if($advert->position == $count) {
+							echo advert($advert, $count);
+							continue;
+							}
+							}
+							if(in_array($count, $exclude)){
+							continue;
+							}
+							article($item, null, $count);
+							?>
+							
+							<?php endforeach; ?>
+						</div>
+						<input class="data-position" type="hidden" name="data['position']" value="">
+						<button class="btn-update submit" type="submit">Create Advert</button>
+						
+					</div>
+
+
 				</form>
 				
 			</div>
