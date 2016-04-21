@@ -59,10 +59,10 @@ $data = array();
 							<?php
 							$count++;
 							$exclude = array();
-							foreach (get_advert("top") as $advert) {
+							foreach (get_adverts("top") as $advert) {
 							$exclude[] = $advert->position;
 							if($advert->position == $count) {
-							echo get_adverts($advert, $count);
+							echo advert($advert, $count);
 							continue;
 							}
 							}
