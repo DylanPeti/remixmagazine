@@ -337,6 +337,23 @@ HTML;
 }
 }
 
+function articles_with_adverts  ($articles) {
+
+$array = get_advert("top");
+
+ foreach($array as $advert) {
+
+          $position = $advert->position;
+    
+          array_splice($articles, $position, 0, array($advert));
+
+    }
+
+     $sliced = array_slice($articles, 0, 8);
+
+     return $sliced;
+
+}
 
 
 
