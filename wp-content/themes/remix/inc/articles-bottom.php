@@ -1,4 +1,4 @@
-<?php $categories = the_latest_from_categories(); ?>
+<?php $categories = the_latest_from_categories(); ?>  
 
 <?php $ids = array(); ?>
 <?php
@@ -24,28 +24,32 @@ foreach ($items as $recent) {
 
 <?php $articles = get_articles(1, $ids); ?>
 
-
 <section id="article-section" class="black">
   
   <div class="container">
    
     <div class="article-collection article-collection-bottom">
-     <?php $count = 0; ?>
-      <?php foreach ($articles as $item) : ?>
-
-      	<?php $count++; ?>
+     <?php $count = 0; 
+      $articles_with_adverts = articles_with_adverts("bottom", $articles);
+       foreach ($articles_with_adverts as $item) : 
+   
+      	 $count++; 
      
-         <?php
+            if(isset($item->location)) {
+             echo get_adverts($item, $count);
+            
+            } else {
+         
+            article($item); 
+          }
 
-          article($item); 
-
-          ?>
+          
        
-      <?php endforeach; ?>
+        endforeach; ?>
       
     </div>
 
-    <?php $offset = 9; ?>
+    <?php $offset = 7; ?>
 
     <div id="more-posts" data-offset=<?php echo $offset ?>>
     <h5>Loading more articles</h5>

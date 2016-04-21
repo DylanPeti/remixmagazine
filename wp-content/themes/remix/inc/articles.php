@@ -42,23 +42,6 @@ $recent_posts = array(
 
     );
 
-function articles_with_adverts($articles) {
-
-$array = get_advert("top");
-
- foreach($array as $advert) {
-
-          $position = $advert->position;
-    
-          array_splice($articles, $position, 0, array($advert));
-
-    }
-
-     $sliced = array_slice($articles, 0, 8);
-
-     return $sliced;
-
-}
 
     $count = 0;
 
@@ -66,7 +49,7 @@ $array = get_advert("top");
 
     $articles = get_articles(0, array($recent_post[0]->ID)); 
 
-    $articles_with_adverts = articles_with_adverts($articles);
+    $articles_with_adverts = articles_with_adverts("top", $articles);
 
     foreach ($articles_with_adverts as $item) : 
 
@@ -79,7 +62,7 @@ $array = get_advert("top");
          
             article($item); 
           }
-            
+        
 
           ?> 
          

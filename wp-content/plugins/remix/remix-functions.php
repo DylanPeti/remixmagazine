@@ -89,14 +89,9 @@ function the_latest_posts($count = 0, $ids = array(), $index = 0) {
 
     $do_not_duplicate = array();
     $do_not_duplicate[] = 9767;
-    $offset = ($index == 0 ? 1 : 9);
+    $offset = ($index == 0 ? 1 : 7);
 
 	  $args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish', 'offset' => $offset);
-
-
-      // $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish');
-
-      // $new_args = array('numberposts' => $count, 'post__not_in' => $do_not_duplicate, 'post_status' => 'publish');
       
      $items = wp_get_recent_posts( $args, OBJECT );
 
@@ -337,13 +332,13 @@ HTML;
 }
 }
 
-function articles_with_adverts  ($articles) {
+function articles_with_adverts ($location, $articles) {
 
-$array = get_advert("top");
+$array = get_advert($location);
 
  foreach($array as $advert) {
 
-          $position = $advert->position;
+          $position = $advert->position - 1;
     
           array_splice($articles, $position, 0, array($advert));
 
