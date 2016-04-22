@@ -3,34 +3,30 @@
     <div class="title">
    	  <h1>Adverts</h1>
     </div>
-<?php
+<?php 
 
-$recent_posts = array(
-    'numberposts' => 1,
-    'offset' => 0,
-    'category' => 0,
-    'orderby' => 'post_date',
-    'order' => 'DESC',
-    'post_type' => 'post',
-    'post_status' => 'publish',
-    'suppress_filters' => true 
+$adverts_top = get_adverts("top"); 
 
- );
+$adverts_bottom = get_adverts("bottom"); 
+
+$adverts = array_merge($adverts_top, $adverts_bottom);
 
 
-$recent_post = wp_get_recent_posts( $recent_posts, OBJECT); 
-
-$articles = get_articles(0, array($recent_post[0]->ID)); ?>
+?>
 
 <section id="article-section" class="black">
   
   <div class="container">
    
     <div class="article-collection">
+
+    <?php $count = 0; ?>
      
-      <?php foreach ($articles as $item) : ?>
+      <?php foreach ($adverts as $item) : ?>
+
+        <?php $count++; ?>
      
-         <?php article($item); ?>
+         <?php echo advert($item, $count); ?>
        
       <?php endforeach; ?>
       
@@ -39,9 +35,6 @@ $articles = get_articles(0, array($recent_post[0]->ID)); ?>
   </div>
 
 </section>
-
-      
-
 
   </div>
 

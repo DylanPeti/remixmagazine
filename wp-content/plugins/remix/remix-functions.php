@@ -275,15 +275,15 @@ function get_adverts($position) {
 
 }
 
-function advert($advert, $count) { 
+function advert($advert, $count = 0) { 
 
 $image = $advert->image;
 
 $link = $advert->link;
-
+$actual_link = "$_SERVER[REQUEST_URI]";
 $count = (isset($count) ? $count : "");
 
-if(is_admin()) {
+if(is_admin() && $actual_link != "/wp-admin/admin.php?page=remix-collection-adverts.php") {
 return <<<HTML
 <article class="article advert" data-position="$count"> 
 <div class="advert-overlay blue-overlay">
