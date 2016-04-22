@@ -278,12 +278,12 @@ function get_adverts($position) {
 function advert($advert, $count = 0) { 
 
 $image = $advert->image;
-
+$advert_id = $advert->id;
 $link = $advert->link;
-$actual_link = "$_SERVER[REQUEST_URI]";
+$actual_link = ("$_SERVER[REQUEST_URI]" == "/wp-admin/admin.php?page=remix-collection-adverts.php" ? true : false);
 $count = (isset($count) ? $count : "");
 
-if(is_admin() && $actual_link != "/wp-admin/admin.php?page=remix-collection-adverts.php") {
+if(is_admin() && !$actual_link) {
 return <<<HTML
 <article class="article advert" data-position="$count"> 
 <div class="advert-overlay blue-overlay">
@@ -314,8 +314,21 @@ return <<<HTML
   
 </article>
 HTML;
+} elseif($actual_link) {
+return <<<HTML
+<article class="article advert" data-position="$count"> 
+<form action="http://remixmagazine.dev/wp-admin/admin.php?page=remix-collection-adverts.php" method="post">
+  <div class="ad">
+            <div class="ad-img" style="background-image: url($image)"></div>
+            <input class="data-id" type="hidden" name="data[id]" value="$advert_id">
+            <div class="delete-advert"><button class="btn-update delete" type="submit">Remove</button></div>
+     
+        </div>
+ </form> 
+</article>
+HTML;
 } else {
-  return <<<HTML
+return <<<HTML
 <article class="article advert" data-position="$count"> 
   <div class="ad">
   <a href="$link" target="_blank">
@@ -328,7 +341,7 @@ HTML;
            </div>
         </div>
   
-</article>
+</article> 
 HTML;
 }
 }

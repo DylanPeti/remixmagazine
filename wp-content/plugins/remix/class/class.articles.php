@@ -88,6 +88,16 @@ static $table;
         $wpdb->delete( $table, array( 'post_id' => $ID ) );
 
 	}
+
+  static function delete_advert($table, $ID) {
+
+        global $wpdb;
+  
+        $table = $wpdb->prefix . "remix_" . $table;
+ 
+        $wpdb->delete( $table, array( 'id' => $ID ) );
+
+  }
  
  static function replace($table, $data, $ID) {
 

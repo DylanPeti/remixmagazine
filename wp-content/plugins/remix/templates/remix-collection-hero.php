@@ -50,7 +50,7 @@ $articles_read = $class::read("hero");
 
 
 
-<div class="remix-wrapper">
+<div class="remix-wrapper hero-section">
 	<div class="container">
 		
      <div class="title">
@@ -132,7 +132,7 @@ $thumb = wp_get_attachment_url( $thumb_id );
  <div class="img remix-hero" style="background-image: url(<?php echo $thumb ?>)"></div>
  <p class="active-hero-text"> <?php echo get_the_title($item->post_id) ?></p>
   <input type="hidden" name="post_id" value="<?php echo $item->post_id ?>">
-  <input href="#" name="submit" class="hero btn-update" type="submit" value="<?php echo "Remove"; ?>">
+  <input href="#" name="submit" class="btn-update" type="submit" value="<?php echo "Remove"; ?>">
   </div>
   </div>
 
@@ -175,7 +175,7 @@ $thumb = wp_get_attachment_url( $thumb_id );
 								<div class="col-md-12">
 								 <div class="details">
 										
-							      <div class="section-title"><h2 class="hero"><?php echo $id; ?></h2></div>
+							      <div class="section-title"><h2 class=""><?php echo $id; ?></h2></div>
 <!-- 								  <div class="pointer"><i class="fa fa-long-arrow-right"></i></div> -->
 							<!-- 	  <div class="status <?php echo $status; ?>"><p><?php echo $status; ?></p></div> -->
 								 
@@ -218,7 +218,7 @@ $thumb = wp_get_attachment_url( $thumb_id );
 							<div class="hero-image">
 
 						    <div class="img" style="background-image: url(<?php echo remix_thumbnail_url($article) ?>)"></div>
-						<input href="#" name="submit" class="hero btn-update" type="submit" value="<?php echo $submit; ?>">
+						<input href="#" name="submit" class="btn-update" type="submit" value="<?php echo $submit; ?>">
 						      </div>
 							</div>
 							

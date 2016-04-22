@@ -12,7 +12,7 @@
 						<div class="col-md-12">
 							<div class="details">
 								
-								<div class="section-title"><h2 class="hero">Hero</h2></div>
+								<div class="section-title"><h2 class="">Hero</h2></div>
 								<div class="pointer"><i class="fa fa-long-arrow-right"></i></div>
 								<div class="status active"><p>active</p></div>
 								
@@ -44,7 +44,7 @@
 						<div class="col-md-12">
 							<div class="details">
 								
-								<div class="section-title"><h2 class="hero">Articles</h2></div>
+								<div class="section-title"><h2 class="">Articles</h2></div>
 								<div class="pointer"><i class="fa fa-long-arrow-right"></i></div>
 								<div class="status inactive"><p>inactive</p></div>
 								
@@ -77,7 +77,7 @@
 						<div class="col-md-12">
 							<div class="details">
 								
-								<div class="section-title"><h2 class="hero">Carousel</h2></div>
+								<div class="section-title"><h2 class="">Carousel</h2></div>
 								<div class="pointer"><i class="fa fa-long-arrow-right"></i></div>
 								<div class="status active"><p>active</p></div>
 								

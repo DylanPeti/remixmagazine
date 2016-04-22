@@ -419,7 +419,7 @@ font-size: 10px;
   float: none;
 }
 
-#advert-create-section .advert-location{
+#advert-create-section .advert-location, #advert-display-section .advert-display{
   width: 920px;
   margin: 0 auto;
   float: none;
@@ -530,4 +530,46 @@ display: none;
     height: 40px;
     margin-bottom: 10px;
   }
+  .advert-display .article {
+    height: 260px;
+   }
+
+  .advert-display .article.advert .ad .ad-img {
+    height: 159px;
+  }
+
+  .advert-display .article.advert .ad .delete-advert button {
+     margin: 15px auto 0 auto;
+    display: block;
+    float: none;
+    text-align: center;
+    padding: 0;
+    line-height: 28px;
+    border: 1px solid #db3434;
+    color: #db3434;
+    
+  }
+
+  .advert-display .article.advert .ad .delete-advert button:hover {
+   background-color: #db3434;
+   color: #fff;
+  }
+
+   .advert-display .article.advert .ad .ad-content {
+    height: 55px;
+   }
+
+   .display-all-adverts .title {
+    text-align: center;
+   }
+
+   .hero-section .btn-update {
+        cursor: pointer;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+    line-height: 28px;
+    margin-top: 10px;
+}
+   }
  

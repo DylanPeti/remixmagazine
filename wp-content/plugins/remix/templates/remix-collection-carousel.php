@@ -102,7 +102,7 @@ $social = $class::read("social")[0];
         				<div class="col-md-12">
         				 <div class="details">
         						
-        			      <div class="section-title"><h2 class="hero"><?php echo "Media"; ?></h2></div>
+        			      <div class="section-title"><h2 class=""><?php echo "Media"; ?></h2></div>
         				  <div class="pointer"><i class="fa fa-long-arrow-right"></i></div>
         				  <div class="status <?php echo $status; ?>"><p><?php echo $status; ?></div>
         						
