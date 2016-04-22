@@ -1,7 +1,29 @@
 <?php
+
 if($_POST) :
-$save = Remix::create("adverts", $_POST);
+    
+     $data = $_POST['data'];
+
+     $position = $_POST['data']['position'];
+     $location = $_POST['data']['location'];
+     
+     $adverts = get_adverts($location);
+
+     $pos = array();
+     
+     foreach($adverts as $ad) {
+       $pos[$ad->id] = $ad->position;
+     }
+
+     if (false !== $key = array_search($position, $pos)) {
+       $save = Remix::replace("adverts", $_POST, $key);
+      } else {
+       $save = Remix::create("adverts", $_POST);
+      }
+
 endif;
+
+
 $recent_posts = array(
 'numberposts' => 1,
 'offset' => 0,
@@ -34,14 +56,14 @@ $data = array();
 						<?php endif; ?>
 						<h3>CREATE</h3>
 						<div class="form-group">
-							<input name="data['title']" class="create-title create-title-input" type="text" name="title" placeholder="Advert title" required>
+							<input name="data[title]" class="create-title create-title-input" type="text" name="title" placeholder="Advert title" required>
 						</div>
 						<div class="form-group">
-							<input name="data['link']" class="create-link create-title-input" type="text" name="title" placeholder="Link to website" required>
+							<input name="data[link]" class="create-link create-title-input" type="text" name="title" placeholder="Link to website" required>
 						</div>
 						<div class="form-group">
 							<label for="sel1">Choose a Location</label>
-							<select name="data['location']" class="form-control" id="sel1" selected="selected">
+							<select name="data[location]" class="form-control" id="sel1" selected="selected">
 								<option value="top" selected>Top</option>
 								<option value="bottom">Bottom</option>
 							</select>
@@ -51,8 +73,8 @@ $data = array();
 							<div class="preview"></div>
 							<p class="img-note">Note: if you see space inside the dotted lines, you'll need
 							to resize the advert image. Ideal dimensions are: 300 x 250</p>
-							<input class="data-image" type="hidden" name="data['image']" value="">
-							<input class="data-status" type="hidden" name="data['status']" value="active">
+							<input class="data-image" type="hidden" name="data[image]" value="">
+							<input class="data-status" type="hidden" name="data[status]" value="active">
 							
 							<a href="#" class="btn-update upload-media">Upload Media</a>
 							
@@ -86,7 +108,7 @@ $data = array();
 							
 							<?php endforeach; ?>
 						</div>
-						<input class="data-position" type="hidden" name="data['position']" value="">
+						<input class="data-position" type="hidden" name="data[position]" value="">
 						<button class="btn-update submit" type="submit">Create Advert</button>
 						
 					</div>
@@ -115,7 +137,7 @@ $data = array();
 							
 							<?php endforeach; ?>
 						</div>
-						<input class="data-position" type="hidden" name="data['position']" value="">
+						<input class="data-position" type="hidden" name="data[position]" value="">
 						<button class="btn-update submit" type="submit">Create Advert</button>
 						
 					</div>
