@@ -1,6 +1,5 @@
   <?php 
 
-  if()
 
 $recent_posts = array(
     'numberposts' => 1,

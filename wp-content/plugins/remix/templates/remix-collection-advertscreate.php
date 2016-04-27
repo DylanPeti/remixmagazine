@@ -115,7 +115,7 @@ $data = array();
 
 					<div class="choose-location-bottom">
 						<div class="location-title"><h2>Bottom</h2></div>
-						<div class="article-collection">
+						<div class="article-collection">`
 							<?php $count = 0; ?>
 							<?php foreach ($articles as $item) : ?>
 							
